@@ -51,7 +51,7 @@ Todo lo que sigue es lo que **la nota dice** que dice la moción. No es el texto
 
 ## Notas
 
-- **Es una filtración, no el documento oficial.** La moción oficial ([F-0007](F-0007-mocion-asamblea.md)) seguía sin publicar al 2026-09-28. Cuando se publique, comparar punto por punto y registrar las diferencias.
+- **Reemplazada por la moción oficial** ([F-0007](F-0007-mocion-asamblea.md)), publicada el 2026-09-29. La diferencia principal: el borrador pedía 9 de 11 votos de la Directiva y la moción oficial pide unanimidad de los once. La comparación punto por punto está en F-0007.
 - La nota no publica el texto de la moción, solo un resumen propio. En la copia del texto de la página falta el título del punto 5, aunque el contenido está.
 - El propio medio aclara que la moción no responde todavía cuánto cuesta cada etapa, quién financia ni con qué contratos.
 - La Abdón es un medio partidario de hinchas de Nacional.

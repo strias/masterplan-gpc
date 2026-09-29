@@ -26,3 +26,4 @@ Según la nota, la moción dice que:
 
 - Es del 2026-09-22, tres días antes de la nota que habla de "filtración" ([F-0009](F-0009-laabdon-mocion-filtrada.md)). No dice de dónde sacó el contenido de la moción.
 - Da unos 50.000 m²; el anteproyecto da 48.000 m² de terreno ([F-0004](F-0004-anteproyecto.md), p. 15).
+- Comparada con la moción oficial ([F-0007](F-0007-mocion-asamblea.md), 2026-09-29): la nota habla de nueve votos de once y la oficial pide unanimidad de los once. Tampoco aparece en la oficial que los aportes extraordinarios deban aprobarse expresamente por la Asamblea: CUARTO 4 permite asignar al proyecto "aportes extraordinarios que se generen para estos fines" sin decir quién los aprueba (p. 7).
