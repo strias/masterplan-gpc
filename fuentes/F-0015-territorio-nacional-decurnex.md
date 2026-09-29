@@ -26,7 +26,7 @@ Según subtítulos automáticos; los minutos son aproximados:
 
 ## Notas
 
-- **Transcripción publicada:** [`transcripciones/F-0015-territorio-nacional-decurnex-2026-09-21.md`](../transcripciones/F-0015-territorio-nacional-decurnex-2026-09-21.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video.
+- **Transcripción publicada:** [`transcripciones/F-0015-territorio-nacional-decurnex-2026-09-21.md`](../transcripciones/F-0015-territorio-nacional-decurnex-2026-09-21.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Las voces (Decurnex o conductores) **las asignó Claude según el contenido**, en [`scripts/voces/F-0015.tsv`](../scripts/voces/F-0015.tsv). Donde el programa de reacción [F-0019](F-0019-pasion-tricolor-reaccion-decurnex.md) repitió el tramo al aire, se muestra también esa otra transcripción, que suele tener mejor texto. Sirve para ubicar el minuto; la cita se verifica contra el video.
 
 - Transmisión del canal Territorio Nacional Tv. El conductor dice al empezar: "21:03 de este lunes 21 de septiembre".
 - Subtítulos automáticos: verificar contra el audio antes de publicar una cita.
