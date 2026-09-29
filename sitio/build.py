@@ -37,7 +37,10 @@ def R(s):
         if rest.startswith("p."):
             return ref(fid, page=rest[2:].strip())
         return ref(fid, rest or None)
-    return re.sub(r"\{(F-\d{4})\s*([^}]*)\}", sub, s)
+    s = re.sub(r"\{(F-\d{4})\s*([^}]*)\}", sub, s)
+    s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    s = s.replace("[[CG]]", '<span class="cg" title="Conocimiento general: no sale de una fuente registrada">conocimiento general</span>')
+    return s
 
 ESTADOS = {
     "coinciden": ("Coinciden en el dato", "ok"),
@@ -233,7 +236,8 @@ for p in PREGUNTAS:
     for who, txt, r in p["resp"]:
         A(f'<div class="ans"><p class="ans-who">{who}</p><p class="ans-txt">{html.escape(txt)}</p><p class="ans-ref">{R(r)}</p></div>')
     A('</div>')
-    A(f'<div class="verdict"><div class="chips">{"".join(chip(e) for e in p["estado"])}</div><p>{R(p["lectura"])}</p></div></article>')
+    A(f'<div class="verdict"><div class="chips">{"".join(chip(e) for e in p["estado"])}</div><p>{R(p["lectura"])}</p></div>')
+    A(f'<a class="more" href="detalle-{p["id"]}.html">Ver en detalle: qué piensa cada uno, en qué se apoya y análisis</a></article>')
 A('</section>')
 
 # Posturas
@@ -280,4 +284,45 @@ A('</ul></section>')
 A('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, hincha de Nacional, con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente.</p></footer></main>''')
 
 open("contrapunto.html", "w").write("\n".join(out))
+
+from detalle import DETALLE
+HEAD = open("head.html").read()
+STYLE = HEAD[HEAD.index("<link rel=\"preconnect\""):]
+EXTRA = """<style>
+.back { font-family: var(--f-mono); font-size: .82rem; }
+.lado { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.lado h3 { font-size: 1.35rem; }
+.lado .tesis { font-family: var(--f-display); font-size: 1.2rem; color: var(--red); text-transform: uppercase; letter-spacing: .02em; }
+.porque { border-top: 1px dashed var(--line); padding-top: 10px; color: var(--muted); font-size: .95rem; }
+.porque b { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink); font-weight: 500; margin-right: 6px; }
+.lados { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.analisis { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--red); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.analisis .aviso { font-size: .92rem; color: var(--muted); }
+.cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: var(--warn-bg); color: var(--warn-fg); padding: 1px 6px; border-radius: 3px; white-space: nowrap; }
+.lectura { font-size: 1.15rem; border-left: 4px solid var(--navy); padding-left: 14px; max-width: 64ch; }
+.res { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.pager { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: var(--f-mono); font-size: .82rem; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>"""
+ids = [p["id"] for p in PREGUNTAS]
+for i, p in enumerate(PREGUNTAS):
+    d = DETALLE[p["id"]]
+    o = []
+    o.append(f'<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>{html.escape(d["titulo"])}</title>{STYLE}{EXTRA}</head><body><main class="wrap">')
+    o.append(f'<header class="hero"><a class="back" href="index.html">← Volver a la portada</a><p class="eyebrow">Master Plan GPC · Pregunta en detalle</p><h1>{html.escape(d["titulo"])}</h1><p class="lede">{R(d["corto"])}</p><div class="chips">{"".join(chip(e) for e in p["estado"])}</div></header>')
+    o.append('<section class="sec"><h2>Qué dice cada uno</h2><div class="lados">')
+    for who, tesis, txt, porque in d["posturas"]:
+        o.append(f'<article class="lado"><h3>{who}</h3><p class="tesis">{html.escape(tesis)}</p><p>{R(txt)}</p><p class="porque"><b>Por qué lo dice</b>{R(porque)}</p></article>')
+    o.append('</div></section>')
+    o.append('<section class="sec"><h2>Análisis</h2><div class="analisis"><p class="aviso">Este análisis es de Claude, la IA que asiste al proyecto, y es opinión. Se apoya en las fuentes enlazadas y, donde lo indica la etiqueta <span class="cg">conocimiento general</span>, en conocimiento general de finanzas y obras que no sale de una fuente registrada. Las cuentas propias usan solo cifras dichas por las partes.</p>')
+    for par in d["analisis"]:
+        o.append(f'<p>{R(par)}</p>')
+    o.append('</div></section>')
+    o.append(f'<section class="sec"><h2>En resumen</h2><p class="lectura">{R(d["lectura"])}</p></section>')
+    o.append('<section class="sec"><h2>Qué lo resolvería</h2><ul class="res">' + "".join(f"<li>{html.escape(x)}</li>" for x in d["resolveria"]) + '</ul></section>')
+    prev = f'<a href="detalle-{ids[i-1]}.html">← {html.escape(DETALLE[ids[i-1]]["titulo"])}</a>' if i > 0 else '<span></span>'
+    nxt = f'<a href="detalle-{ids[i+1]}.html">{html.escape(DETALLE[ids[i+1]]["titulo"])} →</a>' if i + 1 < len(ids) else '<a href="index.html">Volver a la portada</a>'
+    o.append(f'<nav class="pager">{prev}{nxt}</nav>')
+    o.append('<footer class="foot"><p>Preliminar, al 28/09/2026. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener la moción oficial y el modelo económico.</p></footer></main></body></html>')
+    open(f"detalle-{p['id']}.html", "w").write("\n".join(o))
+print("detalles:", len(ids))
 print("ok", sum(len(x) for x in out))

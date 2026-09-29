@@ -1,0 +1,141 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>¿Nacional pone plata en el proyecto?</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: una columna de lectura; cada pregunta es una ficha con quién preguntó, las respuestas en paralelo y el estado al pie. Colores del club: azul, rojo y blanco. */
+:root {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --ink: #141b33;
+  --muted: #545d78;
+  --line: #d9dde9;
+  --navy: #1b2a6b;
+  --red: #c8102e;
+  --ok-bg: #e3f1e8; --ok-fg: #1d5a35;
+  --warn-bg: #fbeed5; --warn-fg: #7a4b05;
+  --bad-bg: #fbe1e4; --bad-fg: #8f1022;
+  --soft-bg: #e4e9f7; --soft-fg: #25367f;
+  --pend-bg: #eceef3; --pend-fg: #4a5169;
+  --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1222; --surface: #161b30; --ink: #e8ebf5; --muted: #a3aac2; --line: #2b3250;
+    --navy: #9fb1ff; --red: #ff6b7d;
+    --ok-bg: #173826; --ok-fg: #9fe0b5; --warn-bg: #3b2c0f; --warn-fg: #f2c979;
+    --bad-bg: #401820; --bad-fg: #ffadb7; --soft-bg: #1f2a55; --soft-fg: #b9c6ff;
+    --pend-bg: #232941; --pend-fg: #b7bdd3;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1222; --surface: #161b30; --ink: #e8ebf5; --muted: #a3aac2; --line: #2b3250;
+  --navy: #9fb1ff; --red: #ff6b7d;
+  --ok-bg: #173826; --ok-fg: #9fe0b5; --warn-bg: #3b2c0f; --warn-fg: #f2c979;
+  --bad-bg: #401820; --bad-fg: #ffadb7; --soft-bg: #1f2a55; --soft-fg: #b9c6ff;
+  --pend-bg: #232941; --pend-fg: #b7bdd3;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: flex; flex-direction: column; gap: 56px; }
+a { color: var(--navy); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 700; line-height: 1.05; text-wrap: balance; margin: 0; letter-spacing: .005em; }
+h1 { font-size: clamp(2.3rem, 6vw, 3.6rem); color: var(--ink); }
+h2 { font-size: 2rem; text-transform: uppercase; letter-spacing: .03em; color: var(--navy); padding-bottom: 8px; border-bottom: 3px solid var(--red); }
+h3 { font-size: 1.55rem; }
+p { margin: 0; }
+.eyebrow, .label, .rol, .ans-who, dt { font-family: var(--f-mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
+.eyebrow { color: var(--red); font-weight: 500; }
+.hero { display: flex; flex-direction: column; gap: 16px; padding-top: 12px; }
+.lede { font-size: 1.12rem; color: var(--muted); max-width: 62ch; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 8px 0 0; }
+.facts > div { background: var(--surface); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.facts dd { margin: 0; font-size: .98rem; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--f-mono); font-size: .82rem; }
+.sec { display: flex; flex-direction: column; gap: 20px; }
+.sec-intro { color: var(--muted); max-width: 64ch; }
+.q { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--navy); padding: 20px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 16px; }
+.asked ul { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.asked li { font-style: italic; color: var(--muted); }
+.asked .who { font-style: normal; font-weight: 600; color: var(--ink); }
+.answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.ans { border-left: 3px solid var(--line); padding-left: 12px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ans-who { color: var(--navy); font-weight: 500; }
+.ans-txt { font-size: .98rem; }
+.ans-ref, .refs { display: flex; flex-wrap: wrap; gap: 6px; }
+.refs { display: inline-flex; margin-left: 4px; }
+.ref { font-family: var(--f-mono); font-size: .74rem; text-decoration: none; background: var(--soft-bg); color: var(--soft-fg); padding: 2px 7px; border-radius: 3px; white-space: nowrap; }
+.ref:hover { text-decoration: underline; }
+.verdict { background: var(--bg); border: 1px dashed var(--line); padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .02em; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
+.chip-ok { background: var(--ok-bg); color: var(--ok-fg); }
+.chip-warn { background: var(--warn-bg); color: var(--warn-fg); }
+.chip-bad { background: var(--bad-bg); color: var(--bad-fg); }
+.chip-soft { background: var(--soft-bg); color: var(--soft-fg); }
+.chip-pend { background: var(--pend-bg); color: var(--pend-fg); }
+.posturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.post { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.coin { margin: 0; display: flex; flex-direction: column; }
+.coin > div { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.coin dt { padding-top: 3px; }
+.coin dd { margin: 0; min-width: 0; font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+thead th { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 500; }
+tbody th { font-weight: 600; width: 32%; }
+tbody tr:last-child > * { border-bottom: 0; }
+.legend { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 20px; }
+.legend > div { display: flex; flex-direction: column; gap: 4px; }
+.legend dt { text-transform: none; letter-spacing: 0; }
+.legend dd { margin: 0; font-size: .92rem; color: var(--muted); }
+.falta { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.falta li { display: grid; grid-template-columns: minmax(180px, 1fr) 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.falta span { color: var(--muted); }
+.fuentes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 8px 20px; }
+.fuentes li { display: flex; gap: 10px; align-items: baseline; min-width: 0; }
+.code { font-family: var(--f-mono); font-size: .78rem; color: var(--red); flex: none; }
+.more { font-family: var(--f-mono); font-size: .8rem; align-self: flex-start; }
+.foot { border-top: 1px solid var(--line); padding-top: 16px; color: var(--muted); font-size: .92rem; }
+@media (max-width: 560px) {
+  .coin > div, .falta li { grid-template-columns: 1fr; gap: 4px; }
+  .q { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+<style>
+.back { font-family: var(--f-mono); font-size: .82rem; }
+.lado { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.lado h3 { font-size: 1.35rem; }
+.lado .tesis { font-family: var(--f-display); font-size: 1.2rem; color: var(--red); text-transform: uppercase; letter-spacing: .02em; }
+.porque { border-top: 1px dashed var(--line); padding-top: 10px; color: var(--muted); font-size: .95rem; }
+.porque b { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink); font-weight: 500; margin-right: 6px; }
+.lados { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.analisis { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--red); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.analisis .aviso { font-size: .92rem; color: var(--muted); }
+.cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: var(--warn-bg); color: var(--warn-fg); padding: 1px 6px; border-radius: 3px; white-space: nowrap; }
+.lectura { font-size: 1.15rem; border-left: 4px solid var(--navy); padding-left: 14px; max-width: 64ch; }
+.res { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.pager { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: var(--f-mono); font-size: .82rem; border-top: 1px solid var(--line); padding-top: 16px; }
+</style></head><body><main class="wrap">
+<header class="hero"><a class="back" href="index.html">← Volver a la portada</a><p class="eyebrow">Master Plan GPC · Pregunta en detalle</p><h1>¿Nacional pone plata en el proyecto?</h1><p class="lede">Las dos partes hablan de los mismos flujos. La discusión real es otra: si esos flujos pueden terminar pagando las pérdidas de los negocios nuevos.</p><div class="chips"><span class="chip chip-ok">Coinciden en el dato</span></div></header>
+<section class="sec"><h2>Qué dice cada uno</h2><div class="lados">
+<article class="lado"><h3>Aldabalde</h3><p class="tesis">La caja del club no se toca</p><p>“Nacional no interviene un solo dólar, salvo el flujo de los palcos”, que “no está en los flujos recurrentes del club” <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=419s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:06:59</a>. La premisa del modelo es que “los flujos actuales del club, con los que el club paga las cuentas, el plantel y todos los gastos, no se tocan” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=8919s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:28:39</a>. Lo que va al fideicomiso son los palcos, sus gastos comunes y el Club Social, y según él vuelve “con creces”: 15 M por año después del repago <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=1779s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:29:39</a>.</p><p class="porque"><b>Por qué lo dice</b>Separa la caja operativa (sueldos, plantel, cuentas) de los ingresos que históricamente se destinan a infraestructura. Apela a una lección conocida del club: los fondos del Parque se usaron para otra cosa <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=4928s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:22:08</a>.</p></article>
+<article class="lado"><h3>Decurnex</h3><p class="tesis">Nacional pone 147 M</p><p>“Nacional está poniendo 147 millones de dólares”: 93 M de palcos (tres renovaciones en 30 años), 33 M del Club Social y 21 M de gastos comunes. “Se haga el proyecto o no se haga, es plata de Nacional” <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=577s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:09:37</a>. Si esa plata respalda negocios que salen mal, “se nos va todo” <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1476s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:24:36</a>.</p><p class="porque"><b>Por qué lo dice</b>Mira el costo de oportunidad: esos 147 M existen sin el Master Plan y podrían ir solo al estadio. Su propuesta es blindarlos para el Parque y que los negocios los ponga un privado <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1388s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:23:08</a>.</p></article>
+<article class="lado"><h3>Conductores de Pasión Tricolor</h3><p class="tesis">Son flujos futuros que hoy no entran</p><p>“Nacional pondría para este proyecto dinero que hoy no está entrando, que es nuestro y que va a entrar a futuro” <a class="ref" href="https://www.youtube.com/watch?v=-lKaALmO6ao&t=2961s" target="_blank" rel="noopener" title="Pasión Tricolor, reacción a Decurnex (22/09)">F-0019 · 00:49:21</a>. Lo presentan como una respuesta a Decurnex.</p><p class="porque"><b>Por qué lo dice</b>Es la misma distinción de Aldabalde: caja actual contra ingresos futuros.</p></article>
+</div></section>
+<section class="sec"><h2>Análisis</h2><div class="analisis"><p class="aviso">Este análisis es de Claude, la IA que asiste al proyecto, y es opinión. Se apoya en las fuentes enlazadas y, donde lo indica la etiqueta <span class="cg">conocimiento general</span>, en conocimiento general de finanzas y obras que no sale de una fuente registrada. Las cuentas propias usan solo cifras dichas por las partes.</p>
+<p><strong>Las dos frases son ciertas, cada una en su marco.</strong> “No se toca la caja” es correcto contablemente: el presupuesto operativo de hoy no financia la obra. “Nacional pone 147 M” es correcto económicamente: son ingresos del club que, sin el proyecto, podrían usarse en otra cosa. Discutir cuál de las dos es la verdadera no lleva a ningún lado.</p>
+<p><strong>La pregunta que importa es otra: ¿esos flujos pueden terminar cubriendo pérdidas de la arena o del estacionamiento?</strong> En un fideicomiso donde todos los ingresos entran a una misma cuenta y pagan una misma deuda, los palcos sostienen todo el conjunto. Si un negocio rinde menos, los palcos pagan la diferencia sin que nadie tome una decisión explícita. Esa es la preocupación de fondo de Decurnex y de Villaverde, y es razonable. <span class="cg" title="Conocimiento general: no sale de una fuente registrada">conocimiento general</span></p>
+<p><strong>El borrador de la moción responde justo eso.</strong> Los ingresos existentes de palcos, Club Social o aportes de socios “solo podrán tener como destino el estadio de fútbol […] no pudiendo afectarse a otras unidades de negocio” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6689s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:51:29</a> <a class="ref" href="https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre" target="_blank" rel="noopener" title="La Abdón: moción filtrada">F-0009</a>. También prevé un mecanismo de restitución al club de los flujos que se asignen. Si esa cláusula queda en la moción oficial y el modelo la implementa con cuentas y prelaciones de pago separadas, la objeción principal queda bastante contestada.</p>
+<p><strong>El riesgo está en la implementación.</strong> Separar flujos dentro de un mismo fideicomiso es posible, pero hay que verlo en el contrato y en el modelo: qué deuda paga cada flujo y qué pasa si un negocio no alcanza. Hoy no hay documento que lo muestre. <span class="cg" title="Conocimiento general: no sale de una fuente registrada">conocimiento general</span></p>
+</div></section>
+<section class="sec"><h2>En resumen</h2><p class="lectura">Es un falso dilema de comunicación. La pregunta útil es: ¿el modelo definitivo aísla los flujos de palcos y Club Social del riesgo de los negocios nuevos? El borrador dice que sí. Hay que confirmarlo en la moción oficial y en el modelo.</p></section>
+<section class="sec"><h2>Qué lo resolvería</h2><ul class="res"><li>Moción oficial: que mantenga la cláusula de destino exclusivo al estadio y el mecanismo de restitución</li><li>Modelo económico: que muestre qué deuda paga cada flujo</li></ul></section>
+<nav class="pager"><span></span><a href="detalle-costo.html">¿Cuánto cuesta la obra? →</a></nav>
+<footer class="foot"><p>Preliminar, al 28/09/2026. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener la moción oficial y el modelo económico.</p></footer></main></body></html>

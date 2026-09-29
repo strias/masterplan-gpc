@@ -1,0 +1,141 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>¿Qué se vota el 24 de octubre y con qué mayoría?</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: una columna de lectura; cada pregunta es una ficha con quién preguntó, las respuestas en paralelo y el estado al pie. Colores del club: azul, rojo y blanco. */
+:root {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --ink: #141b33;
+  --muted: #545d78;
+  --line: #d9dde9;
+  --navy: #1b2a6b;
+  --red: #c8102e;
+  --ok-bg: #e3f1e8; --ok-fg: #1d5a35;
+  --warn-bg: #fbeed5; --warn-fg: #7a4b05;
+  --bad-bg: #fbe1e4; --bad-fg: #8f1022;
+  --soft-bg: #e4e9f7; --soft-fg: #25367f;
+  --pend-bg: #eceef3; --pend-fg: #4a5169;
+  --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1222; --surface: #161b30; --ink: #e8ebf5; --muted: #a3aac2; --line: #2b3250;
+    --navy: #9fb1ff; --red: #ff6b7d;
+    --ok-bg: #173826; --ok-fg: #9fe0b5; --warn-bg: #3b2c0f; --warn-fg: #f2c979;
+    --bad-bg: #401820; --bad-fg: #ffadb7; --soft-bg: #1f2a55; --soft-fg: #b9c6ff;
+    --pend-bg: #232941; --pend-fg: #b7bdd3;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1222; --surface: #161b30; --ink: #e8ebf5; --muted: #a3aac2; --line: #2b3250;
+  --navy: #9fb1ff; --red: #ff6b7d;
+  --ok-bg: #173826; --ok-fg: #9fe0b5; --warn-bg: #3b2c0f; --warn-fg: #f2c979;
+  --bad-bg: #401820; --bad-fg: #ffadb7; --soft-bg: #1f2a55; --soft-fg: #b9c6ff;
+  --pend-bg: #232941; --pend-fg: #b7bdd3;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: flex; flex-direction: column; gap: 56px; }
+a { color: var(--navy); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 700; line-height: 1.05; text-wrap: balance; margin: 0; letter-spacing: .005em; }
+h1 { font-size: clamp(2.3rem, 6vw, 3.6rem); color: var(--ink); }
+h2 { font-size: 2rem; text-transform: uppercase; letter-spacing: .03em; color: var(--navy); padding-bottom: 8px; border-bottom: 3px solid var(--red); }
+h3 { font-size: 1.55rem; }
+p { margin: 0; }
+.eyebrow, .label, .rol, .ans-who, dt { font-family: var(--f-mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
+.eyebrow { color: var(--red); font-weight: 500; }
+.hero { display: flex; flex-direction: column; gap: 16px; padding-top: 12px; }
+.lede { font-size: 1.12rem; color: var(--muted); max-width: 62ch; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 8px 0 0; }
+.facts > div { background: var(--surface); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.facts dd { margin: 0; font-size: .98rem; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--f-mono); font-size: .82rem; }
+.sec { display: flex; flex-direction: column; gap: 20px; }
+.sec-intro { color: var(--muted); max-width: 64ch; }
+.q { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--navy); padding: 20px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 16px; }
+.asked ul { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.asked li { font-style: italic; color: var(--muted); }
+.asked .who { font-style: normal; font-weight: 600; color: var(--ink); }
+.answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.ans { border-left: 3px solid var(--line); padding-left: 12px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ans-who { color: var(--navy); font-weight: 500; }
+.ans-txt { font-size: .98rem; }
+.ans-ref, .refs { display: flex; flex-wrap: wrap; gap: 6px; }
+.refs { display: inline-flex; margin-left: 4px; }
+.ref { font-family: var(--f-mono); font-size: .74rem; text-decoration: none; background: var(--soft-bg); color: var(--soft-fg); padding: 2px 7px; border-radius: 3px; white-space: nowrap; }
+.ref:hover { text-decoration: underline; }
+.verdict { background: var(--bg); border: 1px dashed var(--line); padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .02em; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
+.chip-ok { background: var(--ok-bg); color: var(--ok-fg); }
+.chip-warn { background: var(--warn-bg); color: var(--warn-fg); }
+.chip-bad { background: var(--bad-bg); color: var(--bad-fg); }
+.chip-soft { background: var(--soft-bg); color: var(--soft-fg); }
+.chip-pend { background: var(--pend-bg); color: var(--pend-fg); }
+.posturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.post { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.coin { margin: 0; display: flex; flex-direction: column; }
+.coin > div { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.coin dt { padding-top: 3px; }
+.coin dd { margin: 0; min-width: 0; font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+thead th { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 500; }
+tbody th { font-weight: 600; width: 32%; }
+tbody tr:last-child > * { border-bottom: 0; }
+.legend { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 20px; }
+.legend > div { display: flex; flex-direction: column; gap: 4px; }
+.legend dt { text-transform: none; letter-spacing: 0; }
+.legend dd { margin: 0; font-size: .92rem; color: var(--muted); }
+.falta { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.falta li { display: grid; grid-template-columns: minmax(180px, 1fr) 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.falta span { color: var(--muted); }
+.fuentes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 8px 20px; }
+.fuentes li { display: flex; gap: 10px; align-items: baseline; min-width: 0; }
+.code { font-family: var(--f-mono); font-size: .78rem; color: var(--red); flex: none; }
+.more { font-family: var(--f-mono); font-size: .8rem; align-self: flex-start; }
+.foot { border-top: 1px solid var(--line); padding-top: 16px; color: var(--muted); font-size: .92rem; }
+@media (max-width: 560px) {
+  .coin > div, .falta li { grid-template-columns: 1fr; gap: 4px; }
+  .q { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+<style>
+.back { font-family: var(--f-mono); font-size: .82rem; }
+.lado { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.lado h3 { font-size: 1.35rem; }
+.lado .tesis { font-family: var(--f-display); font-size: 1.2rem; color: var(--red); text-transform: uppercase; letter-spacing: .02em; }
+.porque { border-top: 1px dashed var(--line); padding-top: 10px; color: var(--muted); font-size: .95rem; }
+.porque b { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink); font-weight: 500; margin-right: 6px; }
+.lados { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.analisis { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--red); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.analisis .aviso { font-size: .92rem; color: var(--muted); }
+.cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: var(--warn-bg); color: var(--warn-fg); padding: 1px 6px; border-radius: 3px; white-space: nowrap; }
+.lectura { font-size: 1.15rem; border-left: 4px solid var(--navy); padding-left: 14px; max-width: 64ch; }
+.res { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.pager { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: var(--f-mono); font-size: .82rem; border-top: 1px solid var(--line); padding-top: 16px; }
+</style></head><body><main class="wrap">
+<header class="hero"><a class="back" href="index.html">← Volver a la portada</a><p class="eyebrow">Master Plan GPC · Pregunta en detalle</p><h1>¿Qué se vota el 24 de octubre y con qué mayoría?</h1><p class="lede">Según el borrador, se vota un marco con garantías, no la obra. La mayoría legal parece ser la simple; la política es otra discusión. Llama la atención que el proyecto exija 9 de 11 en la Directiva pero no una mayoría reforzada de los socios.</p><div class="chips"><span class="chip chip-ok">Coinciden en el dato</span><span class="chip chip-pend">Pendiente</span></div></header>
+<section class="sec"><h2>Qué dice cada uno</h2><div class="lados">
+<article class="lado"><h3>Aldabalde</h3><p class="tesis">Se aprueba un sistema de trabajo</p><p>La Asamblea “aprueba el master plan y aprueba un sistema de trabajo que dice que el club no se endeuda, que se dan todas las garantías de que no se inicia si no está el financiamiento” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6965s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:56:05</a>. El 75% salió de una reforma del Estatuto votada “hace dos meses”, que no rige hasta que la apruebe el MEC, y duda de que sea legal fijar una mayoría especial para una sola Asamblea <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=8198s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:16:38</a>. “A mí me parece perfecto que sea el 75%. Si es lo que el socio levanta la mano en la asamblea” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=8441s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:20:41</a>.</p><p class="porque"><b>Por qué lo dice</b>Quiere avanzar ahora; ve el 75% como un posible bloqueo hacia adelante.</p></article>
+<article class="lado"><h3>Decurnex</h3><p class="tesis">Por coherencia, 75%</p><p>El Estatuto vigente dice 50 + 1, pero “si hace dos meses votamos algo, no puede ser que hoy, 60 días después, el proyecto que eventualmente va a ser el más importante de la historia de Nacional…”; lo va a plantear como moción en la Asamblea <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1612s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:26:52</a> <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1633s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:27:13</a>.</p><p class="porque"><b>Por qué lo dice</b>Un proyecto de 30 años aprobado por poco margen divide al club.</p></article>
+<article class="lado"><h3>Singlet</h3><p class="tesis">Nos pareció que era tomarnos el pelo</p><p>La reforma del 7 de julio fijó el 75% para proyectos de más de USD 2 M. Dos o tres días después, Aldabalde dijo que esta Asamblea se regiría por el Estatuto vigente, con 51%: “a nosotros no nos gustó esa actitud” <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=319s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:05:19</a> <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=443s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:07:23</a>. Un proyecto de esta envergadura aprobado con 51% “es porque no conoce el club” <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=580s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:09:40</a>.</p><p class="porque"><b>Por qué lo dice</b>Participó en la redacción de la reforma.</p></article>
+</div></section>
+<section class="sec"><h2>Análisis</h2><div class="analisis"><p class="aviso">Este análisis es de Claude, la IA que asiste al proyecto, y es opinión. Se apoya en las fuentes enlazadas y, donde lo indica la etiqueta <span class="cg">conocimiento general</span>, en conocimiento general de finanzas y obras que no sale de una fuente registrada. Las cuentas propias usan solo cifras dichas por las partes.</p>
+<p><strong>Legalmente, parece mandar el Estatuto vigente.</strong> Si la reforma no está aprobada por el MEC, en principio no rige, y la Asamblea decide por la mayoría que fija el texto vigente. No tenemos el Estatuto ni el trámite, así que esto es una lectura general y no una opinión jurídica. <span class="cg" title="Conocimiento general: no sale de una fuente registrada">conocimiento general</span></p>
+<p><strong>Políticamente, Decurnex y Singlet tienen un punto.</strong> Un proyecto de 30 años aprobado 52 a 48 nace débil: cada Directiva futura va a tener la tentación de revisarlo. Aldabalde lo sabe: dice que si se aprueba por poco o no se aprueba, “no pasa nada”, pero también que se necesita el apoyo del socio.</p>
+<p><strong>Hay una asimetría llamativa.</strong> El borrador exige 9 de 11 votos de la Directiva para las decisiones centrales, justamente para asegurar un consenso amplio <a class="ref" href="https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre" target="_blank" rel="noopener" title="La Abdón: moción filtrada">F-0009</a>. Aplicar esa misma lógica a los socios, con una mayoría reforzada, sería coherente. Lo contrario también se puede argumentar: el 75% le da poder de veto a una minoría.</p>
+<p><strong>Lo que se vota es menos de lo que suena, y más de lo que parece.</strong> Según el borrador, no se autorizan obras, deuda ni garantías: cada paso necesita condiciones y, si hay cambios sustanciales, vuelve a la Asamblea. Pero sí se fija el rumbo: se adopta este Master Plan, con estas unidades de negocio, como marco. Una alternativa como el solo estadio pasaría a ser un cambio del marco.</p>
+</div></section>
+<section class="sec"><h2>En resumen</h2><p class="lectura">El 24 de octubre no se vota “hacer o no hacer la obra”, pero sí cuál es el proyecto de referencia. Por eso la mayoría importa. Una salida razonable sería que la propia Asamblea decida primero, como moción de orden, qué mayoría va a exigirse. Así la discusión de la regla no contamina la discusión del proyecto.</p></section>
+<section class="sec"><h2>Qué lo resolvería</h2><ul class="res"><li>Texto de la reforma del Estatuto y estado del trámite en el MEC</li><li>Moción oficial</li><li>Opinión jurídica sobre si la Asamblea puede autoimponerse una mayoría especial</li></ul></section>
+<nav class="pager"><a href="detalle-sobrecosto.html">← ¿Qué pasa si la obra sale más cara?</a><a href="index.html">Volver a la portada</a></nav>
+<footer class="foot"><p>Preliminar, al 28/09/2026. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener la moción oficial y el modelo económico.</p></footer></main></body></html>
