@@ -23,7 +23,7 @@
 |---|---|
 | ✅ **Verdadero** | La evidencia la respalda sin reparos relevantes |
 | 🟢 **Mayormente verdadero** | Correcta en lo esencial, con matices o imprecisiones menores |
-| 🟡 **Engañoso** | Tiene datos ciertos pero omite contexto clave o lleva a una conclusión equivocada |
+| 🔵 **Engañoso** | Tiene datos ciertos pero omite contexto clave o lleva a una conclusión equivocada |
 | 🟠 **Mayormente falso** | Tiene algún elemento cierto, pero lo esencial no se sostiene |
 | 🔴 **Falso** | La evidencia la contradice |
 | ⚪ **No verificable** | No hay información pública suficiente para evaluarla |

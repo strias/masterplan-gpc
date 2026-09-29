@@ -26,7 +26,7 @@ La razón para usarlas: en este tema el modelo no tiene interés propio ni histo
 
 ## Estado
 
-🟡 **Fase 1: descubrimiento.** Estamos reuniendo documentos, actores y afirmaciones. Todavía no hay veredictos publicados. Sí hay análisis preliminares, marcados como opinión del modelo (ver «Opiniones del modelo»).
+🔵 **Fase 1: descubrimiento.** Estamos reuniendo documentos, actores y afirmaciones. Todavía no hay veredictos publicados. Sí hay análisis preliminares, marcados como opinión del modelo (ver «Opiniones del modelo»).
 
 La Asamblea General Extraordinaria que considera el proyecto es el **24 de octubre de 2026** ([cronología](docs/cronologia.md)).
 

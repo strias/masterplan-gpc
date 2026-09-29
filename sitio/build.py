@@ -314,7 +314,7 @@ EXTRA = """<style>
 .lados { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .analisis { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--red); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
 .analisis .aviso { font-size: .92rem; color: var(--muted); }
-.cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: var(--warn-bg); color: var(--warn-fg); padding: 1px 6px; border-radius: 3px; white-space: nowrap; }
+.cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: transparent; color: var(--muted); border: 1px dashed currentColor; padding: 0 5px; border-radius: 3px; white-space: nowrap; }
 .lectura { font-size: 1.15rem; border-left: 4px solid var(--navy); padding-left: 14px; max-width: 64ch; }
 .res { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
 .pager { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: var(--f-mono); font-size: .82rem; border-top: 1px solid var(--line); padding-top: 16px; }
