@@ -7,7 +7,7 @@ fuente_original: F-0014   # 01:44:58
 tipo: estimacion
 tema: financiero
 veredicto: pendiente
-evidencia: []
+evidencia: [F-0017]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -27,6 +27,8 @@ El total nominal y el valor presente miden cosas distintas; lo que importa es si
 
 Según esta cita, las dos partes aceptan unos USD 82 M como valor presente sin palcos. Hace falta la fuente del planteo que leyó el conductor (¿Singlet y Bardanca?).
 
+Bardanca calcula que los 570 M valen unos 103 M a valor presente ([A-0026](A-0026-bardanca-570-valor-presente-103.md)), casi lo mismo que la suma de las cifras de Aldabalde (82 + 22 = 104).
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -34,3 +36,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-09-28: se agrega evidencia de F-0017.

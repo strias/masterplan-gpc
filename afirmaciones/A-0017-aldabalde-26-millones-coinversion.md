@@ -7,7 +7,7 @@ fuente_original: F-0014   # 01:06:00
 tipo: hecho
 tema: financiero
 veredicto: pendiente
-evidencia: []
+evidencia: [F-0017]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -27,6 +27,8 @@ Los financiadores piden que el club muestre compromiso, y ese compromiso lo pone
 
 Según el conductor, Decurnex, Singlet y Bardanca dicen que sin esos 26 M no hay préstamo y que la cuota terminaría siendo obligatoria ([A-0006](A-0006-decurnex-presion-cuota.md)). Hace falta el modelo y saber qué exigen los financiadores.
 
+Bardanca sostiene que el financiador exige un 15 a 20% de aporte propio y que no puede cubrirse con contratos de arrendamiento ([A-0030](A-0030-bardanca-aporte-propio-20-por-ciento.md)).
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -34,3 +36,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-09-28: se agrega evidencia de F-0017.

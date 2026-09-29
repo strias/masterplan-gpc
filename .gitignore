@@ -9,3 +9,4 @@ archivo/*.pdf
 archivo/*.mp4
 archivo/*.transcripcion.txt
 archivo/*.vtt
+__pycache__/

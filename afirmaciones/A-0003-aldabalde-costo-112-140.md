@@ -7,7 +7,7 @@ fuente_original: F-0016
 tipo: estimacion
 tema: financiero
 veredicto: pendiente
-evidencia: [F-0016]
+evidencia: [F-0016, F-0017]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -32,6 +32,8 @@ Hace falta: la entrevista original con fecha y el modelo económico ([F-0008](..
 - **140 M lo dice el entrevistador** (06:45: "con el costo financiero se iría a 140"). En lo revisado, Aldabalde no lo retoma. La paráfrasis de La Abdón se lo atribuye a Aldabalde.
 - **Vigencia:** es la cifra de costo más reciente de Aldabalde con fecha. Reemplaza la de "unos 100 M" del 2026-07-16 ([A-0009](A-0009-aldabalde-costo-93-100.md)).
 
+Singlet lee el documento de marzo: 93 M con ajuste paramétrico dan 105 M, que "no incluye césped, equipamiento deportivo, honorarios de arquitectura e ingeniería, seguros de obra ni costos financieros durante la obra" ([A-0029](A-0029-singlet-costo-93-105-no-incluye.md)). Hay que ver si los 112 M actuales cubren esos rubros.
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -40,3 +42,4 @@ Pendiente (fase 1).
 
 - 2026-09-28: registro inicial.
 - 2026-09-28: se agrega la fuente original (F-0016); se aclara que el 140 lo planteó el entrevistador.
+- 2026-09-28: se agrega evidencia de F-0017.

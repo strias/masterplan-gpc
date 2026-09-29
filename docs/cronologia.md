@@ -13,6 +13,7 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 | 2025-06-13 | Fecha de creación interna del PDF de la memoria del concurso de ideas | [F-0004](../fuentes/F-0004-anteproyecto.md) |
 | 2025-08 | Según Aldabalde, la Directiva aprueba por unanimidad el proyecto, con 14 etapas y una estimación de USD 93 M | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 00:53:14 |
 | 2026-03-11 | Según Aldabalde, se presenta a la Directiva el modelo económico (USD 93 M) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:16:25 |
+| 2026-07-07 | Según Singlet, Asamblea de reforma del Estatuto: 75% para proyectos de más de USD 2 M (no vigente hasta completar trámites) | [F-0017](../fuentes/F-0017-pasion-tricolor-singlet-bardanca.md), 00:05:19 |
 | 2026-07-16 | Aldabalde en El Espectador Deportes: costo "en entorno a los 100 millones" | [F-0018](../fuentes/F-0018-espectador-aldabalde-2026-07-16.md) |
 | 2026-07 aprox. | Según Aldabalde, se vota una reforma del Estatuto que exige 75% (no vigente hasta la aprobación del MEC) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 02:16:38 |
 | 2026-08-27 | Según Singlet, presentan su análisis a la CPO, con CPA Ferrere y autoridades del club | [F-0019](../fuentes/F-0019-pasion-tricolor-reaccion-decurnex.md), 01:13:36 |

@@ -7,7 +7,7 @@ fuente_original: F-0014   # 01:12:45
 tipo: estimacion
 tema: financiero
 veredicto: pendiente
-evidencia: []
+evidencia: [F-0017]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -27,6 +27,8 @@ Los ingresos del estacionamiento se calculan por evento, no por hora, y con un c
 
 Hay una inconsistencia aritmética a revisar: 3 millones con un castigo de 30% dan 2,1 millones, no 2,5. Puede ser un error de dicción o de transcripción. Hace falta el modelo de CPA para ver los números.
 
+Singlet sostiene que el modelo supone 90% de ocupación durante 30 años ([A-0028](A-0028-singlet-parking-90-ocupacion.md)) y Bardanca, que el estacionamiento tiene un valor actual neto negativo ([A-0027](A-0027-bardanca-parking-van-negativo.md)).
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -34,3 +36,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-09-28: se agrega evidencia de F-0017.
