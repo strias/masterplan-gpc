@@ -168,8 +168,11 @@ def normalizar(texto):
     return re.findall(r"[a-z0-9]+", "".join(c for c in t if unicodedata.category(c) != "Mn"))
 
 
-def voces_manuales(subs, tsv):
-    """Divide los subtítulos en turnos según anclas de texto (asignación por contenido)."""
+def voces_manuales(subs, tsv, ventana=60):
+    """Divide los subtítulos en turnos según anclas de texto (asignación por contenido).
+
+    Un turno largo se corta además cada ~ventana segundos, al inicio de un subtítulo,
+    para que las marcas de tiempo publicadas sirvan para ubicar una cita."""
     texto, marcas = "", []
     for t, l in subs:
         marcas.append((len(texto), t))
@@ -192,9 +195,16 @@ def voces_manuales(subs, tsv):
     turnos = []
     for i, (pos, hablante) in enumerate(cortes):
         fin = cortes[i + 1][0] if i + 1 < len(cortes) else len(texto)
-        trozo = texto[pos:fin].strip()
+        inicio = pos
+        for p, t in marcas:
+            if pos < p < fin and t - tiempo(inicio) >= ventana:
+                trozo = texto[inicio:p].strip()
+                if trozo:
+                    turnos.append((tiempo(inicio), tiempo(p - 1), hablante, trozo))
+                inicio = p
+        trozo = texto[inicio:fin].strip()
         if trozo:
-            turnos.append((tiempo(pos), tiempo(fin - 1), hablante, trozo))
+            turnos.append((tiempo(inicio), tiempo(fin - 1), hablante, trozo))
     return turnos
 
 
@@ -279,6 +289,7 @@ def main():
             modo = ("El texto es el de los subtítulos automáticos de YouTube. **Las voces las asignó Claude según el contenido** "
                     "(quién pregunta, quién responde, a quién se nombra); es una interpretación, no una separación automática. "
                     "\"Conductor\" sin nombre indica que no se puede saber cuál de los conductores habla. "
+                    "Los turnos largos se cortan cada minuto aproximadamente, al inicio de un subtítulo, para que la marca de tiempo sirva para ubicar una cita. "
                     f"En {nrep} lugares, debajo del turno se muestra cómo quedó el mismo tramo en la transcripción de otro programa que lo repitió al aire; "
                     "esa versión suele tener mejor texto, pero sus etiquetas de voz no son confiables y no se usan, y a veces incluye comentarios de ese otro programa pegados al fragmento.")
         elif subs:
