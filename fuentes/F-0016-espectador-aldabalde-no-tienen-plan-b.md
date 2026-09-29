@@ -36,7 +36,7 @@ Según la transcripción con voces aportada por el autor, combinada con los subt
 
 ## Notas
 
-- **Transcripción publicada:** [`transcripciones/F-0016-espectador-aldabalde-2026-09-17.md`](../transcripciones/F-0016-espectador-aldabalde-2026-09-17.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video.
+- **Transcripción publicada:** [`transcripciones/F-0016-espectador-aldabalde-2026-09-17.md`](../transcripciones/F-0016-espectador-aldabalde-2026-09-17.md). Combina la transcripción con voces aportada por el autor y los subtítulos de YouTube. Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video.
 
 - La cifra del ejecutivo quedó resuelta (2 M). La tercera cifra de la cuota (100 o 200) sigue sin resolver.
 - Parte interesada: preside la CPO.
