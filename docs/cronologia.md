@@ -15,10 +15,12 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 | 2026-03-11 | Según Aldabalde, se presenta a la Directiva el modelo económico (USD 93 M) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:16:25 |
 | 2026-07-16 | Aldabalde en El Espectador Deportes: costo "en entorno a los 100 millones" | [F-0018](../fuentes/F-0018-espectador-aldabalde-2026-07-16.md) |
 | 2026-07 aprox. | Según Aldabalde, se vota una reforma del Estatuto que exige 75% (no vigente hasta la aprobación del MEC) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 02:16:38 |
+| 2026-08-27 | Según Singlet, presentan su análisis a la CPO, con CPA Ferrere y autoridades del club | [F-0019](../fuentes/F-0019-pasion-tricolor-reaccion-decurnex.md), 01:13:36 |
 | 2026-09-17 | Aldabalde en El Espectador Deportes: costo de 112 M "con todas las actualizaciones" | [F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md) |
 | 2026-09-21 | Decurnex en *Territorio Nacional*: cotización de RDA de más de 150 M; aporte del club de 147 M | [F-0015](../fuentes/F-0015-territorio-nacional-decurnex.md) |
 | 2026-09-21 | La Directiva aprueba 7 a 4 convocar la Asamblea; en contra, Villaverde, Nadal, Balbi y Decurnex | [F-0015](../fuentes/F-0015-territorio-nacional-decurnex.md), 05:51 |
 | 2026-09-21 | Según Aldabalde, el proyecto de moción llega a los directivos | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:27:35 |
+| 2026-09-22 | Pasión Tricolor lee al aire un borrador de la moción | [F-0019](../fuentes/F-0019-pasion-tricolor-reaccion-decurnex.md), 00:37:28 |
 | 2026-09-22 | La Abdón publica un resumen de la moción | [F-0010](../fuentes/F-0010-laabdon-que-se-propone.md) |
 | 2026-09-23 | La Abdón compara las posturas de Decurnex y Aldabalde | [F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md) |
 | 2026-09-23 | Se publican el anteproyecto (versión 1) y el video resumen en el sitio de la asamblea | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |

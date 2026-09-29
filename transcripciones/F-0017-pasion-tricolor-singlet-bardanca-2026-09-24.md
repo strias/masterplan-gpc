@@ -101,11 +101,11 @@
 
 [00:24:41] interna por x temas y y hemos visto como que las elecciones en Nacionales, el clima nunca nunca se separó, que muchos sospechan y dicen, "Buot, no, esto acá quieren poner paros en la rueda, eh, los válvidos de Courné, esto, aquello para que esto se dilate y no salga, entonces lo dilatan más en el tiempo. Bueno, esas sospechas de de muchos están válido cuestionamiento. Yo creo que ahí levanto un punto que hizo Enrique este y dijo hace un rato que nosotros, por ejemplo, en el acto electoral no participamos con
 
-[00:25:13] el Decurnex, fuimos en la lista con Gómez Soro. Hemos venido acá al programa a expresar diferencias que tuvimos con José Decurnex y de repente esto haciendo un análisis técnico, este tema que para nosotros es super relevante y capaz que nos encuentra con puntos que tenemos en concordancia con José Cornés y bueno, sí, ahí hay que separar lo político, por eso, por eso, pero [carraspeo] en la elección pasada y vos sos principal testigo, Javier, eh nosotros tuvimos cuestionamientos de que estábamos haciendo política con los derechos de TV del presidente de
+[00:25:13] el Decurnex, fuimos en la lista con Gomensoro. Hemos venido acá al programa a expresar diferencias que tuvimos con José Decurnex y de repente esto haciendo un análisis técnico, este tema que para nosotros es super relevante y capaz que nos encuentra con puntos que tenemos en concordancia con José Cornés y bueno, sí, ahí hay que separar lo político, por eso, por eso, pero [carraspeo] en la elección pasada y vos sos principal testigo, Javier, eh nosotros tuvimos cuestionamientos de que estábamos haciendo política con los derechos de TV del presidente de
 
 [00:25:47] algunos contadores que integraban la directiva y que nos decían a cada rato. Y bueno, yo creo que el tema, a ver, hacer política, hacer política hacemos siempre, o sea, si yo me cuestiono que que contrataste a Otero, te estoy haciendo política. El tema acá es cuando vos hacés política para beneficio personal. Claro. Y no poniendo a Nacional como primer cl. Yo creo que a nosotros no nos corresponde Cesayo porque lo hemos demostrado con hechos, ¿no? No, por eso decía, digo, por ahí ustedes están hablando de la parte técnica y con argumentos y han tenido y de vuelta y son con yo hablo a veces de los políticos porque me da la sensación,
 
-[00:26:22] no voy a nombrar a nadie, pero que eh a veces no no se involucran en los temas, ¿no? O sea, eh yo pregunto por no sé, Balv está 100% empapado de este tema. Lo tiene al dedillo, eh, como puedo nombrar a alguien del oficialismo, no sé. Ayer le pregunté a Persman, "¿Tenés información del téo?" No, yo confío en la balde, ¿no? Como que eh y pero y y me da la sensación que bueno que también puede haber directivos de la oposición que dice, "Bueno, está a mí, yo la verdad no tengo ni idea, pero pongo pongo la el palo de la rueda." Entonces siento que a veces no la gente que se
+[00:26:22] no voy a nombrar a nadie, pero que eh a veces no no se involucran en los temas, ¿no? O sea, eh yo pregunto por no sé, Balv está 100% empapado de este tema. Lo tiene al dedillo, eh, como puedo nombrar a alguien del oficialismo, no sé. Ayer le pregunté a Perchman, "¿Tenés información del téo?" No, yo confío en la balde, ¿no? Como que eh y pero y y me da la sensación que bueno que también puede haber directivos de la oposición que dice, "Bueno, está a mí, yo la verdad no tengo ni idea, pero pongo pongo la el palo de la rueda." Entonces siento que a veces no la gente que se
 
 [00:26:54] preocupa el socio hincha, ustedes capaz que la parte técnica que que se han involucrado, sino que los los representantes, los socios de la directiva a veces no han dejado de lado las elecciones y aprovechan cualquier este diferencia para bueno, también este si hay que estirarla, hay que estirarla, ¿viste? Este que está eso no lo podemos comprobar, pero es una sospecha que hay. Yo creo que yo creo que más que poner palos en la rueda, esto lo que tiene que ser es un trampolín para algo que estamos todos de acuerdo, que es que hay que terminar el parque central. En eso estamos todos de acuerdo,
 
@@ -247,7 +247,7 @@
 
 [01:04:22] que planificaron una cantidad de socios y un ingreso que no se está dando y se gastó más de lo previsto. Entonces, eso lo que hace es que alarga el periodo de repago. Por eso en un momento nos dijeron, calcularon mal. Exacto. Siempre calcul el sobrecosto de la obra más un exceso optimista en lo que se iba a ingresar por socio, lo que lleva es que a que se extienda el periodo de repago, pero la obra está y ag no, pero agregale que creo quiero creer que van a aprender o que los que
 
-[01:04:56] hoy abordan esta obra, bueno, no van a a cometer el error que cometió la administración de Decurné, que en esa obra tenía no tenía las garantías adecuadas también en cuanto a llave en mano en un montón de aspectos que eh bueno, de contratos y de garantía y de de riesgo, ¿quién los asume? Que esos riesgos lo asumió Nacional que ahí fue lo que más le criticamos a Decurc, ¿no? Este en aquel momento donde no tenía un blindaje de garantías como debería tener cualquier obra este tan importante
+[01:04:56] hoy abordan esta obra, bueno, no van a a cometer el error que cometió la administración de Decurnex, que en esa obra tenía no tenía las garantías adecuadas también en cuanto a llave en mano en un montón de aspectos que eh bueno, de contratos y de garantía y de de riesgo, ¿quién los asume? Que esos riesgos lo asumió Nacional que ahí fue lo que más le criticamos a Decurnex, ¿no? Este en aquel momento donde no tenía un blindaje de garantías como debería tener cualquier obra este tan importante
 
 [01:05:28] nacional que tenía que pagar era nacional. Javier, yo trabajo en este rubro, yo trabajo en este rubro y te puedo asegurar que el imprevisto es incalculable. Pero vos no me podés decir que es cero porque vos mañana metés una máquina en el parque, te encontrás con un caño maestro de la OCE y te multiplicó por cinco el costo que tenía esa perforación. En este no tiene imprevistos. En este proyecto master plan no ven imprevistos. Eh, analizalo cuando quieras. Sí, sí. No lo leí todo, pero es más te vuelvo a repetir, en los 105 millones que se proyecta una vez en con el, o sea, arrancamos 93 con ajuste
 
@@ -445,6 +445,10 @@
 | CPA Ferrer | CPA Ferrere | 23 |
 | CPA Ferrero | CPA Ferrere | 1 |
 | Curnex | Decurnex | 1 |
+| Decurc | Decurnex | 1 |
+| Decurné | Decurnex | 1 |
+| Gómez Soro | Gomensoro | 1 |
 | José de Curnex | José Decurnex | 2 |
+| Persman | Perchman | 1 |
 | Ricardo Bairo | Ricardo Vairo | 4 |
 | de Curnex | Decurnex | 9 |

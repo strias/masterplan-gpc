@@ -30,5 +30,7 @@ Según subtítulos automáticos; los minutos son aproximados:
 
 - Transmisión del canal Territorio Nacional Tv. El conductor dice al empezar: "21:03 de este lunes 21 de septiembre".
 - Subtítulos automáticos: verificar contra el audio antes de publicar una cita.
-- Todavía no se revisó la entrevista completa; faltan las partes sobre la cuota ([A-0006](../afirmaciones/A-0006-decurnex-presion-cuota.md)) y el Club Social.
-- Hay un programa de Pasión Tricolor que comenta esta entrevista (2026-09-22, https://www.youtube.com/watch?v=-lKaALmO6ao). Es comentario de terceros y no se registró.
+- **Cuota y aporte de socios:** 26 M del modelo, con suba de cuota "inevitable" (13:06 a 14:44) → [A-0006](../afirmaciones/A-0006-decurnex-presion-cuota.md)
+- **CPA Ferrere no avala los negocios** (19:07) → [A-0025](../afirmaciones/A-0025-decurnex-cpa-no-avala-negocios.md)
+- **Sobrecosto del Club Social:** "tuvo entre un 55 y un 60% de sobrecosto" (20:13); ejemplos de otros estadios: Real Madrid, Barcelona, Universidad Católica (20:46).
+- El programa de Pasión Tricolor que comenta esta entrevista está registrado como [F-0019](F-0019-pasion-tricolor-reaccion-decurnex.md).

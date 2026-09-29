@@ -23,7 +23,7 @@
 
 [00:03:18] el parque tiene una unas deficiencias del punto de vista estructural y infraestructura que que son muy complejas. Entonces, el proyecto esto lo que busca es generar nuevos ingresos y garantizar de que ninguno de los fondos que hoy el club utiliza en su flujo habitual eh que están ajustados porque el club ellos es público los balance no les sobra nada y tiene un pasivo muy grande. Nacional necesitan nuevas nuevas fuentes de ingresos, nuevos flujos que puedan financiar el proyecto del estadio y las nuevas unidades que son las que financian el
 
-[00:03:50] estadio, porque eh la posición voluntarista de Hagamos sobre el estadio indudablemente no es viable. Por algo no se ha hecho hasta ahora, ¿no? Eh, entonces esto lo que da es todas las garantías. Hay una moción que la está redactando algunos miembros de directiva de la CPO, está el Dr. Javier Gómez Soro, que es la moción que se va a presentar a los socios, porque nosotros queremos que después de un año y medio es hora de que los socios entiendan, conozcan y tomen las decisiones. Esto es un proyecto de 30 años para el club. Entonces, son los socios los que tienen que tomar las decisiones y ya no son más los directivos los que tienen que hacer
+[00:03:50] estadio, porque eh la posición voluntarista de Hagamos sobre el estadio indudablemente no es viable. Por algo no se ha hecho hasta ahora, ¿no? Eh, entonces esto lo que da es todas las garantías. Hay una moción que la está redactando algunos miembros de directiva de la CPO, está el Dr. Javier Gomensoro, que es la moción que se va a presentar a los socios, porque nosotros queremos que después de un año y medio es hora de que los socios entiendan, conozcan y tomen las decisiones. Esto es un proyecto de 30 años para el club. Entonces, son los socios los que tienen que tomar las decisiones y ya no son más los directivos los que tienen que hacer
 
 [00:04:22] un análisis del modelo económico financiero cuando la realidad del mercado nos va a decir si estamos en condiciones de recibir o o los o los inversionistas o los financiadores para el proyecto. el mercado el que va a definir ese proyecto es viable o no y no este unas discusiones eternas este con modelos económicos porque nosotros lo que tenemos que salir es aprobar en en esa asamblea el master plan que fue aprobado por unanimidad, te repito, por la CPO y por la directiva y dar todas las garantías con esa moción en el sentido de eh aprobar el el
 
@@ -146,4 +146,5 @@
 | Transcrito | Corregido | Veces |
 |---|---|---|
 | Aldavalde | Aldabalde | 1 |
+| Gómez Soro | Gomensoro | 1 |
 | de Curnex | Decurnex | 1 |

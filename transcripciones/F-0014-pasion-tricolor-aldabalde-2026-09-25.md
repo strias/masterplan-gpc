@@ -121,7 +121,7 @@
 
 [00:18:30] Speaker 2: No.
 
-[00:18:32] Speaker 3: Para resumir, vamos a preguntárselo a Lavalde. Se va a votar el proyecto ejecutivo. O sea, lo que se va a ir a votar a la asamblea es un proyecto ejecutivo, darle el aval a la dirigencia para que gaste aproximadamente unos 2 millones de dólares para votar un proyecto ejecutivo, que te acerca a la realidad de los números. Entonces, se va a saber con una exactitud mucho más precisa, tras terminar ese proyecto ejecutivo, cuánto sale el proyecto.
+[00:18:32] Speaker 3: Para resumir, vamos a preguntárselo a Aldabalde. Se va a votar el proyecto ejecutivo. O sea, lo que se va a ir a votar a la asamblea es un proyecto ejecutivo, darle el aval a la dirigencia para que gaste aproximadamente unos 2 millones de dólares para votar un proyecto ejecutivo, que te acerca a la realidad de los números. Entonces, se va a saber con una exactitud mucho más precisa, tras terminar ese proyecto ejecutivo, cuánto sale el proyecto.
 
 [00:19:02] Speaker 2: Para hablar en criollo y a ver si entendí bien, lo que se va a votar en la próxima asamblea no es si se hace el Parque Central, muchas gracias, esperemos. Eso está bueno saberlo, porque era una de las preguntas que yo traía para la mesa hoy, justamente, y me parece muy importante.
 
@@ -157,7 +157,7 @@
 
 [00:21:17] Speaker 2: Con toda la confianza
 
-[00:21:18] Speaker 3: ...va a jugar con línea de cuatro. Poneme el probable 11 ahí, que todavía no está confirmado. Esto es un bosquejo, nosotros más que información del probable 11, que ya vamos a poner en pantalla y ya se suma Santi Bassi. En instantes se va a sumar Santiago Lavalde. Sobre 20:45 va a estar viniendo aquí a la casa del parque y vamos a estar sumándolo al presidente de la Comisión de Patrimonio y Obras. Arrancamos el play con lo deportivo. Poneme el probable 11, Joaco, mientras
+[00:21:18] Speaker 3: ...va a jugar con línea de cuatro. Poneme el probable 11 ahí, que todavía no está confirmado. Esto es un bosquejo, nosotros más que información del probable 11, que ya vamos a poner en pantalla y ya se suma Santi Bassi. En instantes se va a sumar Santiago Aldabalde. Sobre 20:45 va a estar viniendo aquí a la casa del parque y vamos a estar sumándolo al presidente de la Comisión de Patrimonio y Obras. Arrancamos el play con lo deportivo. Poneme el probable 11, Joaco, mientras
 
 [00:21:48] Speaker 3: saludo a Santi Bassi Con un probable 11, que es un bosquejo, no es información, es un análisis de lo que podría parar Carreño, porque todavía no le confirmó el equipo a los jugadores, todavía no hay cierta información. Mejía va a estar en el arco, Luciano Rodríguez con Tomás Viera en la saga, Cándido estaría en la izquierda nuevamente. La duda es si va Ancheta o se mete Martinena en el lateral derecho. Si va Ancheta, Martinena
 
@@ -1999,6 +1999,7 @@
 | Javier Gomez Zoro | Javier Gomensoro | 1 |
 | Javier Gómez Oro | Javier Gomensoro | 1 |
 | Javier Gómez Soló | Javier Gomensoro | 1 |
+| Lavalde | Aldabalde | 2 |
 | Nono Yuria | Nono Giuria | 1 |
 | Pasión y Color Play | Pasión Tricolor Play | 4 |
 | Perman | Perchman | 1 |

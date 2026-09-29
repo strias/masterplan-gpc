@@ -22,3 +22,4 @@ Pendiente. Al 2026-09-28 figura como "Carga pendiente · Disponible próximament
 
 - Cuando se publique, registrar fecha, versión y hash.
 - Hay una versión filtrada resumida por La Abdón el 2026-09-25: [F-0009](F-0009-laabdon-mocion-filtrada.md). Comparar cuando salga la oficial.
+- Parte del borrador se leyó al aire el 2026-09-22 en Pasión Tricolor: [F-0019](F-0019-pasion-tricolor-reaccion-decurnex.md), 00:37:28 a 00:44:30.
