@@ -6,12 +6,27 @@ DESCRIPCION = "Preguntas, respuestas y fuentes del debate sobre el Master Plan d
 HEAD = open("head.html").read()  # fuentes y estilos compartidos
 
 
-def documento(titulo, descripcion, cuerpo, extra=""):
+SITIO = "https://masterplangpc.com"
+
+def tarjeta(titulo, descripcion, ruta):
+    """Metadatos Open Graph y Twitter Card, para que X, WhatsApp y otros muestren la vista previa con imagen."""
+    t, d, u = html.escape(titulo), html.escape(descripcion), f"{SITIO}/{ruta}"
+    return (f'<link rel="canonical" href="{u}">\n'
+            f'<meta property="og:type" content="website">\n<meta property="og:site_name" content="Master Plan GPC">\n'
+            f'<meta property="og:locale" content="es_UY">\n<meta property="og:title" content="{t}">\n'
+            f'<meta property="og:description" content="{d}">\n<meta property="og:url" content="{u}">\n'
+            f'<meta property="og:image" content="{SITIO}/og.png">\n<meta property="og:image:width" content="1200">\n'
+            f'<meta property="og:image:height" content="630">\n'
+            f'<meta property="og:image:alt" content="Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central, con fuentes.">\n'
+            f'<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="{t}">\n'
+            f'<meta name="twitter:description" content="{d}">\n<meta name="twitter:image" content="{SITIO}/og.png">\n')
+
+def documento(titulo, descripcion, cuerpo, extra="", ruta=""):
     """Documento HTML completo y autónomo, listo para copiar a cualquier servidor."""
     return (f'<!doctype html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n'
             f'<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
             f'<title>{html.escape(titulo)}</title>\n<meta name="description" content="{html.escape(descripcion)}">\n'
-            f'{HEAD}{extra}</head>\n<body>\n{cuerpo}\n</body>\n</html>\n')
+            f'{tarjeta(titulo, descripcion, ruta)}{HEAD}{extra}</head>\n<body>\n{cuerpo}\n</body>\n</html>\n')
 
 YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
       "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao"}
@@ -73,8 +88,6 @@ ESTADOS = {
     "parcial": ("Parcialmente consistente", "soft"),
     "pendiente": ("Pendiente", "pend"),
 }
-SITIO = "https://masterplangpc.com"
-
 def compartir(texto, ruta=""):
     """Enlace para publicar en X (Twitter) con el texto y la dirección de la página. Sin JavaScript."""
     from urllib.parse import urlencode
@@ -319,7 +332,7 @@ A('</ul></section>')
 A('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>''')
 
 os.makedirs("debate", exist_ok=True)
-open("debate/index.html", "w").write(documento(TITULO, DESCRIPCION, "\n".join(out), '<style>.back { font-family: var(--f-mono); font-size: .82rem; }</style>'))
+open("debate/index.html", "w").write(documento(TITULO, DESCRIPCION, "\n".join(out), '<style>.back { font-family: var(--f-mono); font-size: .82rem; }</style>', "debate/"))
 
 from detalle import DETALLE
 EXTRA = """<style>
@@ -359,7 +372,7 @@ for i, p in enumerate(PREGUNTAS):
     o.append(f'<nav class="pager">{prev}{nxt}</nav>')
     o.append(f'<footer class="foot"><p>Preliminar, al {ACTUALIZADO}. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener el modelo económico. Fuentes y método: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>')
     descripcion = f'{d["titulo"]} Qué dice cada parte, en qué se apoya y análisis, en el debate sobre el Master Plan del Gran Parque Central.'
-    open(f"debate/detalle-{p['id']}.html", "w").write(documento(d["titulo"], descripcion, "\n".join(o), EXTRA))
+    open(f"debate/detalle-{p['id']}.html", "w").write(documento(d["titulo"], descripcion, "\n".join(o), EXTRA, f"debate/detalle-{p['id']}.html"))
 print("detalles:", len(ids))
 print("ok", sum(len(x) for x in out))
 

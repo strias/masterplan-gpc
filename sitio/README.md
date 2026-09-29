@@ -9,6 +9,7 @@ Sitio estático con dos partes:
 - `mocion.py`: contenido de la portada.
 - `detalle.py`: contenido de las páginas de detalle de cada pregunta (posturas, por qué lo dicen, análisis, qué lo resolvería).
 - `head.html`: fuentes y estilos compartidos.
+- `og.html` y `og.png`: plantilla e imagen de la vista previa que muestran X, WhatsApp y otros al compartir un enlace (1200×630). Si cambia la plantilla, se regenera la imagen con el comando que está en su comentario.
 - `index.html`, `debate/index.html` y `debate/detalle-<id>.html`: páginas generadas. Son documentos HTML completos y autónomos, sin JavaScript ni dependencias más allá de las fuentes de Google.
 
 Marcas en los textos: `{F-0014 01:08:44}` enlaza al minuto del video, `{F-0004 p.42}` a la página del documento, `[[#id|texto]]` a una sección de la misma página, `[[>ruta|texto]]` a otra página, y `[[CG]]` marca una afirmación que sale de conocimiento general y no de una fuente registrada.
