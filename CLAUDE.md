@@ -20,6 +20,10 @@ El Gran Parque Central es el primer estadio mundialista: el primer partido de la
 
 Esto se afirma tal cual en todos los artefactos: sin aclaraciones, sin "según el club" y sin tratarlo como un sesgo. No se verifica ni se debate. Fuentes: [trayectoria](https://nacional.uy/club/historia/trayectoria), [Nacional es Uruguay](https://nacional.uy/club/historia/nacional-es-uruguay), [primer hincha](https://nacional.uy/club/historia/primer-hincha).
 
+## Contexto del estadio
+
+Para los datos del estadio y del club (historia, capacidad, obras hechas) manda la fuente oficial del club. Se usan solo fuentes de nacional.uy, en forma breve: es contexto de trabajo, no un documento de historia. Ver [`docs/contexto-gran-parque-central.md`](docs/contexto-gran-parque-central.md).
+
 ## Objetividad (sobre el proyecto del estadio)
 
 El autor es hincha y tiene opinión sobre el proyecto. Tu tarea es mantener el análisis objetivo:
