@@ -400,12 +400,12 @@ P('''<header class="hero">
     <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
   </dl>
   <nav class="toc" aria-label="Secciones">
-    <a href="#corto">En corto</a><a href="#cambio">Qué cambió</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
+    <a href="#resumen">En resumen</a><a href="#cambio">Qué cambió</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
   </nav>
   <a class="cta" href="debate/">El debate: qué dice cada uno →</a>
 </header>''')
 
-P('<section id="corto" class="sec"><h2>En corto</h2><ul class="corto">')
+P('<section id="resumen" class="sec"><h2>En resumen</h2><ul class="corto">')
 for x in M.EN_CORTO:
     P(f'<li>{R(x)}</li>')
 P('</ul></section>')
@@ -440,7 +440,7 @@ P(f'<section id="analisis" class="sec"><h2>Análisis</h2><div class="analisis"><
 for par in M.ANALISIS:
     P(f'<p>{R(par)}</p>')
 P('</div></section>')
-P(f'<section class="sec"><h2>En resumen</h2><p class="lectura">{R(M.LECTURA)}</p><a class="cta" href="debate/">Ver el debate completo →</a></section>')
+P(f'<section class="sec"><h2>Conclusión</h2><p class="lectura">{R(M.LECTURA)}</p><a class="cta" href="debate/">Ver el debate completo →</a></section>')
 
 P('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Cada código es la ficha de la fuente en el repositorio del proyecto. Los enlaces con página abren el PDF en esa página; los que tienen minuto abren el video en ese punto.</p><ul class="fuentes">')
 for f in M.FUENTES_PORTADA:
