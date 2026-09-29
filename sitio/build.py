@@ -1,6 +1,6 @@
-import html, re
+import html, os, re
 
-ACTUALIZADO = "28/09/2026"
+ACTUALIZADO = "29/09/2026"
 TITULO = "Contrapunto del Master Plan"
 DESCRIPCION = "Preguntas, respuestas y fuentes del debate sobre el Master Plan del Gran Parque Central."
 HEAD = open("head.html").read()  # fuentes y estilos compartidos
@@ -17,6 +17,7 @@ YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
       "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao"}
 NOMBRE = {
     "F-0003": "Sitio oficial de la Asamblea", "F-0004": "Anteproyecto (PDF oficial)",
+    "F-0007": "Moción oficial (PDF)",
     "F-0009": "La Abdón: moción filtrada", "F-0010": "La Abdón: qué se propone",
     "F-0011": "La Abdón: Decurnex y Aldabalde", "F-0012": "La Abdón: Singlet, Bardanca y Aldabalde",
     "F-0014": "Pasión Tricolor, Aldabalde (25/09)", "F-0015": "Territorio Nacional, Decurnex (21/09)",
@@ -26,6 +27,7 @@ NOMBRE = {
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
     "F-0004": "https://asambleagpc.nacional.uy/Anteproyecto.pdf",
+    "F-0007": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf",
     "F-0009": "https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre",
     "F-0010": "https://laabdon.com/noticias/master-plan-del-gran-parque-central-que-se-propone-y-que-significa-para-nacional",
     "F-0011": "https://laabdon.com/noticias/el-futuro-del-gran-parque-central-que-propone-cada-uno-y-donde-estan-las-diferencias",
@@ -41,6 +43,8 @@ def ref(fid, ts=None, page=None):
     else:
         href = URL.get(fid, "#fuentes")
         label = fid + (f" · p. {page}" if page else "")
+        if page and href.endswith(".pdf"):
+            href += f"#page={page.split('-')[0]}"
     return f'<a class="ref" href="{href}" target="_blank" rel="noopener" title="{html.escape(NOMBRE.get(fid, fid))}">{label}</a>'
 
 def R(s):
@@ -55,13 +59,15 @@ def R(s):
     s = re.sub(r"\{(F-\d{4})\s*([^}]*)\}", sub, s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"\[\[#([\w-]+)\|([^\]]+)\]\]", r'<a href="#\1">\2</a>', s)
+    s = re.sub(r"\[\[>([\w./#-]+)\|([^\]]+)\]\]", r'<a href="\1">\2</a>', s)
     s = s.replace("[[CG]]", '<span class="cg" title="Conocimiento general: no sale de una fuente registrada">conocimiento general</span>')
     return s
 
 ESTADOS = {
     "coinciden": ("Coinciden en el dato", "ok"),
     "consistente": ("Consistente con documento", "ok"),
-    "borrador": ("Consistente con el borrador de la moción", "soft"),
+    "mocion": ("Consistente con la moción", "ok"),
+    "cambio": ("Cambió del borrador a la moción", "warn"),
     "atribucion": ("Atribución de prensa incorrecta", "bad"),
     "distintos": ("Mismo actor, dichos distintos", "warn"),
     "cuenta": ("La cuenta no cierra", "warn"),
@@ -80,8 +86,8 @@ PREGUNTAS = [
    ("Aldabalde", "“Nacional no interviene un solo dólar, salvo el flujo de los palcos”, que “no está en los flujos recurrentes del club”. Al fideicomiso van palcos, sus gastos comunes y el Club Social.", "{F-0016 00:06:59} {F-0014 02:28:39}"),
    ("Decurnex", "“Nacional está poniendo 147 millones de dólares”: 93 M de renovación de palcos en 30 años, 33 M del Club Social y 21 M de gastos comunes. “Se haga el proyecto o no se haga, es plata de Nacional.”", "{F-0015 00:09:37}"),
   ],
-  estado=["coinciden"],
-  lectura="Hablan de los mismos flujos y con casi las mismas cifras (Aldabalde también da 93 M de palcos y unos 30 M del Club Social, {F-0014 01:44:58}). La diferencia es si llamarlos “aporte del club”. Según el borrador de la moción, los ingresos existentes de palcos, Club Social o aportes de socios solo pueden ir al estadio y su infraestructura ({F-0009}; leído por Aldabalde en {F-0014 01:28:06}). El borrador no es oficial todavía."),
+  estado=["coinciden", "mocion"],
+  lectura="Hablan de los mismos flujos y con casi las mismas cifras (Aldabalde también da 93 M de palcos y unos 30 M del Club Social, {F-0014 01:44:58}). La diferencia es si llamarlos “aporte del club”. La moción oficial asigna al proyecto justamente esos flujos, y dice que los ya existentes de palcos, Club Social o aportes de socios solo pueden ir al estadio y su infraestructura {F-0007 p.7}."),
  dict(id="costo", q="¿Cuánto cuesta la obra?",
   pregunta=[("Conductor de El Espectador", "“El costo total está tasado en 112 millones, con el costo financiero se iría a 140…”", "{F-0016 00:06:27}")],
   resp=[
@@ -135,8 +141,8 @@ PREGUNTAS = [
    ("Decurnex", "El Club Social “tuvo entre un 55 y un 60% de sobrecosto”; hay que prever un 20 a 25% de imprevistos.", "{F-0015 00:20:13} {F-0015 00:36:50}"),
    ("Bardanca", "Estadios como el Real Madrid o el Barcelona tuvieron desvíos del 50 o 60%: “Nosotros un desvío de obra del 60% no lo resistimos.”", "{F-0017 01:08:11}"),
   ],
-  estado=["borrador", "pendiente"],
-  lectura="Según el borrador de la moción, el club no aporta capital para sobrecostos y ninguna etapa empieza sin financiamiento completo ({F-0009}). Si eso alcanza para cubrir el riesgo es una cuestión de valoración."),
+  estado=["mocion", "pendiente"],
+  lectura="Según la moción oficial, el club no aporta capital para sobrecostos {F-0007 p.7} y ninguna etapa empieza sin financiamiento suficiente para completarla {F-0007 p.7}. Si eso alcanza para cubrir el riesgo es una cuestión de valoración."),
  dict(id="voto", q="¿Qué se vota el 24 de octubre y con qué mayoría?",
   pregunta=[("Conductor de Territorio Nacional", "“La Asamblea, ¿para qué sirve?”", "{F-0015 00:21:40}"),
             ("Oyente, leído en Pasión Tricolor", "“Si se aprueba por el 75% o por el 50 más 1. Que hay un debate ahí.”", "{F-0014 02:12:06}")],
@@ -146,7 +152,7 @@ PREGUNTAS = [
    ("Singlet", "La reforma del 7 de julio fijó el 75% para proyectos de más de USD 2 M. Dos o tres días después, Aldabalde dijo que esta Asamblea se regiría por el Estatuto vigente.", "{F-0017 00:05:19} {F-0017 00:07:23}"),
   ],
   estado=["coinciden", "pendiente"],
-  lectura="Todos coinciden en que la reforma existe y no rige. El desacuerdo es jurídico y de valores. La moción oficial todavía no está publicada ({F-0003})."),
+  lectura="Todos coinciden en que la reforma existe y no rige. El desacuerdo es jurídico y de valores. La moción oficial no fija la mayoría de la Asamblea; se remite a los Estatutos “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” {F-0007 p.5}. Para las decisiones de la Directiva pide unanimidad de los once {F-0007 p.8}."),
 ]
 
 # ---------- Contrapunto ----------
@@ -156,7 +162,7 @@ FILAS = [
  ("Costo de la obra", "distintos", "#costo"),
  ("“140 M con costo financiero”", "atribucion", "#costo"),
  ("Costo del proyecto ejecutivo: 2,5 M", "atribucion", None),
- ("Proyecto ejecutivo antes de votar", "borrador", None),
+ ("Proyecto ejecutivo antes de votar", "mocion", None),
  ("Aporte de socios voluntario", "pendiente", "#cuota"),
  ("Los USD 10 por mes", "distintos", "#cuota"),
  ("Cuentas de los 26 M y del estacionamiento", "cuenta", None),
@@ -167,19 +173,21 @@ FILAS = [
  ("“10 mil butacas nuevas”", "consistente", None),
  ("Solo estadio", "pendiente", "#solo"),
  ("Informe de CPA “lapidario”", "pendiente", None),
- ("Garantías de la moción", "borrador", None),
+ ("Garantías de la moción", "mocion", None),
+ ("Mayoría especial de la Directiva", "cambio", None),
  ("Mayoría del 75%", "coinciden", "#voto"),
 ]
 NOTAS = {
  "Costo del proyecto ejecutivo: 2,5 M": "La Abdón publicó 2,5 M; Aldabalde dijo “del entorno de los 2 millones” {F-0016 00:21:22}.",
- "Proyecto ejecutivo antes de votar": "El borrador exige ejecutivo antes de cada etapa, no antes de la Asamblea {F-0009}. Es un desacuerdo de valores sobre qué hay que saber antes de votar.",
+ "Proyecto ejecutivo antes de votar": "La moción exige ejecutivo antes de cada etapa, no antes de la Asamblea {F-0007 p.7}. Es un desacuerdo de valores sobre qué hay que saber antes de votar.",
  "Ocupación comercial de 97,5%": "Bardanca {F-0017 01:16:57}; Aldabalde: “100% alquilado, con precontratos” {F-0014 01:08:44}. Falta el modelo.",
  "Superficie del zócalo comercial": "Aldabalde habla de modelos de 3.500 y 7.000 m² {F-0014 01:08:14}; el anteproyecto da 3.080 m² de locales comerciales y 14.266 m² de superficies rentables {F-0004 p.42}.",
  "Mantenimiento: 3 o 4 M contra 1,2 M": "Aldabalde {F-0016 00:06:05}; Singlet, último balance: 1,2 M bruto {F-0017 01:31:00}. Falta el balance.",
  "“10 mil butacas nuevas”": "Aldabalde {F-0014 01:52:45}. El aforo pasa de unos 34.000 a más de 43.000 {F-0004 p.64}.",
  "Informe de CPA “lapidario”": "Aldabalde lo anunció así {F-0016 00:16:50}. En un mail leído al aire, un socio de CPA escribe que “no es lapidario ni pretende serlo” {F-0017 00:47:34}. Falta el informe.",
  "Cuentas de los 26 M y del estacionamiento": "Los componentes que da Decurnex suman 23,5 M, no 26 {F-0015 00:13:06}; en el estacionamiento, 3 M con un castigo del 30% dan 2,1 M, no 2,5 {F-0014 01:13:45}. Ver [[#cuota|la cuota]] y [[#parking|el estacionamiento]].",
- "Garantías de la moción": "Fideicomiso separado, sin hipoteca ni deuda del club, 9 de 11 votos de la Directiva para las decisiones centrales, vuelta a la Asamblea ante cambios sustanciales y plazo de 30 meses {F-0009}. Un conductor de Pasión Tricolor pide sanciones para quien incumpla {F-0014 01:58:43}; Singlet teme que se relegue a las asambleas en las decisiones futuras {F-0017 00:17:46}. Aldabalde acepta las sanciones, pero dice que van en el Estatuto {F-0014 01:59:47}. Qué cubre un sobrecosto: [[#sobrecosto|la pregunta del sobrecosto]].",
+ "Mayoría especial de la Directiva": "El borrador pedía 9 de los 11 directivos {F-0014 01:55:53}; la moción oficial pide el voto unánime de los once {F-0007 p.8}. Si no hay unanimidad y la mayoría simple quiere seguir, decide una nueva Asamblea en 30 días.",
+ "Garantías de la moción": "Fideicomiso separado, sin hipoteca ni deuda del club, unanimidad de la Directiva para las decisiones centrales, vuelta a la Asamblea ante cambios sustanciales y plazo de 30 meses {F-0007 p.6-9}. Un conductor de Pasión Tricolor pide sanciones para quien incumpla {F-0014 01:58:43}; Singlet teme que se relegue a las asambleas en las decisiones futuras {F-0017 00:17:46}. Aldabalde acepta las sanciones, pero dice que van en el Estatuto {F-0014 01:59:47}. Qué cubre un sobrecosto: [[#sobrecosto|la pregunta del sobrecosto]].",
 }
 
 COINCIDEN = [
@@ -194,7 +202,7 @@ COINCIDEN = [
 ]
 
 FALTA = [
- ("Moción oficial", "Qué se vota, garantías, aportes extraordinarios"),
+ ("Votación de la Directiva sobre la moción", "Con qué resultado se aprobó el texto oficial"),
  ("Modelo económico financiero", "Costo vigente, cuota, aporte voluntario, supuestos comerciales"),
  ("Material entregado a la Directiva el 11/03/2026", "Qué incluye el costo, ocupación del estacionamiento, techo"),
  ("Excel de CPA “evaluación unidad de negocio v3” e informe de CPA", "Valor de cada negocio, solo estadio"),
@@ -218,7 +226,7 @@ POSTURAS = [
   "{F-0014 01:24:49}"),
 ]
 
-FUENTES = ["F-0003", "F-0004", "F-0009", "F-0011", "F-0012", "F-0014", "F-0015", "F-0016", "F-0017", "F-0018", "F-0019"]
+FUENTES = ["F-0003", "F-0004", "F-0007", "F-0009", "F-0011", "F-0012", "F-0014", "F-0015", "F-0016", "F-0017", "F-0018", "F-0019"]
 
 def src_link(fid):
     if fid in YT:
@@ -229,13 +237,14 @@ out = []
 A = out.append
 A('<main class="wrap">')
 A('''<header class="hero">
-  <p class="eyebrow">Gran Parque Central · Master Plan</p>
+  <a class="back" href="../">← La moción, artículo por artículo</a>
+  <p class="eyebrow">Gran Parque Central · Master Plan · El debate</p>
   <h1>Qué dice cada uno, y qué se puede comprobar</h1>
   <p class="lede">Las preguntas centrales del debate, con las respuestas de cada parte y un enlace al minuto exacto en que se dijo cada cosa. Donde hay un documento, se contrasta con él.</p>
   <dl class="facts">
     <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
     <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
-    <div><dt>Falta publicar</dt><dd>Moción oficial y modelo económico</dd></div>
+    <div><dt>Falta publicar</dt><dd>Modelo económico</dd></div>
   </dl>
   <nav class="toc" aria-label="Secciones">
     <a href="#preguntas">Preguntas</a><a href="#posturas">Posturas</a><a href="#coinciden">En qué coinciden</a><a href="#contrapunto">Contrapunto</a><a href="#falta">Qué falta</a><a href="#fuentes">Fuentes</a>
@@ -279,7 +288,8 @@ A('</tbody></table></div>')
 A('''<dl class="legend">
 <div><dt>''' + chip("coinciden") + '''</dt><dd>Las dos partes dan la misma cifra.</dd></div>
 <div><dt>''' + chip("consistente") + '''</dt><dd>Lo confirma un documento oficial registrado.</dd></div>
-<div><dt>''' + chip("borrador") + '''</dt><dd>Coincide con el borrador de la moción, que todavía no es oficial.</dd></div>
+<div><dt>''' + chip("mocion") + '''</dt><dd>Lo confirma el texto oficial de la moción.</dd></div>
+<div><dt>''' + chip("cambio") + '''</dt><dd>El texto oficial de la moción dice otra cosa que el borrador que circuló antes.</dd></div>
 <div><dt>''' + chip("atribucion") + '''</dt><dd>La fuente original no dice lo que publicó un medio.</dd></div>
 <div><dt>''' + chip("distintos") + '''</dt><dd>La misma persona dijo cosas distintas en fechas distintas. No implica que sea falso: la información puede haber cambiado.</dd></div>
 <div><dt>''' + chip("cuenta") + '''</dt><dd>La cifra dicha no coincide con sus propios componentes.</dd></div>
@@ -301,7 +311,8 @@ A('</ul></section>')
 
 A('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, hincha de Nacional, con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente.</p></footer></main>''')
 
-open("index.html", "w").write(documento(TITULO, DESCRIPCION, "\n".join(out)))
+os.makedirs("debate", exist_ok=True)
+open("debate/index.html", "w").write(documento(TITULO, DESCRIPCION, "\n".join(out), '<style>.back { font-family: var(--f-mono); font-size: .82rem; }</style>'))
 
 from detalle import DETALLE
 EXTRA = """<style>
@@ -324,7 +335,7 @@ for i, p in enumerate(PREGUNTAS):
     d = DETALLE[p["id"]]
     o = []
     o.append('<main class="wrap">')
-    o.append(f'<header class="hero"><a class="back" href="index.html">← Volver a la portada</a><p class="eyebrow">Master Plan GPC · Pregunta en detalle</p><h1>{html.escape(d["titulo"])}</h1><p class="lede">{R(d["corto"])}</p><div class="chips">{"".join(chip(e) for e in p["estado"])}</div></header>')
+    o.append(f'<header class="hero"><a class="back" href="index.html">← Volver al debate</a><p class="eyebrow">Master Plan GPC · Pregunta en detalle</p><h1>{html.escape(d["titulo"])}</h1><p class="lede">{R(d["corto"])}</p><div class="chips">{"".join(chip(e) for e in p["estado"])}</div></header>')
     o.append('<section class="sec"><h2>Qué dice cada uno</h2><div class="lados">')
     for who, tesis, txt, porque in d["posturas"]:
         o.append(f'<article class="lado"><h3>{who}</h3><p class="tesis">{html.escape(tesis)}</p><p>{R(txt)}</p><p class="porque"><b>Por qué lo dice</b>{R(porque)}</p></article>')
@@ -336,10 +347,10 @@ for i, p in enumerate(PREGUNTAS):
     o.append(f'<section class="sec"><h2>En resumen</h2><p class="lectura">{R(d["lectura"])}</p></section>')
     o.append('<section class="sec"><h2>Qué lo resolvería</h2><ul class="res">' + "".join(f"<li>{html.escape(x)}</li>" for x in d["resolveria"]) + '</ul></section>')
     prev = f'<a href="detalle-{ids[i-1]}.html">← {html.escape(DETALLE[ids[i-1]]["titulo"])}</a>' if i > 0 else '<span></span>'
-    nxt = f'<a href="detalle-{ids[i+1]}.html">{html.escape(DETALLE[ids[i+1]]["titulo"])} →</a>' if i + 1 < len(ids) else '<a href="index.html">Volver a la portada</a>'
+    nxt = f'<a href="detalle-{ids[i+1]}.html">{html.escape(DETALLE[ids[i+1]]["titulo"])} →</a>' if i + 1 < len(ids) else '<a href="index.html">Volver al debate</a>'
     o.append(f'<nav class="pager">{prev}{nxt}</nav>')
-    o.append(f'<footer class="foot"><p>Preliminar, al {ACTUALIZADO}. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener la moción oficial y el modelo económico.</p></footer></main>')
+    o.append(f'<footer class="foot"><p>Preliminar, al {ACTUALIZADO}. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener el modelo económico.</p></footer></main>')
     descripcion = f'{d["titulo"]} Qué dice cada parte, en qué se apoya y análisis, en el debate sobre el Master Plan del Gran Parque Central.'
-    open(f"detalle-{p['id']}.html", "w").write(documento(d["titulo"], descripcion, "\n".join(o), EXTRA))
+    open(f"debate/detalle-{p['id']}.html", "w").write(documento(d["titulo"], descripcion, "\n".join(o), EXTRA))
 print("detalles:", len(ids))
 print("ok", sum(len(x) for x in out))
