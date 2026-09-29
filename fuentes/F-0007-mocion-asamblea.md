@@ -63,7 +63,8 @@ Comparación con el borrador resumido por La Abdón ([F-0009](F-0009-laabdon-moc
 
 - **Mayoría especial de la Directiva:** el borrador pedía "al menos nueve de los 11" ([F-0014](F-0014-pasion-tricolor-aldabalde.md), 01:55:53; [F-0009](F-0009-laabdon-mocion-filtrada.md)). La moción oficial pide **unanimidad de los once** (p. 4 y p. 8). Es el cambio más importante.
 - **Extensión:** La Abdón habló de siete páginas; el PDF oficial tiene nueve.
-- **Restitución y excedentes** (CUARTO 6), **prioridad de los planteles** (TERCERO) y la cláusula **ATENTO** sobre exigencias estatutarias más rigurosas no aparecen en el resumen de La Abdón. Puede ser que la nota las omitiera; no se puede saber sin el borrador completo.
+- **Restitución de flujos** (CUARTO 6): no aparece en el resumen de La Abdón, pero Aldabalde la leyó al aire como parte del borrador ([F-0014](F-0014-pasion-tricolor-aldabalde.md), 01:51:29). Estaba en el borrador.
+- **Prioridad de los planteles** (TERCERO) y la cláusula **ATENTO** sobre exigencias estatutarias más rigurosas no aparecen en el resumen de La Abdón. Puede ser que la nota las omitiera; no se puede saber sin el borrador completo.
 - El resto de los diez puntos coincide con el resumen de La Abdón.
 
 ## Notas
