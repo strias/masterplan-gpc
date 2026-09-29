@@ -7,7 +7,7 @@ fuente_original: F-0011
 tipo: hecho
 tema: financiero
 veredicto: pendiente
-evidencia: []
+evidencia: [F-0009, F-0014]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -27,6 +27,8 @@ El riesgo del proyecto queda separado de la economía cotidiana del club.
 
 La moción filtrada ([F-0009](../fuentes/F-0009-laabdon-mocion-filtrada.md)) incluye fideicomiso, prohibición de hipotecas y de deuda del club. Queda por ver la moción oficial, y qué gastos del estadio pasarían al fideicomiso. Relacionada con [A-0001](A-0001-decurnex-147-millones.md).
 
+**Actualización 2026-09-28 ([F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 02:28:39):** "Nosotros en nuestro modelo, la premisa fundamental es que los flujos actuales del club, con los que el club paga las cuentas, el plantel y todos los gastos, no se tocan." Aclara que lo que va al fideicomiso son "los palcos, los gastos comunes" (02:28:32). Es decir, "no se toca la caja" se refiere a los flujos operativos, no a los ingresos de palcos. Ver [A-0001](A-0001-decurnex-147-millones.md).
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -34,3 +36,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-09-28: se agrega la cita textual de F-0014.

@@ -7,3 +7,4 @@ dist/
 # Copias locales de documentos de terceros (pesados o con derechos de sus autores)
 archivo/*.pdf
 archivo/*.mp4
+archivo/*.transcripcion.txt
