@@ -21,4 +21,4 @@ Integración de las comisiones del club, entre ellas la Comisión de Patrimonio 
 
 ## Notas
 
-La página no tiene fecha. El autor pegó la lista el 2026-09-28.
+La página no tiene fecha. El autor copió la lista de esta página el 2026-09-28.
