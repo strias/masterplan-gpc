@@ -7,6 +7,8 @@ HEAD = open("head.html").read()  # fuentes y estilos compartidos
 
 
 SITIO = "https://masterplangpc.com"
+# Imagen de las vistas previas. Si cambia, cambiar también el nombre: X guarda la imagen vieja en caché.
+OG_IMAGEN = "og-2026-09-29.jpg"
 
 def tarjeta(titulo, descripcion, ruta):
     """Metadatos Open Graph y Twitter Card, para que X, WhatsApp y otros muestren la vista previa con imagen."""
@@ -15,11 +17,11 @@ def tarjeta(titulo, descripcion, ruta):
             f'<meta property="og:type" content="website">\n<meta property="og:site_name" content="Master Plan GPC">\n'
             f'<meta property="og:locale" content="es_UY">\n<meta property="og:title" content="{t}">\n'
             f'<meta property="og:description" content="{d}">\n<meta property="og:url" content="{u}">\n'
-            f'<meta property="og:image" content="{SITIO}/og.png">\n<meta property="og:image:width" content="1200">\n'
-            f'<meta property="og:image:height" content="630">\n'
+            f'<meta property="og:image" content="{SITIO}/{OG_IMAGEN}">\n<meta property="og:image:width" content="1200">\n'
+            f'<meta property="og:image:height" content="630">\n<meta property="og:image:type" content="image/jpeg">\n'
             f'<meta property="og:image:alt" content="Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central, con fuentes.">\n'
             f'<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="{t}">\n'
-            f'<meta name="twitter:description" content="{d}">\n<meta name="twitter:image" content="{SITIO}/og.png">\n')
+            f'<meta name="twitter:description" content="{d}">\n<meta name="twitter:image" content="{SITIO}/{OG_IMAGEN}">\n')
 
 def documento(titulo, descripcion, cuerpo, extra="", ruta=""):
     """Documento HTML completo y autónomo, listo para copiar a cualquier servidor."""
