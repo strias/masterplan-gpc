@@ -23,6 +23,6 @@ Programa de comentario: los conductores reaccionan a la entrevista de Decurnex e
 
 ## Notas
 
-- **Transcripción publicada:** [`transcripciones/F-0019-pasion-tricolor-reaccion-decurnex-2026-09-22.md`](../transcripciones/F-0019-pasion-tricolor-reaccion-decurnex-2026-09-22.md). SHA-256 del original: `1060621844e915b5a750476ec85ef1d22a2d2e33fd587b6e6fb68e03a02a9dee`.
+- **Transcripción publicada:** [`transcripciones/F-0019-pasion-tricolor-reaccion-decurnex-2026-09-22.md`](../transcripciones/F-0019-pasion-tricolor-reaccion-decurnex-2026-09-22.md). Combina la transcripción con voces y los subtítulos automáticos de YouTube: donde las cifras no coinciden, se muestran las dos versiones. SHA-256 del original: `1060621844e915b5a750476ec85ef1d22a2d2e33fd587b6e6fb68e03a02a9dee`.
 - Los conductores opinan con fuerza durante el programa (por ejemplo, que el planteo de los 147 M es una "verdad a medias"). Sus opiniones no se registran como afirmaciones salvo que el autor lo pida.
 - Pasión Tricolor es un medio partidario de hinchas de Nacional.

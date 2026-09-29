@@ -2,10 +2,14 @@
 
 - Fuente: [F-0015](../fuentes/) · https://www.youtube.com/watch?v=ErxVag75_mA
 - Fecha de emisión: 2026-09-21
-- Origen: subtítulos automáticos de YouTube (sin separación de voces), agrupados en bloques de unos 30 segundos.
-- SHA-256 del archivo original: `d52fee4bea045213014a16747fff55d155494d9de09321fb5642463cbbaad693`
+- Origen:
+  - subtítulos automáticos de YouTube. SHA-256: `d52fee4bea045213014a16747fff55d155494d9de09321fb5642463cbbaad693`
 
 > **Aviso.** Transcripción automática, sin revisión humana completa. Solo se corrigieron nombres propios mal transcritos (lista al final). Puede tener errores de palabras, cifras o atribución de voces. Antes de citar, verificar contra el video en la marca de tiempo indicada. El contenido es de sus autores y del medio; se publica para que cualquiera pueda verificar las citas de este repositorio.
+>
+> Solo hay subtítulos automáticos: sin separación de voces, agrupados en bloques de unos 30 segundos.
+
+Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
 ---
 

@@ -32,6 +32,7 @@ La Asamblea General Extraordinaria que considera el proyecto es el **24 de octub
 | [`actores/`](actores/) | Personas e instituciones que participan en el debate y sus posiciones |
 | [`afirmaciones/`](afirmaciones/) | Cada afirmación verificada: quién la dijo, evidencia y veredicto |
 | [`transcripciones/`](transcripciones/) | Transcripciones de entrevistas y programas, con marcas de tiempo, para verificar las citas |
+| [`scripts/`](scripts/) | Herramientas del repo (por ejemplo, la que genera las transcripciones) |
 | [`analisis/`](analisis/) | Análisis temáticos: financiero, urbano, deportivo, legal y social |
 | [`docs/`](docs/) | Metodología y criterios |
 

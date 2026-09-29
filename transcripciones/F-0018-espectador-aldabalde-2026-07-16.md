@@ -2,10 +2,14 @@
 
 - Fuente: [F-0018](../fuentes/) · https://www.youtube.com/watch?v=PDYIvpms7r4
 - Fecha de emisión: 2026-07-16
-- Origen: subtítulos automáticos de YouTube (sin separación de voces), agrupados en bloques de unos 30 segundos.
-- SHA-256 del archivo original: `745636bb0796517643474aa0c64707bfb9be4416b37f6e3a24a39ab371aa8a10`
+- Origen:
+  - subtítulos automáticos de YouTube. SHA-256: `745636bb0796517643474aa0c64707bfb9be4416b37f6e3a24a39ab371aa8a10`
 
 > **Aviso.** Transcripción automática, sin revisión humana completa. Solo se corrigieron nombres propios mal transcritos (lista al final). Puede tener errores de palabras, cifras o atribución de voces. Antes de citar, verificar contra el video en la marca de tiempo indicada. El contenido es de sus autores y del medio; se publica para que cualquiera pueda verificar las citas de este repositorio.
+>
+> Solo hay subtítulos automáticos: sin separación de voces, agrupados en bloques de unos 30 segundos.
+
+Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
 ---
 
@@ -250,7 +254,7 @@
 | Aldavalde | Aldabalde | 2 |
 | Bairo | Vairo | 3 |
 | CPA Ferrer | CPA Ferrere | 1 |
-| Gómez Soro | Gomensoro | 1 |
+| Javier Gómez Soro | Javier Gomensoro | 1 |
 | Persman | Perchman | 2 |
 | Ricardo Bairo | Ricardo Vairo | 1 |
 | de Curnex | Decurnex | 2 |

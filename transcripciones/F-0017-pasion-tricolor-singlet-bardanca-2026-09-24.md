@@ -2,10 +2,14 @@
 
 - Fuente: [F-0017](../fuentes/) · https://www.youtube.com/watch?v=dowYxCNXN7k
 - Fecha de emisión: 2026-09-24
-- Origen: subtítulos automáticos de YouTube (sin separación de voces), agrupados en bloques de unos 30 segundos.
-- SHA-256 del archivo original: `845753ed84db511b6c812887fa18c455036a8ce3b079745c32f0ce2ec5f9d384`
+- Origen:
+  - subtítulos automáticos de YouTube. SHA-256: `845753ed84db511b6c812887fa18c455036a8ce3b079745c32f0ce2ec5f9d384`
 
 > **Aviso.** Transcripción automática, sin revisión humana completa. Solo se corrigieron nombres propios mal transcritos (lista al final). Puede tener errores de palabras, cifras o atribución de voces. Antes de citar, verificar contra el video en la marca de tiempo indicada. El contenido es de sus autores y del medio; se publica para que cualquiera pueda verificar las citas de este repositorio.
+>
+> Solo hay subtítulos automáticos: sin separación de voces, agrupados en bloques de unos 30 segundos.
+
+Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
 ---
 

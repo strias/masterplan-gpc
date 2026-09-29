@@ -2,16 +2,22 @@
 
 - Fuente: [F-0014](../fuentes/) · https://www.youtube.com/live/zOnJazksi08
 - Fecha de emisión: 2026-09-25
-- Origen: transcripción automática con separación de voces, aportada por el autor del repo. La separación de voces es imperfecta: a veces mezcla a Aldabalde con los conductores.
-- SHA-256 del archivo original: `adbe79eb2054865b2a690fc1c33e4b843f5ea4dc624080c3a79897cca3331a08`
+- Origen:
+  - transcripción con separación de voces (youtubetotext), aportada por el autor del repo. SHA-256: `adbe79eb2054865b2a690fc1c33e4b843f5ea4dc624080c3a79897cca3331a08`
+  - subtítulos automáticos de YouTube, usados para contrastar cifras. SHA-256: `e087d9784a0dcde9edb9f6949c2397d0687c68a3a8b1459fa9724ea2e918b8a4`
 
 > **Aviso.** Transcripción automática, sin revisión humana completa. Solo se corrigieron nombres propios mal transcritos (lista al final). Puede tener errores de palabras, cifras o atribución de voces. Antes de citar, verificar contra el video en la marca de tiempo indicada. El contenido es de sus autores y del medio; se publica para que cualquiera pueda verificar las citas de este repositorio.
+>
+> La base es la transcripción con voces. En los 161 bloques donde las cifras no coinciden con los subtítulos de YouTube, debajo se muestra el texto de YouTube para ese tramo (línea que empieza con *YouTube*). La separación de voces es imperfecta: a veces mezcla a los entrevistados con los conductores.
+
+Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
 ---
 
 [00:00:01] Speaker 0: [canta] Hoy lo digo con orgullo, si juega el Bolso, hay pasión tricolor.
 
 [00:00:08] Speaker 0: Soy de Nacional, lo más grande que hay. Juegues donde juegues, te vamos a acompañar. Esta es mi pasión, de mi corazón. Pasión tricolor, pasión tricolor. Tus colores están en mi piel y yo me muero por volverte a ver. En el parque, en las tribunas,
+> *YouTube (00:00:08):* Soy de Nacional, lo más grande que hay. Juegue donde juegues te vamos a acompañar. Esta mi pasión de mi corazón. Pasión tricolor. Pasión tricolor. Tus colores están en mi piel y yo me muero por volverte a ver. En el parque, en las tribunas, desde el cielo alienta el Gus y Rosa Luna. Son 10 años
 
 [00:00:39] Speaker 0: desde el cielo alienta el Gusi Rosa Luna. Son 10 años transmitiendo emociones, pero este amor es de generaciones. Abuelos, nietos, tíos, hermanos, todos juntos alentando al Decano, con los oídos sanos. Hoy lo digo con orgullo, si juega el Bolso, hay pasión tricolor.
 
@@ -26,6 +32,7 @@
 [00:02:01] Speaker 0: [música instrumental] Aquellos primeros tiempos de los relatos y la tribuna, al lado tuyo y siempre de una para Nacional. Y pasaron ya 10 años, esto dejó de ser solo un sueño. Te convertiste en el propio dueño de esta pasión. Hoy lo digo con orgullo, si juega el Bolso, hay pasión tricolor. Soy de Nacional, lo más grande que hay.
 
 [00:02:32] Speaker 0: Juegues donde juegues, te vamos a acompañar. Esta es mi pasión, de mi corazón. Pasión tricolor, pasión tricolor. Tus colores están en mi piel y yo me muero por volverte a ver. En el parque, en las tribunas, desde el cielo alienta el Gusi Rosa Luna. Son 10 años transmitiendo emociones, pero este
+> *YouTube (00:02:32):* Juegue donde juegues, te vamos a Esta es mi pasión. es de generaciones. Abuelos, nietos,
 
 [00:03:03] Speaker 0: amor es de generaciones. Abuelos, nietos, tíos, hermanos, todos juntos alentando al Decano, con los oídos sanos. Hoy lo digo con orgullo, si juega el Bolso, hay pasión tricolor. Soy de Nacional, lo más grande que hay. Juegues donde juegues, te vamos a acompañar. Esta es mi pasión, de mi corazón.
 
@@ -70,6 +77,7 @@
 [00:08:58] Speaker 0: Aquellos primeros tiempos de los relatos y la tribuna, al lado tuyo y siempre de una para Nacional. Y pasados ya 10 años, esto dejó de ser solo un sueño, te convertiste en el propio dueño de esta pasión. Hoy lo digo con orgullo, si juega el Bolso, hay pasión tricolor. Soy de Nacional, lo más grande que hay.
 
 [00:09:28] Speaker 0: Juegues donde juegues, te vamos a acompañar. Esta es mi pasión, de mi corazón. Pasión tricolor, pasión tricolor. Tus colores están en mi piel y yo me muero por volverte a ver. En el parque, en las tribunas, desde el cielo alienta el Guczo y Rosa Luna. Son 10 años transmitiendo emociones, pero este
+> *YouTube (00:09:28):* Juegues donde juegues, te vamos a
 
 [00:09:59] Speaker 0: amor es de generaciones. Abuelos, nietos, tíos, hermanos, todos juntos alentando al Decano, con los oídos sanos.
 
@@ -156,12 +164,15 @@
 [00:21:15] Speaker 3: O sea que Nacional seguramente va-
 
 [00:21:17] Speaker 2: Con toda la confianza
+> *YouTube (00:21:17):* O sea, que bueno, eh, Nacional seguramente va con toda la confianza, ¿no? Va a jugar con línea de cuatro. Poneme el probable 11 ahí que todavía no está
 
 [00:21:18] Speaker 3: ...va a jugar con línea de cuatro. Poneme el probable 11 ahí, que todavía no está confirmado. Esto es un bosquejo, nosotros más que información del probable 11, que ya vamos a poner en pantalla y ya se suma Santi Bassi. En instantes se va a sumar Santiago Aldabalde. Sobre 20:45 va a estar viniendo aquí a la casa del parque y vamos a estar sumándolo al presidente de la Comisión de Patrimonio y Obras. Arrancamos el play con lo deportivo. Poneme el probable 11, Joaco, mientras
+> *YouTube (00:21:18):* seguramente va con toda la confianza, ¿no? Va a jugar con línea de cuatro. Poneme el probable 11 ahí que todavía no está confirmado. Esto es un bosquejo. Nosotros más que información del probable 11 que ya vamos a poner en pantalla y ya se suma Santi Basi. Eh, en instantes se va a sumar Santiago alabalde sobre 2045 va a estar viniendo aquí a el gran a la casa del parque y vamos a estar sumándolo eh este a al presidente de la Comisión de Patrimonio y obras. Arrancamos el play con lo deportivo. Poneme el probable 11, Juaco. Mientras saludo a a Santi Basi con un
 
 [00:21:48] Speaker 3: saludo a Santi Bassi Con un probable 11, que es un bosquejo, no es información, es un análisis de lo que podría parar Carreño, porque todavía no le confirmó el equipo a los jugadores, todavía no hay cierta información. Mejía va a estar en el arco, Luciano Rodríguez con Tomás Viera en la saga, Cándido estaría en la izquierda nuevamente. La duda es si va Ancheta o se mete Martinena en el lateral derecho. Si va Ancheta, Martinena
 
 [00:22:19] Speaker 3: podría jugar ya de mediapunta y ahí el que podría salir es Silva, manteniendo una especie de 4-4-2, con la presencia de Botta, algo parecido a lo que hizo Viera en el segundo tiempo ante Wanders.
+> *YouTube (00:22:19):* Si va en Cheta, Martinera, bueno, podría jugar ya de media punta y ahí el que podría salir es Silva, manteniendo una especie de 442, ¿no? Este, con la presencia de Bota, algo parecido a lo que hizo en el Viera en el segundo tiempo ante Wanders, ¿no? Y Bogio que iría por izquierda en esa ocasión, ¿no? Este Bogio ahí este por izquierda,
 
 [00:22:30] Speaker 2: Y Bogio iría por izquierda en esa ocasión.
 
@@ -206,6 +217,7 @@
 [00:23:49] Speaker 2: Sí.
 
 [00:23:50] Speaker 3: Yo no sé, Santi, te doy la bienvenida antes de recibir a Santiago Aldavale. Esto es un bosquejo, no es información, más allá de alguna puntual como esta duda, pero veremos qué once se confirma mañana. ¿Cómo le va, Basi?
+> *YouTube (00:23:50):* es que sí, sí, sí. Yo no sé, Santi, te doy la bienvenida antes de recibir a Santiago Aldabalde, esto es un bosquejo, no es información más allá de algún de alguna puntual como esta duda, pero bueno, veremos qué qué 11 se confirma mañana. ¿Cómo cómo le va? Va, sí. ¿Qué dice? ¿Qué dice Javi Fede, Juanco
 
 [00:24:05] Speaker 4: Qué dice Javi, Fede y Juanjo Gímerez, todos los bolsos están prendidos siempre a Pasión Tricolor y se están sumando. Y al gran Damián de Luceo, que no lo estoy viendo, pero ya lo siento de acá. Así no lo esté viendo, lo siento. El abrazo grande al Dami, que hace tiempo no lo veo. Nos debemos en cualquier momento que organice un asado, que es de los mejores asadores que conozco.
 
@@ -246,6 +258,7 @@
 [00:27:51] Speaker 2: Y Rodrigo Martínez por derecha. Los tres volantes en la mitad de la cancha y la línea de cuatro.
 
 [00:27:56] Speaker 3: Está bien, son opiniones, cada uno tiene la suya. Vamos a ver cuál es el once que para Carreño, todavía no está confirmado. Esto es un bosquejo, lo volvemos a colocar ahí en pantalla mientras se van sumando todos. A todos les pedimos un "like", un me gusta. En instantes, Santiago Aldabalde en vivo, presidente de la Comisión de Patrimonio y Obras, que viene a responder las dudas o críticas sembradas por Decurnex, Tatiana Villaverde, Singlet, Bardanca, que estuvieron ayer acá en vivo en Pasión Tricolor Play. Vamos a escuchar todas las campanas, a ver qué responde Santiago Aldabalde, que en instantes va a estar
+> *YouTube (00:27:56):* línea cuatro. Bueno, está bien, es válida, son opiniones, cada uno tiene la suya. Vamos a ver qué eh cuál es el 11 que que para Carreño. Todavía no está confirmado. Esto es un bosquejo. Lo volvemos a colocar ahí en pantalla. Mientras se van sumando todos, a todos les pedimos un like, un me gusta. En Instante Santiago Aldabalde en vivo, presidente de la Comisión de Patrimonio y Obra que viene, bueno, a responder eh las dudas o críticas sembradas por Decurnex, Tatiana Villaverde, Singlet, Bardanca que estuvieron ayer acá en vivo Pion Color Play. Bueno, vamos a escuchar todas las campanas a ver qué responde Santiago Aldabalde que en instantes va a estar aquí presente en la casa del parque en Pasión Tricolor Play. mientras estamos
 
 [00:28:26] Speaker 3: aquí presente en la Casa del Parque, en Pasión Tricolor Play, mientras estamos palpitando el partido de mañana. Yo creo que la duda principal para mí es dónde juega Martirena, porque el otro día ante Defensor terminó de cuatro y realmente jugó bien y le dio otro potencial ofensivo a Nacional, porque Martirena pasó de cuatro y pusimos un puntero adelante. Entonces hubo una sociedad, un tándem ahí, donde él le arrastraba la marca.
 
@@ -274,6 +287,7 @@
 [00:31:09] Speaker 3: Nunca lo vimos con
 
 [00:31:14] Speaker 3: Gómez a Botta. No, por eso. Veremos. Ya está Santiago Aldabalde, que lo vamos a recibir en instantes. Esta es la información deportiva. Mañana se va a estar confirmando y veremos qué termina colocando Carreño con este probable once, que todavía no está definido. Mañana la previa de las 13 horas, allí en el Ubilla de Melo, con el Menchi Matías Méndez en comentario, con Sabela en locución comercial, quien abre el relato,
+> *YouTube (00:31:14):* ¿Cómo que eso que nunca lo vimos con Gómez a Bota, no, por eso sí, veremos, veremos. Pero bueno, eh ya está Santiago Aldabalde, que lo vamos a recibir en instantes, pero bueno, esta es la información deportiva, mañana la vamos a se va a estar confirmando y veremos que eh termina colocando Carrenio eh con este probable 11 que todavía no está definido ni mucho menos, ¿no? Mañana la previa de las 13 horas eh allí en El Ubilla de Melo con el Menchi Matías Méndez en el comentario con Saber la locución comercial, quien hablan el relato Marquitos Cardoso. Eh, estaremos palpitando este partido donde quedan
 
 [00:31:44] Speaker 3: Marquitos Cardozo. Estaremos palpitando este partido donde quedan ocho finales. Hay que tratar de ganar dos partidos seguidos, meter dos partidos seguidos para después ir por el tercero. Porque después se viene Torque. Entonces, es fundamental acá ganar para seguir con vida, donde Nacional empate o pierda, se termina la chance hasta matemáticamente hablando. Sí, ya sería... Cada partido es una final. ¿Con Torque ya está confirmado el lunes 5? Hay un bosquejo.
 
@@ -284,10 +298,13 @@
 [00:32:55] Speaker 3: Damián quiere un saludo antes. Ahí viene Damián, qué lindo. Cortito, porque se van a venir los bolsos de Pando. Tengo un dato para usted, Moreira. Se van a venir los bolsos de Pando y está Santiago Aldabalde, que ya lo vamos a recibir. Cierre ahí. Mientras Damián se acomoda, Moreira, le voy a tirar este dato y le mando un saludo al Menchi, que siempre está muy atento a todos los detalles. A ver.
 
 [00:33:17] Speaker 5: La primavera florece de mayo.
+> *YouTube (00:33:17):* todos los detalles. A ver, la primavera acá florescer de maya, ¿no? Que me dice que estamos en 699,965
 
 [00:33:19] Speaker 1: [ríe]
+> *YouTube (00:33:19):* la primavera acá florescer de maya, ¿no? Que me dice que estamos en 699,965
 
 [00:33:21] Speaker 3: Me dice que estamos en 69.965 suscriptores. Estamos a 35 de los 70.000, Moreira. Me acaba de decir Matías Méndez, el Menchi, al que le mando un abrazo grande. Estamos a 35 suscriptores de llegar a los 70.000. Tremendo. Gracias a todos. Que obviamente no son sociomiembros. Si llegamos a tener 70.000 sociomiembros, estaríamos ya... Los suscriptores de la cuenta. Son los suscriptores de la cuenta, que te suscribís gratis ahí. Gracias. Y a todos los que son sociomiembros del canal se va a venir un nuevo sorteo también. Ya
+> *YouTube (00:33:21):* ¿no? Que me dice que estamos en 699,965 suscriptores. Estamos a 35 de los 70,000. Moreira me acaba de decir Matías Méndez, el Menchi, al que le mando un abrazo grande. Estamos a 35 suscriptores, llega a los 70,000. Bueno, tremendo. Eh, de que obviamente no son socios miembros. Si llegamos a tener 70,000 socios miembros, bueno, eh está estaríamos este ya e los suscriptores de la cuenta, son los suscriptores de la cuenta que te suscribís ahí y a todos los que son socios del canal se va a venir un nuevo sorteo también. Ya se va a venir Santiago Aldabalde, pero tenemos un amigo acá que nos pasó a visitar, ¿eh?
 
 [00:33:51] Speaker 3: se va a venir Santiago Aldabalde, pero tenemos un amigo acá que nos pasó a visitar. Mire qué bien. Qué facha. Qué facha.
 
@@ -368,10 +385,12 @@
 [00:36:07] Speaker 5: No sé, algo, no tengo bien claro.
 
 [00:36:10] Speaker 3: Se lo vamos a preguntar a Santiago Aldabalde.
+> *YouTube (00:36:10):* bien claro. Bueno, se lo vamos a preguntar. Lo que sé que hay que bicharr una página 51, algo por ahí.
 
 [00:36:11] Speaker 5: Lo que sé es que hay que bichar alguna página 51 o algo por ahí.
 
 [00:36:15] Speaker 3: Sí, bueno, ahí vamos a estar.
+> *YouTube (00:36:15):* 51, algo por ahí. Sí. Bueno, ahí vamos que nos interesa a nosotros que vamos a la port, ¿no? Porque bueno, hoy salió, me imagino
 
 [00:36:16] Speaker 5: Que nos interesa a nosotros, que vamos a la "Do" Sports.
 
@@ -386,8 +405,10 @@
 [00:37:45] Speaker 6: Sí, estuvimos charlando con él para que venga también a conversar con socios e hinchas de la zona, justamente con este tema que está sobre el tapete hoy, más que interesante, importante para el futuro de nuestro club.
 
 [00:37:59] Speaker 3: Así que estaremos la semana que viene. Nosotros quisimos, obviamente, hoy hacer la nota acá con lo que implica esta nota tan importante después de esta semana con muchos dirigentes que salieron a poner y sembrar dudas al proyecto. Y está bueno para que hoy Aldabalde despeje todas las cuestiones y cada uno después saque sus conclusiones. Pero ¿cómo viene la primavera tricolor en Pando? Mañana se festeja de 12 a 15 horas en la Plaza Constitución de Pando, ahí en la Plaza de Pando, Vikingo, una movida que es una
+> *YouTube (00:37:59):* de nuestro club. Bueno, así que estaremos este la semana que viene. Nosotros quisimos obviamente hoy hacer la nota acá este con con lo que implica, ¿no? Este esta nota tan importante después de esta semana con eh bueno, este muchos este dirigentes que salieron a a poner y sembrar dudas al proyecto y está bueno para que hoy alabalde despeje todas las las cuestiones y bueno y cada uno después saque sus conclusiones. Pero bueno, ¿cómo viene la la primavera tricolor en Pando? Mañana se festeja de 12 a 15 horas en la Plaza Constitución de Pando, ahí en la plaza de Pando Vikingo, una movida que bueno que que es una iniciativa ahí del consulado y que tiene un apoyo tremendo de la 30 de
 
 [00:38:29] Speaker 3: iniciativa del consulado y que tiene un apoyo tremendo de La Treinta de Pando, de toda la familia de Pando, ¿no?
+> *YouTube (00:38:29):* una iniciativa ahí del consulado y que tiene un apoyo tremendo de la 30 de Pando, de toda la la familia ahí de de de Pando, ¿no? Exacto. Exactamente. el consulado eh ya
 
 [00:38:37] Speaker 6: Exacto. Exactamente. Ya el consulado como equipo está trabajando justamente hace un año, trabajando fuerte y duro, por suerte a corazón, a pulmón. Y con un montón de movidas, iniciativas que hemos tenido la suerte de hacer e involucrar a un montón de hinchas y socios de la zona. Y en este caso le toca a los más chiquitos, va a ser nuestra primera edición. Toda la tanda que hubo de días del niño tricolor con mucho éxito en todo el país. La última edición
 
@@ -410,6 +431,7 @@
 [00:40:50] Speaker 3: Bien. Ahí para unir a la hinchada está buenísimo, la familia. Y aparte juega Nacional, así que me imagino que van a hacer...
 
 [00:40:57] Speaker 6: Juntito. Terminamos y nos vamos a ver el partido.
+> *YouTube (00:40:57):* van a ser este no este va terminamos y nos vamos a ver el partido. Ahí va, ¿no? Que empieza justo a las 15 horas, así que es la previa del partido.
 
 [00:41:00] Speaker 3: Ahí va. Que empieza justo a las 15 horas, así que es la previa del partido. Así que bueno, Vikingo, te mando un abrazo en tu nombre a todos los que han laburado por este evento. Sabemos que ahí en Pando son bolsos de ley, que siempre están en todos los partidos, siempre están tratando de ayudar, colaborar, de estar cerca de Nacional desde todo punto de vista. Y les hacemos el aguante, el apoyo. Han recibido muchos saludos, mucho apoyo de jugadores, de integrantes de otros medios partidarios también, de todos dando una mano.
 
@@ -448,6 +470,7 @@
 [00:45:58] Speaker 3: Olvídate, tírate de cabeza como lo hacía el Tito. PuntoHome, construí tu casa, viví tu hogar. Ya sabes. Y también de la mano de El Mercado de la Limpieza, ahí ubicados en San José, 946, esquina Wilson Ferreira Aldunate. Ahí venden productos de limpieza por mayor y menor desde hace más de 15 años. Proveen de insumos, artículos líquidos, plásticos y demás a empresas locales, comerciales, restaurantes, hoteles y hogares a todo el país, con envíos a todo el Uruguay, con ventas por mayor,
 
 [00:46:28] Speaker 3: por menor. Tienen su línea de líquidos con excelente rendimiento y control de calidad. Tienen más de 2.000 artículos de venta, tienen de todo. Su principal premisa es el servicio brindado y la velocidad en las entregas de pedidos a todo el Uruguay. Ahí en San José 946, entrá a la web, elmercadodelalimpieza.com y también un WhatsApp con trato directo al 098 058 793 y en Instagram elmercado_de_la_limpieza_uy, con una línea de perfumadores realmente
+> *YouTube (00:46:28):* con ventas por mayor, por menor. Eh tienen, bueno, eh ahí su línea de líquidos con excelente rendimiento y control de calidad. Tien más de 2,000 artículos de venta, eh tienen de todo. Eh este su principal premisa es el servicio brindado y la velocidad en las entregas de pedido eh a todo el Uruguay. Ahí en San José 9:46, entrá a la web eh el mercadolalimpieza.com y y también un WhatsApp contrato directo al 098 05793 y en Instagram el mercado de la limpieza UI con una línea de perfumadores realmente muy buenas. Eh, tenés realmente de todo con la atención de
 
 [00:46:58] Speaker 3: muy buena. Tenés realmente de todo con la atención de nuestro amigo Enrique, en elmercadodelalimpieza.com. Todo en artículos de limpieza.
 
@@ -468,8 +491,10 @@
 [00:48:16] Speaker 3: Estamos en Carnicería Los Hermanos y esto está explotando, Miguel. Nuestro amigo Miguel.
 
 [00:48:21] Speaker 9: Dos bolsos tenés que venir a conocer nuestra promo, la pasión y color: dos kilos de nalga de pollo, un kilo de nalga de carne y dos kilos de papas fritas para freír a tan solo $ 1100.
+> *YouTube (00:48:21):* Y esto está explotando, Miguel. Nuestro amigo Miguel Bolso. Tenés que venir a con nuestra promo, la pasión tricolor. 2 kg deas de pollo, 1 kg deza de carne y 2 kg de papa frita para freír a tan solo 10 100 pesos. Un regalo. Esto explota. Hay de todo. Como pueden ustedes pueden
 
 [00:48:30] Speaker 3: Un regalo. Esto explota. Hay de todo, como ustedes pueden ver, no falta nada en Carnicería Los Hermanos, en Montecassinos y Comandante Braga, abierto de 8 a 20 horas, de lunes a viernes de 8 a 17 horas los sábados. Y ya sabés, seguilos en Instagram, ahí está el WhatsApp para también hacer tus pedidos, que te lo envían a domicilio, que no se te queme el asado. Vamos arriba y también de la mano de Queso Artesano, que es queso queso, ya sabés, el queso de los uruguayos, que hoy a Santiago le vamos a dar
+> *YouTube (00:48:30):* 10 100 pesos. Un regalo. Esto explota. Hay de todo. Como pueden ustedes pueden ver no falta nada. carnicería Los hermanos en Montecaceros y comandante Braga abierto de 8 a 20 horas de lunes a viernes de 8 a 17 horas eh los sábados y ya sabes, seguiros en Instagram, ahí está el WhatsApp eh para también hacer tu pedido eh que te lo envían a domicilio, que no se te queme la vamos arriba y también de la mano de queso artesano, que es queso queso, ya sabés el queso de los uruguayos que hoy a Santiago le vamos a dar eh los dos, fino y en hebras, eh el queso es queso,
 
 [00:49:01] Speaker 3: los dos, fino y en hebras. El queso queso. No contiene gluten. Riquísimo, realmente. Queso Artesano. Pedilo, buscalo en los principales comercios del país. Queso Artesano es queso queso. Estamos en vivo en Pasión Tricolor Play, con Santiago Aldabalde, al que le doy la bienvenida, con Fede Rey, que también se suma a esta nota y todos ustedes en el chat en vivo. Un like, un me gusta. Vamos a estar intercambiando del proyecto del Gran Parque Central, el master plan. Santiago, te doy la bienvenida, las buenas tardes, buenas noches.
 
@@ -478,10 +503,12 @@
 [00:50:01] Speaker 3: en los socios. ¿A quién le creemos? Porque se dice una cosa, se dice otra y el socio en el medio para una asamblea que fue llamada para el 24 de octubre. Así que te doy la bienvenida, preguntarte cómo estás.
 
 [00:50:14] Speaker 10: Estoy bien, gracias por la invitación. Creo que es la tercera o la cuarta, no me acuerdo. La última vez fui al estudio equivocado, porque pierdo un poco la idea de que se han mudado. Felicitaciones de vuelta por la nueva casa. La verdad que estoy contento. Estoy cansado porque son muchos temas, hay mucho trabajo, pero estoy contento porque siento que esta discusión que se está dando es justamente lo que Nacional necesitaba. Y creo que hay un montón de cosas que han sucedido en el buen sentido
+> *YouTube (00:50:14):* Así que bueno, te doy la bienvenida a preguntarte, ¿cómo estás? Estoy bien, gracias por la invitación. Creo que es la tercera o la cuarta, no me acuerdo. La última me fui al estudio equivocado porque pierdo, perdo un poco la idea que se ha mudado. Felicitaciones de vuelta por el nueva la nueva casa. Eh, yo estoy, la verdad que estoy contento, eh, estoy cansado porque son muchos temas, hay mucho, mucho trabajo, pero estoy contento porque siento que esta discusión que se está dando eh es justamente lo que Nacional necesitaba. Este, y creo que hay un montón de cosas que que han sucedido en en el buen sentido en los últimos 20 meses que venimos trabajando, que que creo que van
 
 [00:50:45] Speaker 10: en los últimos 20 meses que venimos trabajando, que creo que van a establecer un estándar, una nueva forma de vincularse con el club, los proyectos y el socio, exigir o pedir las cosas de determinada manera. Yo creo que los próximos proyectos de Nacional, sea cual sea, van a tener seguramente una encuesta previa para saber lo que piensa el socio. Creo que los nuevos proyectos van a tener un concurso, si se justifica. El último concurso nacional antes de este que hicimos por el master plan fue en 1957, 70 años
 
 [00:51:15] Speaker 10: atrás. Yo creo que la gente va a exigir que las cosas se hagan por concurso y no por: "Tengo esta idea, pongo esta idea".
+> *YouTube (00:51:15):* plan fue en 1957, 70 años atrás. Yo creo que la gente va a exigir que las cosas se hagan por concurso y no por tengo esta idea, pongo esta idea. Y e creo que
 
 [00:51:23] Speaker 3: Todo este proyecto no tuvo.
 
@@ -494,18 +521,23 @@
 [00:52:43] Speaker 3: ¿Por qué no se discutió antes este tema o unos meses antes para darle más tiempo también de proceso? ¿Eso fue pensado como una estrategia? Porque yo me imagino que informar al club y a todos los socios no debe ser una tarea fácil en un proyecto como este, que es gigante Pero obviamente el diálogo de ida y vuelta sale cuando uno ya empieza a ver una documentación o una situación donde las cosas estén un poco más reglamentadas. ¿Por qué esto no se dio antes para que tuviera más tiempo?
 
 [00:53:14] Speaker 10: Esto empezó el año pasado en enero con la encuesta y todo esto que acabamos de hablar, y el proyecto fue a directiva en agosto del 2025, hace más de un año. El proyecto se aprobó por unanimidad. El proyecto arquitectónico del estudio que ganó el concurso lo definió la Comisión de Patrimonio por unanimidad y la directiva lo aprobó y apoyó por unanimidad.
+> *YouTube (00:53:14):* se dio antes para que tuviera más tiempo? Porque esto empezó el año pasado, en enero, con la encuesta, todo esto que acabamos de hablar y el proyecto fue a directiva en agosto del 2025, hace más de un año. El proyecto se aprobó por unanimidad. El proyecto arquitectónico del del estudio que ganó la, o sea, el concurso lo definió la comisión de patrimonio por unanimidad y la y la directiva lo apodó por unanimidad. Lo apoyó por unanimidad. Eso fue en agosto del año pasado. Eso fue en agosto, hace más de un año, hace 13 meses. O sea, no hay mucha
 
 [00:53:38] Speaker 3: Eso fue en agosto del año pasado.
+> *YouTube (00:53:38):* unanimidad. Lo apoyó por unanimidad. Eso fue en agosto del año pasado. Eso fue en agosto, hace más de un año, hace 13 meses. O sea, no hay mucha
 
 [00:53:39] Speaker 10: Fue en agosto, hace más de un año, 13 meses. No hay mucha urgencia en ese sentido.
 
 [00:53:43] Speaker 3: Apoya por unanimidad el máster plan, pero no así la viabilidad económica.
 
 [00:53:46] Speaker 10: Por eso te digo. Les cuento las etapas. El máster plan tenía la estimación de 93 millones de dólares. Estaba dentro de la documentación que se votó y se aprobó, y las 14 etapas. No era un proyecto de arquitectura, era un proyecto de arquitectura con 14 etapas con una evaluación y una estimación, como siempre dijimos, de 93 millones de dólares. En algún momento se habló, y ayer se está repitiendo, ayer lo dijeron Singlet y Bardanca, que sacando el techo y todas las cintas digitales y las pantallas se pueden bajar 20 millones,
+> *YouTube (00:53:46):* pero no así la viabilidad económica. Por eso te digo, descuento las etapas. El master plan tenía el la estimación de 93 millones de dólares. Estaba entre la documentación que se votó y que se aprobó y las 14 etapas. No era un proyecto de arquitectura, era un proyecto de arquitectura con 14 etapas, con una evaluación, estimación, como siempre dijimos, de 93 millones dó. Y en algún momento que se habló y que ahora se está repitiendo, el otro día, ayer lo dijeron este singleti Bardanca, que sacando el techo y todas las cintas de de digitales y las pantallas se pueden bajar 20 millones, que es casi un 25% del costo original. Eso lo dijimos el
 
 [00:54:16] Speaker 10: que es casi un 25 % del costo original. Eso lo dijimos desde el primer día, los famosos 93 o 70, porque ahora están editando audios. Entonces, yo decía 93 o 70 y hoy son 150. Yo nunca dije eso.
+> *YouTube (00:54:16):* bajar 20 millones, que es casi un 25% del costo original. Eso lo dijimos el primer día, eran los famosos 93 o 70 porque ahora están editando audios. Entonces yo decía 93 o 70 y hoy son 150. Yo nunca dije que son 150. Ahora, Santiago, ¿sentís que se politizó
 
 [00:54:28] Speaker 3: Santiago, ¿sentís que se politizó el tema definitivamente?
+> *YouTube (00:54:28):* Yo nunca dije que son 150. Ahora, Santiago, ¿sentís que se politizó el tema definitivamente? Hm. Eh, yo creo que todos los temas son
 
 [00:54:34] Speaker 10: Yo creo que todos los temas son políticos, porque en definitiva acá lo que tenemos que definir es el club que queremos.
 
@@ -520,6 +552,7 @@
 [00:55:22] Speaker 10: en una actualidad, estaban pensadas en un futuro proyectado. Lo que hace grandes a las organizaciones es la capacidad de proyectar el futuro. Esa es la verdad. Hoy Nacional tiene una oportunidad histórica de proyectar el futuro y soñar con este proyecto, que le faltan un montón de etapas. Hay que seguir avanzando. Nosotros lo único que pedimos es que el socio apruebe el máster plan que aprobó la directiva. No tiene que aprobar si cuesta 120 o 130. No tiene que aprobar si el parking o los parkings,
 
 [00:55:52] Speaker 10: que ahora vamos a hablar de todos esos temas. Tiene que aprobar y decir: "Bueno, sigamos avanzando con todas estas garantías", que ahora las vamos a leer en el proyecto de moción que está presentado. Este proyecto está apoyado o es la continuación de esto que estábamos hablando. Nacional empieza a jugar en el parque en el año 1900. Y la visión brillante que tuvieron un montón de dirigentes y de socios fue tener esa continuidad.
+> *YouTube (00:55:52):* no tiene que aprobar si el parking o los parking, que ahora vamos a hablar de todos esos temas. tiene que aprobar si bueno sigamos avanzando con todas estas garantías que ahora las vamos a leer en en el proyecto de moción que está que está presentado y este, perdón, y este este proyecto está apoyado o es la continuación de esto que estábamos hablando. Nacional empieza a jugar en el parque en el año 1900 y la visión que tuvieron un montón de dirigentes y de y de socios brillante fue tener esa continuidad. En 1957 se hizo una sede del tamaño de la sede que
 
 [00:56:22] Speaker 10: En 1957 se hizo una sede del tamaño de la sede que tenemos hoy. En 1957. Que no generaba un dólar. Eso es tener visión, eso es ser visionario, eso es proyectar el club. Por eso somos un club grande del mundo.
 
@@ -551,7 +584,8 @@
 
 [00:58:32] Speaker 3: Yo creo los números. Porque acá ustedes dicen: "Esto va a costar 93 millones y por los desfasajes se puede ir a 105". Decurnex dijo que él contrató una consultora
 
-[00:58:50] Speaker 3: ante esto que presentó CPA Ferrere y se puede ir a 150 o 170 el proyecto. Ayer lo dijo también Singlet Bardanca y hoy también creo que habló Tatiana Villaverde, lo que más les preocupa es De alguna manera no están contemplando esos 26 millones que tiene que poner Nacional sí o sí para que financien la obra.
+[00:58:50] Speaker 3: ante esto que presentó CPA Ferrere y se puede ir a 150 o 170 el proyecto. Ayer lo dijo también Singlet y Bardanca y hoy también creo que habló Tatiana Villaverde, lo que más les preocupa es De alguna manera no están contemplando esos 26 millones que tiene que poner Nacional sí o sí para que financien la obra.
+> *YouTube (00:58:50):* que eh ante esta esto que presentó CPA Ferrere y se puede ir a 150 o 170 el proyecto y que lo que más les preocupa y ayer lo dijo también Singleti Bardanca, hoy también este creo que habló una Villaverde, lo que más les preocupa es que eh de alguna manera no están contemplando esos 20 millones, 26 millones, perdón, que tiene que poner Nacional sí o sí para que financen la obra. Pero, ¿cómo no se van a estar contemplando si están en el modelo que estamos? Claro, pero ellos dicen que es
 
 [00:59:15] Speaker 10: ¿Pero cómo no los van a estar contemplando si están en el modelo que estamos leyendo?
 
@@ -566,6 +600,7 @@
 [01:00:00] Speaker 3: [carraspeo]
 
 [01:00:01] Speaker 10: , que explicaba que la estimación que nosotros teníamos era que 20 000 socios, que es un tercio del padrón pagante hoy, porque hoy están pagando 60 000 socios, hay 5000 que están atrasados, que no quiere decir que no paguen, sino que pagan con atraso, pero son 60 000 socios. Entonces, nosotros decíamos: "Bueno, nosotros creemos que hay un 30 % que puede poner $10 por mes". Era una hipótesis.
+> *YouTube (01:00:01):* marzo, ya que explicaba que la estimación que nosotros teníamos que 20,000 socios, que es un tercio del padrón pagante hoy, porque hoy están pagando 60,000 socios, hay 5,000 que están atrasados, que no quiere decir que no paguen, sino que pagan con atraso, porque son 60,000 socios. Entonces nosotros decíamos, bueno, solo creemos que hay un 30% que puede poner dólar por mes. Era una hipótesis. ¿dánto tiempo?
 
 [01:00:20] Speaker 3: ¿Durante cuánto tiempo?
 
@@ -578,30 +613,40 @@
 [01:01:19] Speaker 10: Sí, ahí te paso, querido Joaco. Ese audio, que es un extracto de la nota de El Espectador, sobre la que hay una campaña de mensajes, de tuits y concretamente acá una persona teniendo un micrófono dijo que yo no tengo honestidad intelectual porque había dicho $40, $50 pesos la cuota. Y lo repitió Fernando Brugo en Radio Caro. Entonces, se está entrando en un estilo que yo no comparto y que no voy a entrar en eso.
 
 [01:01:44] Speaker 3: Vos decís que esto no estuvo escrito, porque acá me dicen: "Eso es de la CPO, no de la CPA". Y se puso por escrito lo de 22 500 socios $10.
+> *YouTube (01:01:44):* entrar en eso. O sea, vos decís que esto no estuvo escrito porque acá me dicen eso es eso es de la CPO, no de la CPA, ¿eh? Y se puso por escrito lo de 22,500 socios. Sí, sí, está por escrito. Lo que yo te acabo de decir, está en una celda. Sí,
 
 [01:01:53] Speaker 10: Sí, está por escrito lo que yo te acabo de decir, está en una celda. Está basado en la estimación que tuvimos en la encuesta y está basado también en la realidad de Nacional.
+> *YouTube (01:01:53):* Sí, sí, está por escrito. Lo que yo te acabo de decir, está en una celda. Sí, sí. Y está basado está basado en la estimación que tuvimos en la encuesta y está basado también en la realidad Pero esos no son números muy optimistas. Por eso digo, bueno, ahí vamos a analizar eso, pero 26
 
 [01:02:02] Speaker 3: Pero esos no son números muy optimistas.
+> *YouTube (01:02:02):* está basado también en la realidad Pero esos no son números muy optimistas. Por eso digo, bueno, ahí vamos a analizar eso, pero 26
 
 [01:02:04] Speaker 10: Vamos a analizar eso.
+> *YouTube (01:02:04):* Pero esos no son números muy optimistas. Por eso digo, bueno, ahí vamos a analizar eso, pero 26 millones vamos a terminar porque si no son muchas
 
 [01:02:06] Speaker 3: 26 millones.
 
 [01:02:07] Speaker 10: Vamos a terminar, porque si no son muchas cosas. Vamos a cerrar el tema. Esa fue una estimación de $10. Hoy 32 000 personas pagan la cuota del básquet.
 
 [01:02:18] Speaker 3: Pero es obligatorio eso.
+> *YouTube (01:02:18):* pero es obligatorio eso. No, no, no, no es obligatorio. ¿Puedes bajarte? Claro, por eso son 32 y por eso son 32,
 
 [01:02:19] Speaker 10: No.
+> *YouTube (01:02:19):* pero es obligatorio eso. No, no, no, no es obligatorio. ¿Puedes bajarte? Claro, por eso son 32 y por eso son 32,
 
 [01:02:19] Speaker 3: No es obligatorio. Podés bajarte.
+> *YouTube (01:02:19):* pero es obligatorio eso. No, no, no, no es obligatorio. ¿Puedes bajarte? Claro, por eso son 32 y por eso son 32,
 
 [01:02:21] Speaker 10: Claro, por eso son 32 y no 60. Yo digo: si 32 mil pagan la cuota del básquetbol, con lo lindo que es el básquetbol de Nacional, pero yo creo que el parque tiene otro peso. Nacional aumentó 50 % la cuota en un momento por una necesidad financiera.
+> *YouTube (01:02:21):* No, no, no, no es obligatorio. ¿Puedes bajarte? Claro, por eso son 32 y por eso son 32, ¿no? 60. Entonces yo digo, si 32,000 pagan la cuota del bajo que es el bacote nacional, pero yo creo que el parqué tiene otro peso, me parece. Yo digo, Nacional aumentó 50% de la cuota en en un momento por una necesidad financiera. 2018 a cambio de arreglar un problema
 
 [01:02:40] Speaker 3: 2018.
 
 [01:02:41] Speaker 10: A cambio de arreglar un problema financiero sin límite y no opcional. 50 %. ¿Pasó algo?
+> *YouTube (01:02:41):* necesidad financiera. 2018 a cambio de arreglar un problema financiero sin límite y no opcional. 50% pasó algo y se habrá Sí, se borraron muchos socios. Está bien, pero digo acá la
 
 [01:02:49] Speaker 3: Sí, se borraron muchos socios.
+> *YouTube (01:02:49):* 50% pasó algo y se habrá Sí, se borraron muchos socios. Está bien, pero digo acá la cuota se sigue cobrando. Hoy es el día
 
 [01:02:51] Speaker 10: Está bien, pero la cuota se sigue cobrando y esa cuota de 50 % llega hasta el día de hoy y hoy tenemos más socios que nunca.
 
@@ -610,6 +655,7 @@
 [01:03:00] Speaker 10: La realidad dice una cosa: hay otros clubes locales que han aumentado 40 % la cuota el año pasado y ahí están. Esa es la realidad. Después todos podemos opinar lo que queramos, pero una vez más hay que seguir avanzando. Lo que yo dije en El Espectador es que había cuota de 40, 50, 200 pesos. Me gustaría escuchar ese audio.
 
 [01:03:21] Speaker 3: Hay un análisis de una cuota extra para el Parque Central, como puede ser la cuota del básquetbol, que no es significativa. Hay cuota de 40 pesos, de 50 pesos, 200 pesos y que son voluntarias. El socio, en todo caso, si esa cuota existiera, va a poder tomar la decisión de aportar o no, tiene la posibilidad de bajarse, no es un aumento de cuota. Acá lo que algunos cuestionan y también dicen: ¿pero recién ahora decimos que Nacional tiene que poner plata?
+> *YouTube (01:03:21):* escuchar ese audio? Hay un análisis de de una cuota extra para el parque central, como puede ser la cuota del basketbol, que no es significativa. Hay cuotas de 40 pesos, de 50 pesos, pesos y que son voluntarias. O sea, el socio en todo caso si esa cuota existiera va a poder tomar la decisión de aportar o no. Tiene la posibilidad de bajarse, no es un aumento de cuota. Acá lo que lo que por ahí algunos cuestionan y también dice, "Pero recién ahora decimos que Nacional tiene que poner plata." Porque no, no es que Nacional tiene que poner plata. La
 
 [01:03:46] Speaker 10: No es que Nacional tiene que poner plata.
 
@@ -618,16 +664,20 @@
 [01:04:05] Speaker 10: Esa plata hoy no existe en Nacional. Es una cuota extra que se va a generar para el fideicomiso. Pero vamos a cerrar el tema de los 40 y 50, 200. Yo dije 40, 50 y 200. ¿Estamos de acuerdo?
 
 [01:04:14] Speaker 3: Al aire ahí en El Espectador sí. 40, 50 y 200.
+> *YouTube (01:04:14):* acuerdo? Al aire ahí en el espectador. Sí, 40 50. Lo digo porque ayer hubo un tema de honestidad intelectual sobre mis
 
 [01:04:17] Speaker 10: Lo digo porque ayer hubo un tema de honestidad intelectual sobre mis palabras. Yo no entro en ese juego, pero decir una cosa de ese nivel sin escuchar un audio, yo quiero creer que fue que tengo mala dicción de repente y no se entendió, pero a mí ese juego, esa regla de juego, yo no voy a entrar en eso. Después vamos a hablar de honestidad intelectual, porque todo lo que estamos discutiendo hoy es gracias a todo el laburo que se ha hecho por la Comisión de Patrimonio, por CPA, porque todo esto, hoy estamos discutiendo Excel
+> *YouTube (01:04:17):* Al aire ahí en el espectador. Sí, 40 50. Lo digo porque ayer hubo un tema de honestidad intelectual sobre mis palabras, o sea, es me parece, yo no entro en ese juego, pero decir una cosa de ese nivel sin escuchar un audio, yo quiero creer que fue yo tengo mala adicción de repente y no se entendió, pero a mí ese juego, esa regla de juego, yo no voy a entrar en eso. Yo no voy a entrar. Después vamos a hablar de honestidad intelectual porque todo lo que estamos discutiendo hoy es gracias a todo el laburo que se ha hecho por la comisión de patrimonio por CPA, porque todo esto hoy estamos discutiendo Excel de CPA y modelos, si no hubiera
 
 [01:04:47] Speaker 10: de CPA y modelos. Si no hubiera honestidad intelectual, eso no existiría. Entonces, hay que tener mucho cuidado con las cosas que se dicen y cuando uno se equivoca tiene que pedir disculpas.
 
 [01:05:00] Speaker 3: Como hay un informe escrito, porque ayer algo que decían era: está todo bien con decir de boca.
 
 [01:05:06] Speaker 10: No, pero esto es otra cosa. Esto es cuestionar la honestidad intelectual de una persona con un audio que está equivocado. Eso es un tema que está cerrado. No quiero hablar más de eso. Ahora vamos a hablar de los 10 dólares. Los 10 dólares, Javier, es un modelo y yo creo que se van a conseguir 10 dólares de 20 mil personas, pero si no son 10 dólares de 20 mil personas, podemos tener otro modelo que tenemos, que tenemos mil, porque esto fue en marzo, nosotros estamos en septiembre, nosotros seguimos trabajando todos los días. Entonces, yo te digo, si el socio del interior y el socio del exterior pone 100 pesos por mes, el cadete pone 17 pesos
+> *YouTube (01:05:06):* eh decir de boca, ¿no? No, pero lo que pero esto es otra cosa. Esto es cuestionar la unidente de una persona con un audio que está equivocado. Eso es un tema que está cerrado. No quiero hablar más de eso, pero esos ahora vamos a hablar de los $ Javier es un modelo y yo creo que se van a conseguir $10 de 20,000 personas. Pero si no son $10 20,000 personas podemos tener otro modelo que tenemos que tenemos 1000 porque esto fue en marzo, solo estamos en septiembre, solo seguimos trabajando todos los días. Entonces yo te digo, si el socio del interior y el socio del exterior pone 100 pes por mes, el cadete pone 17 pesos por mes, que son 200 pes por año, y el socio full yat lo pone 200
 
 [01:05:36] Speaker 10: por mes, que son 200 pesos por año y el socio full, el socio platino pone 200 y pico, ¿lo ves viable? Podemos estar eternamente discutiendo eso. Cuántos modelos podemos poner en un Excel.
+> *YouTube (01:05:36):* pone 17 pesos por mes, que son 200 pes por año, y el socio full yat lo pone 200 y pico, ¿lo ves viable? Bueno, podemos estar eternamente discutiendo eso. ¿Cuántos modelos podemos poner en un Excel? Claro, yo la única diferencia ahí que tengo es que que me genera la duda
 
 [01:05:47] Speaker 3: Claro, yo la única diferencia ahí que tengo es que me genera la duda de lo que escuché de Decurnex y lo que escuché ayer de Singlet y Bardanca, es que esos 26 millones de dólares los tiene que poner Nacional obligatoriamente.
 
@@ -638,20 +688,26 @@
 [01:06:14] Speaker 10: Claro, para el proyecto, como una cuota excepcional. No está en los flujos de Nacional. Entonces, el modelo que fue a directiva, el que están todos hablando, dice: aporte de sobrecuota, hasta acá, no te digo porque después es todo muy complicado. Aporte de sobrecuota, muro de la historia u otras opciones de fundraising, de fondeo, son la co-inversión que exigen los financiadores en general, a falta de otros contratos y garantías en esta etapa de proyecto.
 
 [01:06:41] Speaker 3: ¿Qué pasa con lo que dijo Decurnex? Vos hacés todo eso de manera voluntaria, pero según Decurnex dice que eso no es así, no es viable porque nadie te presta esa plata si no puede ir contra un fideicomiso de algo ya e inevitablemente todo esto lo vas a tener que hacer obligatoriamente subiendo la cuota social como una obligación y no como una voluntad.
+> *YouTube (01:06:41):* etapa de proyecto. ¿Qué pasa con lo que dijo Decurés? que está todo bien con empez con vos hacés todo eso de manera voluntaria, pero según de Curnés dice que eso no es así, no es viable porque nadie te presta esa plata si no puede ir contra un fidecomiso de algo ya. E inevitablemente todo esto lo vas a tener que hacer obligatoriamente subiendo la cuota social como una obligación y no como una voluntad. Yo creo que en la cuota del vasco del año pasado la pagaron 31,000 personas y
 
 [01:07:03] Speaker 10: Yo creo que la cuota del básquetbol el año pasado la pagaron 31 mil personas y este año 32 mil. Además, como vos vas desembolsando ese dinero, vos podés ir corrigiendo, porque además esta cuota después se actualiza por inflación, etcétera. Pero acá lo que dice claramente es que esta co-inversión, este dinero, porque vos estás pidiendo 90 y pico de millones de dólares más las actualizaciones, que ahora vamos a hablar de eso. Entonces, obviamente te dicen: "Muchachos, ustedes no ponen absolutamente nada, no ponen garantía, no ponen nada".
+> *YouTube (01:07:03):* voluntad. Yo creo que en la cuota del vasco del año pasado la pagaron 31,000 personas y este año 32,000. O sea, vos podés, además como como vos vas desembolsando ese dinero, vos puedes ir corrigiendo, ¿me explico? Porque además esta cuota después se actualiza por inflación, etcétera. Pero acá lo que dice claramente es que esta coinversión, este dinero, porque vos estás pidiendo eh 90 y pico de millones de dólares más las actualizaciones, que ahora vamos a hablar de eso. Eh, entonces, obviamente te dicen, "Bueno, muchachos, ustedes no ponen absolutamente nada, no ponen garantía, no ponen nada." Entonces te dicen, bueno, tienen que demostrar en
 
 [01:07:33] Speaker 10: Entonces te dicen: "Bueno, tienen que demostrar en definitiva que el club o que la institución está dispuesta". Como nosotros no queremos tocar los fondos de la institución, creemos y confiamos absolutamente que el socio nacional va a apoyar esto. Capaz que estamos equivocados, pero todo eso es la discusión eterna. ¿Cuánto más podemos discutir esto? Si es mucho, si es poco, si son 22 mil de 10 dólares, 40 mil de 5 dólares, 60 mil. ¿Cuánto más vamos a discutir esto? ¿Realmente tiene sentido?
+> *YouTube (01:07:33):* no ponen nada." Entonces te dicen, bueno, tienen que demostrar en definitiva que el club o que la institución está dispuesta. Como nosotros no queremos tocar los fondos de la institución, creemos y confiamos absolutamente que el socio nacional va a apoyar esto. Capaz que estamos equivocados, pero todo eso es la discusión eterna. Podemos estar, ¿cuánto? ¿Cuánto más podemos discutir esto? si es mucho, si es poco, si son $2,000 de $10, 40,000 de $5, 60,000 de cuánto más vamos a discutir esto realmente tiene sentido. Y bueno, lo que pasa que eh a ver, yo creo que eh se genera este y por eso
 
 [01:08:00] Speaker 3: Y bueno, lo que pasa que
 
 [01:08:05] Speaker 3: se genera, y por eso también en lo personal empiezo por este punto, porque es un punto de sin esta plata no hay proyecto
 
 [01:08:14] Speaker 10: Sin esta plata en el proyecto, no, porque acá dice, Javier, que cuando uno viene a leer las cosas tiene que leer todo. Eso es honestidad intelectual. Entonces, uno tiene que decir que acá dice que a falta de otros contratos y garantías en esta etapa del proyecto, porque si nosotros mañana tenemos un zócalo comercial, que tenemos un modelo que son 3.500 metros y otro que son 7.000, porque se utilizan los fondos de lo que sería la tribuna Atilio García. Es complicado, no quiero entrar porque si no, no terminamos nunca más. Pero yo ese zócalo comercial tengo la absoluta convicción, y ya he hecho un montón
+> *YouTube (01:08:14):* esta plata no hay proyecto. Sin esta plata no hay proyecto, ¿no? que acá dice Javier que lo que pasa que hay que cuando uno viene a leer las cosas tiene que leer todo porque eso es honestidad intelectual. Entonces uno tiene que decir que acá dice que a falta de otros contratos y garantías en esta etapa del proyecto porque si nosotros mañana tenemos un zócalo comercial que tenemos un modelo que son 3500 m y otro que son 7000 porque se utiliza los fondos de lo que sería la tribuna tila García, es complicado. No quiero entrar porque si no no terminamos nunca más. Pero si vos tenés, yo yo Zócalo Comercial tengo la absoluta convicción y ya he hecho un montón de contactos a nivel comercial de que va a estar 100% alquilado, 100%
 
 [01:08:44] Speaker 10: de contactos a nivel comercial, de que va a estar 100 % alquilado, con precontratos esperando que se alquile, porque me han llamado empresas amigas cuando me han escuchado. Y además hemos hablado con grupos muy grandes. Entonces, esos 7.000 metros, que estimamos 20 dólares el metro, que es un valor comercial absolutamente razonable. Después podemos hablar también de la validación de las hipótesis que nosotros estamos poniendo. Esos son 140.000 dólares por mes. En un año hay que multiplicar 140 por 12, te va
+> *YouTube (01:08:44):* absoluta convicción y ya he hecho un montón de contactos a nivel comercial de que va a estar 100% alquilado, 100% alquilado con precontratos esperando que se que se alquile. Porque me han llamado empresas a mí cuando me han escuchado y además hemos salado con grupos muy grandes. Entonces esos 7000 m que estimamos $ el metro que es un valor comercial absolutamente razonable. Después podemos hablar también de las de las validación de las hipótesis que nosotros estamos poniendo. Esos son este $10,000 por mes. Está que en un año hay que multiplicar 140 por 12 te va a dar este 1,680,000.
 
 [01:09:14] Speaker 10: a dar 1.680.000 dólares. Esos contratos, que en general son a 5,5 o a 10 años, son grandes superficies, vos los podés poner en garantía, porque vos estás dando una garantía de un tercero. No son flujos futuros, son contratos que dependen del pago de un tercero.
+> *YouTube (01:09:14):* que multiplicar 140 por 12 te va a dar este 1,680,000. Esos contratos que en general son a 5+5 o a 10 años y son grandes superficies, vos lo podés poner en garantía porque vos estás dando una garantía de un tercero. Entonces ahí ya no te van a exigir para no es son flujo futuro, son contratos que dependen del pago de un tercero. Eso es así porque ayer Verdanca yo le pregunte, eso es así porque yo trabajo en eso y yo
 
 [01:09:33] Speaker 3: ¿Eso es así? Porque ayer a Bardanca le pregunté.
 
@@ -680,8 +736,10 @@
 [01:12:45] Speaker 10: no por horas de ocupación. Entonces, nosotros dijimos que en el modelo nuestro tenemos cuatro shows en el año en el parking. Esos cuatro shows calculamos que hay una ocupación total. Al parking le asignamos un valor a la entrada y lo multiplicamos por los 900 lugares. Eso genera un flujo. Después tenemos los partidos de Nacional de campeonato local. Calculamos 20 partidos con una ocupación total. Sacamos los 250 lugares que van a utilizar los palquistas, que les corresponden, por lo menos con los contratos
 
 [01:13:15] Speaker 10: de palco vigentes. Los próximos hay que ver cómo se diseña el tema del parking. Entonces, hicimos esa cuenta, calculamos 15 dólares como un precio de estacionamiento de esos partidos, eso genera 225.000 dólares por año. Después calculamos los partidos de Copa y los clásicos con una entrada con un valor del ticket un poquito más alto, eso genera 75.000 dólares. Después generamos los eventos de la arena no deportivos, que calculamos 60 en el año, un poquito más de uno por semana, que es menos de lo que esperamos. Esos son
+> *YouTube (01:13:15):* corresponden, por lo menos con los contratos de palco vigentes. Los próximos hay que ver cómo se diseña el tema del parking. Entonces, hicimos esa cuenta, calculamos $1 como un como un este precio de estacionamiento de esos partidos. Eso genera 2225,000 por año. Después calculamos la los partidos de copa y los clásicos con una entrada con un valor de ticket un poquito más alto. Eso genera $75,000. Después generamos los eventos de la arena no deportivos que calculamos 60 en el año, un poquito más de uno por semana, que es menos de lo que esperamos. Esos son este a un valor unitario de $10 para para estar
 
 [01:13:45] Speaker 10: a un valor unitario de 10 dólares para estar varias horas en un evento. Ahí calculamos que el 50 % va a estar ocupado. Todo ese modelo, que es muy largo y muy complejo, genera en el mejor escenario, sin IVA, 3 millones de dólares y castigado un 30 %, genera 2 millones y medio de dólares de ingresos. Entonces, nosotros en el modelo dijimos que no vamos a poder operar este parking. Calculamos que puede tener 500.000 dólares de costo operativo, de mantenerlo, de limpiarlo,
+> *YouTube (01:13:45):* lo que esperamos. Esos son este a un valor unitario de $10 para para estar varias horas en un evento. Ahí calculamos este que el 50% va a estar ocupado. Bueno, todo ese modelo que es muy largo y muy complejo genera en en el en el mejor escenario sin IVA 3 millones de dólares y castigado un 30% genera 2,illones y medio de dólares de ingreso. Entonces nosotros en el modelo dijimos, bueno, nosotros no vamos a poder operar este parking. Esto calculamos que pueda tener de costo operativo, está de mantenerlo, de limpiarlo, la seguridad, las cámaras, anual,
 
 [01:14:15] Speaker 10: la seguridad, las cámaras, la electricidad.
 
@@ -694,6 +752,7 @@
 [01:14:46] Speaker 10: Pero perdón, para terminar. Ese millón de dólares, voy a abrir un paréntesis importante, al filtrar esta información irresponsablemente, cuando nosotros vayamos a negociar con el operador del parking, ya sabe lo que queremos cobrar. Si vos vas a negociar con las cartas vistas, va a ser muy difícil. Cuando vayamos a pedir una tasa, ya perjudicaron a Nacional mostrando lo que Nacional está dispuesto a pagar de tasa o cómo Nacional va a negociar los shows o cómo Nacional quiere arrendar
 
 [01:15:16] Speaker 10: los espacios del zócalo comercial, que no es un mini shopping. El 2,5 % o el 5 %, depende cómo se configure, de los metros totales del proyecto son comerciales. Se dicen muchas cosas, yo creo que hay que ser mucho más riguroso y cuando uno no sabe tiene que preguntar, no tiene que talentear.
+> *YouTube (01:15:16):* o cómo Nacional quiere arrendar los espacios del zócalo comercial, que no es un minihoing. El 2 y5 o el 5%, depende cómo se configure, de los metros totales del proyecto, son comerciales. Entonces, se dicen muchas cosas, yo creo que hay que ser mucho más riguroso y cuando uno no sabe tiene que preguntar, no tiene que talentear. No preguntaron y bueno, esto del parking te lo acabo de
 
 [01:15:35] Speaker 3: ¿No preguntaron?
 
@@ -712,6 +771,7 @@
 [01:16:00] Speaker 10: Fue una reunión muy larga y muy técnica. Hay un montón de puntos, pero si vos realmente querés encontrar las soluciones y querés entender, lo que hay que hacer es preguntar, informarse, como el tema de la cuota. Esos 10 dólares eran un modelo en marzo de 20.000 socios, lo que les acabo de explicar. Después hay 50 modelos posibles.
 
 [01:16:21] Speaker 3: ¿Vos estás dispuesto a ir a un debate con Decurnex públicamente?
+> *YouTube (01:16:21):* 50 modelos posibles. Vos, vos estás dispuesto a ir a un debate con Decurnex este púicamente. Yo no tengo tuve problema. Acá lo que pasa que hoy, por ejemplo, se salió a decir
 
 [01:16:25] Speaker 10: Yo no tengo problema. Acá lo que pasa es que hoy, por ejemplo, se salió a decir que hay cosas que no están incluidas en el modelo desde el punto de vista de los gastos. El modelo de la directiva estaba cuantificado en 93 millones de dólares en marzo. Después nosotros le hicimos todas las actualizaciones, que es lo que corresponde, decir: "Bueno, si esto nos va a llevar cinco años, se va a mover un montón de variables de inflación, se va a mover
 
@@ -742,12 +802,16 @@
 [01:18:46] Speaker 10: Con esto que estamos hablando. Vos tenés que tener un contrato de obra, tenés que tener un proyecto ejecutivo, que se está hablando, estamos 100 % de acuerdo. Obvio que sí. Lo que pasa es que vos tenés que tener un proyecto ejecutivo de un master plan que esté aprobado por el 75 % de los socios. Que ahí hay una discusión que es jurídica y conceptual o ética. Que si quieren hablamos de eso también, con todo gusto. Realmente Nacional se va a marcar en un proyecto. Además, el ejecutivo lo que dice es cómo se va a realizar la obra. Después tenés que hacer un segundo
 
 [01:19:16] Speaker 10: paso, que es seguir avanzando con todo el modelado de todos los ingresos y los contratos que podés ir cerrando y la financiación, y después tenés que hacer una licitación. Y ahí, justamente, el proyecto ejecutivo se hace para tomar decisiones. "Muchachos, estamos 20 millones de dólares arriba". Vamos a poner un ejemplo. No tengo ningún problema, porque es así en la vida misma. Saquemos el techo. El techo es el 25 %.
+> *YouTube (01:19:16):* obra. Después tenés que hacer un segundo paso que es seguir avanzando con toda la el modelado, digamos, de todos los ingresos y los contratos que puedes ir cerrando y la financiación y después tiene que hacer una licitación y ahí justamente el proyecto ejecutivo se hace para tomar decisiones, muchachos, eh, estamos 20 millones de dólares arriba. Vamos a poner un ejemplo, no tengo ningún problema porque es así, es la vida misma. Saquemos, saquemos el techo. Saquemos el techo. El techo es el 25%. Dijo 150, 170 millones. Bueno, pero yo te puedo decir 200,
 
 [01:19:40] Speaker 11: Te dijo 150, 170 millones.
+> *YouTube (01:19:40):* Saquemos el techo. El techo es el 25%. Dijo 150, 170 millones. Bueno, pero yo te puedo decir 200, Javier. Bueno, o seaemos estar
 
 [01:19:42] Speaker 10: Pero yo te puedo decir 200, Javier.
+> *YouTube (01:19:42):* Dijo 150, 170 millones. Bueno, pero yo te puedo decir 200, Javier. Bueno, o seaemos estar porque una cosa es el club social que si
 
 [01:19:45] Speaker 11: Una cosa es el club social, que si hay un desajuste pasaste de cuatro a ocho. Ahora, en un club como Nacional, donde haya un desajuste de 105 a 170.
+> *YouTube (01:19:45):* Javier. Bueno, o seaemos estar porque una cosa es el club social que si hay un desajuste pasaste de cuatro a ocho. Ahora, en un club como Nacional donde haya un desajuste de 105 170 vamos pero Javier si nosotros tenemos C. Digo, pasa que
 
 [01:19:54] Speaker 10: Pero Javier. Nosotros podemos generar todos los ingresos. Si yo te digo: "Va a costar 170, ¿nos vamos a fundir?" No hagamos nada, porque cuando hagamos solo el estadio, que va a costar 80 o 90, capaz cuesta 120. Entonces, no hagamos nada. Hay que hacer las cosas bien. No hay que dejar de hacer las cosas, hay que hacer las cosas bien. Entonces, yo digo, cuando terminamos el ejecutivo y el proyecto licitatorio, porque el ejecutivo sigue siendo una estimación más fina, pero sigue siendo una estimación, vos tenés que hacer una licitación y cuando llegás
 
@@ -788,10 +852,12 @@
 [01:22:08] Speaker 10: El problema del Parque Central fue que no había un fideicomiso y que los fondos que estaban destinados para una cosa los usaron para otra. No tiene nada que ver el Parque Central. Parque Central había armado en un remate 11 millones de dólares.
 
 [01:22:20] Speaker 11: Sí, claro.
+> *YouTube (01:22:20):* 11 millones de dólares. Sí, claro. pero digo es como la es como que Nacional debe 40
 
 [01:22:23] Speaker 10: Es como que Nacional debe 40 millones de dólares por el Parque Central.
 
 [01:22:25] Speaker 11: Escucho a Decurnex y dice todo lo contrario a lo que estás diciendo vos.
+> *YouTube (01:22:25):* es como la es como que Nacional debe 40 millones de dólares por el parque central. Escucho escucho a Decurnex y dice todo lo contrario de lo que estás diciendo vos. Está bien, pero justamente como es una discusión que podemos estar
 
 [01:22:28] Speaker 10: Está bien, pero justamente como es una discusión que podemos estar eternamente, yo lo que le pido a la gente es que lea la moción y que vea cómo es el proceso en el que se van tomando las decisiones. Porque si el proyecto cuesta 200 millones de dólares, no lo vamos a hacer, porque no lo vamos a poder hacer. Y ahí vamos a tener que trabajar sobre ese proyecto. Estoy poniendo un absurdo, yo no digo que va a costar eso. Yo estoy convencido de que va a costar otra cosa, y que tenemos algunas estrategias, como sacar el 25 % del costo, que es el techo y las pantallas, que se le pueden
 
@@ -860,12 +926,14 @@
 [01:31:09] Speaker 11: Eso es generar trevero.
 
 [01:31:10] Speaker 10: Ayer a mí me trataron de honesto intelectual y acabo de poner un audio que dice todo lo contrario. Yo obviamente estoy seguro que va a haber una retractación en ese sentido, pero hay un montón de temas, porque la honestidad intelectual también en un modelo de 570 millones de dólares de fideicomiso, que ahora vamos a hablar, que se dice que eso no se genera en el fideicomiso. Sí se genera dentro del fideicomiso y el flujo genuino del club, como ya dijimos los paicos, está siempre aclarado, es el mismo modelo de siempre. Más transparencia de la que existe en este caso nunca la hubo, porque estamos hablando de que es un proyecto que tuvo todas las etapas, es un concurso,
+> *YouTube (01:31:10):* yo yo lo que digo es esos querían trveros. Bueno, ayer a mí me trataron en soneto intelectual y acabo poner un audio que dice todo lo contrario. Yo obviamente estoy seguro que va a haber una retractación en ese sentido, pero hay un montón de temas porque la honestidad intelectual también en un modelo de 570 millones de dólares de fidecomiso que ahora vamos a hablar que se dice que eso no se generan en el fidecomiso. Sí, sí se generan dentro del fidecomiso y el flujo genuino del club, como ya dijimos, los pacos está siempre aclarado, es el mismo modelo de siempre. O sea, más transparencia de la que existe en este caso nunca la hubo, porque estamos hablando que es un proyecto que tuvo todas las etapas, es un concurso después de 70 años y pasó por directiva hace un año y un mes. Y el
 
 [01:31:41] Speaker 10: después de 70 años y pasó por directiva hace un año y un mes. Y el modelo este está en directiva hace siete meses y de hecho se filtró, para mi gusto, ayer se leyeron mail personales al aire. Ese tipo de cosas yo no estoy de acuerdo, pero son formas de vivir y formas de actuar, y cada uno es libre. Yo creo mucho en la libertad y creo mucho en el socio de Nacional. Yo confío en el socio de Nacional y confío en las asambleas. Yo no concibo filosóficamente que un directivo vote en contra de una asamblea. No me importa lo
 
 [01:32:11] Speaker 10: que diga la asamblea, que vaya y que prenda fuego la asamblea, pero vos no puedes votar en contra de una asamblea, porque la asamblea es el órgano máximo de democracia del club y es lo que nos diferencia de otros clubes. Tenemos una asamblea de socios, que se juntan 900 tipos en una asamblea.
 
 [01:32:25] Speaker 11: Sí, pero tenemos que ir lo más informados posible y por eso tratamos de invitarte a vos. Estás tratando de despejar todas las dudas, pero tenemos hoy un contrapunto de agua y aceite, de blanco y negro.
+> *YouTube (01:32:25):* juntan 900 tipos es una asamblea. Sí, pero tenemos que ir lo más informado posible. Y hoy, bueno, por eso tratamos de invitarte a vos, este, estás tratando de despejar todas las dudas, pero digo, tenemos hoy este un contrapunto de agua y aceite, ¿no? De de blanco negro. Yo insisto, el socio tiene que leer la
 
 [01:32:40] Speaker 10: Yo insisto, el socio tiene que leer la moción y si después de leerla encuentra algo que no esté contemplado, ahí sí. Pero vamos a leer la moción.
 
@@ -874,28 +942,38 @@
 [01:32:54] Speaker 10: Lo acabo de explicar, no hay estadio sin parking.
 
 [01:32:59] Speaker 10: Hay algunos temas, por ejemplo, los palcos se renuevan tres veces. No importa, no es significativo, pero digo, cosas que están mal. Esto no es del todo correcto. Hay palcos que se renuevan tres veces, hay palcos que se renuevan solo una vez en el fideicomiso. Ese tipo de cosas que se tiran. Hay palcos hoy que están hasta el 2048 renovados.
+> *YouTube (01:32:59):* quieren entrar en el tema de hay algunos temas, por ejemplo, los palcos se renuevan tres veces, no importa, no es significativo, pero digo, cosas que están mal, esto no es del todo correcto. Hay palcos que se renuevan tres veces, hay palcos que se renuevan solo una vez en el fidel comiso. Ese tipo de cosas que se tiran. O sea, hay pacos hoy que están hasta el 1900, perdón, hasta el 2048 renovados. Lo gados, sobre todo. Sí, algunos hasta el 46. 44. Realmente
 
 [01:33:18] Speaker 11: Los de la Vegao, sobre todo.
+> *YouTube (01:33:18):* 2048 renovados. Lo gados, sobre todo. Sí, algunos hasta el 46. 44. Realmente
 
 [01:33:19] Speaker 10: Sí, algunos hasta el 46, hasta el 44. ¿Realmente alguien cree que una persona va a renovar 30 años hasta el 2078, que faltan 50 años, va a poner hoy el dinero? Porque ayer se hablaba del valor presente del dinero.
+> *YouTube (01:33:19):* Lo gados, sobre todo. Sí, algunos hasta el 46. 44. Realmente alguien cree que una persona va a renovar 30 años hasta el 2078 que faltan 50 años, va a poner hoy el dinero porque cuando ayer se hablaba del valor presente del dinero, ¿no? Pero las renovaciones generalmente son cada 10 años.
 
 [01:33:36] Speaker 11: Pero las renovaciones generalmente son cada 10 años.
+> *YouTube (01:33:36):* valor presente del dinero, ¿no? Pero las renovaciones generalmente son cada 10 años. Sí, claro. Por eso te de 2048 ya son
 
 [01:33:38] Speaker 10: Sí, claro.
+> *YouTube (01:33:38):* renovaciones generalmente son cada 10 años. Sí, claro. Por eso te de 2048 ya son
 
 [01:33:39] Speaker 11: Ese del 2048, ya son pocos los palcos igual, ¿no?
+> *YouTube (01:33:39):* años. Sí, claro. Por eso te de 2048 ya son pocos los palcos igual, ¿no? Que no, no, pero los palcos empiezan a de verdad en 2030. Vos vas a tener una
 
 [01:33:42] Speaker 10: No, los palcos se empiezan a acabar de verdad en 2030. Vos vas a tener una renovación, sí, claro, está el modelo, pero vos para realmente cobrar el valor total de los palcos lo tenés que tirar en la cadencia normal. Si vos le adelantas valor a esa gente, le pedís que te adelante ese dinero por 10 años, más 10 más, por 30, ¿realmente alguien cree que va a pagar 30 años un palco hoy? ¿Qué tasa de descuento te va a pedir que no sabes si va a estar vivo? Yo no sé si voy a estar vivo dentro de 30 años. Está todo bien, pero digo, puedo pagar una renovación, pagar una mano. El mío se renueva
+> *YouTube (01:33:42):* pocos los palcos igual, ¿no? Que no, no, pero los palcos empiezan a de verdad en 2030. Vos vas a tener una renovación. Sí, claro. Está en el modelo, pero vos para realmente cobrar el valor total de los pacos lo tenés que tirar en la cadencia normal. Si vos le adelantás valor, o sea, le adelantas a esa gente, le pedís que te adelante ese dinero por 10 años más 10 más por 30, realmente alguien cree que va a pagar 30 años un palco hoy. ¿Qué tasa de descuento te va a pedir que no sabes si va a estar vivo? Yo no sé si va a estar vivo dentro de 30 años. Está todo bien, pero digo, por pagar una renovación, pagar una mano. El mío se renueva en el 30 y pico. Este, el mío se renueva en el 31, creo. Bueno,
 
 [01:34:12] Speaker 10: en el 31, creo.
+> *YouTube (01:34:12):* mío se renueva en el 30 y pico. Este, el mío se renueva en el 31, creo. Bueno, en el 34 hay varios también. Sí, 33, 34. Bueno, está hoy te renó el
 
 [01:34:17] Speaker 11: El 34 hay varios también.
+> *YouTube (01:34:17):* en el 34 hay varios también. Sí, 33, 34. Bueno, está hoy te renó el
 
 [01:34:18] Speaker 10: Sí, 33, 34. Hoy te renovó el de 31 y te adelanto un poquito. Esas cosas sí, ojalá, son buenas para el modelo.
 
 [01:34:26] Speaker 11: Yo te escuché, Santiago, hablar de que una de las ilusiones también sería que en 2030 el Gran Parque Central sea una posibilidad para que se jueguen algunos de los partidos del Mundial, ¿no? Dentro de esos requisitos FIFA y CONMEBOL, por ejemplo, el tema del estacionamiento, ¿está contemplado? Por el tema de plazas.
 
 [01:34:50] Speaker 10: Justamente, este estadio estaríamos en norma CONMEBOL y en norma Intendencia de Montevideo. Entonces, la fantasía de hacer el estadio, vamos a hacer el codo. Le voy a poner un ejemplo de Librido. Yo creo que el estadio hoy está en muy buenas condiciones. La cancha, después del mal arranque de febrero del año pasado, que estuvo muy complicado, es la misma cancha, se ha trabajado de otra manera y está muy bien. Hoy para bajar la cancha 50 centímetros, que es lo que el proyecto prevé y que está en los costos incluidos,
+> *YouTube (01:34:50):* Bueno, justamente nosotros este estadio estaríamos en Norma eh con Mebol y en Norma Intendencia Montevideo, ¿no? Entonces eh la fantasía de hacer el estadio, vamos a hacer el codo. Le voy a poner un ejemplo de híbrido. Está hablando de híbrio. Yo creo que el estadio hoy está en muy buenas condiciones, la cancha después del mal arranque del febrero del año pasado que estuvo muy complicado. Es la misma cancha, se ha trabajado de otra manera, está muy bien. Hoy para bajar la cancha 50 cm, que es lo que el proyecto prevé y que está en los costos incluidos, eh, hay que meter 1600 camiones, entrar y
 
 [01:35:21] Speaker 10: hay que meter 1600 camiones, entrar y sacar. Algunos entran vacíos y se van llenos y después cuando hay que completar, entran llenos y se van vacíos. 1600 camiones. Hoy el Parque Central no tiene una entrada de camiones. Es raro. No tiene una, debería tener más de una. Hoy para entrar camiones en el parque tenemos que demoler el codo o bajar.
 
@@ -918,14 +996,18 @@
 [01:37:22] Speaker 11: Porque yo tengo un número acá, que no sé si es real o no, pero está arriba de 5000 plazas.
 
 [01:37:26] Speaker 10: Sí, claro. Exactamente.
+> *YouTube (01:37:26):* si es real o no, pero está arriba de 5000 casas. Exactamente. Estamos hablando hoy nacional el proyecto son 9.
 
 [01:37:27] Speaker 11: Estamos hablando que hoy Nacional el proyecto son 900.
+> *YouTube (01:37:27):* 5000 casas. Exactamente. Estamos hablando hoy nacional el proyecto son 9. Exactamente porque no tenemos capacidad de poner 5000 estacionamientos. Además
 
 [01:37:30] Speaker 10: Exactamente, porque no tenemos capacidad de poner 5000 estacionamientos.
 
 [01:37:34] Speaker 11: Pero entonces no se cae un poco el sueño ese.
+> *YouTube (01:37:34):* de poner 5000 estacionamientos. Además ahí sí yo creo que sería Pero entonces no se cae un poco el sueño ese de No, no. Porque una cosa nosotros lo que estamos proponiendo,
 
 [01:37:36] Speaker 10: No, porque una cosa, nosotros lo que estamos proponiendo-
+> *YouTube (01:37:36):* Pero entonces no se cae un poco el sueño ese de No, no. Porque una cosa nosotros lo que estamos proponiendo, nosotros lo que propusimos para el 2030
 
 [01:37:38] Speaker 11: 2030 digo.
 
@@ -946,6 +1028,7 @@
 [01:38:51] Speaker 10: Con la moción contempla todo.
 
 [01:38:53] Speaker 11: 100 %. Porque la discusión esta, ahora vamos a ver los supuestos que pusimos y CPA. ¿Cuántos días, perdón, va a llegar al socio la moción? Y bueno, el martes son casi un mes, 28 días. Son siete páginas, tampoco
+> *YouTube (01:38:53):* vote. Con la moción contempla todos todos los todos los porque la discusión esta ahora vamos a ver los supuestos que pusimos y se cuántos días antes, perdón, va a llegar al socio la moción porque y bueno, el martes son casi un mes, 28 días son siete páginas tampoco. Maxi Busó dice, "Acá tiene que haber un
 
 [01:39:07] Speaker 0: [risas]
 
@@ -970,6 +1053,7 @@
 [01:40:52] Speaker 10: único venue que hay, venue se llama los lugares donde se hacen eventos y espectáculos, es el Antel Arena, que tiene una situación desde el punto de vista, ahora aparentemente los números son mejores, pero es un arena público que tiene un montón de características, tiene un montón de obligaciones desde el punto de vista público, desde el punto de vista de negocios. El Zorrilla es una maravilla, tiene 2000 localidades.
 
 [01:41:14] Speaker 11: El Solís.
+> *YouTube (01:41:14):* tiene 2000 localidades, pero tiene una El Solís también, el Sodre es grande, tiene 2000 butacas, pero tiene una
 
 [01:41:15] Speaker 10: El Solís también, el Zorrilla es grande, tiene 2000 butacas, pero tiene una agenda propia muy fuerte.
 
@@ -986,16 +1070,20 @@
 [01:42:36] Speaker 11: La otra, no, lo que citée recién.
 
 [01:42:41] Speaker 11: Con respecto a que ellos dicen que hay fuentes de financiamiento comerciales que no generan ingresos, que no generan valor. Y esto, la verdad, a mí y a todos los socios que lo leímos, y ayer me decía: "Yo, la verdad, no lo entendí." Trató de explicarlo Bardanca, y le digo: "Explícale a don María, a don José." Dice: "¿El proyecto genera 70 millones de dólares?" Que es algo que vos has repetido.
+> *YouTube (01:42:41):* respecto a que ellos dicen que hay fuentes eh de financiamiento comerciales que no generan ingresos, que no generan valor. Y esto eh la verdad a mí y a todos los socios que lo leímos y ayer me decía, yo la verdad no lo entendí. Eh, trató de explicarlo Bardanca. Le digo, explicarle a don María, don José, dice, "El proyecto genera 70 millones de dólares, que es algo que vos has repetido 570 en en en 30 años.
 
 [01:43:03] Speaker 10: 570.
+> *YouTube (01:43:03):* dólares, que es algo que vos has repetido 570 en en en 30 años. Según Santiago Alda Valalde, el proyecto
 
 [01:43:04] Speaker 11: En 30 años. Según Santiago Aldabalde, el proyecto generaría 570 millones de dólares.
 
 [01:43:09] Speaker 10: No según Santiago Aldabalde. Hay mucha gente trabajando. Estas son las chicanas que para mí no están bien, pero no importa, vamos arriba. Cada uno con su estilo.
+> *YouTube (01:43:09):* generaría 570 millones dó." Según Santiago Aldabalde, hay mucha gente trabajando. Pasa estas son las chicanas que para mí no están bien, pero no importa. Vamos arriba. Pero cada uno con su estilo. Lo que pasa que vos sos el vocero. Digo, cada vez que la prema, no es una opinión
 
 [01:43:16] Speaker 11: Lo que pasa es que vos sos el vocero, cada vez que salís a la prensa.
 
 [01:43:19] Speaker 10: No es una opinión personal mía. Está todo bien.
+> *YouTube (01:43:19):* cada vez que la prema, no es una opinión personal. Es un está el proyecto general es 570 millones, pero dentro de esa
 
 [01:43:22] Speaker 11: El proyecto generaría 570 millones. Pero dentro de esa cifra se incluyen los ingresos de tres renovaciones de palcos, que ya dijiste que no es así, que es una renovación de palco.
 
@@ -1032,6 +1120,7 @@
 [01:45:59] Speaker 11: ¿Qué intención es ahí entonces?
 
 [01:46:00] Speaker 10: No sé, por eso digo, ¿cómo no van a estar enojados los socios que nos tiran a nosotros y ahora tenemos que?
+> *YouTube (01:46:00):* gente, ¿qué intenciones hay entonces de Bueno, pero entonces digo, por eso digo, ¿cómo no vamos a estar enojados los socios que nos tiran a nosotros y ahora tenemos vos sumás vos sumás el Excel y te da 570 millones, yo que sé?
 
 [01:46:07] Speaker 11: Vos sumás el Excel y te da 570 millones.
 
@@ -1048,10 +1137,13 @@
 [01:47:04] Speaker 10: que están todas las garantías y cada paso está cubierto por el modelo como está diseñada la moción. Porque la verdad, que tampoco nadie la dice, es que cuando vos tengas el proyecto ejecutivo, no vas a poder tomar decisiones tampoco. Tenés que avanzar en la financiación, tenés que avanzar en las unidades de negocio, tenés que avanzar con los contratos, tenés que entender si ese proyecto ejecutivo, cuando lo salgas a licitar, te van a cobrar lo que vos esperás o vas a tener que hacer ajustes de proyecto, que no pasa nada. Lo que dijimos, sacamos el techo, hacemos esto,
 
 [01:47:35] Speaker 10: vamos a hacer este allanamiento, hagamos la mitad. Capaz que no funcione igual el arranque mientras se construye la arena. Hay 1.000 decisiones que tomar. Lo que pasa es que podemos estar discutiendo 100 años.
+> *YouTube (01:47:35):* techo, hacemos esto, para vamos a hacer estallamiento, hagamos la mitad, capaz que no funcione igual el arranque mientras se construye la arena. O sea, hay 1 decisiones que tomar. Lo que pasa que podemos estar discutiendo 100 años. Lo que pasa que eh al ser un proyecto tan ambicioso en cuanto a la inversión
 
 [01:47:44] Speaker 11: Lo que pasa es que al ser un proyecto tan ambicioso en cuanto a la inversión que requiere y a todos los riesgos que por ahí se toman, más allá de todo lo que vos decís, también se toman ejemplos de otros estadios del mundo. Lo dijo Decurnex, que todos los estadios que citó, habló del Real Madrid, habló de Católica, habló de todo, que dijeron un precio y se fue a otro y eso alteró la economía del club.
+> *YouTube (01:47:44):* que podemos estar discutiendo 100 años. Lo que pasa que eh al ser un proyecto tan ambicioso en cuanto a la inversión que que requiere y a todos los riesgos que por ahí se toman, más allá de todo lo que vos decís, eh este también se toman ejemplos de otros estadios del mundo. Eh lo dijo de Cournés, que dice que eh todos los estadios que citó, no sé, habló del Real Madrid, habló de Católica, habló de todo, que dijeron un precio y se fue a otro y eso alteró la economía del Católica, la Católica calculó que iba a ser un estadio para 25000 personas con 25 millones de
 
 [01:48:07] Speaker 10: La Católica calculó que iba a ser un estadio para 25 mil personas con 25 millones de dólares. Es raro también. Ya te suena raro de arranque.
+> *YouTube (01:48:07):* economía del Católica, la Católica calculó que iba a ser un estadio para 25000 personas con 25 millones de dólares. Está bueno. Es raro también. Ya, ya te suena raro de arranque, ¿no? Entonces, digo, yo que sé,
 
 [01:48:16] Speaker 11: Sí, claro.
 
@@ -1066,6 +1158,7 @@
 [01:48:38] Speaker 10: No había otra que trasladarte lo que generan del otro lado. El miedo.
 
 [01:48:43] Speaker 11: No, yo creo en ti. Para mí las cosas se logran de esa forma.
+> *YouTube (01:48:43):* tenido el miedo, el miedo. Yo no, pero yo estoy contigo, eh, para mí las cosas se logran de esa forma y esto es esto es proyectar el club 50 años
 
 [01:48:47] Speaker 10: Esto es proyectar el club 50 años para adelante y tratar de solucionarlo. Nacional hoy debe entre 36 y 40 millones de dólares.
 
@@ -1078,12 +1171,16 @@
 [01:49:20] Speaker 10: Nacional es una plata que te mueve la aguja y te puede desbarajar. No lo vas a empezar porque Nacional no está garantizando que te va
 
 [01:49:31] Speaker 10: a dar.
+> *YouTube (01:49:31):* pero digo cuando hacanamente 90 120
 
 [01:49:31] Speaker 11: Lo digo livianamente.
+> *YouTube (01:49:31):* pero digo cuando hacanamente 90 120 no estoy hablando de 90 120 Bueno, pero
 
 [01:49:32] Speaker 10: 90, 120, no pasa nada.
+> *YouTube (01:49:32):* 90 120 no estoy hablando de 90 120 Bueno, pero en su momento Javi cuando yo hemos hecho
 
 [01:49:34] Speaker 11: No, estoy hablando de 90, 120. Pero en su momento, Javi, cuando habíamos hecho ampliaciones en el Gran Parque Central, también se han hablado de unos números y se han ido a otros.
+> *YouTube (01:49:34):* 90 120 no estoy hablando de 90 120 Bueno, pero en su momento Javi cuando yo hemos hecho ampliaciones en el gran parque central también se han hablado de unos números y se han ido a otro y este pero no de este calibre no obvio porque pero tampoco nunca
 
 [01:49:44] Speaker 10: No de este calibre.
 
@@ -1092,8 +1189,10 @@
 [01:49:49] Speaker 10: De este tipo capaz que no la contás.
 
 [01:49:52] Speaker 11: No, pero pará, ¿por qué no la vas a contar si el club no se está endeudando? Porque todas estas horas que estamos hablando, el club tenía la cadena en el cuello, el club era responsable por todo. Te voy a leer otro artículo. Tiene mil artículos.
+> *YouTube (01:49:52):* un de este tipo capaz que no la contas. No, no, pero pará. ¿Por qué no la vas a contar si el club no se está endeudando? Porque todas estas todas estas obras que estamos hablando, el club tenía la cadena en el cuello. El club era responsable por todo. Te voy a leer otro artículo. Tiene 1000 artículos. Te voy a leer otro. Pero no se está deudando. Eh, no sé si
 
 [01:50:03] Speaker 10: Pero no sé si no se está endeudando.
+> *YouTube (01:50:03):* artículo. Tiene 1000 artículos. Te voy a leer otro. Pero no se está deudando. Eh, no sé si no se está deudando. No, no escuch. Pará, pará.
 
 [01:50:07] Speaker 11: No, escuchá. El club no asumirá deuda corporativa derivada del proyecto, ni actuará como deudor solidario, codeudor, fiador o garante de las obligaciones del fideicomiso, del inversor, del financiador, del constructor o del operador o de terceros. Asimismo, el club no asumirá obligaciones de aporte de capital para cobertura de sobrecostos o déficit operativo.
 
@@ -1104,20 +1203,26 @@
 [01:50:59] Speaker 11: de uso y explotación que eventualmente se otorguen, lo que proponía Tatiana, al fideicomiso o a un tercero, deberán ser temporales. No se afectarán ingresos ordinarios actualmente comprendidos en el presupuesto del club. Únicamente podrán asignarse al proyecto los flujos vinculados a la venta, renovación, uso y gastos comunes de los palcos y dividendo del club social, lo que hablábamos hoy. Los ingresos generados del club ya existentes por palcos, dividendo del club social o aportes extraordinarios solo podrán tener como destino el estadio de
 
 [01:51:29] Speaker 11: fútbol, lo que les leí hoy, y su infraestructura necesaria, no pudiendo afectarse a otras unidades de negocio. Lo que se plantea ya está contemplado. Aparentemente está todo contemplado. El modelo definitivo deberá prever un mecanismo de compensación o restitución al club de los flujos preexistentes que efectivamente se asignen al proyecto. Todo lo que el club vuelque al proyecto tiene que haber un mecanismo que le garantice al club que se lo devuelve. El fideicomiso lo devuelve, porque entre los 570 millones que se manejan dentro del fideicomiso y los 150 millones que en la honestidad
+> *YouTube (01:51:29):* destino el estadio de fútbol, lo que les leí hoy, y su infraestructura necesaria, no pudiendo afectarse a otras unidades de negocio. Lo que se plantea que vaya, okay, ya está contemplado. Aparentemente está todo contemplado. El modelo definitivo deberá prever un mecanismo de compensación o restitución al club de los flujos preexistentes que efectivamente se asignen el proyecto. O sea, todo lo que el club vuelque al proyecto tiene que haber un mecanismo que le garantice el club que se lo devuelve. el fil comiso lo devuelve porque el fin de comiso entre los 570 m000ones que se manejan dentro del f comiso y los 150 m000ones que en la honestidad intelectual se dejaron afuera 150 millones del análisism
 
 [01:51:59] Speaker 11: intelectual se dejaron afuera,
+> *YouTube (01:51:59):* honestidad intelectual se dejaron afuera 150 millones del análisism
 
 [01:52:05] Speaker 11: hablábamos de 40, 50, 200 pesos, y estamos hablando de 150 millones que quedan afuera de un modelo. Si querés vamos a hablar de los 150 millones. Este proyecto genera 570 más 150, son 720 millones de dólares.
+> *YouTube (01:52:05):* no eh habláamos de 40 50 200 pesos y estamos hablando de 150 millones queon afuera de un modelo que ahora si quieres vamos a hablar de los 150 millones o sea este proyecto genera 570 más 150 son 7 20 millones de dólar Eso es, pero no es
 
 [01:52:22] Speaker 11: Eso está también en la presentación de directiva del 11 de marzo.
 
 [01:52:27] Speaker 10: Los números esos, ¿no se los presentaron ustedes a CPA Ferrere? ¿Quién hizo el análisis de esos ingresos? Porque eso es algo que se cuestiona. CPA Ferrere los números se los da Nacional y Nacional les da unos números muy optimistas. Eso es lo que se dice.
 
 [01:52:41] Speaker 11: Hay que tener un poco de respeto por CPA Ferrere.
+> *YouTube (01:52:41):* optimistas. Eso es lo que se dice. Hay que tener un poco de respeto por CPA Fernando. Bueno, yo te digo lo que lo que lo que dice nosotros acá en la página 17 te lo
 
 [01:52:43] Speaker 10: Yo te digo lo que dicen.
+> *YouTube (01:52:43):* Hay que tener un poco de respeto por CPA Fernando. Bueno, yo te digo lo que lo que lo que dice nosotros acá en la página 17 te lo muestro Javier. otros beneficios que del
 
 [01:52:45] Speaker 11: Nosotros acá en la página 17, te lo muestro, Javier, otros beneficios del proyecto para el Club Nacional de Fútbol que no están monetizados en el fideicomiso, están afuera de fideicomiso. ¿Por qué? El fideicomiso es de Nacional y Nacional va a recibir esos fondos cuando termine de pagar. Esto va directo al club. Acá hay ingresos por nuevas localidades a los partidos. Nosotros vamos a tener 10 mil butacas nuevas, sitios nuevos.
+> *YouTube (01:52:45):* Fernando. Bueno, yo te digo lo que lo que lo que dice nosotros acá en la página 17 te lo muestro Javier. otros beneficios que del proyecto para el Club Nacional de Fútbol que no están monetizados en el fidecomiso, están afuera de fidecomiso. ¿Por qué? El fidecomiso de Nacional y Nacional va a recibir esos fondos cuando termine de pagar. Esto va directo al club. Acá hay ingresos por nuevas localidades a los partidos. Nosotros vamos a tener 10,000 butacas nuevas de eh sitio nuevo. Igual dicen que sin el techo ahí se pierde un montón de cosas VIP y no no.
 
 [01:53:07] Speaker 10: Igual dicen que sin el techo ahí se pierde un montón de cosas VIP.
 
@@ -1128,6 +1233,7 @@
 [01:53:25] Speaker 11: No, en la vida no hay nada de riesgo cero. Me subo al auto ahora, me atropellan o me pegan un tiro. No existe riesgo cero. Nacional no es un club de riesgo cero. Cuando compramos el Parque Central en el 37, había otros clubes que no tienen estadio. No tuvieron estadio 80 años. No hay riesgo cero. El tipo que tomó la decisión de hacer la sede en 1957, ¿vos te pensás que había riesgo cero? ¿En serio?
 
 [01:53:47] Speaker 10: No, por eso te pregunto.
+> *YouTube (01:53:47):* En serio. No, no, no. Por eso te no riesgo cero no. Hay que trabajar y hacer las cosas bien y proyectar el club para 50 años.
 
 [01:53:48] Speaker 11: Riesgo cero no. Hay que trabajar y hacer las cosas bien y proyectar el club para 50 años. Yo no creo más en el no se puede, en el chiquito, no así codito. ¿Hacemos el estadio de que le guste a quién? ¿El modelo de quién es? ¿Estamos todos okey con el proyecto?
 
@@ -1156,10 +1262,12 @@
 [01:54:53] Speaker 11: Exacto. Esta moción sí es muy larga, hay que leerla toda. La parte sustancial de la moción es el resuelve, lo que va a resolver. Vamos a tratar de simplificarlo un poco en extensión para que la gente, sobre todo la gente más joven, que le embola leer, tratar de que la pueda tener en pequeñas imágenes, un resumen, si se puede lograr. Esto continúa diciendo que hay condiciones previas al inicio de cada etapa y el inicio material de las obras o de cualquiera de sus etapas técnicas o financieramente
 
 [01:55:23] Speaker 11: autónomas, quedará condicionado el cumplimiento previo y documentado de proyecto ejecutivo, alcance definido, cronograma, permisos y autorizaciones, modelo económico-financiero actualizado, financiamiento o inversión suficiente para completar cada etapa, procedimiento competitivo de licitación, adjudicación de contratos principales y garantías, etcétera. Mayoría especial de la comisión directiva. Para dar garantías absolutas de que todos están escuchados y representados. Requerir, antes del inicio general de proyecto o de una etapa técnica, el
+> *YouTube (01:55:23):* o de cualquiera de sus etapas técnicas o financieramente autónomas que hará condicionado el cumplimiento previo y documentado de proyecto ejecutivo, alcance definido, cronograma, permisos y autorizaciones, modelo económico financiero actualizado, financiamiento o inversión suficiente para completar cada etapa, procedimiento competitivo de licitación, adjudicación de contratos principales y garantías, etcétera. mayoría especial de la comisión directiva está para dar garantías absolutas de que todos están escuchados y representados. Requerir antes del inicio general de proyecto de una etapa técnica el voto conforme de al menos nueve de los 11 integrantes de la
 
 [01:55:53] Speaker 11: voto conforme de al menos nueve de los 11 integrantes de la directiva.
 
 [01:55:56] Speaker 10: ¿No vuelve a pasar a Asamblea?
+> *YouTube (01:55:56):* nueve de los 11 integrantes de la directiva. No vuelve a pasar la Asamblea. Pero bueno, pero la Asamblea ya aprobó el proyecto. Acá están todas las garantías
 
 [01:56:01] Speaker 11: Pero la Asamblea ya aprobó el proyecto. Acá están todas las garantías.
 
@@ -1168,6 +1276,7 @@
 [01:56:05] Speaker 11: No, la Asamblea aprueba el master ejecutivo, no porque no existe. La Asamblea aprueba el master plan y aprueba un sistema de trabajo que dice que el club no se endeuda, que se dan todas las garantías de que no se inicia si no está el financiamiento, de que Nacional no es fiador, de que Nacional no hipoteca. Igual, hay una situación que dice: "Si no se alcanza la mayoría especial en la comisión directiva, entendiera que corresponde mantener la propuesta, deberá convocar una nueva asamblea extraordinaria dentro de los 30 días siguientes". Si no hay
 
 [01:56:35] Speaker 11: acuerdo en la directiva, otra vez se va a Asamblea. Lo que yo te digo es que yo estoy convencido que si está el financiamiento, es muy difícil que los directivos digan que no. Y si no, otra vez la Asamblea tomará la decisión. Yo creo que si 9 de 11 o 10 de 11, 11 de 11 están de acuerdo, bueno, ya está. Si no, en definitiva, cada cosa tenemos que volver. La Asamblea aprueba un sistema de trabajo que tiene garantías absolutas, que estoy leyendo alguna, tiene siete páginas. Después dice: "Todo integrante de la comisión directiva y la comisión de licitaciones que se va a crear", que tampoco existió nunca en la historia
+> *YouTube (01:56:35):* asamblea extraordinaria dentro de los 30 días siguientes. O sea, si no hay acuerdo en la electiva, otra vez se va a asamblea. Claro, claro. Pasa que yo estoy convencido que si está el financiamiento es muy difícil que los directivos digan que no y si no bueno otra vez la asamblea tom tomará la decisión. Yo creo que si 9 de 11 o 10 de 11 de 11 de acuerdo. Bueno, está si no en definitiva si que cada cosa tenemos que volver. La asamblea aprueba un sistema de trabajo que tiene garantías absolutas que estoy leyendo alguna cosa. Tiene siete páginas está. Después dice todo integrante de la comisión directiva y la comisión de licitaciones que se va a crear, que tampoco existió nunca en la historia del club, una comisión de licitaciones independiente con técnico
 
 [01:57:05] Speaker 11: del club, una comisión de licitaciones independiente, con técnicos de primer nivel. "Todo integrante de la comisión directiva, de la comisión de licitaciones, asesor o participante en los procesos de selección que tenga un interés personal, profesional o económico, directo o indirecto, respecto de un oferente, inversor o financiador, deberá declararlo y abstenerse de intervenir en el análisis, negociación y votación". Es interminable las garantías que da esta moción. Yo no conozco una moción que dé estas garantías.
 
@@ -1220,6 +1329,7 @@
 [02:00:00] Speaker 11: No, eso me parece bien y estoy de acuerdo en agregarlo Pero lo que te quiero decir es que es un tema que me parece mucho más importante.
 
 [02:00:06] Speaker 10: ¿Sabes qué pasa, Santiago? Porque ya nos quemamos con leche mil veces y vemos una vaca y lloramos. Ya pasó que acá se han puesto un montón de cosas en mociones. En la moción del club social se puso Decurnex y se votó en la asamblea que el club se endeudaba en cuatro millones de dólares y compraba una casa en 500 mil dólares. ¿Y sabes qué pasa? No pasó nada. Ocho millones, no compraron la casa, el club no cobró cuando tenía que cobrar y hoy Decurnex dice que se equivocó y ya está, no pasa nada. Hoy sale Decurnex
+> *YouTube (02:00:06):* mucho más importante y sabes qué pasa, Santiago porque ya nos quemamos con leche mil veces y vemos una vaca y lloramos y ya pasó que acá se han puesto un montón de cosas en mociones. En la moción del gran del club social se puso de Cournex y se votó en la Asamblea que el club se indeudaba en 4 millones de dólares y compraba una casa en 500,000 y ¿sabes qué pasa? No, no pasó nada. 8 millones no compraron la casa, el club no cobró cuando tenía que cobrar y hoy de Courné dice que se equivocó y ya está y no pasa nada. Hoy sale de Cur, ¿no? Bueno, nosotros le erramos, sí, le erramos 50, 60 los imprevistos y nadie y
 
 [02:00:37] Speaker 10: y dice que erraron en 50 o 60 los imprevistos y nunca hay consecuencias para los que se equivocan. Acá estamos hablando de mucho dinero y de muchas cuestiones. Me parecen bien todas las garantías que se ponen en la moción, pero si no hay consecuencias para quien rompa con alguna de estas cuestiones, la verdad es lo mismo que la nada.
 
@@ -1244,14 +1354,17 @@
 [02:02:31] Speaker 11: Yo creo que estas discusiones terminan siendo discusiones que se van de tono y que terminan en otro lugar. Ahora todo el mundo quiere tener razón acá, ya no importa si se puede hacer, si es lo mejor para Nacional, si resuelve. Yo estaba hoy hablando de los 40 millones de dólares que debe Nacional, la infraestructura del parque, de lo que falta hacer en los céspedes, la actualización de la sede. Yo creo que la sede tiene que estar. Nacional no tiene una sala de reuniones más allá de la directiva. Si hoy tiene que ser una reunión nacional, la única sala que hay es la directiva. Es raro en un club de este tamaño, vista la capacidad
 
 [02:03:02] Speaker 11: y la grandeza que tiene Nacional. Entonces, Nacional necesita actualización en la sede, necesita actualización en el club social, porque después de estos años va a haber que hacer lo que se llama el CapEx, volver a poner dinero para que se actualice. De hecho, el master plan prevé 1.500 metros para el Club Social, para que pueda crecer y salir del estancamiento que tiene hoy en la cantidad de socios, que tiene una explicación, no voy a entrar en eso, no es mi tema. Pero sí, todo el mundo coincide en que necesita otra fortaleza para tener más opciones para tener más socios. Me perdí.
+> *YouTube (02:03:02):* tamaño y la capacidad y la grandeza que tiene Nacional. Entonces, la necesita actualización en la sede, necesita actualización Club Social, porque después de estos años va a haber que hacer lo que llama el CAPEX, volver a poner dinero para que se actualice. De hecho, el el master plan prevé 15 m para el club social para que pueda crecer y que pueda salir del estancamiento que tiene hoy en la cantidad de socios que tiene una explicación. No voy a entrar en eso, no es mi tema, pero sí todo el mundo coincide que necesita, digamos, otra fortaleza para tener más opciones, para tener más socios. Entonces, e me perdí, me a lo que no lo te decía, los 40 millones
 
 [02:03:33] Speaker 11: Lo que te decía, los 40 millones de dólares que debemos, yo creo que se necesita, más allá del master plan y esto y lo otro, 50, 60, 70 millones de dólares para dejar todo lo que tenemos en condiciones, el estadio, y arrancamos todos los años cinco o seis millones de dólares abajo. Yo tengo una línea desde Ceferino Rodríguez a Ricardo Vairo con los ingresos del club y el pasivo del club. Los ingresos del club, para hacer números redondos, se multiplicaron por cuatro. En ese período, el pasivo del club se multiplicó por
 
 [02:04:03] Speaker 11: cuatro. Esa es la realidad. Y las actuaciones nuestras a nivel internacional está claro que no son las mejores. Le está pasando a todos los equipos de fútbol uruguayo. No quiero hablar de otros equipos, pero hay que mirar los números en la Libertadores. Entonces, si nosotros no cambiamos ese modelo, ¿por qué razón cambiaría la situación del club? Si nosotros seguimos repitiendo el mismo modelo, todos quieren bajar el pasivo, todos quieren ganar la Libertadores. Pero no pasa. Y la verdad que no está pasando. Entonces, ¿no será momento de decir: "Muchachos,
 
 [02:04:34] Speaker 11: este es un punto de quiebre. Tenemos la obligación de soñar, de ser visionarios". Creo que es el proyecto más grande de la historia del club, pero no estoy poniendo a la altura de cosas épicas que han pasado en la historia, pero es un punto de quiebre. ¿No será el momento de decir: "Vamos a arremangarnos, vamos a echar para adelante?" Yo creo que sí. Vamos a echar para adelante, porque Giovan se viene esperando. A mí si me decís, sí. Vos poné 10 dólares por mes. Bajá Netflix. Claro que sí.
+> *YouTube (02:04:34):* muchachos, este es un punto de quiebre, tenemos la obligación de soñar, de ser visionarios. No, no estoy poniendo este proyecto a la altura, creo que es el proyecto más grande de la historia del club, pero no estoy poniendo a la altura de cosas épicas que han pasado en la historia, pero digo, es un punto de quiebre, no será el momento de decir, vamos a remangarnos, vamos a echar para adelante. Yo creo que yo creo que adelante, a mí si me decís, sí, a mí si me decís sí. A m vos no ponés, vamos a volver a los Vos ponés dó por mes. Puse, no pon baj Netflix. Claro que sí, claro que sí. Por algo en la Por algo en la
 
 [02:05:04] Speaker 11: Por algo en la encuesta
+> *YouTube (02:05:04):* que sí. Por algo en la Por algo en la encuesta mucho el 80% por algo en la
 
 [02:05:08] Speaker 11: pusieron el 80 % que sí, que se colaboraría. Yo creo que sí. Y si a vos me decís, obvio, voy con vos y vamos. ¿10? ¿Cuánto? ¿10 por mes? ¿Cuánto ponés? Sí, ¿pero cuánto para el parque? 10 dólares más. Nada. La vida.
 
@@ -1260,6 +1373,7 @@
 [02:05:28] Speaker 11: Cómo no. Claro que sí, todos queremos terminar el parque, todos queremos hacer como decís. Si nosotros estamos en este proyecto y yo tengo gente que me está escribiendo de Estados Unidos, de Europa, y dice: "Yo quiero colaborar, quiero poner plata". Lo que queremos es que se pongan de acuerdo los políticos del club. Si nos tiran a nosotros el fardo al socio. No podemos vivir el club en una unanimidad, porque no hay unanimidad. Entonces, tenemos que preguntarle a la gente. Yo me pregunto por qué no hay unanimidad en un tema tan importante. Y bueno, porque no hay. Bueno. Está bien, pero no pasa nada. ¿Pero cómo no salían las diferencias? Nosotros logramos la
 
 [02:05:59] Speaker 11: unanimidad hasta votar el proyecto. Es un montón. Yo pensé que íbamos a seguir en ese camino, porque ahí decía 93 millones, 14 etapas, y estaba todo: la arena, el parque, la plaza del hincha. A nadie le gusta la plaza del hincha. Yo quiero tener una plaza del hincha. Quiero que el hincha se junte ahí y que festeje. Y tenemos quilombo con los vecinos en el barrio, que tenemos un montón de denuncias. Capaz que podemos hacer el agite adentro nuestro, de nuestra plaza. Hay un montón de temas que están contemplados, es un proyecto maravilloso. Y quiero decir una cosa, este proyecto no es de la CPO, no es de Santiago Aldabalde, no es de Ricardo
+> *YouTube (02:05:59):* Nosotros logramos la unanimidad hasta hasta votar el proyecto. Es un montón. Yo pensé que íbamos a seguir en ese camino porque ahí decía 93,00ones 14 etapas y estaba todo. Estaba la arena, el parque, la plaza del hincha. Nadie le gusta la plaza del hincha. Yo quiero tener la plaza del hincha. Quiero que el hincha se junte ahí y que festeje. Y tenemos quilombo con los vecinos en el barrio que tenemos un montón de denuncias. Capaz que podemos hacer el ajite adentro nuestro, de nuestra plaza. Hay un montón de temas que están contemplados. Es un proyecto maravilloso. Y quiero decir una cosa, este proyecto no es de la CPO. No es de Santiago Aldabalde, no es de Ricardo Vairo, es un proyecto que ganó un concurso.
 
 [02:06:29] Speaker 11: Airó, es un proyecto que ganó un concurso. Nosotros no lo conocíamos este proyecto. El año pasado, en junio, no existía esto. No es una idea loca que nosotros trajimos de nuestra casa. Esto ganó un concurso después de 70 años que no había un concurso nacional. Y es tan desafiante porque está buscando dos soluciones: la solución del parque y está buscando la solución del modelo económico nacional, que hoy no está funcionando. Esa es la realidad. Santiago, ¿qué pasa? Antes que nada, poneme lo de
 
@@ -1274,8 +1388,10 @@
 [02:09:00] Speaker 11: que en el nuevo proyecto el Abdón iría para el visitante, claramente es un error de escritura. Tatiana, de los otros temas. No, eso normal.
 
 [02:09:09] Speaker 12: De los otros temas que le contestaste no-
+> *YouTube (02:09:09):* de los otros temas que le contestaste, Santiago, te quería hacer una pregunta. Eh, si si el 24 no la votación da que la
 
 [02:09:10] Speaker 11: Santiago, te quería hacer una pregunta. Si en 2024 la votación da que la masa social no aprueba, ¿cómo continúa? ¿Hay otro proyecto? ¿Se empieza a trabajar de otra forma?
+> *YouTube (02:09:10):* de los otros temas que le contestaste, Santiago, te quería hacer una pregunta. Eh, si si el 24 no la votación da que la masa social no aprueba, ¿cómo continúa? Hay un hay otro proyecto, se empieza a trabajar de otra forma. Uno me dice, "Moreira, cabeza cuadrada." No, yo tengo la obligación
 
 [02:09:24] Speaker 12: Moreira cabeza cuadrada. No, yo tengo la obligación hoy con Aldabalde. ¿Qué te pensás, que no pienso igual que él en este punto? No, pero tengo la obligación de trasladárselo porque es lo que se está generando en redes sociales. Hubiese sido cabeza cuadrada si no se lo pregunto, porque no aclara. Claramente la aclaración, como dice Santiago, casi no se tiene ni que hacer, porque me parece que es de cabeza cuadrada pensar que Nacional le va a dar la dona al visitante. Pero como lo están planteando y tenemos a Aldabalde acá,
 
@@ -1298,6 +1414,7 @@
 [02:12:05] Speaker 11: Sí, perdón.
 
 [02:12:06] Speaker 13: La otra consulta, y ya te dejo, que me ha llegado por varios lados, es el tema famoso que puede generar y va a generar una división en las votaciones en asamblea si se aprueba por el 75 % o por el 50 más 1. Que hay un debate ahí.
+> *YouTube (02:12:06):* Sí, perdón la la otra consulta y y ya te dejo que me ha llegado por varios lados es es el tema famoso que puede generar y va a generar una división es en la votación en la asamblea si se aprueba por el 70% o por el 50 + 1, ¿no? Que que hay un debate ahí, obviamente, ¿no? Bueno, eh gracias, Santi. Mira, desde el
 
 [02:12:27] Speaker 11: Gracias, Santi. Desde el punto de vista de las garantías, es lo que yo les decía, en la moción se explica claramente que no se inicia ni una etapa ni el proyecto si no está el financiamiento. Y después había un montón de coberturas, lo busco de vuelta. Acá: no se iniciarán las obras materiales si no está el proyecto ejecutivo, el alcance definido, cronograma, los permisos, las autorizaciones, las habilitaciones, el modelo económico actualizado con análisis de
 
@@ -1318,14 +1435,17 @@
 [02:15:43] Speaker 11: En vez de poner Scarone, puso Abdón. Ese es el error. Esto lo escribió una persona, un arquitecto en un estudio. Estuvo trabajando en 150 páginas. Capaz que no conoce en detalle el nombre de la tribuna. No lo sé.
 
 [02:15:59] Speaker 12: El argumento es hacia la tribuna Scarone, está diciendo Lavalle.
+> *YouTube (02:15:59):* de la tribuna. No, no lo sé. E el eh el argumento eh digo eh el argumento es es hacia la tribuna es carón. Está diciendo Alda Val. Claro, 100% es mirar los planos, mirar los
 
 [02:16:05] Speaker 11: Claro, 100 %. Es mirar los planos.
 
 [02:16:07] Speaker 12: Mirar los planos y se entiende. Se equivocó en el nombre por un error.
+> *YouTube (02:16:07):* 100% es mirar los planos, mirar los planos y se entiende. Digo, se equivocó en el nombre por un error. Exacto. Pero no, no tiene, o sea, yo creo que lo mismo en vez de decir, "Che,
 
 [02:16:12] Speaker 11: Yo creo que es lo mismo. En vez de decir: "Che, ¿no será un error?", porque además están los planos, vos mirás los planos y te das cuenta que es la Scarone.
 
 [02:16:18] Speaker 12: Basta con haberte escuchado todas las entrevistas que diste, hablaste del segundo anillo de la Scarone, los visitantes en la Scarone. Yo qué sé, pero hay que aclararlo, porque se generaron, en base a eso, las dudas. Yo creo que no entra en la cabeza de nadie que el visitante vaya al Abdón.
+> *YouTube (02:16:18):* planos." Mira, los planos te das cuenta que las jarones. Pero aparte aparte digo, basta con haberte escuchado este todas las entrevistas que diste. Hablaste del segundo anillo de las Carones, los visitantes en Las Carones, los visitantes de las carones, o sea, yo que sé, digo está, pero por viste, hay que aclararlo, hay que aclararlo porque se generó en base a eso las dudas, digo, la verdad. Yo creo que no entra en la cabeza de nadie que el visitante vaya el abdom. Obviamente yo no quiero dejar de contestarle a Santi lo del 75%.
 
 [02:16:38] Speaker 11: Yo no quiero dejar de contestarle a Santi lo del 75 %. El 75 % nace en una idea de la Comisión de Patrimonio, que era el blindaje de los proyectos de infraestructura del club. ¿Cuál era el concepto o cuál era el origen de eso? Nacional había tenido problemas por ir hacia atrás y hacia adelante con proyectos aprobados. Entonces, la intención era, en aquel momento eran dos tercios, que si hay un proyecto aprobado, grande, importante, obviamente, si estamos arreglando un baño,
 
@@ -1348,10 +1468,12 @@
 [02:19:52] Speaker 11: votado, pero que no quedaba vigente. Eso desde el punto de vista técnico. Yo creo que se puede presentar una moción para votar con el 75 %. No sé si eso desde el punto de vista legal está bien, porque vos no te podés armar un estatuto para una asamblea, porque si no nos juntamos 200, vamos a la asamblea y hacemos un estatuto y votamos con el 35 % otra cosa. Eso es un tema jurídico. Insisto, yo creo en las asambleas, soy prosocio, creo en el inconsciente colectivo
 
 [02:20:23] Speaker 11: tricolor, el socio todo junto no se equivoca. A veces a las asambleas van 300 personas y somos 60 000 socios y más de un millón y medio de hinchas.
+> *YouTube (02:20:23):* colectivo tricolor, el el socio todos juntos no se equivoca. A veces en las asambleas van 300 personas y somos 60,000 socios y más de 1,illón y medio de hinchas. Entonces est van a ir más de 1000 seguro, seguro. Pero es representativa porque
 
 [02:20:31] Speaker 12: Estaban ahí más de 1000 seguro.
 
 [02:20:33] Speaker 11: Seguro, es representativa porque son los que van, pero tal vez es difícil de contemplar todas las alternativas.
+> *YouTube (02:20:33):* est van a ir más de 1000 seguro, seguro. Pero es representativa porque son los que van, pero tal vez es difícil de contemplar todas las alternativas. Hay que abrir el parque, está bien, ¿no? Pero no va a ser un tema
 
 [02:20:39] Speaker 12: Hay que abrir el parque.
 
@@ -1372,6 +1494,7 @@
 [02:23:00] Speaker 11: operador del parking, no que el parking iba a estar ocupado el 90 %. Pasa que si vos querés entender cómo funciona o vos querés encontrar una palabra equivocada en 150 páginas. Es un tema de lo que cada uno propone y está muy bien. Y yo no me meto con nadie. Voy a contar una anécdota que me parece que vale la pena. Hay gente joven que de repente no lo sabe. José María Delgado, en 1911, se enfrentó a otro grupo de dirigentes por abrir el club
 
 [02:23:30] Speaker 11: y hacer un club popular y un club de trabajadores. Esa historia la saben.
+> *YouTube (02:23:30):* por abrir el club y hacer un club popular y un club de trabajadores. Esa historia la saben. Está 1911. En 1911 se le fueron la mitad de los
 
 [02:23:35] Speaker 12: Sí, claro. 1911.
 
@@ -1380,6 +1503,7 @@
 [02:24:00] Speaker 12: Sale el tuit ahora. Aldabalde dice que sí.
 
 [02:24:03] Speaker 11: Estoy poniendo un ejemplo histórico donde no había unanimidades y donde seguramente la gente no debía saber qué hacer. Y de hecho, hay gente que se fue a otro club, al Bristol, que no sé ni lo que es. Esa es la historia de Nacional, pero era gente que soñaba en grande. Compró el Parque Central en 1937. Otros clubes no tuvieron estadio en 90 años. Somos distintos. Hicieron una sede en 1957 en Ocho de Octubre, que no generaba un
+> *YouTube (02:24:03):* estoy poniendo estoy poniendo un ejemplo histórico donde no había unanimidades y donde seguramente la gente no debía saber qué hacer y de hecho hay gente que se fue a otro club, al Bristol, no sé ni lo que es. Está. Esa es la historia de Nacional, pero era gente que soñaba en grande. Compró el parque central. Compró el parque central 1937.7. Otros clubes no tuvieron estadio 90 años. Somos distintos. Hicieron una sede en 1957 en 8 de octubre que no generaba un dó dó. ¿Por qué? porque tenía la
 
 [02:24:33] Speaker 11: dólar. Obviamente, no generaba un dólar. ¿Por qué? Porque tenían la cabeza grande.
 
@@ -1418,6 +1542,7 @@
 [02:26:45] Speaker 12: a varias directivas. Acá dice Juan Emerson dos Santos: "Cuando se empezó a hablar del proyecto, se habló de inversores brasileros interesados en invertir en él. Con el pasar del tiempo, ya no se habló más de esos posibles inversores. ¿Qué pasó?"
 
 [02:26:57] Speaker 11: Esos inversores brasileños llegaron un día al Parque Central, los acercó Eduardo Ache, que estaban analizando también la inversión del Estadio Centenario. Nosotros nos reunimos con ellos, viajamos. Esa empresa era una empresa de un grupo gigante en Brasil, un fondo que maneja 65 mil millones de dólares, una cosa escandalosa, que tenía cientos de empresas. Ese grupo tuvo un problema judicial en Brasil con la justicia, un tema escandaloso de allanamiento. Pero esta empresa en realidad no tenía
+> *YouTube (02:26:57):* esos posibles inversores. ¿Qué pasó? Esos inversores brasileños llegaron un día al parque central, los acercó Eduardo H, que estaban analizando también la inversión del estadio Centenario. Nosotros nos reunimos con ellos, viajamos. Esa esa empresa era una empresa de un grupo gigante en Brasil que maneja 65, un fondo que maneja 65,000 millones de dólares, una cosa escandalosa, que tenía cientos de empresas. Ese grupo tuvo un problema judicial en Brasil, este, no sé, con la justicia, un tema escandaloso de allanamiento, pero esta empresa en realidad no tenía nada que ver, estaba dentro de ese fondo. Entonces, la gente que trabajaba
 
 [02:27:27] Speaker 11: nada que ver, estaba dentro de ese fondo. Entonces, la gente que trabajaba ahí se fue y está armando un nuevo proyecto. De hecho, volvieron a aparecer y están en contacto con nosotros. Nosotros estamos hoy hablando con, sobre todo, financiadores de primer nivel mundial, empresas en Europa, bancos europeos, Estados Unidos, bancos multilaterales de crédito. Nosotros tuvimos en contacto y tuvimos un acuerdo de confidencialidad firmado con DF, que es Live Nation, la empresa más grande del mundo de espectáculos. O sea, tenemos operadores calificados, un montón de gente interesada en el zócalo
 
@@ -1462,8 +1587,10 @@
 [02:30:14] Speaker 11: Gomensoro fue el que levantó la bandera esa. El Parque Central es un activo fundacional del fútbol mundial. Las Copas del Mundo empezaron acá. Brasil debutó mundialista en el Parque Central, Argentina debutó mundialista en el Parque Central. Entonces, eso tiene un valor único. Somos el único estadio del mundo que tiene esa condición. Entonces, yo creo que hay una oportunidad de ir a pedir determinados apoyos. Ahora, jugar el primer partido de la historia, Estados Unidos-Bélgica, 100 años después, en el mismo lugar, es un evento FIFA. Sin duda, el mundo entero lo va a ver para calentar la pantalla del mundial, como pasa siempre con los eventos FIFA.
 
 [02:30:44] Speaker 11: Estamos hablando de Estados Unidos. Nacional hizo una movida este año con las embajadas, cuando jugaron Estados Unidos y Bélgica, casualmente en el mundial, y hubo Interés, una cosa como que buena idea de jugarlo. Pero este negocio en realidad que está en el modelo con un millón de dólares absolutamente subvaluado para mí, porque un partido
+> *YouTube (02:30:44):* calentar la pantalla del mundial, como pasa siempre con los eventos FIFA. Estamos hablando de Estados Unidos. Nacional hizo una movida este año con las embajadas cuando jugaron Estados Unidos y Bélgica casualmente en el mundial y hubo interés, una cosa como que qué buena idea de jugarlo, pero este negocio en realidad que está en el modelo con un millón de dólares absolutamente este subvaluado para mí como un partido FIFA que juega Estados Unidos y Bélgica que sea la previa 100 años después del
 
 [02:31:06] Speaker 0: [risa]
+> *YouTube (02:31:06):* este subvaluado para mí como un partido FIFA que juega Estados Unidos y Bélgica que sea la previa 100 años después del
 
 [02:31:07] Speaker 11: FIFA que juegue Estados Unidos y Bélgica, que sea la previa 100 años después del primer partido de la historia de los mundiales, no vale un millón de dólares. Solo pusimos un millón de dólares. Y hay un montón de valuaciones que nosotros pusimos que para mi gusto están por debajo. No fuimos optimistas, fuimos pesimistas. Ayer hablaba con una empresa y le decía: "Las marcas de FIFA, Coca-Cola, McDonald's, Qatar, Visa, hablan de la Copa del Mundo, que es una marca registrada de la FIFA y la pueden nombrar. El resto de las marcas del mundo, las más grandes del mundo, no la pueden nombrar". ¿Entonces qué dicen?
 
@@ -1474,20 +1601,24 @@
 [02:31:56] Speaker 11: el mundo del fútbol entero va a estar mirando el Uruguay. Hoy vender el nombre del parque, que es una de las cosas que la gente propone y que está en el modelo, tiene una escala de Uruguay y tiene los números de Uruguay. Ahora, una marca mundial, ser sponsor primer estadio de la historia, los 100 años, cuando se va a jugar el primer partido o una serie completa en Uruguay, eso tiene un valor con una escala enorme, que nosotros creo que también lo pusimos, como es un signo de interrogación, no sabemos cuánto hace. Entonces lo pusimos con mucha cautela.
 
 [02:32:26] Speaker 12: Para dejar claro, entonces, la cuota o el dinero este que tienen que sacar de los socios, ¿nunca va a ser obligatorio? Va a ser opcional.
+> *YouTube (02:32:26):* vacimos con mucha cautela. Eh, para dejar claro entonces la la la cuota esta que o el dinero esta que tienen que sacar de los socios, nunca va a ser obligatorio, va a ser opcional siempre. M igual que la del basc 32000
 
 [02:32:36] Speaker 11: Siempre. Igual que la del básquet. 32 mil el básquet. Yo creo que ese número para el parque va a ser bastante.
+> *YouTube (02:32:36):* a ser obligatorio, va a ser opcional siempre. M igual que la del basc 32000 el basc. Yo creo que ese número para el parqueo va a ser bastante bastante bien. O sea, nunca eh va a ser una cuota
 
 [02:32:42] Speaker 12: Bien. O sea, nunca va a ser una cuota obligatoria.
 
 [02:32:47] Speaker 11: Yo creo que no. Esa es una decisión de directiva, no mía. Pero yo creo que no.
 
 [02:32:53] Speaker 11: No, porque en el modelo nuestro, cuando estamos hablando de 20 mil, si fuera obligatoria, serían 60 mil. No pagan 60 mil. Entonces ahí ya está claro.
+> *YouTube (02:32:53):* Habría que entonces no porque en el modelo en el modelo nuestro cuando estamos hablando de 20,000 si fuera obligatoria serían 60,000. No, no van 60,000. Entonces ahí ya está claro. Claro. Yo digo por lo que dijo José Decurnex, que esto si no era obligatorio
 
 [02:33:01] Speaker 12: Yo digo por lo que dijo José Decurnex, que esto, si no era obligatorio, no corría, porque no te lo prestan.
 
 [02:33:07] Speaker 11: Lo mismo de siempre. Opiniones sin sustento para mí, porque José Decurnex aumentó 50 % la cuota obligatoria y no se fue nadie. La encuesta dice que el 80 %-
 
 [02:33:17] Speaker 12: Pero sobraron algunos socios. Pelota. Después volvieron.
+> *YouTube (02:33:17):* pero se borraron algunos socios. Está bien, pero pero no pero no el 50%, o sea, el saldo fue absolutamente positivo. Bueno, yo digo
 
 [02:33:20] Speaker 11: No es 50 %, el saldo fue absolutamente positivo. Yo digo, para mí, con un proyecto lanzado y contagiando, va a ser demoledor el apoyo. No tengo dudas. Yo creo en el hincha nacional, el hincha nacional se muere por el Parque, nuestra casa es el estadio donde nacieron los mundiales, es la casa donde nació el hincha. La esencia del fútbol hispanoamericano nació en el Parque Central. Es una locura.
 
@@ -1506,16 +1637,21 @@
 [02:34:12] Speaker 14: Eso se puede, porque yo verdad que decía que no, pero sí se puede.
 
 [02:34:14] Speaker 11: Porque vos no estás cediendo contracts. Son discusiones técnicas interminables. El socio tiene razón de calentarse. Mirá lo que estamos discutiendo. Entonces, vayan a la moción y vean si realmente hay algo que compromete a Nacional o si esto es seguir avanzando en un proyecto que nos va a cambiar para siempre la historia del club.
+> *YouTube (02:34:14):* eso se puede porque decía puede porque vos no estás cediendo, vos estásendo contratos, o sea, son discusiones técnicas interminables, el socio tiene razón de calentarse. es lo que estamos discutiendo. Entonces, vayan a la moción y vean si realmente hay algo que compromete a Nacional o si esto es seguir avanzando en un proyecto que nos va a cambiar para siempre la historia del club. Acá Andrés dice, "¿Y qué sucede si no se llega a los 26 millones? ¿Qué sucede
 
 [02:34:33] Speaker 14: Acá Andrés dice: ¿y qué sucede si no se llega a los 26 millones? ¿Qué sucede ahí? Si por alguna razón no se llega a los 26.
 
 [02:34:40] Speaker 11: Podemos tener los contratos, esto que estaba explicando yo recién, o podemos buscar, llegado el momento, otras herramientas, porque indudablemente capaz que el muro, esto que hablábamos hoy, se juntan 10 amigos que viven en Buenos Aires y dicen: "Vamos a poner 100 dólares entre los 10 o son 15 y vamos a colaborar todos los meses con Nacional". Yo confío muchísimo en que va a pasar eso.
+> *YouTube (02:34:40):* llega a llegar a podemos tener los contratos, esto que estaba explicando yo recién o podemos buscar llegado el momento, otras herramientas porque indudablemente capaz que el muro, esto que hablábamos hoy decir, bueno, se juntan 10 amigos que viven en Buenos Aires, dic poner $00 por mes, $ por mes, $00 entre los 10 o son 15 y vamos a colaborar todos los meses con Nacional. Yo confío muchísimo en que va a pasar eso. No, no que va a haber mucha gente que sí. Hace 20 años
 
 [02:35:04] Speaker 14: Va a haber mucha gente que sí.
+> *YouTube (02:35:04):* con Nacional. Yo confío muchísimo en que va a pasar eso. No, no que va a haber mucha gente que sí. Hace 20 años porque todos pusimos en la encuesta
 
 [02:35:06] Speaker 11: Hace 20 años yo compré un vidrio.
+> *YouTube (02:35:06):* va a pasar eso. No, no que va a haber mucha gente que sí. Hace 20 años porque todos pusimos en la encuesta Jel. Hace 20 años yo compré un vidrio 200, ¿no? 200 hace 20 años $200 una fortuna. Hay
 
 [02:35:12] Speaker 14: 200 dólares, ¿no?
+> *YouTube (02:35:12):* 200, ¿no? 200 hace 20 años $200 una fortuna. Hay
 
 [02:35:14] Speaker 11: Hace 20 años 200 dólares era una fortuna. Nacional tenía 5000 socios, creo, en esa época.
 
@@ -1524,6 +1660,7 @@
 [02:35:20] Speaker 12: Vos estás hablando de los cristales.
 
 [02:35:22] Speaker 11: De los cristales de Luis Apolo, que era el artista plástico que los hizo. Se vendieron 250 de 200 dólares. Esos 200 dólares hoy, 20 años después, pueden ser 2000 dólares. Y lo pusieron el 5 % de los socios. Los socios van a colaborar y van a apoyar y vamos a estar, seguro. No todos van a poder, no todos van a querer, pero hay un porcentaje que lo va a hacer porque lo hemos hecho en todas las actividades, ya sea en el parque, en todos los momentos.
+> *YouTube (02:35:22):* Vos estás hablando de los cristales de los cristales de los cristales de Luis Apolo que era el artista plático que los hizo. O sea, se vendieron 250 de 200. Esos $200 hoy 20 años pueden ser $2,000. 000 y teníamos, o sea, lo pusieron el 5% de los socios, ¿no? Que los socios van a colaborar y van a apoyar y vamos a estar seguro. No todos, no todos van a poder, no todos van a querer, pero hay un porcentaje que lo va a hacer porque lo hemos hecho en todas las actividades, ya sea en el parque la gente compra camiseta camiseta de cuatro palos, que es es un esfuerzo
 
 [02:35:51] Speaker 14: Hoy la gente compra camisetas de cuatro palos.
 
@@ -1544,24 +1681,31 @@
 [02:37:13] Speaker 11: En agosto del año pasado tenía el proyecto arquitectónico con todas estas unidades de negocios que hoy nadie quiere, aparentemente, pero todas se votaron, tenía las 14 etapas y los 93 millones de dólares estimados. Vamos a suponer que las unidades de negocios y los números están cuestionados, está todo bien, me parece razonable, pero el proyecto se aprobó después de un concurso, después de 70 años. Entonces, no va más ese proyecto. Yo no sé cuál es la posición. Yo he escuchado a José Decurnex con mucha grandeza
 
 [02:37:43] Speaker 11: decir que le parecía fantástico el proyecto y que le parecía excelente el trabajo que había hecho la CPO. Entonces, yo supongo que el proyecto ya no lo discutimos más, el proyecto arquitectónico. Ahora veremos y ojalá se pueda hacer solo el parque y después ir haciendo las otras cosas. Si se puede hacer, la asamblea lo vota, el proyecto con 75 %, vamos a ponerle, no sé cómo va a quedar eso técnicamente, no lo sé. Estoy de acuerdo con lo que resuelva la asamblea. Si está el proyecto aprobado y podemos hacer solo el estadio, maravilloso. CPA Ferrere hizo el estudio y dice que no, pero bueno.
+> *YouTube (02:37:43):* Curné con mucha este grandeza decir que le parecía fantástico el proyecto y que le parecía excelente el trabajo que haya hecho la la CPO. Entonces, yo supongo que el proyecto ya no discutimos más. el proyecto arquitectónico. Ahora veremos y ojalá se pueda hacer solo el parque y después ir haciendo las otras cosas. Si si se puede hacer, la Asamblea lo vota el proyecto con 75%, vamos a ponerle. No sé cómo va a quedar eso técnicamente no lo sé. Estoy de acuerdo lo que resuelve la Asamblea. Eh, si está el proyecto aprobado y podemos hacer solo el estadio, maravilloso. Se pega Ferrer hizo el estudio, dice que no, pero bueno, claro, ojalá que sí. Eh, llegamos al 2030. Sí, llegamos
 
 [02:38:13] Speaker 11: Ojalá que sí.
+> *YouTube (02:38:13):* hizo el estudio, dice que no, pero bueno, claro, ojalá que sí. Eh, llegamos al 2030. Sí, llegamos y después en el caso de llegar
 
 [02:38:14] Speaker 14: ¿Llegamos al 2030?
 
 [02:38:16] Speaker 11: Sí, llegamos. Llegamos si seguimos esperando. No sé, porque pasa un año y nos parece que vamos muy rápido.
+> *YouTube (02:38:16):* Eh, llegamos al 2030. Sí, llegamos y después en el caso de llegar llegamos y seguimos esperando, no sé porque digo, pasar una un año y nos parece que vamos muy rápido. Por eso llegamos, ¿cuándo? Si arrancamos, ¿cuándo?
 
 [02:38:22] Speaker 14: Por eso, llegamos, si arrancamos, ¿cuándo?
+> *YouTube (02:38:22):* porque digo, pasar una un año y nos parece que vamos muy rápido. Por eso llegamos, ¿cuándo? Si arrancamos, ¿cuándo? Y después del 24 de octubre. O sea, después del 24 de octubre ya se
 
 [02:38:25] Speaker 11: Después del 24 de octubre.
 
 [02:38:26] Speaker 14: Después del 24 de octubre ya se arrancaría.
 
 [02:38:28] Speaker 11: O arrancamos o no arrancamos.
+> *YouTube (02:38:28):* O sea, después del 24 de octubre ya se arrancaría. O arrancamos o no arrancamos. Claro. Y ahí sí se llega.
 
 [02:38:29] Speaker 14: Claro, y ahí sí se llega.
+> *YouTube (02:38:29):* arrancaría. O arrancamos o no arrancamos. Claro. Y ahí sí se llega. Si se aprueba el 24 de octubre se llega al 2030. Y eh, ¿dónde se juega? ¿Se va a
 
 [02:38:31] Speaker 11: Sí se llega.
+> *YouTube (02:38:31):* Claro. Y ahí sí se llega. Si se aprueba el 24 de octubre se llega al 2030. Y eh, ¿dónde se juega? ¿Se va a
 
 [02:38:32] Speaker 14: Si se aprueba el 24 de octubre, se llega al 2030. ¿Y dónde se juega? ¿Se va a cerrar el parque y dónde se juega?
 
@@ -1578,6 +1722,7 @@
 [02:38:57] Speaker 11: No, lo que pasa es que no estamos hablando de un partido del mundial. Estamos hablando de celebrar un partido previo entre las selecciones que juegan el primer partido de la historia en el parque. Ojalá nos den un partido oficial.
 
 [02:39:12] Speaker 12: Y que pasen por alto eso.
+> *YouTube (02:39:12):* oficial por alto eso y bueno, yo creo que en un estadio emblemático 100 años después el mundial
 
 [02:39:13] Speaker 11: Y bueno, yo creo que en un estadio emblemático, 100 años después, el mundial vuelve a Uruguay, yo creo que se podrá negociar, también por los estacionamientos.
 
@@ -1598,10 +1743,13 @@
 [02:40:04] Speaker 11: No creo que armen un escándalo porque estamos atrás de un objetivo muy grande. Entonces, es un tema del que cada uno puede opinar, sentirse como quiera, reclamar. Es así. Estamos haciendo un proyecto que cambia la historia del club. Y de repente hay gente que dice: "Como me veo cinco años sin palco".
 
 [02:40:20] Speaker 14: Acá me aporta Federico Britos, que está mirando la nota del directivo, que seguramente la semana que viene vamos a escuchar a varios actores de la interna del club. Él apoya el proyecto y dice: "Hasta julio de 2027 está disponible el Centenario".
+> *YouTube (02:40:20):* se como 5 años sin par. Acá me aporta Federico Britos que está mirando la nota al directivo, que seguramente la semana que viene también eh bueno, vamos a escuchar a varios eh actores de la de la interna de club. Él apoya el proyecto y dice, "Hasta julio 2027 está disponible el centenario." Sí, eso es así. hasta julio 2017 y después me dice eh con que coincide
 
 [02:40:35] Speaker 11: Sí, eso es así.
+> *YouTube (02:40:35):* 2027 está disponible el centenario." Sí, eso es así. hasta julio 2017 y después me dice eh con que coincide
 
 [02:40:36] Speaker 14: Hasta julio de 2027 está disponible el Centenario y después me dice que coincide contigo en que es demasiada garantista esta moción y que están esperando porque la están demorando. Dice: "La oposición como que todavía no dio el ok".
+> *YouTube (02:40:36):* Sí, eso es así. hasta julio 2017 y después me dice eh con que coincide contigo que es demasiada garantista esta moción eh y bueno que están esperando porque la están demorando. Eh dice la oposición este como que todavía no o sea no dio lo que yo creo que ahí el planteo, por lo que me me explicaron, el
 
 [02:40:52] Speaker 11: Yo creo que ahí el planteo, por lo que me explicaron los cuatro directivos que no votaron en la asamblea, es no suban la moción hasta que esté votada. Entonces se va a votar y después se va a subir.
 
@@ -1726,22 +1874,28 @@
 [02:50:58] Speaker 15: Hay una persona que dice que Aldabalde no respondió.
 
 [02:51:00] Speaker 14: ¿Cuál?
+> *YouTube (02:51:00):* que dijo ahí hay una persona que dice que Alda Valalde no respondió. ¿Cuál? Sí. ¿Qué dijo? Eh, ya te digo. Acá no, ahí por la encuesta, 2410
 
 [02:51:01] Speaker 15: Sí.
+> *YouTube (02:51:01):* Valalde no respondió. ¿Cuál? Sí. ¿Qué dijo? Eh, ya te digo. Acá no, ahí por la encuesta, 2410
 
 [02:51:02] Speaker 14: ¿Qué dijo?
+> *YouTube (02:51:02):* ¿Cuál? Sí. ¿Qué dijo? Eh, ya te digo. Acá no, ahí por la encuesta, 2410
 
 [02:51:02] Speaker 15: Ya te digo.
+> *YouTube (02:51:02):* ¿Cuál? Sí. ¿Qué dijo? Eh, ya te digo. Acá no, ahí por la encuesta, 2410
 
 [02:51:03] Speaker 14: Acá no, ahí por la encuesta. 2410 Asamblea por el Gran Parque. ¿Ya tenés postura tomada? Sí, lo voto a favor. No, no me convence.
 
 [02:51:11] Speaker 15: Más arriba dice Aldabalde. Agradezco mucho que hayan leído mi pregunta, pero Aldabalde no la respondió. Solo dijo que capaz unos bolsos en Buenos Aires ponen plata. Yo quería saber cuáles son las consecuencias. No estaría entendiendo la pregunta.
 
 [02:51:24] Speaker 14: No, yo lo que digo es: hay un concepto del fondeo que dice, insisto nuevamente, que es una de las opciones en el momento, en marzo, hasta que se tengan contratos que se puedan sustituir por esas opciones o que se sumen a esas opciones, que es el famoso muro de la historia que vos ponés con tu familia, con un grupo de amigos, puede ser alguna filial o varios bolsos que viven en el exterior. Vos decís: "Yo voy a poner una chapa en el muro de la historia, voy a colaborar con el parque" y Nacional
+> *YouTube (02:51:24):* consecuencias. No, no, no estaría entendiendo la pregunta. No, no. Yo lo que digo es hay un hay un concepto del fondeo que dice en el insisto nuevamente que dice que es una de las opciones en el momento, en marzo, hasta que se tengan contratos que se puedan sustituir por esas opciones o que se sumen a esas opciones, que es el famoso muro de la historia que vos ponés con tu familia, con un grupo de amigos, puede ser este alguna filial o varios bolchos que viven en el exterior. Si bueno, yo voy a poner una chapa en el muro de la historia, voy a colaborar con el parque y Nacional te va a dar ese lugar para una barra. No tiene que ser una persona que ponga $2,000 por
 
 [02:51:55] Speaker 14: te va a dar ese lugar para una barra. No tiene que ser una persona que ponga 2.000 dólares. Puede ser 20, 50.
 
 [02:52:00] Speaker 15: Museo Todo Bolso, por ejemplo.
+> *YouTube (02:52:00):* puede ser 20, 50. Buceo todo bolso, por ejemplo. Exacto. Buceo todo bolso, por ejemplo. Podría. Entonces, ponés la
 
 [02:52:02] Speaker 14: Exacto.
 
@@ -1772,6 +1926,7 @@
 [02:53:06] Speaker 15: La encuesta ahí, Molina, ¿viste algo?
 
 [02:53:08] Speaker 14: Sí, la encuesta ahí, vamos a cerrar porque está rapidita. Hay un 69 %, 2410 Asamblea por el Gran Parque Central. ¿Ya tenés postura tomada? Sí, lo voto a favor, 69 %. No, no me convence, 11 %. Aún no me decido, seguiré escuchando, 19 %.
+> *YouTube (02:53:08):* la encuesta ahí, Morena, ¿viste algo, eh? Sí, bueno, la encuesta ahí vamos a cerrar porque está rapidita. Bueno, hay un 69% eh 24 el 10 asamblea por el Gran Parque Central. Ya tenés postura tomada. Sí, lo voto a favor, 69%. No, no me convence 11%. Aún no me decido, seguiré escuchando. 19%. O sea, me encanta que la gente quiera seguir escuchando. Les comento que hoy se
 
 [02:53:25] Speaker 15: Me encanta que la gente quiera seguir escuchando. Les comento que hoy se publicó asamblea.nacional.uy creo que es.
 
@@ -1782,8 +1937,10 @@
 [02:53:39] Speaker 14: Ah, ¿nuevo es? En realidad, ese link me lo pasaron, no lo recuerdo de memoria, pero se pueden anotar para las reuniones presenciales que vamos a tener todos los lunes en la sede.
 
 [02:53:49] Speaker 15: ¿Todos los lunes en la sede o en el restaurant?
+> *YouTube (02:53:49):* las reuniones presenciales que va a haber todos los lunes en la sede. Todos los lunes en la sede o en el restaurant. En el PUX en el 1900. Van a haber reuniones todos
 
 [02:53:52] Speaker 14: En el paddock.
+> *YouTube (02:53:52):* Todos los lunes en la sede o en el restaurant. En el PUX en el 1900. Van a haber reuniones todos los lunes presenciales.
 
 [02:53:53] Speaker 15: En el 1900 van a haber reuniones todos los lunes presenciales.
 
@@ -1850,10 +2007,12 @@
 [02:57:21] Speaker 15: Ahí cada uno tiene que pensar lo que está haciendo por Nacional, si está sumando o no está sumando. Eso es un tema personal, uno tampoco le puede dirigir la vida a los demás, cada uno es libre y yo creo en la libertad del ser humano y que hagan lo que quieran y que publiquen lo que quieran. Para mí hay líneas que no se deben pasar. Y después, en definitiva, entiendo que hay líderes y hay gente que confía mucho en uno u otro dirigente y está bien. Y también la gente tiene opinión propia y yo he hablado con un montón de gente que me dice: "Yo voto a fulano y pienso así, y voto a mengano
 
 [02:57:51] Speaker 15: y pienso asá", porque tampoco soy un doctor porque digo lo que dice el otro.
+> *YouTube (02:57:51):* voto a fulano y pienso así y o voto a mengano y pienso asá porque tampoco digo soy soy un termoido lo que dice el otro es tal cual pero bueno cerramos la la encuesta ahí el 69% bueno de los que eh
 
 [02:57:55] Speaker 14: Tal cual. Cerramos la encuesta ahí, el 69% de los que votaron están a favor, que ya tiene una postura tomada a favor. "Aún no me decido, seguiré escuchando", un 20%; "no me convence", un 11%.
 
 [02:58:10] Speaker 15: Ese 20% vamos a ir a buscarlo para convencerlo.
+> *YouTube (02:58:10):* 20%. No, no me convence un 11%. Ese 20% vamos a ir a buscarlo. Sí, bueno, reuniones presenciales los lunes en el PADOC. Eh, reuniones
 
 [02:58:13] Speaker 14: Reuniones presenciales los lunes en el paddock, reuniones virtuales para los socios del interior y exterior en Zoom los miércoles, todo en la ticketera de nacional.uy, se pueden inscribir.
 
@@ -1902,10 +2061,12 @@
 [03:00:48] Speaker 15: Estos son para la CPO.
 
 [03:00:50] Speaker 14: Licium Mix entre los Fucking Boom y los Protein.
+> *YouTube (03:00:50):* estos son para la CPO mix un mix entre los fucking bon y los prot. Tenemos que tener 10 por lo menos. Sí, sí. Ahora, ahora vemos. Así que
 
 [03:00:52] Speaker 15: Tenemos que tener 10 por lo menos.
 
 [03:00:54] Speaker 14: Sí, ahora vemos. Así que poneme los Fucking Boom y los Protein Puff también. Se lleva Santiago Fucking Boom de la mano de Fucking Boom, bomba de dulce de leche, chocolate, chocolate blanco. Delicioso realmente. Ahora también en Disco Devoto y Giant. Y el proteico, que es el permitido inteligente, es el Protein Boom Intense, 12 gramos de proteína, 0 % de azúcar agregada y delicioso realmente, el permitido inteligente, el Protein Boom y Protein Boom Intense y más productos proteicos como la crema de avellanas con proteína. La barrita Protein Bar, espectacular. Después de meter un poco de fierro, Advaldo, usted hace boxeo también, sé
+> *YouTube (03:00:54):* Tenemos que tener 10 por lo menos. Sí, sí. Ahora, ahora vemos. Así que bueno, eh, ponemme los fucking bomb y los Protin Puff también. Se lleva Santiago fucking Bon, de la mano de fucking Bond, bomba de dulce de leche, chocolate, chocolate blanco, delicioso realmente. Ahora también en disco de Boto Yan, y el Proteico e que es el permitido inteligente, es el Protein Bon intense. 12 g de proteína, 0% azúcar agregada y delicioso realmente el permitido inteligente del Protein Bon, protein boning test y más productos proteicos como la crema avellana con proteína. Bueno, la barrita protein bar espectacular. Después de meter un poco de fierro, eh, alabaldo, usted hace boxeo también. Sé que le metan los guantes, o sea, es un poco pretencioso
 
 [03:01:24] Speaker 14: que le mete a los guantes.
 
@@ -1950,14 +2111,19 @@
 [03:03:21] Speaker 14: ¿Cómo está la fuente natural?
 
 [03:03:23] Speaker 15: Todo, fuentes de humo naturales, inciensos, aceites esenciales naturales.
+> *YouTube (03:03:23):* todo. Fuentes de humo naturales, inciensos, eh, aceites esenciales naturales. 10% de descuento pasión de color. Sí, sí, sí, sí.
 
 [03:03:28] Speaker 14: ¿Y 10 % de descuento nombrando Pasión y color?
+> *YouTube (03:03:28):* naturales. 10% de descuento pasión de color. Sí, sí, sí, sí. @alquimia 657 en Instagram, eh, con Vito
 
 [03:03:29] Speaker 15: Sí.
+> *YouTube (03:03:29):* naturales. 10% de descuento pasión de color. Sí, sí, sí, sí. @alquimia 657 en Instagram, eh, con Vito
 
 [03:03:31] Speaker 14: @alkimia1657 en Instagram. Convito ahí que los recibe y el abrazo a Mateo, nuestro diseñador viral Suárez, a Nacional viral mundial. Ahí el WhatsApp, el Instagram, contáctalo seguido. 22 horas, 10 minutos, estamos pasadísimos.
+> *YouTube (03:03:31):* Sí, sí, sí, sí. @alquimia 657 en Instagram, eh, con Vito ahí que lo recibe y el abrazo a Mateo, nuestro diseñador viral Suárez, Nacional, viral mundial, ahí el WhatsApp, el Instagram, contactalo, seguiros. 22 horas 10 minutos, estamos pasadísimos, nos pasamos un poco, ¿no? Gracias Jua Jimer, porque la verdad nos hizo el aguante. Gracias Tecé
 
 [03:03:42] Speaker 15: Nos pasamos un poco.
+> *YouTube (03:03:42):* seguiros. 22 horas 10 minutos, estamos pasadísimos, nos pasamos un poco, ¿no? Gracias Jua Jimer, porque la verdad nos hizo el aguante. Gracias Tecé
 
 [03:03:43] Speaker 14: Gracias, Joaco Giménez, porque la verdad nos hizo un aguante. Gracias.
 
@@ -1978,7 +2144,7 @@
 | Transcrito | Corregido | Veces |
 |---|---|---|
 | Abdon | Abdón | 4 |
-| Aldavalde | Aldabalde | 1 |
+| Aldavalde | Aldabalde | 8 |
 | Alvalde | Aldabalde | 3 |
 | Atila García | Atilio García | 1 |
 | Bairo | Vairo | 2 |
@@ -1986,7 +2152,7 @@
 | Brito, | Britos, | 1 |
 | CP Ferrer | CPA Ferrere | 1 |
 | CP que me lo escriba | CPA que me lo escriba | 1 |
-| CPA Ferrer | CPA Ferrere | 5 |
+| CPA Ferrer | CPA Ferrere | 6 |
 | CPA Ferrero | CPA Ferrere | 1 |
 | CPAU Ferry | CPA Ferrere | 1 |
 | Curnext | Decurnex | 3 |
@@ -1999,16 +2165,18 @@
 | Javier Gomez Zoro | Javier Gomensoro | 1 |
 | Javier Gómez Oro | Javier Gomensoro | 1 |
 | Javier Gómez Soló | Javier Gomensoro | 1 |
+| José de Curnex | José Decurnex | 1 |
 | Lavalde | Aldabalde | 2 |
 | Nono Yuria | Nono Giuria | 1 |
-| Pasión y Color Play | Pasión Tricolor Play | 4 |
+| Pasión y Color Play | Pasión Tricolor Play | 5 |
 | Perman | Perchman | 1 |
 | Ricardo Airó | Ricardo Vairo | 1 |
-| Ricardo Bairo | Ricardo Vairo | 1 |
+| Ricardo Bairo | Ricardo Vairo | 2 |
 | SPA Ferrer | CPA Ferrere | 1 |
 | Saint Led | Singlet | 2 |
 | Sepé Ferrer | CPA Ferrere | 3 |
-| Sigleti | Singlet | 2 |
+| Sigleti | Singlet | 1 |
+| Sigleti Bardanca | Singlet y Bardanca | 1 |
 | Siglé | Singlet | 1 |
 | Single | Singlet | 2 |
 | Singlett | Singlet | 2 |

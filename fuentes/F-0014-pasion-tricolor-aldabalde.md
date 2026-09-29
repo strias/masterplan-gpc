@@ -63,7 +63,7 @@ Entrevista en vivo a Santiago Aldabalde, presidente de la CPO, para responder a 
 
 ## Notas
 
-- **Transcripción publicada:** [`transcripciones/F-0014-pasion-tricolor-aldabalde-2026-09-25.md`](../transcripciones/F-0014-pasion-tricolor-aldabalde-2026-09-25.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video.
+- **Transcripción publicada:** [`transcripciones/F-0014-pasion-tricolor-aldabalde-2026-09-25.md`](../transcripciones/F-0014-pasion-tricolor-aldabalde-2026-09-25.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video. Combina la transcripción con voces y los subtítulos automáticos de YouTube: donde las cifras no coinciden, se muestran las dos versiones.
 
 - Parte interesada: Aldabalde preside la comisión que impulsa el proyecto.
 - Menciona documentos que no están registrados: la presentación y el modelo a Directiva del 11 de marzo de 2026 (con número de página) y un texto de CPA que leyó al aire. Hay que conseguirlos.
