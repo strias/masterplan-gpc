@@ -1,13 +1,13 @@
 ---
 id: A-0003
-afirmacion: "El costo es de unos USD 112 millones; con el costo de financiar las obras podría llegar a 140 millones."   # paráfrasis de F-0011, no cita textual
+afirmacion: "[...] los asesores, los arquitectos, todo lo que es gerenciamiento, está en 112 millones de dólares [...] proyectados en los cuatro o cinco años que va a llevar la obra."
 actor: santiago-aldabalde
-fecha:                   # fecha de la declaración original, pendiente
-fuente_original: F-0011
+fecha: 2026-09-17
+fuente_original: F-0016
 tipo: estimacion
 tema: financiero
 veredicto: pendiente
-evidencia: []
+evidencia: [F-0016]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -17,7 +17,7 @@ actualizado: 2026-09-28
 
 Entrevista en El Espectador Deportes, resumida por La Abdón.
 
-**Es una paráfrasis de La Abdón ([F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md)).** Falta la cita textual y la fecha de la declaración original.
+Primero registrada como paráfrasis de La Abdón ([F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md)). La fuente original está en Evidencia.
 
 ## Versión más fuerte
 
@@ -27,6 +27,11 @@ La cifra de obra es 112 millones; la diferencia hasta 140 es costo financiero, q
 
 Hace falta: la entrevista original con fecha y el modelo económico ([F-0008](../fuentes/F-0008-modelo-economico-financiero.md)). Comparar con [A-0009](A-0009-aldabalde-costo-93-100.md) (93 a 100 millones) y con [A-0002](A-0002-decurnex-costo-rda.md).
 
+**Fuente original ([F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md), 07:47, subtítulos automáticos).**
+- **112 M** los da Aldabalde, con honorarios, gerenciamiento y proyección a los años de obra.
+- **140 M lo dice el entrevistador** (06:45: "con el costo financiero se iría a 140"). En lo revisado, Aldabalde no lo retoma. La paráfrasis de La Abdón se lo atribuye a Aldabalde.
+- **Vigencia:** es la cifra de costo más reciente de Aldabalde con fecha. Reemplaza la de "unos 100 M" del 2026-07-16 ([A-0009](A-0009-aldabalde-costo-93-100.md)).
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -34,3 +39,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-09-28: se agrega la fuente original (F-0016); se aclara que el 140 lo planteó el entrevistador.

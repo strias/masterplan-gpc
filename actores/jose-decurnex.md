@@ -4,7 +4,7 @@ nombre: José Decurnex
 tipo: persona
 rol: vocal de la Comisión Directiva
 postura: con-reparos
-fuentes: [F-0001, F-0011]
+fuentes: [F-0001, F-0011, F-0015]
 ---
 
 ## Postura

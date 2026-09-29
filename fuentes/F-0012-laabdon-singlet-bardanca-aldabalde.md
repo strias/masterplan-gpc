@@ -28,6 +28,6 @@ Paráfrasis de La Abdón, no citas textuales:
 
 ## Notas
 
-- **Fuente secundaria.** Los programas de Pasión Tricolor no están registrados todavía.
+- **Fuente secundaria.** Originales: Singlet y Bardanca en [F-0017](F-0017-pasion-tricolor-singlet-bardanca.md) (2026-09-24), Aldabalde en [F-0014](F-0014-pasion-tricolor-aldabalde.md) (2026-09-25), y la cifra de 93 a 100 M en [F-0018](F-0018-espectador-aldabalde-2026-07-16.md) (2026-07-16).
 - La nota aclara que los ingresos acumulados durante décadas no se comparan directamente con el costo inicial de construcción.
-- Las cifras de costo que da para Aldabalde (93 a 100 millones) no coinciden con las de [F-0011](F-0011-laabdon-decurnex-aldabalde.md) (112 a 140). Hay que ver las fechas y qué incluye cada una.
+- Las cifras de costo que da para Aldabalde (93 a 100 millones) no coinciden con las de [F-0011](F-0011-laabdon-decurnex-aldabalde.md) (112 a 140). Se explica por las fechas: unos 100 M el 2026-07-16 y 112 M el 2026-09-17 ([A-0009](../afirmaciones/A-0009-aldabalde-costo-93-100.md)).

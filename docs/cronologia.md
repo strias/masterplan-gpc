@@ -13,12 +13,15 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 | 2025-06-13 | Fecha de creación interna del PDF de la memoria del concurso de ideas | [F-0004](../fuentes/F-0004-anteproyecto.md) |
 | 2025-08 | Según Aldabalde, la Directiva aprueba por unanimidad el proyecto, con 14 etapas y una estimación de USD 93 M | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 00:53:14 |
 | 2026-03-11 | Según Aldabalde, se presenta a la Directiva el modelo económico (USD 93 M) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:16:25 |
+| 2026-07-16 | Aldabalde en El Espectador Deportes: costo "en entorno a los 100 millones" | [F-0018](../fuentes/F-0018-espectador-aldabalde-2026-07-16.md) |
 | 2026-07 aprox. | Según Aldabalde, se vota una reforma del Estatuto que exige 75% (no vigente hasta la aprobación del MEC) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 02:16:38 |
-| 2026-09-21 | Decurnex habla en *Territorio Nacional*; el proyecto de moción llega a los directivos | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 00:49:31 y 01:27:35 |
+| 2026-09-17 | Aldabalde en El Espectador Deportes: costo de 112 M "con todas las actualizaciones" | [F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md) |
+| 2026-09-21 | Decurnex en *Territorio Nacional*: cotización de RDA de más de 150 M; aporte del club de 147 M | [F-0015](../fuentes/F-0015-territorio-nacional-decurnex.md) |
+| 2026-09-21 | Según Aldabalde, el proyecto de moción llega a los directivos | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:27:35 |
 | 2026-09-22 | La Abdón publica un resumen de la moción | [F-0010](../fuentes/F-0010-laabdon-que-se-propone.md) |
 | 2026-09-23 | La Abdón compara las posturas de Decurnex y Aldabalde | [F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md) |
 | 2026-09-23 | Se publican el anteproyecto (versión 1) y el video resumen en el sitio de la asamblea | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |
-| 2026-09-24 | Singlet y Bardanca en Pasión Tricolor | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md) |
+| 2026-09-24 | Singlet y Bardanca en Pasión Tricolor | [F-0017](../fuentes/F-0017-pasion-tricolor-singlet-bardanca.md) |
 | 2026-09-25 | Aldabalde en Pasión Tricolor | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md) |
 | 2026-09-25 | La Abdón publica un resumen de la moción filtrada (no oficial) | [F-0009](../fuentes/F-0009-laabdon-mocion-filtrada.md) |
 | 2026-09-26 | La Abdón resume los programas de Pasión Tricolor con Singlet, Bardanca y Aldabalde | [F-0012](../fuentes/F-0012-laabdon-singlet-bardanca-aldabalde.md) |

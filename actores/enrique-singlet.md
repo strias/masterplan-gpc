@@ -4,7 +4,7 @@ nombre: Enrique Singlet
 tipo: persona
 rol: contador; socio que participa en el debate público
 postura: con-reparos
-fuentes: [F-0012]
+fuentes: [F-0012, F-0017]
 ---
 
 ## Postura

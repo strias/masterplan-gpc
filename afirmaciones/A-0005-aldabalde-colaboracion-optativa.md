@@ -2,12 +2,12 @@
 id: A-0005
 afirmacion: "No está previsto un aumento obligatorio de la cuota; habría una colaboración optativa de 40 o 50 pesos, de la que el socio podría darse de baja."   # paráfrasis de F-0011, no cita textual
 actor: santiago-aldabalde
-fecha:                   # fecha de la declaración original, pendiente
-fuente_original: F-0011
+fecha: 2026-09-17
+fuente_original: F-0016
 tipo: hecho
 tema: financiero
 veredicto: pendiente
-evidencia: [F-0014]
+evidencia: [F-0014, F-0016]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -17,7 +17,7 @@ actualizado: 2026-09-28
 
 Responde a la advertencia de Decurnex sobre la cuota.
 
-**Es una paráfrasis de La Abdón ([F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md)).** Falta la cita textual y la fecha de la declaración original.
+Primero registrada como paráfrasis de La Abdón ([F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md)). La fuente original está en Evidencia.
 
 ## Versión más fuerte
 
@@ -29,6 +29,8 @@ Hace falta: la moción oficial ([F-0007](../fuentes/F-0007-mocion-asamblea.md)) 
 
 **Actualización 2026-09-28 ([F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:03:00):** Aldabalde dice que en El Espectador habló de cuotas de **40, 50 y 200 pesos**, no de "40 o 50", y pidió que se pasara el audio. Según él, "ayer" (en el programa con Singlet y Bardanca) se dudó de su honestidad intelectual por esa cifra. La paráfrasis de La Abdón puede estar incompleta. Además dice que la cuota sería optativa "siempre" (02:32:36), aunque después aclara: "Yo creo que no. Esa es una decisión de directiva, no mía" (02:32:47). Ver también [A-0018](A-0018-aldabalde-hipotesis-cuota-10-dolares.md).
 
+**Fuente original ([F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md), 09:28, subtítulos automáticos):** "Hay cuotas de 40 pesos, de 50 pesos, [...] pesos y que son voluntarias". Al subtítulo le falta una palabra, justo donde Aldabalde dice que dijo "200" ([F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:03:00). Es compatible con su versión; hay que confirmarlo con el audio.
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -37,3 +39,4 @@ Pendiente (fase 1).
 
 - 2026-09-28: registro inicial.
 - 2026-09-28: se agrega la versión de Aldabalde sobre la cifra (F-0014).
+- 2026-09-28: se agrega la fuente original (F-0016).

@@ -28,6 +28,7 @@ Paráfrasis de La Abdón, no citas textuales:
 
 ## Notas
 
-- **Fuente secundaria.** Las entrevistas originales no están registradas todavía. Hay que conseguirlas para tener citas textuales y fechas.
+- **Fuente secundaria.** Originales: Decurnex en [F-0015](F-0015-territorio-nacional-decurnex.md) (2026-09-21) y Aldabalde en [F-0016](F-0016-espectador-aldabalde-no-tienen-plan-b.md) (2026-09-17).
+- Según el original, los 140 M no los dijo Aldabalde, sino el entrevistador ([A-0003](../afirmaciones/A-0003-aldabalde-costo-112-140.md)).
 - La nota describe a Decurnex como "desde la oposición". Según [F-0001](F-0001-autoridades-directivos.md) es vocal de la Comisión Directiva.
 - El contrapunto entre los dos es una elaboración del medio, que lo aclara.

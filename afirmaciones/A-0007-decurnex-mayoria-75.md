@@ -1,13 +1,13 @@
 ---
 id: A-0007
-afirmacion: "Una decisión de este alcance debería tener un respaldo del 75%."   # paráfrasis de F-0011, no cita textual
+afirmacion: "Como socio de Nacional, yo creo que esto tiene que ser aprobado por el 75%, porque si hace dos meses nosotros en una asamblea por amplísima mayoría votamos que este tipo de..."
 actor: jose-decurnex
-fecha:                   # fecha de la declaración original, pendiente
-fuente_original: F-0011
+fecha: 2026-09-21
+fuente_original: F-0015
 tipo: opinion
 tema: legal
 veredicto: pendiente
-evidencia: []
+evidencia: [F-0015, F-0014]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -17,7 +17,7 @@ actualizado: 2026-09-28
 
 Entrevista en Territorio Nacional, resumida por La Abdón.
 
-**Es una paráfrasis de La Abdón ([F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md)).** Falta la cita textual y la fecha de la declaración original.
+Primero registrada como paráfrasis de La Abdón ([F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md)). La fuente original está en Evidencia.
 
 ## Versión más fuerte
 
@@ -27,6 +27,8 @@ Un proyecto que compromete ingresos por décadas necesita un consenso amplio, no
 
 Es una postura sobre qué mayoría debería exigirse. Aparte, hay un hecho verificable: qué mayoría exige el Estatuto para esta Asamblea. Hace falta el Estatuto del club.
 
+**Fuente original ([F-0015](../fuentes/F-0015-territorio-nacional-decurnex.md), 26:05, subtítulos automáticos).** Decurnex apoya su pedido en la reforma del Estatuto votada "hace dos meses". Aldabalde confirma que esa reforma existe, pero dice que no rige hasta que la apruebe el MEC ([A-0019](A-0019-aldabalde-reforma-estatuto-75.md)). Los dos coinciden en el hecho de la reforma; discrepan sobre si corresponde aplicarla a esta Asamblea.
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -34,3 +36,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-09-28: se agrega la fuente original (F-0015) con fecha y cita.
