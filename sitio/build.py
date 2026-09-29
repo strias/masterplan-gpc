@@ -31,14 +31,17 @@ def ref(fid, ts=None, page=None):
     return f'<a class="ref" href="{href}" target="_blank" rel="noopener" title="{html.escape(NOMBRE.get(fid, fid))}">{label}</a>'
 
 def R(s):
-    """Reemplaza marcas {F-0014 01:08:44} o {F-0004 p.42} por enlaces."""
+    """Escapa el texto y reemplaza marcas: {F-0014 01:08:44} o {F-0004 p.42} por enlaces a la fuente,
+    **negrita**, [[#id|texto]] por un enlace interno y [[CG]] por la etiqueta de conocimiento general."""
     def sub(m):
         fid, rest = m.group(1), (m.group(2) or "").strip()
         if rest.startswith("p."):
             return ref(fid, page=rest[2:].strip())
         return ref(fid, rest or None)
+    s = html.escape(s, quote=False)
     s = re.sub(r"\{(F-\d{4})\s*([^}]*)\}", sub, s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    s = re.sub(r"\[\[#([\w-]+)\|([^\]]+)\]\]", r'<a href="#\1">\2</a>', s)
     s = s.replace("[[CG]]", '<span class="cg" title="Conocimiento general: no sale de una fuente registrada">conocimiento general</span>')
     return s
 
@@ -84,7 +87,7 @@ PREGUNTAS = [
    ("Bardanca", "El financiador exige un aporte propio de 15 a 20% y no acepta que sea voluntario.", "{F-0017 00:54:19}"),
   ],
   estado=["distintos", "cuenta", "pendiente"],
-  lectura="Los dos lados coinciden en que el modelo pide unos 26 M de aporte de socios; discrepan en si puede ser voluntario. Aldabalde cambió su versión sobre los USD 10 entre el 17 y el 25 de septiembre. Los componentes que da Decurnex suman 23,5 M, no 26. La tercera cifra de cuota de Aldabalde (¿100 o 200 pesos?) falta verificarla en el audio. Se resuelve con el modelo económico, que todavía no está publicado ({F-0003})."),
+  lectura="Los dos lados coinciden en que el modelo pide unos 26 M de aporte de socios; discrepan en si puede ser voluntario. Aldabalde cambió su versión sobre los USD 10 entre el 17 y el 25 de septiembre. Los componentes que da Decurnex suman 23,5 M, no 26; él mismo da 11 M para los bonos, donde 1.000 × 2.000 × 5 son 10 M ({F-0015 00:14:05}). La tercera cifra de cuota del 17/09 (¿100 o 200 pesos?) falta verificarla en el audio; el 25/09 Aldabalde dijo “hablábamos de 40, 50, 200 pesos” ({F-0014 01:52:05}). Se resuelve con el modelo económico, que todavía no está publicado ({F-0003})."),
  dict(id="570", q="¿El proyecto genera 570 millones de dólares?",
   pregunta=[("Conductor de Pasión Tricolor", "“Según Santiago Aldabalde, el proyecto generaría 570 millones de dólares. Pero dentro de esa cifra se incluyen los ingresos de tres renovaciones de palcos…”", "{F-0014 01:43:03}")],
   resp=[
@@ -111,7 +114,7 @@ PREGUNTAS = [
    ("Bardanca", "Trabajan sobre el Excel de CPA con cambios, por ejemplo sin techo, y “tenemos indicios de que se podría llegar a estructurar”. No está terminado.", "{F-0017 01:20:05}"),
   ],
   estado=["pendiente"],
-  lectura="Falta el análisis de CPA del escenario de solo estadio y la alternativa de Singlet y Bardanca. Hay un dato en común: el techo cuesta unos 20 a 21,5 M, según Aldabalde y según Singlet ({F-0014 01:22:28}, {F-0017 01:41:45})."),
+  lectura="Falta el análisis de CPA del escenario de solo estadio y la alternativa de Singlet y Bardanca. Hay un dato en común: el techo cuesta unos 20 M según Aldabalde, con cintas digitales y pantallas, y 21,5 M según Singlet, rubros 12 y 13 ({F-0014 00:53:46}, {F-0017 01:41:45})."),
  dict(id="sobrecosto", q="¿Qué pasa si la obra sale más cara?",
   pregunta=[("Conductor de El Espectador", "“El sobrecosto que puede tener, como tuvo el Camp Nou, como tuvo el Real Madrid, como tuvo el Antel Arena […] ¿quién se hace cargo?”", "{F-0016 00:23:57}")],
   resp=[
@@ -143,7 +146,7 @@ FILAS = [
  ("Proyecto ejecutivo antes de votar", "borrador", None),
  ("Aporte de socios voluntario", "pendiente", "#cuota"),
  ("Los USD 10 por mes", "distintos", "#cuota"),
- ("Cuentas de los 26 M y del estacionamiento", "cuenta", "#cuota"),
+ ("Cuentas de los 26 M y del estacionamiento", "cuenta", None),
  ("Ocupación y valor del estacionamiento", "pendiente", "#parking"),
  ("Ocupación comercial de 97,5%", "pendiente", None),
  ("Superficie del zócalo comercial", "parcial", None),
@@ -151,7 +154,7 @@ FILAS = [
  ("“10 mil butacas nuevas”", "consistente", None),
  ("Solo estadio", "pendiente", "#solo"),
  ("Informe de CPA “lapidario”", "pendiente", None),
- ("Garantías de la moción", "borrador", "#sobrecosto"),
+ ("Garantías de la moción", "borrador", None),
  ("Mayoría del 75%", "coinciden", "#voto"),
 ]
 NOTAS = {
@@ -162,16 +165,19 @@ NOTAS = {
  "Mantenimiento: 3 o 4 M contra 1,2 M": "Aldabalde {F-0016 00:06:05}; Singlet, último balance: 1,2 M bruto {F-0017 01:31:00}. Falta el balance.",
  "“10 mil butacas nuevas”": "Aldabalde {F-0014 01:52:45}. El aforo pasa de unos 34.000 a más de 43.000 {F-0004 p.64}.",
  "Informe de CPA “lapidario”": "Aldabalde lo anunció así {F-0016 00:16:50}. En un mail leído al aire, un socio de CPA escribe que “no es lapidario ni pretende serlo” {F-0017 00:47:34}. Falta el informe.",
+ "Cuentas de los 26 M y del estacionamiento": "Los componentes que da Decurnex suman 23,5 M, no 26 {F-0015 00:13:06}; en el estacionamiento, 3 M con un castigo del 30% dan 2,1 M, no 2,5 {F-0014 01:13:45}. Ver [[#cuota|la cuota]] y [[#parking|el estacionamiento]].",
+ "Garantías de la moción": "Fideicomiso separado, sin hipoteca ni deuda del club, 9 de 11 votos de la Directiva para las decisiones centrales, vuelta a la Asamblea ante cambios sustanciales y plazo de 30 meses {F-0009}. Un conductor de Pasión Tricolor pide sanciones para quien incumpla {F-0014 01:58:43}; Singlet teme que se relegue a las asambleas en las decisiones futuras {F-0017 00:17:46}. Aldabalde acepta las sanciones, pero dice que van en el Estatuto {F-0014 01:59:47}. Qué cubre un sobrecosto: [[#sobrecosto|la pregunta del sobrecosto]].",
 }
 
 COINCIDEN = [
  ("Ingresos a valor presente", "unos 104 M según Aldabalde; 103 M según Bardanca", "{F-0014 01:44:58} {F-0017 00:31:30}"),
  ("Palcos en 30 años", "93 M, tres renovaciones", "{F-0015 00:09:37} {F-0014 01:44:58}"),
- ("Techo", "unos 20 M según Aldabalde; 21,5 M según Singlet", "{F-0014 01:22:28} {F-0017 01:41:45}"),
+ ("Techo", "unos 20 M según Aldabalde, con cintas digitales y pantallas; 21,5 M según Singlet, rubros 12 y 13", "{F-0014 00:53:46} {F-0017 01:41:45}"),
  ("Aporte de socios en el modelo", "unos 26 M", "{F-0014 01:06:00} {F-0015 00:12:34}"),
  ("Reforma del Estatuto (75%)", "existe y todavía no rige", "{F-0014 02:16:38} {F-0015 00:25:45}"),
  ("Pasivo del club", "entre 36 y 40 M", "{F-0014 01:48:47} {F-0015 00:33:36}"),
  ("Ingresos de los negocios", "los modeló la CPO; CPA arma el modelo con esos insumos", "{F-0015 00:19:01} {F-0014 01:15:43}"),
+ ("Objetivo", "terminar el estadio, con el Mundial 2030 como oportunidad", "{F-0016 00:14:00} {F-0015 00:33:02} {F-0017 01:20:05} {F-0017 01:35:00}"),
 ]
 
 FALTA = [
