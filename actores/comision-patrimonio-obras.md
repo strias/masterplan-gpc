@@ -1,6 +1,6 @@
 ---
 id: comision-patrimonio-obras
-nombre: Comisión de Patrimonio y Obras
+nombre: Comisión de Patrimonio y Obras (CPO)
 tipo: institucion
 rol: comisión asesora del club
 postura: sin-definir
