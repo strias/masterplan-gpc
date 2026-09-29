@@ -8,6 +8,8 @@ tipo: hecho              # hecho | estimacion | opinion
 tema: financiero         # financiero | urbano | deportivo | legal | social | otro
 veredicto: pendiente     # pendiente | verdadero | mayormente-verdadero | enganoso | mayormente-falso | falso | no-verificable | opinion
 evidencia: []            # IDs de fuentes
+vigente: true            # false si la información cambió después
+reemplazada_por:         # ID de la afirmación o fuente con el dato nuevo
 actualizado: 2026-01-01
 ---
 

@@ -29,6 +29,14 @@
 | ⚪ **No verificable** | No hay información pública suficiente para evaluarla |
 | 💬 **Opinión** | Es una valoración y no admite veredicto de verdad |
 
+## Vigencia de la información
+
+El proyecto se discute públicamente desde hace casi dos años y sus datos cambiaron: costos, etapas, plazos y alcance.
+
+- Toda fuente lleva su **fecha de publicación**. Sin fecha no se usa como evidencia de un dato del proyecto.
+- Cuando un dato cambia, **vale el más reciente**. El anterior no se borra: queda registrado como reemplazado, con la fecha y la fuente del cambio.
+- Una afirmación se evalúa contra lo que se sabía **a su fecha**. Si era correcta entonces y después el dato cambió, no es falsa: queda como **desactualizada** y se enlaza el dato vigente.
+
 ## Reglas
 
 1. Toda afirmación se registra con su cita textual, autor, fecha y fuente original.

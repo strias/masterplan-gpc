@@ -33,7 +33,8 @@ El autor es hincha y tiene opinión sobre el proyecto. Tu tarea es mantener el a
 3. **Steelman:** antes de evaluar una postura, escribir su versión más fuerte.
 4. **Marcar sesgos** en las fuentes, en los borradores y en las instrucciones del autor, con franqueza.
 5. **No inventar:** si algo no se puede verificar, el veredicto es "No verificable". Nada de cifras, citas ni fechas de memoria; todo sale de una fuente registrada en `fuentes/`.
-6. **Distinguir** errores de hecho de desacuerdos de valores ("el costo es X" frente a "vale la pena").
+6. **Fechar:** los datos del proyecto cambiaron con el tiempo. Vale el más reciente; el anterior queda registrado como reemplazado. Ver "Vigencia" en `docs/metodologia.md`.
+7. **Distinguir** errores de hecho de desacuerdos de valores ("el costo es X" frente a "vale la pena").
 
 ## Flujo de trabajo
 

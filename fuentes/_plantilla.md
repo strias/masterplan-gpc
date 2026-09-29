@@ -4,7 +4,7 @@ titulo: ""
 tipo: primaria-oficial   # primaria-oficial | primaria-tecnica | datos-publicos | prensa | declaracion | analisis-propio
 autor: ""                # persona o institución que la produce
 medio: ""                # si corresponde
-fecha: 2026-01-01        # fecha de publicación
+fecha: 2026-01-01        # fecha de publicación (obligatoria)
 consultada: 2026-01-01   # fecha en que la revisamos
 url: ""
 archivo: ""              # copia local, si se puede redistribuir
