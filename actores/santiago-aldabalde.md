@@ -15,6 +15,8 @@ Afirmaciones registradas: [A-0003](../afirmaciones/A-0003-aldabalde-costo-112-14
 
 Con cita textual y minuto, de [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md): [A-0012](../afirmaciones/A-0012-aldabalde-deuda-36-40.md), [A-0013](../afirmaciones/A-0013-aldabalde-zocalo-7000-m2.md), [A-0014](../afirmaciones/A-0014-aldabalde-parking-2-millones.md), [A-0015](../afirmaciones/A-0015-aldabalde-fideicomiso-570-720.md), [A-0016](../afirmaciones/A-0016-aldabalde-valor-presente-82-22.md), [A-0017](../afirmaciones/A-0017-aldabalde-26-millones-coinversion.md), [A-0018](../afirmaciones/A-0018-aldabalde-hipotesis-cuota-10-dolares.md), [A-0019](../afirmaciones/A-0019-aldabalde-reforma-estatuto-75.md), [A-0020](../afirmaciones/A-0020-aldabalde-bajada-cancha-incluida.md), [A-0021](../afirmaciones/A-0021-aldabalde-10000-butacas.md), [A-0022](../afirmaciones/A-0022-aldabalde-solo-estadio-inviable.md), [A-0023](../afirmaciones/A-0023-aldabalde-deficit-anual.md), [A-0024](../afirmaciones/A-0024-aldabalde-techo-25-por-ciento.md).
 
+De [F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md): [A-0035](../afirmaciones/A-0035-aldabalde-ahorro-mantenimiento-3-4-millones.md), [A-0036](../afirmaciones/A-0036-aldabalde-flujo-15-mas-5-millones.md), [A-0037](../afirmaciones/A-0037-aldabalde-palcos-17-millones-10-anos.md), [A-0038](../afirmaciones/A-0038-aldabalde-informe-cpa-lapidario.md).
+
 ## Versión más fuerte de su argumento
 
 Nacional tiene cinco hectáreas en el centro de Montevideo que hoy producen ingresos casi solo los días de partido. Un complejo que funcione todo el año puede pagar la terminación del estadio y cambiar la economía del club, con el riesgo aislado en un fideicomiso y sin empezar ninguna etapa sin financiamiento asegurado.

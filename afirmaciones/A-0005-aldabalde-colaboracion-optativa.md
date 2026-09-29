@@ -7,7 +7,7 @@ fuente_original: F-0016
 tipo: hecho
 tema: financiero
 veredicto: pendiente
-evidencia: [F-0014, F-0016]
+evidencia: [F-0014, F-0016, F-0017]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -31,6 +31,10 @@ Hace falta: la moción oficial ([F-0007](../fuentes/F-0007-mocion-asamblea.md)) 
 
 **Fuente original ([F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md), 09:28, subtítulos automáticos):** "Hay cuotas de 40 pesos, de 50 pesos, [...] pesos y que son voluntarias". Al subtítulo le falta una palabra, justo donde Aldabalde dice que dijo "200" ([F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:03:00). Es compatible con su versión; hay que confirmarlo con el audio.
 
+**Con la transcripción con voces ([F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md), 00:09:10):** "Hay cuotas de 40 pesos, de 50 pesos, 100 pesos y que son voluntarias [...] No es un aumento de cuota general, ni se habla de 10 dólares ni nada de eso. Eso es todo información que no es correcta."
+- **La tercera cifra no está resuelta:** esta transcripción dice "100", los subtítulos de YouTube la omiten y Aldabalde dijo después que había dicho "200" ([F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:03:00). Hay que escuchar el audio.
+- **"Ni se habla de 10 dólares":** el 2026-09-25 Aldabalde reconoce que la hipótesis de USD 10 por mes de 20.000 socios estaba en el modelo de marzo, como "una celda de un Excel" ([A-0018](A-0018-aldabalde-hipotesis-cuota-10-dolares.md)). Según Bardanca, CPA Ferrere le confirmó por mail que el aporte es el del modelo: 22.500 socios × USD 10 por mes ([F-0017](../fuentes/F-0017-pasion-tricolor-singlet-bardanca.md), 00:50:00). Es una diferencia que conviene verificar con el modelo vigente: si la hipótesis de USD 10 sigue o fue reemplazada.
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -40,3 +44,4 @@ Pendiente (fase 1).
 - 2026-09-28: registro inicial.
 - 2026-09-28: se agrega la versión de Aldabalde sobre la cifra (F-0014).
 - 2026-09-28: se agrega la fuente original (F-0016).
+- 2026-09-28: con la transcripción con voces: 40, 50 y ¿100 o 200? pesos; se agrega la frase sobre los 10 dólares.

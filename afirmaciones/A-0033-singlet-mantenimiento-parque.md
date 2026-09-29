@@ -7,7 +7,7 @@ fuente_original: F-0017   # 01:31:00
 tipo: hecho
 tema: financiero
 veredicto: pendiente
-evidencia: [F-0017]
+evidencia: [F-0017, F-0016]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -25,7 +25,9 @@ Los ahorros que se atribuyen al Master Plan están inflados y no son propios del
 
 ## Evidencia
 
-No se registró quién dijo "3 o 4 millones". Hace falta el último balance del club.
+Hace falta el último balance del club.
+
+El "3 o 4 millones" lo dijo Aldabalde el 2026-09-17 ([A-0035](A-0035-aldabalde-ahorro-mantenimiento-3-4-millones.md)).
 
 ## Veredicto
 
@@ -34,3 +36,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-09-28: se identifica quién dijo 3 o 4 millones.

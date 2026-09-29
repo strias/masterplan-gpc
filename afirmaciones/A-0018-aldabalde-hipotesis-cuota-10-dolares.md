@@ -7,7 +7,7 @@ fuente_original: F-0014   # 01:00:01
 tipo: estimacion
 tema: financiero
 veredicto: pendiente
-evidencia: []
+evidencia: [F-0016]
 vigente: true
 reemplazada_por:
 actualizado: 2026-09-28
@@ -27,6 +27,8 @@ Es una hipótesis razonable si se compara con cuántos socios pagan la cuota vol
 
 Hace falta: la encuesta (ficha técnica, fecha, muestra), el padrón de socios y el dato de la cuota de básquetbol. La cifra equivale a USD 12 M en cinco años (20.000 × 10 × 60); habría que ver cómo se llega a los 26 M de [A-0017](A-0017-aldabalde-26-millones-coinversion.md).
 
+El 2026-09-17 Aldabalde había dicho "ni se habla de 10 dólares ni nada de eso. Eso es todo información que no es correcta" ([F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md), 00:09:42). Ver [A-0005](A-0005-aldabalde-colaboracion-optativa.md).
+
 ## Veredicto
 
 Pendiente (fase 1).
@@ -34,3 +36,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-09-28: se agrega la declaración del 2026-09-17.
