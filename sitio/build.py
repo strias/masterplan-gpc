@@ -1,0 +1,283 @@
+import html, re
+
+YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
+      "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao"}
+NOMBRE = {
+    "F-0003": "Sitio oficial de la Asamblea", "F-0004": "Anteproyecto (PDF oficial)",
+    "F-0009": "La Abdón: moción filtrada", "F-0010": "La Abdón: qué se propone",
+    "F-0011": "La Abdón: Decurnex y Aldabalde", "F-0012": "La Abdón: Singlet, Bardanca y Aldabalde",
+    "F-0014": "Pasión Tricolor, Aldabalde (25/09)", "F-0015": "Territorio Nacional, Decurnex (21/09)",
+    "F-0016": "El Espectador, Aldabalde (17/09)", "F-0017": "Pasión Tricolor, Singlet y Bardanca (24/09)",
+    "F-0018": "El Espectador, Aldabalde (16/07)", "F-0019": "Pasión Tricolor, reacción a Decurnex (22/09)",
+}
+URL = {
+    "F-0003": "https://asambleagpc.nacional.uy/",
+    "F-0004": "https://asambleagpc.nacional.uy/Anteproyecto.pdf",
+    "F-0009": "https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre",
+    "F-0010": "https://laabdon.com/noticias/master-plan-del-gran-parque-central-que-se-propone-y-que-significa-para-nacional",
+    "F-0011": "https://laabdon.com/noticias/el-futuro-del-gran-parque-central-que-propone-cada-uno-y-donde-estan-las-diferencias",
+    "F-0012": "https://laabdon.com/noticias/master-plan-del-gpc-las-dudas-de-singlet-y-bardanca-y-las-respuestas-de-aldabalde-frente-a-frente",
+}
+
+def ref(fid, ts=None, page=None):
+    """Enlace a la fuente, al minuto exacto si es video."""
+    if ts and fid in YT:
+        h, m, s = map(int, ts.split(":"))
+        href = f"https://www.youtube.com/watch?v={YT[fid]}&t={h*3600+m*60+s}s"
+        label = f"{fid} · {ts}"
+    else:
+        href = URL.get(fid, "#fuentes")
+        label = fid + (f" · p. {page}" if page else "")
+    return f'<a class="ref" href="{href}" target="_blank" rel="noopener" title="{html.escape(NOMBRE.get(fid, fid))}">{label}</a>'
+
+def R(s):
+    """Reemplaza marcas {F-0014 01:08:44} o {F-0004 p.42} por enlaces."""
+    def sub(m):
+        fid, rest = m.group(1), (m.group(2) or "").strip()
+        if rest.startswith("p."):
+            return ref(fid, page=rest[2:].strip())
+        return ref(fid, rest or None)
+    return re.sub(r"\{(F-\d{4})\s*([^}]*)\}", sub, s)
+
+ESTADOS = {
+    "coinciden": ("Coinciden en el dato", "ok"),
+    "consistente": ("Consistente con documento", "ok"),
+    "borrador": ("Consistente con el borrador de la moción", "soft"),
+    "atribucion": ("Atribución de prensa incorrecta", "bad"),
+    "distintos": ("Mismo actor, dichos distintos", "warn"),
+    "cuenta": ("La cuenta no cierra", "warn"),
+    "parcial": ("Parcialmente consistente", "soft"),
+    "pendiente": ("Pendiente", "pend"),
+}
+def chip(k):
+    t, c = ESTADOS[k]
+    return f'<span class="chip chip-{c}">{t}</span>'
+
+# ---------- Preguntas ----------
+PREGUNTAS = [
+ dict(id="plata", q="¿Nacional pone plata en el proyecto?",
+  pregunta=[("Conductor de El Espectador", "“Si Nacional no llega a esas cifras, las tiene que poner de su caja. Vos recién decís que no…”", "{F-0016 00:06:27}")],
+  resp=[
+   ("Aldabalde", "“Nacional no interviene un solo dólar, salvo el flujo de los palcos”, que “no está en los flujos recurrentes del club”. Al fideicomiso van palcos, sus gastos comunes y el Club Social.", "{F-0016 00:06:59} {F-0014 02:28:39}"),
+   ("Decurnex", "“Nacional está poniendo 147 millones de dólares”: 93 M de renovación de palcos en 30 años, 33 M del Club Social y 21 M de gastos comunes. “Se haga el proyecto o no se haga, es plata de Nacional.”", "{F-0015 00:09:37}"),
+  ],
+  estado=["coinciden"],
+  lectura="Hablan de los mismos flujos y con casi las mismas cifras (Aldabalde también da 93 M de palcos y unos 30 M del Club Social, {F-0014 01:44:58}). La diferencia es si llamarlos “aporte del club”. Según el borrador de la moción, los ingresos existentes de palcos, Club Social o aportes de socios solo pueden ir al estadio y su infraestructura ({F-0009}; leído por Aldabalde en {F-0014 01:28:06}). El borrador no es oficial todavía."),
+ dict(id="costo", q="¿Cuánto cuesta la obra?",
+  pregunta=[("Conductor de El Espectador", "“El costo total está tasado en 112 millones, con el costo financiero se iría a 140…”", "{F-0016 00:06:27}")],
+  resp=[
+   ("Aldabalde", "16/07: la cotización original fue de 93 M y CPA la actualizó “en torno a los 100 millones”. 17/09: “con todas las actualizaciones, todo lo que llaman los soft costs […] está en 112 millones de dólares proyectados en los cuatro o cinco años que va a llevar la obra.”", "{F-0018 00:07:58} {F-0016 00:07:30}"),
+   ("Decurnex", "Encargó una estimación a RDA: “un costo arriba de los 150 millones de dólares”, porque el preproyecto no cotiza mobiliario, césped, audio, conectividad ni los anclajes del techo.", "{F-0015 00:07:35} {F-0015 00:08:11}"),
+   ("Singlet", "El material entregado a la Directiva parte de 93 M y llega a 105 M, y “no incluye césped, equipamiento deportivo, honorarios de arquitectura e ingeniería, seguros de obra ni costos financieros durante la obra”.", "{F-0017 00:51:51}"),
+  ],
+  estado=["distintos", "pendiente"],
+  lectura="Las cifras de Aldabalde cambian con el tiempo por actualizaciones; la vigente es 112 M. El “140 M” que La Abdón le atribuye lo dijo el entrevistador ({F-0016 00:06:27}). El anteproyecto oficial no trae costos ({F-0004}). Falta ver qué incluye hoy el costo de 112 M y el informe de RDA."),
+ dict(id="cuota", q="¿Va a haber una cuota extra? ¿Es obligatoria?",
+  pregunta=[("Conductor de Territorio Nacional", "“¿Eso es opcional, José, o es obligatorio?”", "{F-0015 00:13:25}"),
+            ("Conductor de Pasión Tricolor", "“La cuota o el dinero este que tienen que sacar de los socios, ¿nunca va a ser obligatorio?”", "{F-0014 02:32:26}")],
+  resp=[
+   ("Aldabalde", "17/09: “Hay cuotas de 40 pesos, de 50 pesos, 100 pesos y que son voluntarias […] ni se habla de 10 dólares.” 25/09: los USD 10 por mes de 20.000 socios eran “una celda de un Excel” de marzo. Obligatoria: “Siempre [optativa] […] Yo creo que no. Esa es una decisión de directiva, no mía.”", "{F-0016 00:09:10} {F-0014 00:59:29} {F-0014 02:32:36}"),
+   ("Decurnex", "El modelo supone 26 M de aporte de socios: 22.500 socios con USD 10 por mes durante 5 años y 1.000 socios con bonos de USD 2.000 por año. Para un financiador, un aporte voluntario “es tomado como cero”: “tenés que hacer una suba de cuota inevitable”, de alrededor del 50%.", "{F-0015 00:13:06} {F-0015 00:14:44}"),
+   ("Bardanca", "El financiador exige un aporte propio de 15 a 20% y no acepta que sea voluntario.", "{F-0017 00:54:19}"),
+  ],
+  estado=["distintos", "cuenta", "pendiente"],
+  lectura="Los dos lados coinciden en que el modelo pide unos 26 M de aporte de socios; discrepan en si puede ser voluntario. Aldabalde cambió su versión sobre los USD 10 entre el 17 y el 25 de septiembre. Los componentes que da Decurnex suman 23,5 M, no 26. La tercera cifra de cuota de Aldabalde (¿100 o 200 pesos?) falta verificarla en el audio. Se resuelve con el modelo económico, que todavía no está publicado ({F-0003})."),
+ dict(id="570", q="¿El proyecto genera 570 millones de dólares?",
+  pregunta=[("Conductor de Pasión Tricolor", "“Según Santiago Aldabalde, el proyecto generaría 570 millones de dólares. Pero dentro de esa cifra se incluyen los ingresos de tres renovaciones de palcos…”", "{F-0014 01:43:03}")],
+  resp=[
+   ("Aldabalde", "El fideicomiso genera 570 M en 30 años, más 150 M que van directo al club. Acepta el valor presente: “si esos 570 millones, sacando los palcos, son 82 hoy, los 94 de los palcos son 22”.", "{F-0016 00:05:03} {F-0014 01:44:58}"),
+   ("Bardanca", "Sumar los ingresos de 30 años “es un error financiero grave y básico”. Traídos al presente, “esos 570 millones son 103 millones de dólares”, y además incluyen palcos, gastos comunes y Club Social, que existirían sin el proyecto.", "{F-0017 00:30:29} {F-0017 00:33:40}"),
+  ],
+  estado=["coinciden"],
+  lectura="Coinciden casi exactamente: 82 + 22 = 104 M según Aldabalde, 103 M según Bardanca. El desacuerdo es qué cifra comunicar y qué ingresos son propios del proyecto."),
+ dict(id="parking", q="¿El estacionamiento da ganancia?",
+  pregunta=[("Conductor de Pasión Tricolor", "“Lo que generó ruido es lo del garage, los estacionamientos. Decime esa.”", "{F-0017 00:37:56}")],
+  resp=[
+   ("Singlet", "“980 plazas. El supuesto del proyecto es que hay una ocupación del 90% durante los 30 años.”", "{F-0017 00:39:24}"),
+   ("Bardanca", "Con el Excel de CPA y sin cambiar sus supuestos, el valor actual neto del estacionamiento da “menos siete millones de dólares”. La arena tampoco genera valor; el zócalo comercial sí.", "{F-0017 00:43:21} {F-0017 00:57:13}"),
+   ("Aldabalde", "El 90% “es la curva de lo que le vamos a cobrar al operador”, no la ocupación. Calculado por eventos, da unos 2,5 M de ingresos y 0,5 M de costo: “es un negocio de 2 millones de dólares”.", "{F-0014 01:11:08} {F-0014 01:13:45}"),
+  ],
+  estado=["pendiente", "cuenta"],
+  lectura="Es un desacuerdo sobre qué dice el modelo, y se resuelve leyendo el documento. Además miden cosas distintas: valor actual neto de la inversión contra resultado anual. En la cuenta de Aldabalde, 3 M con un castigo del 30% dan 2,1 M, no 2,5. Los 980 lugares sí están en el anteproyecto ({F-0004 p.42})."),
+ dict(id="solo", q="¿Se puede terminar solo el estadio?",
+  pregunta=[("Conductor de El Espectador", "“Hay plan B. El plan B, por ejemplo, es terminar exclusivamente el parque.”", "{F-0016 00:16:01}"),
+            ("Conductor de Pasión Tricolor", "“¿Con los flujos de Nacional solamente construir el parque sin todos los negocios anexos, eso para vos es inviable?”", "{F-0014 02:14:26}")],
+  resp=[
+   ("Aldabalde", "“Para hacer el parque solo no dan los números.” Con los palcos hay 17 M en 10 años, unos 13 M a valor presente. “No para mí, para el análisis que hizo [CPA].”", "{F-0016 00:16:13} {F-0014 02:14:43}"),
+   ("Decurnex", "“Debiera de haber un estudio y un análisis pormenorizado y detallado del tema parque en exclusividad”, y los demás negocios los debería financiar alguien de afuera.", "{F-0015 00:16:45}"),
+   ("Bardanca", "Trabajan sobre el Excel de CPA con cambios, por ejemplo sin techo, y “tenemos indicios de que se podría llegar a estructurar”. No está terminado.", "{F-0017 01:20:05}"),
+  ],
+  estado=["pendiente"],
+  lectura="Falta el análisis de CPA del escenario de solo estadio y la alternativa de Singlet y Bardanca. Hay un dato en común: el techo cuesta unos 20 a 21,5 M, según Aldabalde y según Singlet ({F-0014 01:22:28}, {F-0017 01:41:45})."),
+ dict(id="sobrecosto", q="¿Qué pasa si la obra sale más cara?",
+  pregunta=[("Conductor de El Espectador", "“El sobrecosto que puede tener, como tuvo el Camp Nou, como tuvo el Real Madrid, como tuvo el Antel Arena […] ¿quién se hace cargo?”", "{F-0016 00:23:57}")],
+  resp=[
+   ("Aldabalde", "“El fideicomiso es el responsable de toda la financiación.” Si cuesta 130 en vez de 110, no se empieza sin tener ese dinero; en el peor caso, el fideicomiso tarda más en pagar.", "{F-0016 00:24:12}"),
+   ("Decurnex", "El Club Social “tuvo entre un 55 y un 60% de sobrecosto”; hay que prever un 20 a 25% de imprevistos.", "{F-0015 00:20:13} {F-0015 00:36:50}"),
+   ("Bardanca", "Estadios como el Real Madrid o el Barcelona tuvieron desvíos del 50 o 60%: “Nosotros un desvío de obra del 60% no lo resistimos.”", "{F-0017 01:08:11}"),
+  ],
+  estado=["borrador", "pendiente"],
+  lectura="Según el borrador de la moción, el club no aporta capital para sobrecostos y ninguna etapa empieza sin financiamiento completo ({F-0009}). Si eso alcanza para cubrir el riesgo es una cuestión de valoración."),
+ dict(id="voto", q="¿Qué se vota el 24 de octubre y con qué mayoría?",
+  pregunta=[("Conductor de Territorio Nacional", "“La Asamblea, ¿para qué sirve?”", "{F-0015 00:21:40}"),
+            ("Oyente, leído en Pasión Tricolor", "“Si se aprueba por el 75% o por el 50 más 1. Que hay un debate ahí.”", "{F-0014 02:12:06}")],
+  resp=[
+   ("Aldabalde", "La Asamblea “aprueba el master plan y aprueba un sistema de trabajo”: sin deuda del club, sin hipotecas y sin empezar nada sin financiamiento. Sobre la mayoría: el 75% salió de una reforma del Estatuto votada “hace dos meses”, que no rige hasta que la apruebe el MEC.", "{F-0014 01:56:05} {F-0014 02:16:38}"),
+   ("Decurnex", "Según el Estatuto vigente alcanza con mayoría simple, pero “esto tiene que ser aprobado por el 75%”, como votó la Asamblea; va a plantearlo como moción.", "{F-0015 00:25:45}"),
+   ("Singlet", "La reforma del 7 de julio fijó el 75% para proyectos de más de USD 2 M. Dos o tres días después, Aldabalde dijo que esta Asamblea se regiría por el Estatuto vigente.", "{F-0017 00:05:19} {F-0017 00:07:23}"),
+  ],
+  estado=["coinciden", "pendiente"],
+  lectura="Todos coinciden en que la reforma existe y no rige. El desacuerdo es jurídico y de valores. La moción oficial todavía no está publicada ({F-0003})."),
+]
+
+# ---------- Contrapunto ----------
+FILAS = [
+ ("¿Pone plata Nacional?", "coinciden", "#plata"),
+ ("570 M: nominal y valor presente", "coinciden", "#570"),
+ ("Costo de la obra", "distintos", "#costo"),
+ ("“140 M con costo financiero”", "atribucion", "#costo"),
+ ("Costo del proyecto ejecutivo: 2,5 M", "atribucion", None),
+ ("Proyecto ejecutivo antes de votar", "borrador", None),
+ ("Aporte de socios voluntario", "pendiente", "#cuota"),
+ ("Los USD 10 por mes", "distintos", "#cuota"),
+ ("Cuentas de los 26 M y del estacionamiento", "cuenta", "#cuota"),
+ ("Ocupación y valor del estacionamiento", "pendiente", "#parking"),
+ ("Ocupación comercial de 97,5%", "pendiente", None),
+ ("Superficie del zócalo comercial", "parcial", None),
+ ("Mantenimiento: 3 o 4 M contra 1,2 M", "pendiente", None),
+ ("“10 mil butacas nuevas”", "consistente", None),
+ ("Solo estadio", "pendiente", "#solo"),
+ ("Informe de CPA “lapidario”", "pendiente", None),
+ ("Garantías de la moción", "borrador", "#sobrecosto"),
+ ("Mayoría del 75%", "coinciden", "#voto"),
+]
+NOTAS = {
+ "Costo del proyecto ejecutivo: 2,5 M": "La Abdón publicó 2,5 M; Aldabalde dijo “del entorno de los 2 millones” {F-0016 00:21:22}.",
+ "Proyecto ejecutivo antes de votar": "El borrador exige ejecutivo antes de cada etapa, no antes de la Asamblea {F-0009}. Es un desacuerdo de valores sobre qué hay que saber antes de votar.",
+ "Ocupación comercial de 97,5%": "Bardanca {F-0017 01:16:57}; Aldabalde: “100% alquilado, con precontratos” {F-0014 01:08:44}. Falta el modelo.",
+ "Superficie del zócalo comercial": "Aldabalde habla de modelos de 3.500 y 7.000 m² {F-0014 01:08:14}; el anteproyecto da 3.080 m² de locales comerciales y 14.266 m² de superficies rentables {F-0004 p.42}.",
+ "Mantenimiento: 3 o 4 M contra 1,2 M": "Aldabalde {F-0016 00:06:05}; Singlet, último balance: 1,2 M bruto {F-0017 01:31:00}. Falta el balance.",
+ "“10 mil butacas nuevas”": "Aldabalde {F-0014 01:52:45}. El aforo pasa de unos 34.000 a más de 43.000 {F-0004 p.64}.",
+ "Informe de CPA “lapidario”": "Aldabalde lo anunció así {F-0016 00:16:50}. En un mail leído al aire, un socio de CPA escribe que “no es lapidario ni pretende serlo” {F-0017 00:47:34}. Falta el informe.",
+}
+
+COINCIDEN = [
+ ("Ingresos a valor presente", "unos 104 M según Aldabalde; 103 M según Bardanca", "{F-0014 01:44:58} {F-0017 00:31:30}"),
+ ("Palcos en 30 años", "93 M, tres renovaciones", "{F-0015 00:09:37} {F-0014 01:44:58}"),
+ ("Techo", "unos 20 M según Aldabalde; 21,5 M según Singlet", "{F-0014 01:22:28} {F-0017 01:41:45}"),
+ ("Aporte de socios en el modelo", "unos 26 M", "{F-0014 01:06:00} {F-0015 00:12:34}"),
+ ("Reforma del Estatuto (75%)", "existe y todavía no rige", "{F-0014 02:16:38} {F-0015 00:25:45}"),
+ ("Pasivo del club", "entre 36 y 40 M", "{F-0014 01:48:47} {F-0015 00:33:36}"),
+ ("Ingresos de los negocios", "los modeló la CPO; CPA arma el modelo con esos insumos", "{F-0015 00:19:01} {F-0014 01:15:43}"),
+]
+
+FALTA = [
+ ("Moción oficial", "Qué se vota, garantías, aportes extraordinarios"),
+ ("Modelo económico financiero", "Costo vigente, cuota, aporte voluntario, supuestos comerciales"),
+ ("Material entregado a la Directiva el 11/03/2026", "Qué incluye el costo, ocupación del estacionamiento, techo"),
+ ("Excel de CPA “evaluación unidad de negocio v3” e informe de CPA", "Valor de cada negocio, solo estadio"),
+ ("Informe de RDA", "Costo de más de 150 M"),
+ ("Texto de la reforma del Estatuto", "Mayoría del 75%"),
+ ("Último balance del club", "Mantenimiento y pasivo"),
+]
+
+POSTURAS = [
+ ("Santiago Aldabalde", "Presidente de la CPO · postura oficialista",
+  "El Master Plan es la única forma de terminar el estadio y cambiar la economía del club. Cinco hectáreas en el centro de Montevideo que hoy rinden casi solo los días de partido pueden pagar la obra con arena, estacionamiento, zócalo comercial y plaza. El riesgo queda en un fideicomiso: sin hipotecas, sin deuda del club y sin empezar ninguna etapa sin financiamiento. “Hacer solo el estadio no da.”",
+  "{F-0014 00:50:14} {F-0016 00:02:32}"),
+ ("José Decurnex", "Vocal de la Directiva · votó contra convocar la Asamblea",
+  "Lo que quieren los socios es el estadio, y ahí deben ir los recursos del club: 147 M en 30 años de palcos, gastos comunes y Club Social, más el aporte de socios. Los negocios complementarios tienen riesgo y los deberían financiar privados. Sin proyecto ejecutivo no hay costo cierto; pide aprobación con el 75%.",
+  "{F-0015 00:04:13} {F-0015 00:16:45}"),
+ ("Enrique Singlet y Joaquín Bardanca", "Contadores · agrupación Atilio García",
+  "Crítica técnica sobre los documentos de CPA: los 570 M son nominales; con los propios supuestos de CPA, el estacionamiento y la arena no generan valor; el costo de 105 M deja rubros afuera; un financiador no acepta un aporte voluntario; falta análisis de sensibilidad. Dicen que no son asesores de Decurnex y trabajan en una alternativa de solo estadio.",
+  "{F-0017 00:11:21} {F-0017 01:24:00}"),
+ ("Tatiana Villaverde", "Contadora de la Directiva",
+  "El dinero genuino del club debe ir al estadio; las unidades de negocio, a inversores externos a su riesgo, con concesiones temporales como la del restaurante o la tienda. (Mensaje leído al aire.)",
+  "{F-0014 01:24:49}"),
+]
+
+FUENTES = ["F-0003", "F-0004", "F-0009", "F-0011", "F-0012", "F-0014", "F-0015", "F-0016", "F-0017", "F-0018", "F-0019"]
+
+def src_link(fid):
+    if fid in YT:
+        return f'<a href="https://www.youtube.com/watch?v={YT[fid]}" target="_blank" rel="noopener">{NOMBRE[fid]}</a>'
+    return f'<a href="{URL[fid]}" target="_blank" rel="noopener">{NOMBRE[fid]}</a>'
+
+out = []
+A = out.append
+A(open("head.html").read())
+A('<main class="wrap">')
+A('''<header class="hero">
+  <p class="eyebrow">Gran Parque Central · Master Plan</p>
+  <h1>Qué dice cada uno, y qué se puede comprobar</h1>
+  <p class="lede">Las preguntas centrales del debate, con las respuestas de cada parte y un enlace al minuto exacto en que se dijo cada cosa. Donde hay un documento, se contrasta con él.</p>
+  <dl class="facts">
+    <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
+    <div><dt>Estado</dt><dd>Preliminar · actualizado el 28/09/2026</dd></div>
+    <div><dt>Falta publicar</dt><dd>Moción oficial y modelo económico</dd></div>
+  </dl>
+  <nav class="toc" aria-label="Secciones">
+    <a href="#preguntas">Preguntas</a><a href="#posturas">Posturas</a><a href="#coinciden">En qué coinciden</a><a href="#contrapunto">Contrapunto</a><a href="#falta">Qué falta</a><a href="#fuentes">Fuentes</a>
+  </nav>
+</header>''')
+
+# Preguntas
+A('<section id="preguntas" class="sec"><h2>Las preguntas más importantes</h2>')
+A('<p class="sec-intro">Cada pregunta indica dónde se hizo. Cada respuesta enlaza al video en el minuto justo. Las citas salen de transcripciones automáticas: escuchá el tramo antes de citarlo.</p>')
+for p in PREGUNTAS:
+    A(f'<article class="q" id="{p["id"]}"><h3>{html.escape(p["q"])}</h3>')
+    A('<div class="asked"><span class="label">Dónde se preguntó</span><ul>')
+    for who, txt, r in p["pregunta"]:
+        A(f'<li><span class="who">{who}:</span> {html.escape(txt)} {R(r)}</li>')
+    A('</ul></div><div class="answers">')
+    for who, txt, r in p["resp"]:
+        A(f'<div class="ans"><p class="ans-who">{who}</p><p class="ans-txt">{html.escape(txt)}</p><p class="ans-ref">{R(r)}</p></div>')
+    A('</div>')
+    A(f'<div class="verdict"><div class="chips">{"".join(chip(e) for e in p["estado"])}</div><p>{R(p["lectura"])}</p></div></article>')
+A('</section>')
+
+# Posturas
+A('<section id="posturas" class="sec"><h2>Las posturas</h2><div class="posturas">')
+for n, rol, txt, r in POSTURAS:
+    A(f'<article class="post"><h3>{n}</h3><p class="rol">{rol}</p><p>{html.escape(txt)}</p><p class="ans-ref">{R(r)}</p></article>')
+A('</div></section>')
+
+# Coinciden
+A('<section id="coinciden" class="sec"><h2>En qué coinciden</h2><p class="sec-intro">En los datos centrales, las dos partes dan cifras iguales o muy cercanas. La discusión es sobre cómo leerlas y cuánto riesgo aceptar.</p><dl class="coin">')
+for t, v, r in COINCIDEN:
+    A(f'<div><dt>{t}</dt><dd>{html.escape(v)} <span class="refs">{R(r)}</span></dd></div>')
+A('</dl></section>')
+
+# Contrapunto
+A('<section id="contrapunto" class="sec"><h2>Contrapunto</h2><p class="sec-intro">Estado de cada tema según lo que se puede comprobar hoy. Las definiciones de cada estado están al pie.</p><div class="table-wrap"><table><thead><tr><th scope="col">Tema</th><th scope="col">Estado</th><th scope="col">Detalle</th></tr></thead><tbody>')
+for t, e, anchor in FILAS:
+    det = R(NOTAS[t]) if t in NOTAS else (f'<a href="{anchor}">Ver la pregunta</a>' if anchor else "")
+    A(f'<tr><th scope="row">{t}</th><td>{chip(e)}</td><td>{det}</td></tr>')
+A('</tbody></table></div>')
+A('''<dl class="legend">
+<div><dt>''' + chip("coinciden") + '''</dt><dd>Las dos partes dan la misma cifra.</dd></div>
+<div><dt>''' + chip("consistente") + '''</dt><dd>Lo confirma un documento oficial registrado.</dd></div>
+<div><dt>''' + chip("borrador") + '''</dt><dd>Coincide con el borrador de la moción, que todavía no es oficial.</dd></div>
+<div><dt>''' + chip("atribucion") + '''</dt><dd>La fuente original no dice lo que publicó un medio.</dd></div>
+<div><dt>''' + chip("distintos") + '''</dt><dd>La misma persona dijo cosas distintas en fechas distintas. No implica que sea falso: la información puede haber cambiado.</dd></div>
+<div><dt>''' + chip("cuenta") + '''</dt><dd>La cifra dicha no coincide con sus propios componentes.</dd></div>
+<div><dt>''' + chip("parcial") + '''</dt><dd>Una parte coincide con un documento y otra no se puede comprobar.</dd></div>
+<div><dt>''' + chip("pendiente") + '''</dt><dd>Falta el documento que lo resuelve.</dd></div>
+</dl></section>''')
+
+# Falta
+A('<section id="falta" class="sec"><h2>Qué falta para verificar</h2><ul class="falta">')
+for d, r in FALTA:
+    A(f'<li><strong>{d}</strong><span>{r}</span></li>')
+A('</ul></section>')
+
+# Fuentes
+A('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Cada código (F-0014, etc.) es la ficha de la fuente en el repositorio del proyecto. Los enlaces con minuto abren el video en ese punto.</p><ul class="fuentes">')
+for f in FUENTES:
+    A(f'<li><span class="code">{f}</span>{src_link(f)}</li>')
+A('</ul></section>')
+
+A('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, hincha de Nacional, con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente.</p></footer></main>''')
+
+open("contrapunto.html", "w").write("\n".join(out))
+print("ok", sum(len(x) for x in out))

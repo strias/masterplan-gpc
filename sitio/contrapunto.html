@@ -1,0 +1,270 @@
+<title>Contrapunto del Master Plan</title>
+<meta name="description" content="Preguntas, respuestas y fuentes del debate sobre el Master Plan del Gran Parque Central.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: una columna de lectura; cada pregunta es una ficha con quién preguntó, las respuestas en paralelo y el estado al pie. Colores del club: azul, rojo y blanco. */
+:root {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --ink: #141b33;
+  --muted: #545d78;
+  --line: #d9dde9;
+  --navy: #1b2a6b;
+  --red: #c8102e;
+  --ok-bg: #e3f1e8; --ok-fg: #1d5a35;
+  --warn-bg: #fbeed5; --warn-fg: #7a4b05;
+  --bad-bg: #fbe1e4; --bad-fg: #8f1022;
+  --soft-bg: #e4e9f7; --soft-fg: #25367f;
+  --pend-bg: #eceef3; --pend-fg: #4a5169;
+  --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1222; --surface: #161b30; --ink: #e8ebf5; --muted: #a3aac2; --line: #2b3250;
+    --navy: #9fb1ff; --red: #ff6b7d;
+    --ok-bg: #173826; --ok-fg: #9fe0b5; --warn-bg: #3b2c0f; --warn-fg: #f2c979;
+    --bad-bg: #401820; --bad-fg: #ffadb7; --soft-bg: #1f2a55; --soft-fg: #b9c6ff;
+    --pend-bg: #232941; --pend-fg: #b7bdd3;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1222; --surface: #161b30; --ink: #e8ebf5; --muted: #a3aac2; --line: #2b3250;
+  --navy: #9fb1ff; --red: #ff6b7d;
+  --ok-bg: #173826; --ok-fg: #9fe0b5; --warn-bg: #3b2c0f; --warn-fg: #f2c979;
+  --bad-bg: #401820; --bad-fg: #ffadb7; --soft-bg: #1f2a55; --soft-fg: #b9c6ff;
+  --pend-bg: #232941; --pend-fg: #b7bdd3;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: flex; flex-direction: column; gap: 56px; }
+a { color: var(--navy); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 700; line-height: 1.05; text-wrap: balance; margin: 0; letter-spacing: .005em; }
+h1 { font-size: clamp(2.3rem, 6vw, 3.6rem); color: var(--ink); }
+h2 { font-size: 2rem; text-transform: uppercase; letter-spacing: .03em; color: var(--navy); padding-bottom: 8px; border-bottom: 3px solid var(--red); }
+h3 { font-size: 1.55rem; }
+p { margin: 0; }
+.eyebrow, .label, .rol, .ans-who, dt { font-family: var(--f-mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
+.eyebrow { color: var(--red); font-weight: 500; }
+.hero { display: flex; flex-direction: column; gap: 16px; padding-top: 12px; }
+.lede { font-size: 1.12rem; color: var(--muted); max-width: 62ch; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 8px 0 0; }
+.facts > div { background: var(--surface); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.facts dd { margin: 0; font-size: .98rem; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--f-mono); font-size: .82rem; }
+.sec { display: flex; flex-direction: column; gap: 20px; }
+.sec-intro { color: var(--muted); max-width: 64ch; }
+.q { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--navy); padding: 20px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 16px; }
+.asked ul { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.asked li { font-style: italic; color: var(--muted); }
+.asked .who { font-style: normal; font-weight: 600; color: var(--ink); }
+.answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.ans { border-left: 3px solid var(--line); padding-left: 12px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ans-who { color: var(--navy); font-weight: 500; }
+.ans-txt { font-size: .98rem; }
+.ans-ref, .refs { display: flex; flex-wrap: wrap; gap: 6px; }
+.refs { display: inline-flex; margin-left: 4px; }
+.ref { font-family: var(--f-mono); font-size: .74rem; text-decoration: none; background: var(--soft-bg); color: var(--soft-fg); padding: 2px 7px; border-radius: 3px; white-space: nowrap; }
+.ref:hover { text-decoration: underline; }
+.verdict { background: var(--bg); border: 1px dashed var(--line); padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .02em; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
+.chip-ok { background: var(--ok-bg); color: var(--ok-fg); }
+.chip-warn { background: var(--warn-bg); color: var(--warn-fg); }
+.chip-bad { background: var(--bad-bg); color: var(--bad-fg); }
+.chip-soft { background: var(--soft-bg); color: var(--soft-fg); }
+.chip-pend { background: var(--pend-bg); color: var(--pend-fg); }
+.posturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.post { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.coin { margin: 0; display: flex; flex-direction: column; }
+.coin > div { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.coin dt { padding-top: 3px; }
+.coin dd { margin: 0; min-width: 0; font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+thead th { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 500; }
+tbody th { font-weight: 600; width: 32%; }
+tbody tr:last-child > * { border-bottom: 0; }
+.legend { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 20px; }
+.legend > div { display: flex; flex-direction: column; gap: 4px; }
+.legend dt { text-transform: none; letter-spacing: 0; }
+.legend dd { margin: 0; font-size: .92rem; color: var(--muted); }
+.falta { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.falta li { display: grid; grid-template-columns: minmax(180px, 1fr) 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.falta span { color: var(--muted); }
+.fuentes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 8px 20px; }
+.fuentes li { display: flex; gap: 10px; align-items: baseline; min-width: 0; }
+.code { font-family: var(--f-mono); font-size: .78rem; color: var(--red); flex: none; }
+.foot { border-top: 1px solid var(--line); padding-top: 16px; color: var(--muted); font-size: .92rem; }
+@media (max-width: 560px) {
+  .coin > div, .falta li { grid-template-columns: 1fr; gap: 4px; }
+  .q { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<main class="wrap">
+<header class="hero">
+  <p class="eyebrow">Gran Parque Central · Master Plan</p>
+  <h1>Qué dice cada uno, y qué se puede comprobar</h1>
+  <p class="lede">Las preguntas centrales del debate, con las respuestas de cada parte y un enlace al minuto exacto en que se dijo cada cosa. Donde hay un documento, se contrasta con él.</p>
+  <dl class="facts">
+    <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
+    <div><dt>Estado</dt><dd>Preliminar · actualizado el 28/09/2026</dd></div>
+    <div><dt>Falta publicar</dt><dd>Moción oficial y modelo económico</dd></div>
+  </dl>
+  <nav class="toc" aria-label="Secciones">
+    <a href="#preguntas">Preguntas</a><a href="#posturas">Posturas</a><a href="#coinciden">En qué coinciden</a><a href="#contrapunto">Contrapunto</a><a href="#falta">Qué falta</a><a href="#fuentes">Fuentes</a>
+  </nav>
+</header>
+<section id="preguntas" class="sec"><h2>Las preguntas más importantes</h2>
+<p class="sec-intro">Cada pregunta indica dónde se hizo. Cada respuesta enlaza al video en el minuto justo. Las citas salen de transcripciones automáticas: escuchá el tramo antes de citarlo.</p>
+<article class="q" id="plata"><h3>¿Nacional pone plata en el proyecto?</h3>
+<div class="asked"><span class="label">Dónde se preguntó</span><ul>
+<li><span class="who">Conductor de El Espectador:</span> “Si Nacional no llega a esas cifras, las tiene que poner de su caja. Vos recién decís que no…” <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=387s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:06:27</a></li>
+</ul></div><div class="answers">
+<div class="ans"><p class="ans-who">Aldabalde</p><p class="ans-txt">“Nacional no interviene un solo dólar, salvo el flujo de los palcos”, que “no está en los flujos recurrentes del club”. Al fideicomiso van palcos, sus gastos comunes y el Club Social.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=419s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:06:59</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=8919s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:28:39</a></p></div>
+<div class="ans"><p class="ans-who">Decurnex</p><p class="ans-txt">“Nacional está poniendo 147 millones de dólares”: 93 M de renovación de palcos en 30 años, 33 M del Club Social y 21 M de gastos comunes. “Se haga el proyecto o no se haga, es plata de Nacional.”</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=577s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:09:37</a></p></div>
+</div>
+<div class="verdict"><div class="chips"><span class="chip chip-ok">Coinciden en el dato</span></div><p>Hablan de los mismos flujos y con casi las mismas cifras (Aldabalde también da 93 M de palcos y unos 30 M del Club Social, <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6298s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:44:58</a>). La diferencia es si llamarlos “aporte del club”. Según el borrador de la moción, los ingresos existentes de palcos, Club Social o aportes de socios solo pueden ir al estadio y su infraestructura (<a class="ref" href="https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre" target="_blank" rel="noopener" title="La Abdón: moción filtrada">F-0009</a>; leído por Aldabalde en <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=5286s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:28:06</a>). El borrador no es oficial todavía.</p></div></article>
+<article class="q" id="costo"><h3>¿Cuánto cuesta la obra?</h3>
+<div class="asked"><span class="label">Dónde se preguntó</span><ul>
+<li><span class="who">Conductor de El Espectador:</span> “El costo total está tasado en 112 millones, con el costo financiero se iría a 140…” <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=387s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:06:27</a></li>
+</ul></div><div class="answers">
+<div class="ans"><p class="ans-who">Aldabalde</p><p class="ans-txt">16/07: la cotización original fue de 93 M y CPA la actualizó “en torno a los 100 millones”. 17/09: “con todas las actualizaciones, todo lo que llaman los soft costs […] está en 112 millones de dólares proyectados en los cuatro o cinco años que va a llevar la obra.”</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=PDYIvpms7r4&t=478s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (16/07)">F-0018 · 00:07:58</a> <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=450s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:07:30</a></p></div>
+<div class="ans"><p class="ans-who">Decurnex</p><p class="ans-txt">Encargó una estimación a RDA: “un costo arriba de los 150 millones de dólares”, porque el preproyecto no cotiza mobiliario, césped, audio, conectividad ni los anclajes del techo.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=455s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:07:35</a> <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=491s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:08:11</a></p></div>
+<div class="ans"><p class="ans-who">Singlet</p><p class="ans-txt">El material entregado a la Directiva parte de 93 M y llega a 105 M, y “no incluye césped, equipamiento deportivo, honorarios de arquitectura e ingeniería, seguros de obra ni costos financieros durante la obra”.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=3111s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:51:51</a></p></div>
+</div>
+<div class="verdict"><div class="chips"><span class="chip chip-warn">Mismo actor, dichos distintos</span><span class="chip chip-pend">Pendiente</span></div><p>Las cifras de Aldabalde cambian con el tiempo por actualizaciones; la vigente es 112 M. El “140 M” que La Abdón le atribuye lo dijo el entrevistador (<a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=387s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:06:27</a>). El anteproyecto oficial no trae costos (<a class="ref" href="https://asambleagpc.nacional.uy/Anteproyecto.pdf" target="_blank" rel="noopener" title="Anteproyecto (PDF oficial)">F-0004</a>). Falta ver qué incluye hoy el costo de 112 M y el informe de RDA.</p></div></article>
+<article class="q" id="cuota"><h3>¿Va a haber una cuota extra? ¿Es obligatoria?</h3>
+<div class="asked"><span class="label">Dónde se preguntó</span><ul>
+<li><span class="who">Conductor de Territorio Nacional:</span> “¿Eso es opcional, José, o es obligatorio?” <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=805s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:13:25</a></li>
+<li><span class="who">Conductor de Pasión Tricolor:</span> “La cuota o el dinero este que tienen que sacar de los socios, ¿nunca va a ser obligatorio?” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=9146s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:32:26</a></li>
+</ul></div><div class="answers">
+<div class="ans"><p class="ans-who">Aldabalde</p><p class="ans-txt">17/09: “Hay cuotas de 40 pesos, de 50 pesos, 100 pesos y que son voluntarias […] ni se habla de 10 dólares.” 25/09: los USD 10 por mes de 20.000 socios eran “una celda de un Excel” de marzo. Obligatoria: “Siempre [optativa] […] Yo creo que no. Esa es una decisión de directiva, no mía.”</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=550s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:09:10</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=3569s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 00:59:29</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=9156s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:32:36</a></p></div>
+<div class="ans"><p class="ans-who">Decurnex</p><p class="ans-txt">El modelo supone 26 M de aporte de socios: 22.500 socios con USD 10 por mes durante 5 años y 1.000 socios con bonos de USD 2.000 por año. Para un financiador, un aporte voluntario “es tomado como cero”: “tenés que hacer una suba de cuota inevitable”, de alrededor del 50%.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=786s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:13:06</a> <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=884s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:14:44</a></p></div>
+<div class="ans"><p class="ans-who">Bardanca</p><p class="ans-txt">El financiador exige un aporte propio de 15 a 20% y no acepta que sea voluntario.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=3259s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:54:19</a></p></div>
+</div>
+<div class="verdict"><div class="chips"><span class="chip chip-warn">Mismo actor, dichos distintos</span><span class="chip chip-warn">La cuenta no cierra</span><span class="chip chip-pend">Pendiente</span></div><p>Los dos lados coinciden en que el modelo pide unos 26 M de aporte de socios; discrepan en si puede ser voluntario. Aldabalde cambió su versión sobre los USD 10 entre el 17 y el 25 de septiembre. Los componentes que da Decurnex suman 23,5 M, no 26. La tercera cifra de cuota de Aldabalde (¿100 o 200 pesos?) falta verificarla en el audio. Se resuelve con el modelo económico, que todavía no está publicado (<a class="ref" href="https://asambleagpc.nacional.uy/" target="_blank" rel="noopener" title="Sitio oficial de la Asamblea">F-0003</a>).</p></div></article>
+<article class="q" id="570"><h3>¿El proyecto genera 570 millones de dólares?</h3>
+<div class="asked"><span class="label">Dónde se preguntó</span><ul>
+<li><span class="who">Conductor de Pasión Tricolor:</span> “Según Santiago Aldabalde, el proyecto generaría 570 millones de dólares. Pero dentro de esa cifra se incluyen los ingresos de tres renovaciones de palcos…” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6183s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:43:03</a></li>
+</ul></div><div class="answers">
+<div class="ans"><p class="ans-who">Aldabalde</p><p class="ans-txt">El fideicomiso genera 570 M en 30 años, más 150 M que van directo al club. Acepta el valor presente: “si esos 570 millones, sacando los palcos, son 82 hoy, los 94 de los palcos son 22”.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=303s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:05:03</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6298s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:44:58</a></p></div>
+<div class="ans"><p class="ans-who">Bardanca</p><p class="ans-txt">Sumar los ingresos de 30 años “es un error financiero grave y básico”. Traídos al presente, “esos 570 millones son 103 millones de dólares”, y además incluyen palcos, gastos comunes y Club Social, que existirían sin el proyecto.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=1829s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:30:29</a> <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=2020s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:33:40</a></p></div>
+</div>
+<div class="verdict"><div class="chips"><span class="chip chip-ok">Coinciden en el dato</span></div><p>Coinciden casi exactamente: 82 + 22 = 104 M según Aldabalde, 103 M según Bardanca. El desacuerdo es qué cifra comunicar y qué ingresos son propios del proyecto.</p></div></article>
+<article class="q" id="parking"><h3>¿El estacionamiento da ganancia?</h3>
+<div class="asked"><span class="label">Dónde se preguntó</span><ul>
+<li><span class="who">Conductor de Pasión Tricolor:</span> “Lo que generó ruido es lo del garage, los estacionamientos. Decime esa.” <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=2276s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:37:56</a></li>
+</ul></div><div class="answers">
+<div class="ans"><p class="ans-who">Singlet</p><p class="ans-txt">“980 plazas. El supuesto del proyecto es que hay una ocupación del 90% durante los 30 años.”</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=2364s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:39:24</a></p></div>
+<div class="ans"><p class="ans-who">Bardanca</p><p class="ans-txt">Con el Excel de CPA y sin cambiar sus supuestos, el valor actual neto del estacionamiento da “menos siete millones de dólares”. La arena tampoco genera valor; el zócalo comercial sí.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=2601s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:43:21</a> <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=3433s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:57:13</a></p></div>
+<div class="ans"><p class="ans-who">Aldabalde</p><p class="ans-txt">El 90% “es la curva de lo que le vamos a cobrar al operador”, no la ocupación. Calculado por eventos, da unos 2,5 M de ingresos y 0,5 M de costo: “es un negocio de 2 millones de dólares”.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=4268s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:11:08</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=4425s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:13:45</a></p></div>
+</div>
+<div class="verdict"><div class="chips"><span class="chip chip-pend">Pendiente</span><span class="chip chip-warn">La cuenta no cierra</span></div><p>Es un desacuerdo sobre qué dice el modelo, y se resuelve leyendo el documento. Además miden cosas distintas: valor actual neto de la inversión contra resultado anual. En la cuenta de Aldabalde, 3 M con un castigo del 30% dan 2,1 M, no 2,5. Los 980 lugares sí están en el anteproyecto (<a class="ref" href="https://asambleagpc.nacional.uy/Anteproyecto.pdf" target="_blank" rel="noopener" title="Anteproyecto (PDF oficial)">F-0004 · p. 42</a>).</p></div></article>
+<article class="q" id="solo"><h3>¿Se puede terminar solo el estadio?</h3>
+<div class="asked"><span class="label">Dónde se preguntó</span><ul>
+<li><span class="who">Conductor de El Espectador:</span> “Hay plan B. El plan B, por ejemplo, es terminar exclusivamente el parque.” <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=961s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:16:01</a></li>
+<li><span class="who">Conductor de Pasión Tricolor:</span> “¿Con los flujos de Nacional solamente construir el parque sin todos los negocios anexos, eso para vos es inviable?” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=8066s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:14:26</a></li>
+</ul></div><div class="answers">
+<div class="ans"><p class="ans-who">Aldabalde</p><p class="ans-txt">“Para hacer el parque solo no dan los números.” Con los palcos hay 17 M en 10 años, unos 13 M a valor presente. “No para mí, para el análisis que hizo [CPA].”</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=973s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:16:13</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=8083s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:14:43</a></p></div>
+<div class="ans"><p class="ans-who">Decurnex</p><p class="ans-txt">“Debiera de haber un estudio y un análisis pormenorizado y detallado del tema parque en exclusividad”, y los demás negocios los debería financiar alguien de afuera.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1005s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:16:45</a></p></div>
+<div class="ans"><p class="ans-who">Bardanca</p><p class="ans-txt">Trabajan sobre el Excel de CPA con cambios, por ejemplo sin techo, y “tenemos indicios de que se podría llegar a estructurar”. No está terminado.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=4805s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 01:20:05</a></p></div>
+</div>
+<div class="verdict"><div class="chips"><span class="chip chip-pend">Pendiente</span></div><p>Falta el análisis de CPA del escenario de solo estadio y la alternativa de Singlet y Bardanca. Hay un dato en común: el techo cuesta unos 20 a 21,5 M, según Aldabalde y según Singlet (<a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=4948s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:22:28</a>, <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=6105s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 01:41:45</a>).</p></div></article>
+<article class="q" id="sobrecosto"><h3>¿Qué pasa si la obra sale más cara?</h3>
+<div class="asked"><span class="label">Dónde se preguntó</span><ul>
+<li><span class="who">Conductor de El Espectador:</span> “El sobrecosto que puede tener, como tuvo el Camp Nou, como tuvo el Real Madrid, como tuvo el Antel Arena […] ¿quién se hace cargo?” <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=1437s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:23:57</a></li>
+</ul></div><div class="answers">
+<div class="ans"><p class="ans-who">Aldabalde</p><p class="ans-txt">“El fideicomiso es el responsable de toda la financiación.” Si cuesta 130 en vez de 110, no se empieza sin tener ese dinero; en el peor caso, el fideicomiso tarda más en pagar.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=1452s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:24:12</a></p></div>
+<div class="ans"><p class="ans-who">Decurnex</p><p class="ans-txt">El Club Social “tuvo entre un 55 y un 60% de sobrecosto”; hay que prever un 20 a 25% de imprevistos.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1213s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:20:13</a> <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=2210s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:36:50</a></p></div>
+<div class="ans"><p class="ans-who">Bardanca</p><p class="ans-txt">Estadios como el Real Madrid o el Barcelona tuvieron desvíos del 50 o 60%: “Nosotros un desvío de obra del 60% no lo resistimos.”</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=4091s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 01:08:11</a></p></div>
+</div>
+<div class="verdict"><div class="chips"><span class="chip chip-soft">Consistente con el borrador de la moción</span><span class="chip chip-pend">Pendiente</span></div><p>Según el borrador de la moción, el club no aporta capital para sobrecostos y ninguna etapa empieza sin financiamiento completo (<a class="ref" href="https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre" target="_blank" rel="noopener" title="La Abdón: moción filtrada">F-0009</a>). Si eso alcanza para cubrir el riesgo es una cuestión de valoración.</p></div></article>
+<article class="q" id="voto"><h3>¿Qué se vota el 24 de octubre y con qué mayoría?</h3>
+<div class="asked"><span class="label">Dónde se preguntó</span><ul>
+<li><span class="who">Conductor de Territorio Nacional:</span> “La Asamblea, ¿para qué sirve?” <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1300s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:21:40</a></li>
+<li><span class="who">Oyente, leído en Pasión Tricolor:</span> “Si se aprueba por el 75% o por el 50 más 1. Que hay un debate ahí.” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=7926s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:12:06</a></li>
+</ul></div><div class="answers">
+<div class="ans"><p class="ans-who">Aldabalde</p><p class="ans-txt">La Asamblea “aprueba el master plan y aprueba un sistema de trabajo”: sin deuda del club, sin hipotecas y sin empezar nada sin financiamiento. Sobre la mayoría: el 75% salió de una reforma del Estatuto votada “hace dos meses”, que no rige hasta que la apruebe el MEC.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6965s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:56:05</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=8198s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:16:38</a></p></div>
+<div class="ans"><p class="ans-who">Decurnex</p><p class="ans-txt">Según el Estatuto vigente alcanza con mayoría simple, pero “esto tiene que ser aprobado por el 75%”, como votó la Asamblea; va a plantearlo como moción.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1545s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:25:45</a></p></div>
+<div class="ans"><p class="ans-who">Singlet</p><p class="ans-txt">La reforma del 7 de julio fijó el 75% para proyectos de más de USD 2 M. Dos o tres días después, Aldabalde dijo que esta Asamblea se regiría por el Estatuto vigente.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=319s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:05:19</a> <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=443s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:07:23</a></p></div>
+</div>
+<div class="verdict"><div class="chips"><span class="chip chip-ok">Coinciden en el dato</span><span class="chip chip-pend">Pendiente</span></div><p>Todos coinciden en que la reforma existe y no rige. El desacuerdo es jurídico y de valores. La moción oficial todavía no está publicada (<a class="ref" href="https://asambleagpc.nacional.uy/" target="_blank" rel="noopener" title="Sitio oficial de la Asamblea">F-0003</a>).</p></div></article>
+</section>
+<section id="posturas" class="sec"><h2>Las posturas</h2><div class="posturas">
+<article class="post"><h3>Santiago Aldabalde</h3><p class="rol">Presidente de la CPO · postura oficialista</p><p>El Master Plan es la única forma de terminar el estadio y cambiar la economía del club. Cinco hectáreas en el centro de Montevideo que hoy rinden casi solo los días de partido pueden pagar la obra con arena, estacionamiento, zócalo comercial y plaza. El riesgo queda en un fideicomiso: sin hipotecas, sin deuda del club y sin empezar ninguna etapa sin financiamiento. “Hacer solo el estadio no da.”</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=3014s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 00:50:14</a> <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=152s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:02:32</a></p></article>
+<article class="post"><h3>José Decurnex</h3><p class="rol">Vocal de la Directiva · votó contra convocar la Asamblea</p><p>Lo que quieren los socios es el estadio, y ahí deben ir los recursos del club: 147 M en 30 años de palcos, gastos comunes y Club Social, más el aporte de socios. Los negocios complementarios tienen riesgo y los deberían financiar privados. Sin proyecto ejecutivo no hay costo cierto; pide aprobación con el 75%.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=253s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:04:13</a> <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1005s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:16:45</a></p></article>
+<article class="post"><h3>Enrique Singlet y Joaquín Bardanca</h3><p class="rol">Contadores · agrupación Atilio García</p><p>Crítica técnica sobre los documentos de CPA: los 570 M son nominales; con los propios supuestos de CPA, el estacionamiento y la arena no generan valor; el costo de 105 M deja rubros afuera; un financiador no acepta un aporte voluntario; falta análisis de sensibilidad. Dicen que no son asesores de Decurnex y trabajan en una alternativa de solo estadio.</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=681s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:11:21</a> <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=5040s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 01:24:00</a></p></article>
+<article class="post"><h3>Tatiana Villaverde</h3><p class="rol">Contadora de la Directiva</p><p>El dinero genuino del club debe ir al estadio; las unidades de negocio, a inversores externos a su riesgo, con concesiones temporales como la del restaurante o la tienda. (Mensaje leído al aire.)</p><p class="ans-ref"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=5089s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:24:49</a></p></article>
+</div></section>
+<section id="coinciden" class="sec"><h2>En qué coinciden</h2><p class="sec-intro">En los datos centrales, las dos partes dan cifras iguales o muy cercanas. La discusión es sobre cómo leerlas y cuánto riesgo aceptar.</p><dl class="coin">
+<div><dt>Ingresos a valor presente</dt><dd>unos 104 M según Aldabalde; 103 M según Bardanca <span class="refs"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6298s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:44:58</a> <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=1890s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:31:30</a></span></dd></div>
+<div><dt>Palcos en 30 años</dt><dd>93 M, tres renovaciones <span class="refs"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=577s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:09:37</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6298s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:44:58</a></span></dd></div>
+<div><dt>Techo</dt><dd>unos 20 M según Aldabalde; 21,5 M según Singlet <span class="refs"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=4948s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:22:28</a> <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=6105s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 01:41:45</a></span></dd></div>
+<div><dt>Aporte de socios en el modelo</dt><dd>unos 26 M <span class="refs"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=3960s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:06:00</a> <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=754s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:12:34</a></span></dd></div>
+<div><dt>Reforma del Estatuto (75%)</dt><dd>existe y todavía no rige <span class="refs"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=8198s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 02:16:38</a> <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1545s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:25:45</a></span></dd></div>
+<div><dt>Pasivo del club</dt><dd>entre 36 y 40 M <span class="refs"><a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6527s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:48:47</a> <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=2016s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:33:36</a></span></dd></div>
+<div><dt>Ingresos de los negocios</dt><dd>los modeló la CPO; CPA arma el modelo con esos insumos <span class="refs"><a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=1141s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:19:01</a> <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=4543s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:15:43</a></span></dd></div>
+</dl></section>
+<section id="contrapunto" class="sec"><h2>Contrapunto</h2><p class="sec-intro">Estado de cada tema según lo que se puede comprobar hoy. Las definiciones de cada estado están al pie.</p><div class="table-wrap"><table><thead><tr><th scope="col">Tema</th><th scope="col">Estado</th><th scope="col">Detalle</th></tr></thead><tbody>
+<tr><th scope="row">¿Pone plata Nacional?</th><td><span class="chip chip-ok">Coinciden en el dato</span></td><td><a href="#plata">Ver la pregunta</a></td></tr>
+<tr><th scope="row">570 M: nominal y valor presente</th><td><span class="chip chip-ok">Coinciden en el dato</span></td><td><a href="#570">Ver la pregunta</a></td></tr>
+<tr><th scope="row">Costo de la obra</th><td><span class="chip chip-warn">Mismo actor, dichos distintos</span></td><td><a href="#costo">Ver la pregunta</a></td></tr>
+<tr><th scope="row">“140 M con costo financiero”</th><td><span class="chip chip-bad">Atribución de prensa incorrecta</span></td><td><a href="#costo">Ver la pregunta</a></td></tr>
+<tr><th scope="row">Costo del proyecto ejecutivo: 2,5 M</th><td><span class="chip chip-bad">Atribución de prensa incorrecta</span></td><td>La Abdón publicó 2,5 M; Aldabalde dijo “del entorno de los 2 millones” <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=1282s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:21:22</a>.</td></tr>
+<tr><th scope="row">Proyecto ejecutivo antes de votar</th><td><span class="chip chip-soft">Consistente con el borrador de la moción</span></td><td>El borrador exige ejecutivo antes de cada etapa, no antes de la Asamblea <a class="ref" href="https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre" target="_blank" rel="noopener" title="La Abdón: moción filtrada">F-0009</a>. Es un desacuerdo de valores sobre qué hay que saber antes de votar.</td></tr>
+<tr><th scope="row">Aporte de socios voluntario</th><td><span class="chip chip-pend">Pendiente</span></td><td><a href="#cuota">Ver la pregunta</a></td></tr>
+<tr><th scope="row">Los USD 10 por mes</th><td><span class="chip chip-warn">Mismo actor, dichos distintos</span></td><td><a href="#cuota">Ver la pregunta</a></td></tr>
+<tr><th scope="row">Cuentas de los 26 M y del estacionamiento</th><td><span class="chip chip-warn">La cuenta no cierra</span></td><td><a href="#cuota">Ver la pregunta</a></td></tr>
+<tr><th scope="row">Ocupación y valor del estacionamiento</th><td><span class="chip chip-pend">Pendiente</span></td><td><a href="#parking">Ver la pregunta</a></td></tr>
+<tr><th scope="row">Ocupación comercial de 97,5%</th><td><span class="chip chip-pend">Pendiente</span></td><td>Bardanca <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=4617s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 01:16:57</a>; Aldabalde: “100% alquilado, con precontratos” <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=4124s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:08:44</a>. Falta el modelo.</td></tr>
+<tr><th scope="row">Superficie del zócalo comercial</th><td><span class="chip chip-soft">Parcialmente consistente</span></td><td>Aldabalde habla de modelos de 3.500 y 7.000 m² <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=4094s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:08:14</a>; el anteproyecto da 3.080 m² de locales comerciales y 14.266 m² de superficies rentables <a class="ref" href="https://asambleagpc.nacional.uy/Anteproyecto.pdf" target="_blank" rel="noopener" title="Anteproyecto (PDF oficial)">F-0004 · p. 42</a>.</td></tr>
+<tr><th scope="row">Mantenimiento: 3 o 4 M contra 1,2 M</th><td><span class="chip chip-pend">Pendiente</span></td><td>Aldabalde <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=365s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:06:05</a>; Singlet, último balance: 1,2 M bruto <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=5460s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 01:31:00</a>. Falta el balance.</td></tr>
+<tr><th scope="row">“10 mil butacas nuevas”</th><td><span class="chip chip-ok">Consistente con documento</span></td><td>Aldabalde <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6765s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:52:45</a>. El aforo pasa de unos 34.000 a más de 43.000 <a class="ref" href="https://asambleagpc.nacional.uy/Anteproyecto.pdf" target="_blank" rel="noopener" title="Anteproyecto (PDF oficial)">F-0004 · p. 64</a>.</td></tr>
+<tr><th scope="row">Solo estadio</th><td><span class="chip chip-pend">Pendiente</span></td><td><a href="#solo">Ver la pregunta</a></td></tr>
+<tr><th scope="row">Informe de CPA “lapidario”</th><td><span class="chip chip-pend">Pendiente</span></td><td>Aldabalde lo anunció así <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=1010s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:16:50</a>. En un mail leído al aire, un socio de CPA escribe que “no es lapidario ni pretende serlo” <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=2854s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:47:34</a>. Falta el informe.</td></tr>
+<tr><th scope="row">Garantías de la moción</th><td><span class="chip chip-soft">Consistente con el borrador de la moción</span></td><td><a href="#sobrecosto">Ver la pregunta</a></td></tr>
+<tr><th scope="row">Mayoría del 75%</th><td><span class="chip chip-ok">Coinciden en el dato</span></td><td><a href="#voto">Ver la pregunta</a></td></tr>
+</tbody></table></div>
+<dl class="legend">
+<div><dt><span class="chip chip-ok">Coinciden en el dato</span></dt><dd>Las dos partes dan la misma cifra.</dd></div>
+<div><dt><span class="chip chip-ok">Consistente con documento</span></dt><dd>Lo confirma un documento oficial registrado.</dd></div>
+<div><dt><span class="chip chip-soft">Consistente con el borrador de la moción</span></dt><dd>Coincide con el borrador de la moción, que todavía no es oficial.</dd></div>
+<div><dt><span class="chip chip-bad">Atribución de prensa incorrecta</span></dt><dd>La fuente original no dice lo que publicó un medio.</dd></div>
+<div><dt><span class="chip chip-warn">Mismo actor, dichos distintos</span></dt><dd>La misma persona dijo cosas distintas en fechas distintas. No implica que sea falso: la información puede haber cambiado.</dd></div>
+<div><dt><span class="chip chip-warn">La cuenta no cierra</span></dt><dd>La cifra dicha no coincide con sus propios componentes.</dd></div>
+<div><dt><span class="chip chip-soft">Parcialmente consistente</span></dt><dd>Una parte coincide con un documento y otra no se puede comprobar.</dd></div>
+<div><dt><span class="chip chip-pend">Pendiente</span></dt><dd>Falta el documento que lo resuelve.</dd></div>
+</dl></section>
+<section id="falta" class="sec"><h2>Qué falta para verificar</h2><ul class="falta">
+<li><strong>Moción oficial</strong><span>Qué se vota, garantías, aportes extraordinarios</span></li>
+<li><strong>Modelo económico financiero</strong><span>Costo vigente, cuota, aporte voluntario, supuestos comerciales</span></li>
+<li><strong>Material entregado a la Directiva el 11/03/2026</strong><span>Qué incluye el costo, ocupación del estacionamiento, techo</span></li>
+<li><strong>Excel de CPA “evaluación unidad de negocio v3” e informe de CPA</strong><span>Valor de cada negocio, solo estadio</span></li>
+<li><strong>Informe de RDA</strong><span>Costo de más de 150 M</span></li>
+<li><strong>Texto de la reforma del Estatuto</strong><span>Mayoría del 75%</span></li>
+<li><strong>Último balance del club</strong><span>Mantenimiento y pasivo</span></li>
+</ul></section>
+<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Cada código (F-0014, etc.) es la ficha de la fuente en el repositorio del proyecto. Los enlaces con minuto abren el video en ese punto.</p><ul class="fuentes">
+<li><span class="code">F-0003</span><a href="https://asambleagpc.nacional.uy/" target="_blank" rel="noopener">Sitio oficial de la Asamblea</a></li>
+<li><span class="code">F-0004</span><a href="https://asambleagpc.nacional.uy/Anteproyecto.pdf" target="_blank" rel="noopener">Anteproyecto (PDF oficial)</a></li>
+<li><span class="code">F-0009</span><a href="https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre" target="_blank" rel="noopener">La Abdón: moción filtrada</a></li>
+<li><span class="code">F-0011</span><a href="https://laabdon.com/noticias/el-futuro-del-gran-parque-central-que-propone-cada-uno-y-donde-estan-las-diferencias" target="_blank" rel="noopener">La Abdón: Decurnex y Aldabalde</a></li>
+<li><span class="code">F-0012</span><a href="https://laabdon.com/noticias/master-plan-del-gpc-las-dudas-de-singlet-y-bardanca-y-las-respuestas-de-aldabalde-frente-a-frente" target="_blank" rel="noopener">La Abdón: Singlet, Bardanca y Aldabalde</a></li>
+<li><span class="code">F-0014</span><a href="https://www.youtube.com/watch?v=zOnJazksi08" target="_blank" rel="noopener">Pasión Tricolor, Aldabalde (25/09)</a></li>
+<li><span class="code">F-0015</span><a href="https://www.youtube.com/watch?v=ErxVag75_mA" target="_blank" rel="noopener">Territorio Nacional, Decurnex (21/09)</a></li>
+<li><span class="code">F-0016</span><a href="https://www.youtube.com/watch?v=anYgHKGhDWo" target="_blank" rel="noopener">El Espectador, Aldabalde (17/09)</a></li>
+<li><span class="code">F-0017</span><a href="https://www.youtube.com/watch?v=dowYxCNXN7k" target="_blank" rel="noopener">Pasión Tricolor, Singlet y Bardanca (24/09)</a></li>
+<li><span class="code">F-0018</span><a href="https://www.youtube.com/watch?v=PDYIvpms7r4" target="_blank" rel="noopener">El Espectador, Aldabalde (16/07)</a></li>
+<li><span class="code">F-0019</span><a href="https://www.youtube.com/watch?v=-lKaALmO6ao" target="_blank" rel="noopener">Pasión Tricolor, reacción a Decurnex (22/09)</a></li>
+</ul></section>
+<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, hincha de Nacional, con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente.</p></footer></main>
