@@ -109,6 +109,10 @@ tbody tr:last-child > * { border-bottom: 0; }
 .fuentes li { display: flex; gap: 10px; align-items: baseline; min-width: 0; }
 .code { font-family: var(--f-mono); font-size: .78rem; color: var(--red); flex: none; }
 .more { font-family: var(--f-mono); font-size: .8rem; align-self: flex-start; }
+.gitbar { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 9px 16px; background: var(--surface); border-bottom: 1px solid var(--line); color: var(--ink); font-family: var(--f-mono); font-size: .8rem; line-height: 1.35; text-decoration: none; text-align: left; }
+.gitbar svg { flex: none; }
+.gitbar b { font-weight: 500; color: var(--navy); white-space: nowrap; }
+.gitbar:hover span { text-decoration: underline; }
 .acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
 .share { font-family: var(--f-mono); font-size: .85rem; color: var(--navy); border: 1px solid currentColor; padding: 7px 13px; border-radius: 3px; text-decoration: none; }
 .share:hover { text-decoration: underline; }
