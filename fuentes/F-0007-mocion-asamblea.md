@@ -21,3 +21,4 @@ Pendiente. Al 2026-09-28 figura como "Carga pendiente · Disponible próximament
 ## Notas
 
 - Cuando se publique, registrar fecha, versión y hash.
+- Hay una versión filtrada resumida por La Abdón el 2026-09-25: [F-0009](F-0009-laabdon-mocion-filtrada.md). Comparar cuando salga la oficial.
