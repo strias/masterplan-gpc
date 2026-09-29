@@ -1,6 +1,12 @@
 # Análisis
 
-Análisis temáticos que integran fuentes y afirmaciones. Un archivo por tema:
+Análisis que integran fuentes y afirmaciones.
+
+**Disponibles:**
+
+- [`contrapunto-master-plan.md`](contrapunto-master-plan.md): posturas de los participantes, en qué coinciden y qué se puede comprobar hoy (preliminar).
+
+**Previstos, por tema:**
 
 - `financiero.md`: inversión, financiamiento, retorno y riesgo para el club
 - `urbano.md`: impacto en el barrio, tránsito, normativa urbana
