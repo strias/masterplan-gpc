@@ -73,6 +73,14 @@ ESTADOS = {
     "parcial": ("Parcialmente consistente", "soft"),
     "pendiente": ("Pendiente", "pend"),
 }
+SITIO = "https://masterplangpc.com"
+
+def compartir(texto, ruta=""):
+    """Enlace para publicar en X (Twitter) con el texto y la dirección de la página. Sin JavaScript."""
+    from urllib.parse import urlencode
+    q = urlencode({"text": texto, "url": f"{SITIO}/{ruta}"})
+    return f'<a class="share" href="https://x.com/intent/post?{html.escape(q)}" target="_blank" rel="noopener">Compartir en X</a>'
+
 def chip(k):
     t, c = ESTADOS[k]
     return f'<span class="chip chip-{c}">{t}</span>'
@@ -248,6 +256,7 @@ A('''<header class="hero">
   <nav class="toc" aria-label="Secciones">
     <a href="#preguntas">Preguntas</a><a href="#posturas">Posturas</a><a href="#coinciden">En qué coinciden</a><a href="#contrapunto">Contrapunto</a><a href="#falta">Qué falta</a><a href="#fuentes">Fuentes</a>
   </nav>
+  <div class="acciones">''' + compartir("Master Plan del Gran Parque Central: qué dice cada uno y qué se puede comprobar, con el minuto exacto de cada cita.", "debate/") + '''</div>
 </header>''')
 
 # Preguntas
@@ -346,6 +355,7 @@ for i, p in enumerate(PREGUNTAS):
     o.append('<section class="sec"><h2>Qué lo resolvería</h2><ul class="res">' + "".join(f"<li>{html.escape(x)}</li>" for x in d["resolveria"]) + '</ul></section>')
     prev = f'<a href="detalle-{ids[i-1]}.html">← {html.escape(DETALLE[ids[i-1]]["titulo"])}</a>' if i > 0 else '<span></span>'
     nxt = f'<a href="detalle-{ids[i+1]}.html">{html.escape(DETALLE[ids[i+1]]["titulo"])} →</a>' if i + 1 < len(ids) else '<a href="index.html">Volver al debate</a>'
+    o.append(f'<div class="acciones">{compartir(d["titulo"] + " Qué dice cada parte y en qué se apoya, con fuentes.", "debate/detalle-" + p["id"] + ".html")}</div>')
     o.append(f'<nav class="pager">{prev}{nxt}</nav>')
     o.append(f'<footer class="foot"><p>Preliminar, al {ACTUALIZADO}. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener el modelo económico. Fuentes y método: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>')
     descripcion = f'{d["titulo"]} Qué dice cada parte, en qué se apoya y análisis, en el debate sobre el Master Plan del Gran Parque Central.'
@@ -396,7 +406,7 @@ P('''<header class="hero">
   <nav class="toc" aria-label="Secciones">
     <a href="#resumen">En resumen</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
   </nav>
-  <a class="cta" href="debate/">El debate: qué dice cada uno →</a>
+  <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
 </header>''')
 
 P('<section id="resumen" class="sec"><h2>En resumen</h2><ul class="corto">')
@@ -430,7 +440,7 @@ P(f'<section id="analisis" class="sec"><h2>Análisis</h2><div class="analisis"><
 for par in M.ANALISIS:
     P(f'<p>{R(par)}</p>')
 P('</div></section>')
-P(f'<section class="sec"><h2>Conclusión</h2><p class="lectura">{R(M.LECTURA)}</p><a class="cta" href="debate/">Ver el debate completo →</a></section>')
+P(f'<section class="sec"><h2>Conclusión</h2><p class="lectura">{R(M.LECTURA)}</p><div class="acciones"><a class="cta" href="debate/">Ver el debate completo →</a>{compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.")}</div></section>')
 
 P('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Cada código es la ficha de la fuente en el repositorio del proyecto. Los enlaces con página abren el PDF en esa página; los que tienen minuto abren el video en ese punto.</p><ul class="fuentes">')
 for f in M.FUENTES_PORTADA:
