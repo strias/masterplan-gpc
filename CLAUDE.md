@@ -22,7 +22,7 @@ Esto se afirma tal cual en todos los artefactos: sin aclaraciones, sin "según e
 
 ## Contexto del estadio
 
-Para los datos del estadio y del club (historia, capacidad, obras hechas) manda la fuente oficial del club. Se usan solo fuentes de nacional.uy, en forma breve: es contexto de trabajo, no un documento de historia. Ver [`docs/contexto-gran-parque-central.md`](docs/contexto-gran-parque-central.md).
+Para los datos del estadio y del club (historia, capacidad, obras hechas) manda la fuente oficial del club. Esto no aplica al Master Plan: lo que diga el club sobre el proyecto se verifica como cualquier otra afirmación. Se usan solo fuentes de nacional.uy, en forma breve: es contexto de trabajo, no un documento de historia. Ver [`docs/contexto-gran-parque-central.md`](docs/contexto-gran-parque-central.md).
 
 ## Objetividad (sobre el proyecto del estadio)
 
