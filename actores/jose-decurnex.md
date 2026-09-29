@@ -13,6 +13,10 @@ Propone concentrar los recursos propios del club en el estadio y dejar los demá
 
 Afirmaciones registradas: [A-0001](../afirmaciones/A-0001-decurnex-147-millones.md), [A-0002](../afirmaciones/A-0002-decurnex-costo-rda.md), [A-0006](../afirmaciones/A-0006-decurnex-presion-cuota.md), [A-0007](../afirmaciones/A-0007-decurnex-mayoria-75.md), [A-0025](../afirmaciones/A-0025-decurnex-cpa-no-avala-negocios.md).
 
+## Antecedentes
+
+Fue presidente del club. El conductor de *Territorio Nacional* lo recuerda ("cuando era presidente nunca lo pudimos tener", [F-0015](../fuentes/F-0015-territorio-nacional-decurnex.md), 00:02:18) y él habla del Club Social como obra de su gestión ("lo que nos pasó a nosotros y a todo el grupo que trabajó en el Club Social", [F-0015](../fuentes/F-0015-territorio-nacional-decurnex.md), 00:20:23).
+
 ## Versión más fuerte de su argumento
 
 El estadio es lo que el club necesita, y es ahí donde deben ir sus recursos. Los negocios complementarios tienen riesgo comercial y deberían asumirlo privados. Comprometer 30 años de ingresos de palcos y Club Social sin un proyecto ejecutivo ni un costo cerrado es una decisión demasiado grande para una mayoría simple.
