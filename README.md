@@ -1,5 +1,16 @@
 # Masterplan GPC
 
+[![Qué se vota el 24 de octubre: la moción y el debate, con la fuente de cada dato](sitio/og-2026-09-29.jpg)](https://masterplangpc.com)
+
+## 👉 [masterplangpc.com](https://masterplangpc.com)
+
+- **[La moción, artículo por artículo](https://masterplangpc.com):** qué se vota en la Asamblea del 24 de octubre de 2026, qué responde del debate y qué deja abierto.
+- **[El debate](https://masterplangpc.com/debate/):** qué dice cada uno, con el minuto exacto de cada cita, en qué coinciden y qué falta verificar.
+
+El sitio se genera desde este repositorio ([`sitio/`](sitio/)). Todo lo que muestra sale de las fichas de acá.
+
+## Sobre el proyecto
+
 Un análisis abierto, verificable y transparente del proyecto de remodelación del **Gran Parque Central** y del desarrollo comercial proyectado a su alrededor.
 
 El proyecto genera debate por su escala. Este repositorio reúne las fuentes, registra quién dijo qué y verifica cada afirmación con evidencia, tanto las de quienes apoyan el proyecto como las de quienes lo critican. Todo el proceso es público: cada fuente, cada veredicto y cada cambio quedan registrados en el historial de git.
@@ -39,6 +50,7 @@ La Asamblea General Extraordinaria que considera el proyecto es el **24 de octub
 | [`afirmaciones/`](afirmaciones/) | Cada afirmación verificada: quién la dijo, evidencia y veredicto |
 | [`transcripciones/`](transcripciones/) | Transcripciones de entrevistas y programas, con marcas de tiempo, para verificar las citas |
 | [`scripts/`](scripts/) | Herramientas del repo (por ejemplo, la que genera las transcripciones) |
+| [`sitio/`](sitio/) | Generador y páginas de [masterplangpc.com](https://masterplangpc.com) |
 | [`analisis/`](analisis/) | Análisis temáticos: financiero, urbano, deportivo, legal y social |
 | [`docs/`](docs/) | Metodología y criterios |
 
