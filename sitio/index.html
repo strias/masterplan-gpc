@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La moción del Master Plan</title>
+<meta name="description" content="Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central artículo por artículo, qué responde del debate y qué deja abierto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: una columna de lectura; cada pregunta es una ficha con quién preguntó, las respuestas en paralelo y el estado al pie. Colores del club: azul, blanco y rojo, con los valores de nacional.uy. */
+:root {
+  /* Colores oficiales del club, tomados de la hoja de estilos de nacional.uy (tema tcnf, 2026-09-28):
+     azul #0046ad, azul oscuro #002f87, azul más oscuro #001e57, rojo #c00c30, celeste #addaf6, blanco. */
+  --nac-blue: #0046ad; --nac-blue-dark: #002f87; --nac-blue-darker: #001e57;
+  --nac-red: #c00c30; --nac-sky: #addaf6; --nac-white: #ffffff;
+  --bg: #f6f6f6;
+  --surface: #ffffff;
+  --ink: #161616;
+  --muted: #4e5566;
+  --line: #e0e3ea;
+  --navy: var(--nac-blue-dark);
+  --red: var(--nac-red);
+  --ok-bg: #e3f1e8; --ok-fg: #1d5a35;
+  --warn-bg: transparent; --warn-fg: var(--red);
+  --bad-bg: #fbe1e4; --bad-fg: #8f1022;
+  --soft-bg: #e3f1fc; --soft-fg: var(--nac-blue-dark);
+  --pend-bg: #eceef3; --pend-fg: #4a5169;
+  --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000f2e; --surface: var(--nac-blue-darker); --ink: #eef3fb; --muted: #b3bfd6; --line: #1f3a73;
+    --navy: var(--nac-sky); --red: #ff7a8e;
+    --ok-bg: #173826; --ok-fg: #9fe0b5; --warn-bg: transparent; --warn-fg: var(--red);
+    --bad-bg: #401820; --bad-fg: #ffadb7; --soft-bg: #0a2c6b; --soft-fg: var(--nac-sky);
+    --pend-bg: #13254d; --pend-fg: #b3bfd6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #000f2e; --surface: var(--nac-blue-darker); --ink: #eef3fb; --muted: #b3bfd6; --line: #1f3a73;
+  --navy: var(--nac-sky); --red: #ff7a8e;
+  --ok-bg: #173826; --ok-fg: #9fe0b5; --warn-bg: transparent; --warn-fg: var(--red);
+  --bad-bg: #401820; --bad-fg: #ffadb7; --soft-bg: #0a2c6b; --soft-fg: var(--nac-sky);
+  --pend-bg: #13254d; --pend-fg: #b3bfd6;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body::before { content: ""; display: block; height: 6px; background: linear-gradient(90deg, var(--nac-blue) 0 33.3%, var(--nac-white) 33.3% 66.6%, var(--nac-red) 66.6% 100%); box-shadow: inset 0 -1px 0 rgba(0,0,0,.08); }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: flex; flex-direction: column; gap: 56px; }
+a { color: var(--navy); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 700; line-height: 1.05; text-wrap: balance; margin: 0; letter-spacing: .005em; }
+h1 { font-size: clamp(2.3rem, 6vw, 3.6rem); color: var(--ink); }
+h2 { font-size: 2rem; text-transform: uppercase; letter-spacing: .03em; color: var(--navy); padding-bottom: 8px; border-bottom: 3px solid var(--red); }
+h3 { font-size: 1.55rem; }
+p { margin: 0; }
+.eyebrow, .label, .rol, .ans-who, dt { font-family: var(--f-mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
+.eyebrow { color: var(--red); font-weight: 500; }
+.hero { display: flex; flex-direction: column; gap: 16px; padding-top: 12px; }
+.lede { font-size: 1.12rem; color: var(--muted); max-width: 62ch; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 8px 0 0; }
+.facts > div { background: var(--surface); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.facts dd { margin: 0; font-size: .98rem; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--f-mono); font-size: .82rem; }
+.sec { display: flex; flex-direction: column; gap: 20px; }
+.sec-intro { color: var(--muted); max-width: 64ch; }
+.q { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--navy); padding: 20px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 16px; }
+.asked ul { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.asked li { font-style: italic; color: var(--muted); }
+.asked .who { font-style: normal; font-weight: 600; color: var(--ink); }
+.answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.ans { border-left: 3px solid var(--line); padding-left: 12px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ans-who { color: var(--navy); font-weight: 500; }
+.ans-txt { font-size: .98rem; }
+.ans-ref, .refs { display: flex; flex-wrap: wrap; gap: 6px; }
+.refs { display: inline-flex; margin-left: 4px; }
+.ref { font-family: var(--f-mono); font-size: .74rem; text-decoration: none; background: var(--soft-bg); color: var(--soft-fg); padding: 2px 7px; border-radius: 3px; white-space: nowrap; }
+.ref:hover { text-decoration: underline; }
+.verdict { background: var(--bg); border: 1px dashed var(--line); padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .02em; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
+.chip-ok { background: var(--ok-bg); color: var(--ok-fg); }
+.chip-warn { background: var(--warn-bg); color: var(--warn-fg); box-shadow: inset 0 0 0 1px currentColor; }
+.chip-bad { background: var(--bad-bg); color: var(--bad-fg); }
+.chip-soft { background: var(--soft-bg); color: var(--soft-fg); }
+.chip-pend { background: var(--pend-bg); color: var(--pend-fg); }
+.posturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.post { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.coin { margin: 0; display: flex; flex-direction: column; }
+.coin > div { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.coin dt { padding-top: 3px; }
+.coin dd { margin: 0; min-width: 0; font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+thead th { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 500; }
+tbody th { font-weight: 600; width: 32%; }
+tbody tr:last-child > * { border-bottom: 0; }
+.legend { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 20px; }
+.legend > div { display: flex; flex-direction: column; gap: 4px; }
+.legend dt { text-transform: none; letter-spacing: 0; }
+.legend dd { margin: 0; font-size: .92rem; color: var(--muted); }
+.falta { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.falta li { display: grid; grid-template-columns: minmax(180px, 1fr) 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.falta span { color: var(--muted); }
+.fuentes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 8px 20px; }
+.fuentes li { display: flex; gap: 10px; align-items: baseline; min-width: 0; }
+.code { font-family: var(--f-mono); font-size: .78rem; color: var(--red); flex: none; }
+.more { font-family: var(--f-mono); font-size: .8rem; align-self: flex-start; }
+.foot { border-top: 1px solid var(--line); padding-top: 16px; color: var(--muted); font-size: .92rem; }
+@media (max-width: 560px) {
+  .coin > div, .falta li { grid-template-columns: 1fr; gap: 4px; }
+  .q { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+<style>
+.cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: transparent; color: var(--muted); border: 1px dashed currentColor; padding: 0 5px; border-radius: 3px; white-space: nowrap; }
+.corto { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: 70ch; }
+.cambio { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.cambio > div { background: var(--surface); padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.cambio .ahora { border-top: 4px solid var(--red); }
+.cambio .antes { border-top: 4px solid var(--line); color: var(--muted); }
+.arts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.art { display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.art .num { font-family: var(--f-display); font-size: 1.3rem; text-transform: uppercase; color: var(--red); line-height: 1.1; }
+.art h3 { font-size: 1.25rem; }
+.art div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.art .more { margin-top: 2px; }
+.resp { display: flex; flex-direction: column; gap: 12px; }
+.resp article { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--navy); padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.resp h3 { font-size: 1.25rem; }
+.resp h3 a { color: inherit; text-decoration-thickness: 1px; }
+.analisis { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--red); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.analisis .aviso { font-size: .92rem; color: var(--muted); }
+.lectura { font-size: 1.15rem; border-left: 4px solid var(--navy); padding-left: 14px; max-width: 64ch; }
+.cta { display: inline-block; align-self: flex-start; font-family: var(--f-mono); font-size: .85rem; background: var(--navy); color: var(--bg); padding: 8px 14px; border-radius: 3px; text-decoration: none; }
+.cta:hover { text-decoration: underline; }
+@media (max-width: 560px) { .art { grid-template-columns: 1fr; gap: 4px; } }
+</style></head>
+<body>
+<main class="wrap">
+<header class="hero">
+  <p class="eyebrow">Gran Parque Central · Master Plan · Asamblea del 24 de octubre</p>
+  <h1>Qué se vota el 24 de octubre</h1>
+  <p class="lede">El 29 de septiembre el club publicó la moción que considera la Asamblea General Extraordinaria. Acá está artículo por artículo, con la página de cada cita, qué responde a las preguntas del debate y qué deja abierto.</p>
+  <dl class="facts">
+    <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
+    <div><dt>Moción</dt><dd>Publicada el 29/09/2026 · 9 páginas <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007</a></dd></div>
+    <div><dt>Estado</dt><dd>Preliminar · actualizado el 29/09/2026</dd></div>
+  </dl>
+  <nav class="toc" aria-label="Secciones">
+    <a href="#corto">En corto</a><a href="#cambio">Qué cambió</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
+  </nav>
+  <a class="cta" href="debate/">El debate: qué dice cada uno →</a>
+</header>
+<section id="corto" class="sec"><h2>En corto</h2><ul class="corto">
+<li>Se aprueba el Master Plan como <strong>marco</strong> y se autoriza a la Directiva a seguir estructurándolo. Eso solo <strong>no habilita</strong> obras, financiamiento, garantías ni contratos definitivos <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6</a>.</li>
+<li>El proyecto va a un <strong>fideicomiso</strong> con patrimonio y cuentas separadas. El club no es garante, no hipoteca el Parque y no pone capital para sobrecostos ni déficits <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6-7</a>.</li>
+<li>Al proyecto pueden ir los flujos de <strong>palcos y Club Social</strong>, los ingresos nuevos del Master Plan y aportes extraordinarios. Los flujos que ya existen solo pueden ir al estadio <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7</a>.</li>
+<li>Ninguna etapa empieza sin proyecto ejecutivo, permisos, modelo validado, <strong>financiamiento suficiente para completarla</strong>, licitación e informe jurídico <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7-8</a>.</li>
+<li>Las decisiones centrales necesitan el voto <strong>unánime de los once</strong> directivos. Si no lo hay, decide una nueva Asamblea <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=8" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 8</a>.</li>
+<li>Si en <strong>30 meses</strong> no empezó ninguna etapa sustancial, caduca la autorización, con una sola prórroga de un año <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a>.</li>
+</ul></section>
+<section id="cambio" class="sec"><h2>Qué cambió respecto del borrador</h2><p class="sec-intro">Antes de la publicación circuló un borrador. El texto oficial cambia la garantía que más se había discutido: la mayoría que necesita la Directiva.</p><div class="chips"><span class="chip chip-warn">Cambió del borrador a la moción</span></div><div class="cambio">
+<div class="antes"><p class="label">El borrador</p><p>Al menos <strong>9 de los 11</strong> directivos para las decisiones centrales. Así lo leyó Aldabalde al aire <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6953s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:55:53</a>, así lo resumió La Abdón <a class="ref" href="https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre" target="_blank" rel="noopener" title="La Abdón: moción filtrada">F-0009</a> y así lo comentaron en Pasión Tricolor <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=1027s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:17:07</a>.</p></div>
+<div class="ahora"><p class="label">La moción oficial</p><p>El <strong>voto unánime de los once</strong> integrantes de la Comisión Directiva <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=8" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 8</a>. Lo repite en los fundamentos <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=4" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 4</a>.</p></div>
+</div><p class="sec-intro">Lo demás que se conocía del borrador coincide con el texto oficial. La restitución de flujos al club ya estaba en el borrador leído por Aldabalde <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6689s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:51:29</a>. Detalle en la ficha F-0007 del repositorio.</p></section>
+<section id="articulos" class="sec"><h2>Artículo por artículo</h2><p class="sec-intro">La parte que se vota es la resolución, en diez artículos. Resumen propio; cada enlace abre la página del PDF oficial.</p><ol class="arts">
+<li class="art"><span class="num">Primero</span><div><h3>Aprobación institucional</h3><p>Aprueba el Master Plan como marco arquitectónico, estratégico y funcional, con ejecución por etapas y la integración del estadio con arena, Plaza del Hincha, estacionamientos y las demás unidades del proyecto. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6</a></p></div></li>
+<li class="art"><span class="num">Segundo</span><div><h3>Alcance de la autorización</h3><p>Autoriza a la Directiva, con la CPO y asesores, a seguir con estudios, proyectos ejecutivos, permisos, licitaciones y negociaciones. “Deberá priorizarse el inicio de aquellas etapas que involucren directamente al Estadio.” No habilita obras, financiamiento, garantías ni afectación de activos o ingresos. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6</a></p><a class="more" href="debate/detalle-solo.html">En el debate: ¿Se puede terminar solo el estadio?</a></div></li>
+<li class="art"><span class="num">Tercero</span><div><h3>Fideicomiso</h3><p>Fideicomiso de propósito específico con patrimonio, contabilidad, cuentas y flujos separados, administración profesional y controles independientes. La operación del complejo debe preservar la actividad de los planteles principales. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6</a></p></div></li>
+<li class="art"><span class="num">Cuarto</span><div><h3>Protección del patrimonio y de la caja</h3><p>Seis límites acumulativos: sin deuda ni garantías del club; sin capital para sobrecostos o déficits; sin hipotecas ni venta de bienes; derechos de uso temporales y reversibles; solo se asignan palcos, Club Social, ingresos nuevos y aportes extraordinarios; los flujos existentes solo van al estadio; restitución al club de lo que aporte. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6-7</a></p><a class="more" href="debate/detalle-plata.html">En el debate: ¿Nacional pone plata?</a></div></li>
+<li class="art"><span class="num">Quinto</span><div><h3>Condiciones antes de cada etapa</h3><p>Proyecto ejecutivo, cronograma y presupuesto; permisos; modelo actualizado y validado por CPA Ferrere u otra firma independiente; financiamiento suficiente para completar la etapa, con compromisos vinculantes; licitación con una Comisión de Licitaciones; contratos, garantías y seguros; informe jurídico. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7-8</a></p><a class="more" href="debate/detalle-sobrecosto.html">En el debate: ¿Qué pasa si sale más cara?</a></div></li>
+<li class="art"><span class="num">Sexto</span><div><h3>Mayoría especial de la Directiva</h3><p>Unanimidad de los once para el fideicomiso, el modelo definitivo, las contrapartes, los contratos de financiamiento, el presupuesto e inicio de cada etapa y las adjudicaciones. Sin unanimidad, si la mayoría simple quiere seguir, se convoca una Asamblea en 30 días. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=8" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 8</a></p><a class="more" href="debate/detalle-voto.html">En el debate: ¿Qué se vota y con qué mayoría?</a></div></li>
+<li class="art"><span class="num">Séptimo</span><div><h3>Control y transparencia</h3><p>Declaración y abstención ante conflictos de interés, auditoría externa, informes trimestrales a la Directiva e informe a los socios al menos cada seis meses, “sin perjuicio de la reserva exigible durante negociaciones o procesos competitivos”. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=8" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 8</a></p></div></li>
+<li class="art"><span class="num">Octavo</span><div><h3>Cambios sustanciales</h3><p>Vuelven a la Asamblea los cambios que alteren la esencia del Master Plan, comprometan más ingresos ordinarios, agreguen deuda o garantías del club, afecten la propiedad de sus bienes o quiten garantías. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a></p></div></li>
+<li class="art"><span class="num">Noveno</span><div><h3>Plazo y caducidad</h3><p>A los 30 meses sin inicio material de una etapa sustancial, la Directiva decide si sigue y puede prorrogar una vez por un año. Si vence, cae la autorización del artículo 2°, no la aprobación del 1°. Demoliciones menores o movimientos hechos para evitar el plazo no cuentan. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a></p></div></li>
+<li class="art"><span class="num">Décimo</span><div><h3>Reglamentación</h3><p>La Directiva reglamenta la resolución. Ningún acto posterior puede reducir las garantías sin una nueva Asamblea Extraordinaria. <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a></p></div></li>
+</ol></section>
+<section id="debate" class="sec"><h2>Qué responde a las preguntas del debate</h2><p class="sec-intro">Las preguntas son las del <a href="debate/">contrapunto</a>. Cada una enlaza a su página de detalle.</p><div class="resp">
+<article><h3><a href="debate/detalle-plata.html">¿Nacional pone plata en el proyecto?</a></h3><div class="chips"><span class="chip chip-ok">La moción lo responde</span></div><p>Sí, y dice cuál: palcos (venta, renovación, uso y gastos comunes), dividendos del Club Social y aportes extraordinarios. Esos flujos, cuando ya existen, solo pueden ir al estadio, y el modelo debe prever su restitución al club <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7</a>. Es lo que describían tanto Aldabalde como Decurnex.</p></article>
+<article><h3><a href="debate/detalle-sobrecosto.html">¿Qué pasa si la obra sale más cara?</a></h3><div class="chips"><span class="chip chip-soft">Lo responde en parte</span></div><p>El club no pone capital para sobrecostos y ninguna etapa empieza sin financiamiento suficiente para completarla, con garantías y seguros <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7-8</a>. No dice qué pasa si una etapa se queda sin fondos a mitad de camino.</p></article>
+<article><h3><a href="debate/detalle-voto.html">¿Qué se vota y con qué mayoría?</a></h3><div class="chips"><span class="chip chip-soft">Lo responde en parte</span></div><p>Dice qué se vota: el marco y la autorización para estructurar, no la obra <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6</a>. No fija con qué mayoría decide la Asamblea: se remite a los Estatutos “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=5" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 5</a>.</p></article>
+<article><h3><a href="debate/detalle-solo.html">¿Se puede terminar solo el estadio?</a></h3><div class="chips"><span class="chip chip-soft">Lo responde en parte</span></div><p>Pide priorizar las etapas del estadio <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6</a>, pero aprueba el conjunto con arena, estacionamiento y zócalo comercial <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6</a>. No evalúa la alternativa de solo estadio. Pasar a ella parece un cambio de la “esencia” del Master Plan, que vuelve a la Asamblea <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a>.</p></article>
+<article><h3><a href="debate/detalle-cuota.html">¿Va a haber una cuota extra? ¿Es obligatoria?</a></h3><div class="chips"><span class="chip chip-pend">La moción no lo trata</span></div><p>Solo menciona “aportes extraordinarios que se generen para estos fines” <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7</a>. No dice monto, si son voluntarios ni quién los aprueba.</p></article>
+<article><h3><a href="debate/detalle-costo.html">¿Cuánto cuesta la obra?</a></h3><div class="chips"><span class="chip chip-pend">La moción no lo trata</span></div><p>No da ninguna cifra. Exige un presupuesto por etapa antes de empezarla <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7</a> y dice que las estimaciones de CPA Ferrere “mantienen carácter evolutivo” <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=2" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 2</a>.</p></article>
+<article><h3><a href="debate/detalle-570.html">¿El proyecto genera 570 millones?</a></h3><div class="chips"><span class="chip chip-pend">La moción no lo trata</span></div><p>No da cifras de ingresos. Dice que el repago debería salir “de los nuevos flujos creados o potenciados por el propio Máster Plan” <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=3" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 3</a>.</p></article>
+<article><h3><a href="debate/detalle-parking.html">¿El estacionamiento da ganancia?</a></h3><div class="chips"><span class="chip chip-pend">La moción no lo trata</span></div><p>Lo incluye entre las unidades aprobadas <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6</a>, sin números.</p></article>
+</div></section>
+<section id="no-dice" class="sec"><h2>Qué no dice</h2><ul class="falta">
+<li><strong>Costo, financiamiento e ingresos</strong><span>Ninguna cifra. Quedan para el modelo definitivo, que aprueba la Directiva por unanimidad <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=8" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 8</a>.</span></li>
+<li><strong>Aporte de socios</strong><span>Ni monto, ni si es voluntario, ni quién lo aprueba <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7</a>.</span></li>
+<li><strong>Mayoría de la Asamblea</strong><span>Se remite a los Estatutos <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=5" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 5</a>.</span></li>
+<li><strong>Fondos que no alcanzan a mitad de una etapa</strong><span>Prevé el comienzo, no el medio de la obra <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7-8</a>.</span></li>
+<li><strong>Sanciones por incumplir</strong><span>Ninguna. Aldabalde dijo que van en el Estatuto <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=7187s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:59:47</a>.</span></li>
+<li><strong>Conclusiones del Consejo Asesor</strong><span>Las presentará “oportunamente” a la Directiva <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=2" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 2</a>; no dice si antes de la Asamblea.</span></li>
+<li><strong>Votación de la Directiva</strong><span>El documento no dice cómo se aprobó el texto ni lleva firma.</span></li>
+</ul></section>
+<section id="hechos" class="sec"><h2>Datos de la moción, por verificar</h2><p class="sec-intro">Los antecedentes de la moción traen afirmaciones de hecho. Se verifican como cualquier otra, con la misma vara para el club.</p><div class="table-wrap"><table><thead><tr><th scope="col">Dato</th><th scope="col">Estado</th><th scope="col">Contraste</th></tr></thead><tbody>
+<tr><th scope="row">Aprobación unánime de la CPO (2/7/2025) y de la Directiva (4/8/2025) <span class="refs"><a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=1" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 1</a></span></th><td><span class="chip chip-ok">Consistente con documento</span></td><td>Aldabalde había dicho “agosto” y unanimidad <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=3194s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 00:53:14</a>. Un conductor de Pasión Tricolor habla de una aprobación unánime “en cuanto a la idea” <a class="ref" href="https://www.youtube.com/watch?v=-lKaALmO6ao&t=808s" target="_blank" rel="noopener" title="Pasión Tricolor, reacción a Decurnex (22/09)">F-0019 · 00:13:28</a>.</td></tr>
+<tr><th scope="row">Unas cinco hectáreas, unos 50.000 m² <span class="refs"><a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=1" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 1</a> <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=3" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 3</a></span></th><td><span class="chip chip-ok">Consistente con documento</span></td><td>El anteproyecto da 48.000 m² de terreno <a class="ref" href="https://asambleagpc.nacional.uy/Anteproyecto.pdf#page=15" target="_blank" rel="noopener" title="Anteproyecto (PDF oficial)">F-0004 · p. 15</a>.</td></tr>
+<tr><th scope="row">Encuesta de 2025 con casi 14.000 respuestas <span class="refs"><a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=1" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 1</a></span></th><td><span class="chip chip-pend">Pendiente</span></td><td>No hay fuente registrada con los resultados.</td></tr>
+<tr><th scope="row">Primer concurso de arquitectura del club desde 1957 <span class="refs"><a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=1" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 1</a></span></th><td><span class="chip chip-pend">Pendiente</span></td><td>No hay fuente registrada.</td></tr>
+<tr><th scope="row">Consejo Asesor externo que examinó el modelo <span class="refs"><a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=2" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 2</a></span></th><td><span class="chip chip-pend">Pendiente</span></td><td>No se sabe quiénes lo integran ni qué concluyó.</td></tr>
+</tbody></table></div></section>
+<section id="analisis" class="sec"><h2>Análisis</h2><div class="analisis"><p class="aviso">Este análisis es de Claude, la IA que asiste al proyecto, y es opinión. Se apoya en la moción y en las fuentes enlazadas y, donde lo indica la etiqueta <span class="cg">conocimiento general</span>, en conocimiento general de finanzas y fideicomisos que no sale de una fuente registrada. No es una opinión jurídica.</p>
+<p><strong>Es una moción de garantías más que de proyecto.</strong> De los diez artículos, solo el primero aprueba algo de fondo; los otros nueve ponen límites a la Directiva. Responde con claridad la preocupación que compartían las dos partes, que el club no se endeude ni hipoteque el Parque <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=6" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 6-7</a>. En eso, lo que decía Aldabalde <a class="ref" href="https://www.youtube.com/watch?v=zOnJazksi08&t=6965s" target="_blank" rel="noopener" title="Pasión Tricolor, Aldabalde (25/09)">F-0014 · 01:56:05</a> queda escrito.</p>
+<p><strong>La unanimidad es la novedad, y cambia el equilibrio.</strong> La Directiva votó 7 a 4 convocar la Asamblea <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=351s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:05:51</a>. Con 9 de 11, bastaba sumar a dos de esos cuatro; con unanimidad, cada directivo puede frenar cada decisión central. La salida es convocar otra Asamblea en 30 días <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=8" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 8</a>. En la práctica, si el desacuerdo sigue, las decisiones grandes vuelven a los socios. Eso contesta en parte el temor de Singlet de que se relegue a las asambleas <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=1066s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:17:46</a>. El costo posible: más asambleas y más demora.</p>
+<p><strong>El 24 de octubre se decide el rumbo, no los números.</strong> Costo, cuota, ingresos y estacionamiento, que son casi todo el debate, no están en la moción. Los va a decidir la Directiva después, por unanimidad y con el modelo actualizado <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7-8</a>. Se vota antes de conocer el modelo, que la propia moción llama “evolutivo” <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=2" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 2</a>, y antes de las conclusiones del Consejo Asesor. Si eso está bien es un desacuerdo de valores: Decurnex quiere el ejecutivo antes de votar <a class="ref" href="https://www.youtube.com/watch?v=ErxVag75_mA&t=699s" target="_blank" rel="noopener" title="Territorio Nacional, Decurnex (21/09)">F-0015 · 00:11:39</a>; Aldabalde, no gastar 2 M sin respaldo <a class="ref" href="https://www.youtube.com/watch?v=anYgHKGhDWo&t=1282s" target="_blank" rel="noopener" title="El Espectador, Aldabalde (17/09)">F-0016 · 00:21:22</a>. Ver <a href="debate/#voto">la pregunta del voto</a>.</p>
+<p><strong>Lo que sí queda fijado pesa.</strong> El artículo 1° adopta este Master Plan, con arena, estacionamiento y zócalo comercial, y sobrevive aunque caduque la autorización <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a>. Una alternativa de solo estadio, como la que estudian Singlet y Bardanca <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=4805s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 01:20:05</a>, tendría que volver a la Asamblea como cambio sustancial <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a>.</p>
+<p><strong>El aporte de socios es el punto más abierto.</strong> La moción permite asignar “aportes extraordinarios” sin decir si son voluntarios <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=7" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 7</a>. Bardanca sostiene que un financiador pide un aporte propio que no sea voluntario <a class="ref" href="https://www.youtube.com/watch?v=dowYxCNXN7k&t=3259s" target="_blank" rel="noopener" title="Pasión Tricolor, Singlet y Bardanca (24/09)">F-0017 · 00:54:19</a>. Si eso termina en una suba de cuota, no queda claro si cuenta como “comprometer ingresos ordinarios adicionales”, que obligaría a volver a la Asamblea <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a>. Convendría que la reglamentación lo aclare. Ver <a href="debate/detalle-cuota.html">la cuota</a>.</p>
+<p><strong>Sin capital del club para sobrecostos, el riesgo lo toma otro.</strong> Un financiador sin garantía del club suele pedir más contingencia, más tasa o menos alcance <span class="cg" title="Conocimiento general: no sale de una fuente registrada">conocimiento general</span>. Es probable que el financiamiento real sea más caro o más chico que el modelado, y eso no se ve hasta la etapa de contratos. Ver <a href="debate/detalle-sobrecosto.html">el sobrecosto</a>.</p>
+<p><strong>Las garantías dependen de quien las haga cumplir.</strong> El artículo 10° impide que la Directiva las reduzca sin una Asamblea <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a>, pero no hay sanciones. La información a los socios es semestral y admite reserva durante las negociaciones <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=8" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 8</a>. Tampoco se definen “etapa sustancial” ni “inicio material” más allá de lo que no cuenta <a class="ref" href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf#page=9" target="_blank" rel="noopener" title="Moción oficial (PDF)">F-0007 · p. 9</a>. Son puntos para la reglamentación.</p>
+</div></section>
+<section class="sec"><h2>En resumen</h2><p class="lectura">La moción protege bien la caja y el patrimonio del club, y suma un control fuerte: unanimidad en la Directiva o vuelta a los socios. No contesta las preguntas de números del debate, que quedan para decisiones posteriores bajo esas reglas. Votar el 24 de octubre es aprobar un rumbo y un sistema de garantías. Si alcanza con eso, sin conocer todavía el modelo, es la pregunta que cada socio tiene que responder.</p><a class="cta" href="debate/">Ver el debate completo →</a></section>
+<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Cada código es la ficha de la fuente en el repositorio del proyecto. Los enlaces con página abren el PDF en esa página; los que tienen minuto abren el video en ese punto.</p><ul class="fuentes">
+<li><span class="code">F-0007</span><a href="https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf" target="_blank" rel="noopener">Moción oficial (PDF)</a></li>
+<li><span class="code">F-0003</span><a href="https://asambleagpc.nacional.uy/" target="_blank" rel="noopener">Sitio oficial de la Asamblea</a></li>
+<li><span class="code">F-0004</span><a href="https://asambleagpc.nacional.uy/Anteproyecto.pdf" target="_blank" rel="noopener">Anteproyecto (PDF oficial)</a></li>
+<li><span class="code">F-0009</span><a href="https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre" target="_blank" rel="noopener">La Abdón: moción filtrada</a></li>
+<li><span class="code">F-0014</span><a href="https://www.youtube.com/watch?v=zOnJazksi08" target="_blank" rel="noopener">Pasión Tricolor, Aldabalde (25/09)</a></li>
+<li><span class="code">F-0015</span><a href="https://www.youtube.com/watch?v=ErxVag75_mA" target="_blank" rel="noopener">Territorio Nacional, Decurnex (21/09)</a></li>
+<li><span class="code">F-0016</span><a href="https://www.youtube.com/watch?v=anYgHKGhDWo" target="_blank" rel="noopener">El Espectador, Aldabalde (17/09)</a></li>
+<li><span class="code">F-0017</span><a href="https://www.youtube.com/watch?v=dowYxCNXN7k" target="_blank" rel="noopener">Pasión Tricolor, Singlet y Bardanca (24/09)</a></li>
+<li><span class="code">F-0019</span><a href="https://www.youtube.com/watch?v=-lKaALmO6ao" target="_blank" rel="noopener">Pasión Tricolor, reacción a Decurnex (22/09)</a></li>
+</ul></section>
+<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, hincha de Nacional, con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente.</p></footer></main>
+</body>
+</html>

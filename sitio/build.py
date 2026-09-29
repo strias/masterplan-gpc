@@ -49,7 +49,7 @@ def ref(fid, ts=None, page=None):
 
 def R(s):
     """Escapa el texto y reemplaza marcas: {F-0014 01:08:44} o {F-0004 p.42} por enlaces a la fuente,
-    **negrita**, [[#id|texto]] por un enlace interno y [[CG]] por la etiqueta de conocimiento general."""
+    **negrita**, [[#id|texto]] por un enlace interno, [[>ruta|texto]] por un enlace a otra página y [[CG]] por la etiqueta de conocimiento general."""
     def sub(m):
         fid, rest = m.group(1), (m.group(2) or "").strip()
         if rest.startswith("p."):
@@ -59,7 +59,7 @@ def R(s):
     s = re.sub(r"\{(F-\d{4})\s*([^}]*)\}", sub, s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"\[\[#([\w-]+)\|([^\]]+)\]\]", r'<a href="#\1">\2</a>', s)
-    s = re.sub(r"\[\[>([\w./#-]+)\|([^\]]+)\]\]", r'<a href="\1">\2</a>', s)
+    s = re.sub(r"\[\[&gt;([\w./#-]+)\|([^\]]+)\]\]", r'<a href="\1">\2</a>', s)  # [[>ruta|texto]], ya escapado
     s = s.replace("[[CG]]", '<span class="cg" title="Conocimiento general: no sale de una fuente registrada">conocimiento general</span>')
     return s
 
@@ -354,3 +354,102 @@ for i, p in enumerate(PREGUNTAS):
     open(f"debate/detalle-{p['id']}.html", "w").write(documento(d["titulo"], descripcion, "\n".join(o), EXTRA))
 print("detalles:", len(ids))
 print("ok", sum(len(x) for x in out))
+
+# ---------- Portada: la moción ----------
+import mocion as M
+
+def chip_resp(k):
+    t, c = M.RESPUESTAS[k]
+    return f'<span class="chip chip-{c}">{t}</span>'
+
+PORTADA_CSS = """<style>
+.cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: transparent; color: var(--muted); border: 1px dashed currentColor; padding: 0 5px; border-radius: 3px; white-space: nowrap; }
+.corto { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: 70ch; }
+.cambio { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.cambio > div { background: var(--surface); padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.cambio .ahora { border-top: 4px solid var(--red); }
+.cambio .antes { border-top: 4px solid var(--line); color: var(--muted); }
+.arts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.art { display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.art .num { font-family: var(--f-display); font-size: 1.3rem; text-transform: uppercase; color: var(--red); line-height: 1.1; }
+.art h3 { font-size: 1.25rem; }
+.art div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.art .more { margin-top: 2px; }
+.resp { display: flex; flex-direction: column; gap: 12px; }
+.resp article { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--navy); padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.resp h3 { font-size: 1.25rem; }
+.resp h3 a { color: inherit; text-decoration-thickness: 1px; }
+.analisis { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--red); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.analisis .aviso { font-size: .92rem; color: var(--muted); }
+.lectura { font-size: 1.15rem; border-left: 4px solid var(--navy); padding-left: 14px; max-width: 64ch; }
+.cta { display: inline-block; align-self: flex-start; font-family: var(--f-mono); font-size: .85rem; background: var(--navy); color: var(--bg); padding: 8px 14px; border-radius: 3px; text-decoration: none; }
+.cta:hover { text-decoration: underline; }
+@media (max-width: 560px) { .art { grid-template-columns: 1fr; gap: 4px; } }
+</style>"""
+
+o = []
+P = o.append
+P('<main class="wrap">')
+P('''<header class="hero">
+  <p class="eyebrow">Gran Parque Central · Master Plan · Asamblea del 24 de octubre</p>
+  <h1>Qué se vota el 24 de octubre</h1>
+  <p class="lede">El 29 de septiembre el club publicó la moción que considera la Asamblea General Extraordinaria. Acá está artículo por artículo, con la página de cada cita, qué responde a las preguntas del debate y qué deja abierto.</p>
+  <dl class="facts">
+    <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
+    <div><dt>Moción</dt><dd>''' + R("Publicada el 29/09/2026 · 9 páginas {F-0007}") + '''</dd></div>
+    <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
+  </dl>
+  <nav class="toc" aria-label="Secciones">
+    <a href="#corto">En corto</a><a href="#cambio">Qué cambió</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
+  </nav>
+  <a class="cta" href="debate/">El debate: qué dice cada uno →</a>
+</header>''')
+
+P('<section id="corto" class="sec"><h2>En corto</h2><ul class="corto">')
+for x in M.EN_CORTO:
+    P(f'<li>{R(x)}</li>')
+P('</ul></section>')
+
+P(f'<section id="cambio" class="sec"><h2>Qué cambió respecto del borrador</h2><p class="sec-intro">Antes de la publicación circuló un borrador. El texto oficial cambia la garantía que más se había discutido: la mayoría que necesita la Directiva.</p><div class="chips">{chip("cambio")}</div><div class="cambio">')
+P(f'<div class="antes"><p class="label">El borrador</p><p>{R(M.CAMBIO["antes"])}</p></div>')
+P(f'<div class="ahora"><p class="label">La moción oficial</p><p>{R(M.CAMBIO["ahora"])}</p></div>')
+P(f'</div><p class="sec-intro">{R(M.CAMBIO["nota"])}</p></section>')
+
+P('<section id="articulos" class="sec"><h2>Artículo por artículo</h2><p class="sec-intro">La parte que se vota es la resolución, en diez artículos. Resumen propio; cada enlace abre la página del PDF oficial.</p><ol class="arts">')
+for num, tit, txt, pag, deb in M.ARTICULOS:
+    link = f'<a class="more" href="debate/detalle-{deb[0]}.html">En el debate: {html.escape(deb[1])}</a>' if deb else ""
+    P(f'<li class="art"><span class="num">{num}</span><div><h3>{html.escape(tit)}</h3><p>{R(txt)} {R("{F-0007 " + pag + "}")}</p>{link}</div></li>')
+P('</ol></section>')
+
+P('<section id="debate" class="sec"><h2>Qué responde a las preguntas del debate</h2><p class="sec-intro">Las preguntas son las del <a href="debate/">contrapunto</a>. Cada una enlaza a su página de detalle.</p><div class="resp">')
+for pid, q, k, txt in M.DEBATE:
+    P(f'<article><h3><a href="debate/detalle-{pid}.html">{html.escape(q)}</a></h3><div class="chips">{chip_resp(k)}</div><p>{R(txt)}</p></article>')
+P('</div></section>')
+
+P('<section id="no-dice" class="sec"><h2>Qué no dice</h2><ul class="falta">')
+for t, x in M.NO_DICE:
+    P(f'<li><strong>{html.escape(t)}</strong><span>{R(x)}</span></li>')
+P('</ul></section>')
+
+P('<section id="hechos" class="sec"><h2>Datos de la moción, por verificar</h2><p class="sec-intro">Los antecedentes de la moción traen afirmaciones de hecho. Se verifican como cualquier otra, con la misma vara para el club.</p><div class="table-wrap"><table><thead><tr><th scope="col">Dato</th><th scope="col">Estado</th><th scope="col">Contraste</th></tr></thead><tbody>')
+for t, r, e, x in M.HECHOS:
+    P(f'<tr><th scope="row">{html.escape(t)} <span class="refs">{R(r)}</span></th><td>{chip(e)}</td><td>{R(x)}</td></tr>')
+P('</tbody></table></div></section>')
+
+P(f'<section id="analisis" class="sec"><h2>Análisis</h2><div class="analisis"><p class="aviso">{M.AVISO}</p>')
+for par in M.ANALISIS:
+    P(f'<p>{R(par)}</p>')
+P('</div></section>')
+P(f'<section class="sec"><h2>En resumen</h2><p class="lectura">{R(M.LECTURA)}</p><a class="cta" href="debate/">Ver el debate completo →</a></section>')
+
+P('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Cada código es la ficha de la fuente en el repositorio del proyecto. Los enlaces con página abren el PDF en esa página; los que tienen minuto abren el video en ese punto.</p><ul class="fuentes">')
+for f in M.FUENTES_PORTADA:
+    P(f'<li><span class="code">{f}</span>{src_link(f)}</li>')
+P('</ul></section>')
+P('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, hincha de Nacional, con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente.</p></footer></main>''')
+
+open("index.html", "w").write(documento(
+    "La moción del Master Plan",
+    "Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central artículo por artículo, qué responde del debate y qué deja abierto.",
+    "\n".join(o), PORTADA_CSS))
+print("portada ok", sum(len(x) for x in o))
