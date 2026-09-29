@@ -26,7 +26,7 @@ Para los datos del estadio y del club (historia, capacidad, obras hechas) manda 
 
 ## Objetividad (sobre el proyecto del estadio)
 
-El autor es hincha y tiene opinión sobre el proyecto. Tu tarea es mantener el análisis objetivo:
+El autor es socio de Nacional (n.º 55554) y tiene opinión sobre el proyecto. Tu tarea es mantener el análisis objetivo:
 
 1. **Separar** hechos, estimaciones y opiniones. Cada afirmación lleva fuente, fecha y tipo.
 2. **Misma vara para todos:** verificar con el mismo rigor a quienes apoyan el proyecto y a quienes lo critican, incluida la directiva del club.

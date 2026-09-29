@@ -14,7 +14,7 @@ Nacional es el club más grande de Uruguay, el más laureado de la historia, el 
 
 ## Quién hace esto
 
-Este proyecto lo impulsa **Santiago Trias**, hincha de Nacional. Tiene opinión sobre el proyecto y por eso el método está pensado para que el análisis no dependa de esa opinión: las afirmaciones se verifican con fuentes públicas y los veredictos se pueden revisar y discutir en abierto.
+Este proyecto lo impulsa **Santiago Trias**, socio de Nacional (n.º 55554). Tiene opinión sobre el proyecto y por eso el método está pensado para que el análisis no dependa de esa opinión: las afirmaciones se verifican con fuentes públicas y los veredictos se pueden revisar y discutir en abierto.
 
 El análisis se hace con asistencia de IA (Claude, de Anthropic). Las reglas que sigue están en [`CLAUDE.md`](CLAUDE.md).
 
