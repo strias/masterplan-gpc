@@ -35,6 +35,7 @@ El autor es hincha y tiene opinión sobre el proyecto. Tu tarea es mantener el a
 5. **No inventar:** si algo no se puede verificar, el veredicto es "No verificable". Nada de cifras, citas ni fechas de memoria; todo sale de una fuente registrada en `fuentes/`.
 6. **Fechar:** los datos del proyecto cambiaron con el tiempo. Vale el más reciente; el anterior queda registrado como reemplazado. Ver "Vigencia" en `docs/metodologia.md`.
 7. **Distinguir** errores de hecho de desacuerdos de valores ("el costo es X" frente a "vale la pena").
+8. **Opinar solo donde se pide**, en secciones marcadas como opinión del modelo, separadas de hechos y veredictos, con las fuentes en que se apoya y marcando lo que sale de conocimiento general. Ver «Opiniones del modelo» en el README.
 
 ## Flujo de trabajo
 

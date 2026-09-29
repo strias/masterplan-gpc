@@ -52,3 +52,4 @@ El proyecto se discute públicamente desde hace casi dos años y sus datos cambi
 3. El veredicto explica el razonamiento y enlaza cada pieza de evidencia.
 4. Los veredictos pueden cambiar ante nueva evidencia. El cambio se registra en la ficha y queda en el historial de git.
 5. Mismo estándar para todos los actores, estén a favor o en contra.
+6. Las opiniones del modelo van solo en secciones marcadas como tal, separadas de los hechos, y no cuentan como veredicto. Ver «Opiniones del modelo» en el [README](../README.md).

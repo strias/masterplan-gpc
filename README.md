@@ -18,9 +18,15 @@ Este proyecto lo impulsa **Santiago Trias**, hincha de Nacional. Tiene opinión 
 
 El análisis se hace con asistencia de IA (Claude, de Anthropic). Las reglas que sigue están en [`CLAUDE.md`](CLAUDE.md).
 
+## Opiniones del modelo
+
+Además de verificar, en algunas secciones se le pide al modelo una opinión: por ejemplo, el «Análisis» y el «En resumen» de cada pregunta del sitio. Esas secciones están marcadas como opinión, separadas de los hechos y de los veredictos.
+
+La razón para usarlas: en este tema el modelo no tiene interés propio ni historia con el club, así que su lectura es, en general, más imparcial que la del autor. No es neutral por definición: puede arrastrar sesgos de sus datos de entrenamiento o errores de razonamiento. Por eso cada opinión indica en qué fuentes se apoya, marca lo que sale de conocimiento general y no de una fuente registrada, y se puede discutir como cualquier otra afirmación del repositorio.
+
 ## Estado
 
-🟡 **Fase 1: descubrimiento.** Estamos reuniendo documentos, actores y afirmaciones. Todavía no hay veredictos publicados.
+🟡 **Fase 1: descubrimiento.** Estamos reuniendo documentos, actores y afirmaciones. Todavía no hay veredictos publicados. Sí hay análisis preliminares, marcados como opinión del modelo (ver «Opiniones del modelo»).
 
 La Asamblea General Extraordinaria que considera el proyecto es el **24 de octubre de 2026** ([cronología](docs/cronologia.md)).
 
