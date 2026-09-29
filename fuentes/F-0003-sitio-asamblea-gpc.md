@@ -36,3 +36,4 @@ Sitio oficial del club para la Asamblea General Extraordinaria que considera el 
 
 - La página cambia. La copia del texto al 2026-09-28 está en `archivo/`. Revisar periódicamente y registrar cada documento nuevo o versión nueva como una ficha propia.
 - Parte interesada: es el canal oficial del club, que impulsa la moción.
+- 2026-09-29: el sitio publica la moción oficial ([F-0007](F-0007-mocion-asamblea.md)), enlace "Ver moción". El aviso "Carga pendiente · Disponible próximamente" sigue en la tarjeta del modelo económico financiero ([F-0008](F-0008-modelo-economico-financiero.md)).

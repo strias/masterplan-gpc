@@ -11,8 +11,8 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 |---|---|---|
 | 2025-06 | Según Aldabalde, "el año pasado, en junio, no existía esto" (el proyecto ganador) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 02:06:29 |
 | 2025-06-13 | Fecha de creación interna del PDF de la memoria del concurso de ideas | [F-0004](../fuentes/F-0004-anteproyecto.md) |
-| 2025-07-02 | La CPO aprueba por unanimidad el proyecto seleccionado | [F-0007](../fuentes/F-0007-mocion-asamblea.md), p. 1 |
-| 2025-08-04 | La Directiva aprueba por unanimidad el Master Plan y sus etapas | [F-0007](../fuentes/F-0007-mocion-asamblea.md), p. 1 |
+| 2025-07-02 | Según la moción, la CPO aprueba por unanimidad el proyecto seleccionado | [F-0007](../fuentes/F-0007-mocion-asamblea.md), p. 1 |
+| 2025-08-04 | Según la moción, la Directiva aprueba por unanimidad el Master Plan y sus etapas | [F-0007](../fuentes/F-0007-mocion-asamblea.md), p. 1 |
 | 2025-08 | Según Aldabalde, la Directiva aprueba por unanimidad el proyecto, con 14 etapas y una estimación de USD 93 M (la moción da la fecha exacta: 2025-08-04) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 00:53:14 |
 | 2026-03-11 | Según Aldabalde, se presenta a la Directiva el modelo económico (USD 93 M) | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:16:25 |
 | 2026-07-07 | Según Singlet, Asamblea de reforma del Estatuto: 75% para proyectos de más de USD 2 M (no vigente hasta completar trámites) | [F-0017](../fuentes/F-0017-pasion-tricolor-singlet-bardanca.md), 00:05:19 |
