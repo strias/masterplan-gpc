@@ -42,6 +42,7 @@ El proyecto se discute públicamente desde hace casi dos años y sus datos cambi
 - Cada dato lleva el ID de su fuente y, si es un documento, la página: `F-0004, p. 42`.
 - `p. N` es el número impreso en la página, no el del visor del PDF. Si difieren, la ficha de la fuente lo aclara.
 - Los videos se citan con marca de tiempo (`F-0005, 03:15`).
+- Las transcripciones de audio y video se publican en `transcripciones/`, con los nombres propios corregidos y la lista de correcciones al final. Son automáticas: sirven para ubicar el minuto, pero la cita se verifica contra el video.
 - Las fichas de documentos registran versión, fecha de carga y hash SHA-256, para saber exactamente qué versión se citó.
 
 ## Reglas

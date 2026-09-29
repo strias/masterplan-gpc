@@ -8,6 +8,7 @@ fecha: 2026-01-01        # fecha de publicación (obligatoria)
 consultada: 2026-01-01   # fecha en que la revisamos
 url: ""
 archivo: ""              # copia local, si se puede redistribuir
+transcripcion: ""        # para audio o video: transcripciones/<ID>-....md
 ---
 
 ## Resumen

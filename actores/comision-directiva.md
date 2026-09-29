@@ -4,7 +4,7 @@ nombre: Comisión Directiva del Club Nacional de Football
 tipo: institucion
 rol: comisión directiva
 postura: sin-definir
-fuentes: [F-0001]
+fuentes: [F-0001, F-0015]
 ---
 
 ## Integración
@@ -26,6 +26,8 @@ fuentes: [F-0001]
 | Delegado AUF | Esc. Adolfo Orellano |
 | Delegado AUF | Esc. Gonzalo Bertín |
 | Adscripta a la presidencia | Mag. Magdalena Giuria |
+
+**Votación del 2026-09-21:** la convocatoria a la Asamblea del 24 de octubre se aprobó 7 a 4. Votaron en contra Tatiana Villaverde, Amaro Nadal, Alejandro Balbi y José Decurnex, según Decurnex ([F-0015](../fuentes/F-0015-territorio-nacional-decurnex.md), 05:51).
 
 Cada integrante que haga afirmaciones públicas sobre el proyecto tendrá su propia ficha.
 

@@ -7,7 +7,8 @@ medio: El Espectador Deportes (YouTube)
 fecha: 2026-07-16        # fecha en el título; subido 10:31 hora de Uruguay
 consultada: 2026-09-28
 url: https://www.youtube.com/watch?v=PDYIvpms7r4
-archivo: archivo/F-0018-espectador-aldabalde-2026-07-16.subtitulos.vtt   # no se sube al repo
+archivo: archivo/F-0018-espectador-aldabalde-2026-07-16.subtitulos.vtt   # original local, no se sube
+transcripcion: transcripciones/F-0018-espectador-aldabalde-2026-07-16.md
 ---
 
 ## Resumen
@@ -24,5 +25,6 @@ Según subtítulos automáticos; los minutos son aproximados:
 
 ## Notas
 
-- Los subtítulos automáticos están guardados localmente y no se suben al repo.
+- **Transcripción publicada:** [`transcripciones/F-0018-espectador-aldabalde-2026-07-16.md`](../transcripciones/F-0018-espectador-aldabalde-2026-07-16.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video.
+
 - Hay un resumen de prensa en Decano (2026-07-17, https://decano.com/el-cambio-economico-que-nacional-necesita/) y otra entrevista del día anterior en Pasión Tricolor (2026-07-15, https://www.youtube.com/watch?v=TKg5IA-Zy3o, desde 43:54). Ninguna de las dos se registró ni se revisó.

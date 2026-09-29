@@ -7,7 +7,8 @@ medio: Pasión Tricolor (YouTube, en vivo)
 fecha: 2026-09-25        # emisión en vivo: 19:05 a 22:09 hora de Uruguay
 consultada: 2026-09-28
 url: https://www.youtube.com/live/zOnJazksi08
-archivo: archivo/F-0014-pasion-tricolor-aldabalde-2026-09-25.transcripcion.txt   # no se sube al repo
+archivo: archivo/F-0014-pasion-tricolor-aldabalde-2026-09-25.transcripcion.txt   # original local, no se sube
+transcripcion: transcripciones/F-0014-pasion-tricolor-aldabalde-2026-09-25.md
 ---
 
 ## Resumen
@@ -19,7 +20,7 @@ Entrevista en vivo a Santiago Aldabalde, presidente de la CPO, para responder a 
 - Transmisión en vivo del canal "Pasión Tricolor". Inicio 2026-09-25T22:05:39Z, fin 2026-09-26T01:09:33Z (datos de YouTube). Duración: 3:04:06.
 - Transcripción automática con separación de voces, aportada por el autor del repo. SHA-256: `adbe79eb2054865b2a690fc1c33e4b843f5ea4dc624080c3a79897cca3331a08`.
 
-**Cómo citar:** marca de tiempo del video (`F-0014, 01:08:44`). La transcripción tiene errores. La separación de voces mezcla a veces a Aldabalde con los conductores, así que la atribución se hace por contenido. Los nombres propios suelen salir mal (por ejemplo "Curnek" por Decurnex, "Sepé Ferrer" por CPA Ferrere, "Bairo" por Vairo). Antes de publicar una cita textual, verificarla contra el audio.
+**Cómo citar:** marca de tiempo del video (`F-0014, 01:08:44`). La separación de voces mezcla a veces a Aldabalde con los conductores, así que la atribución se hace por contenido. En la versión publicada se corrigieron los nombres propios; el resto puede tener errores. Antes de publicar una cita textual, verificarla contra el audio.
 
 ## Datos clave
 
@@ -61,6 +62,8 @@ Entrevista en vivo a Santiago Aldabalde, presidente de la CPO, para responder a 
 - La cuota para el Parque sería optativa: "Siempre" (02:32:36). Después: "Yo creo que no. Esa es una decisión de directiva, no mía." (02:32:47)
 
 ## Notas
+
+- **Transcripción publicada:** [`transcripciones/F-0014-pasion-tricolor-aldabalde-2026-09-25.md`](../transcripciones/F-0014-pasion-tricolor-aldabalde-2026-09-25.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video.
 
 - Parte interesada: Aldabalde preside la comisión que impulsa el proyecto.
 - Menciona documentos que no están registrados: la presentación y el modelo a Directiva del 11 de marzo de 2026 (con número de página) y un texto de CPA que leyó al aire. Hay que conseguirlos.

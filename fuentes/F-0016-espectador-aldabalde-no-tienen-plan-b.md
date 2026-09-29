@@ -7,7 +7,8 @@ medio: El Espectador Deportes
 fecha: 2026-09-17        # subido a YouTube 10:13 hora de Uruguay; la página del medio dice 17 SET
 consultada: 2026-09-28
 url: https://espectador.com/lamanana/entrevista/santiago-aldabalde-salio-al-cruce-de-las-criticas-al-masterplan-del-gpc-no-tienen-plan-b
-archivo: archivo/F-0016-espectador-aldabalde-2026-09-17.subtitulos.vtt   # no se sube al repo
+archivo: archivo/F-0016-espectador-aldabalde-2026-09-17.subtitulos.vtt   # original local, no se sube
+transcripcion: transcripciones/F-0016-espectador-aldabalde-2026-09-17.md
 ---
 
 ## Resumen
@@ -25,5 +26,7 @@ Según subtítulos automáticos; los minutos son aproximados:
 
 ## Notas
 
-- Los subtítulos automáticos están guardados localmente y no se suben al repo. Los huecos del subtítulo (la cifra de la cuota y la del ejecutivo) hay que resolverlos escuchando el audio.
+- **Transcripción publicada:** [`transcripciones/F-0016-espectador-aldabalde-2026-09-17.md`](../transcripciones/F-0016-espectador-aldabalde-2026-09-17.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video.
+
+- Subtítulos automáticos. Los huecos del subtítulo (la cifra de la cuota y la del ejecutivo) hay que resolverlos escuchando el audio.
 - Parte interesada: preside la CPO.

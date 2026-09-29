@@ -7,7 +7,8 @@ medio: Pasión Tricolor (YouTube, en vivo; también 89.3 FM)
 fecha: 2026-09-24        # emisión en vivo: 19:05 a 21:42 hora de Uruguay
 consultada: 2026-09-28
 url: https://www.youtube.com/watch?v=dowYxCNXN7k
-archivo: archivo/F-0017-pasion-tricolor-singlet-bardanca-2026-09-24.subtitulos.vtt   # no se sube al repo
+archivo: archivo/F-0017-pasion-tricolor-singlet-bardanca-2026-09-24.subtitulos.vtt   # original local, no se sube
+transcripcion: transcripciones/F-0017-pasion-tricolor-singlet-bardanca-2026-09-24.md
 ---
 
 ## Resumen
@@ -20,5 +21,6 @@ Entrevista a los contadores Enrique Singlet y Joaquín Bardanca con sus reparos 
 
 ## Notas
 
-- Los subtítulos automáticos están guardados localmente y no se suben al repo.
+- **Transcripción publicada:** [`transcripciones/F-0017-pasion-tricolor-singlet-bardanca-2026-09-24.md`](../transcripciones/F-0017-pasion-tricolor-singlet-bardanca-2026-09-24.md). Tiene los nombres propios corregidos y la lista de correcciones al final. Sirve para ubicar el minuto; la cita se verifica contra el video.
+
 - Hay que revisarla para tener citas textuales de Singlet y Bardanca ([A-0011](../afirmaciones/A-0011-bardanca-estacionamientos.md)).
