@@ -1,5 +1,18 @@
 import html, re
 
+ACTUALIZADO = "28/09/2026"
+TITULO = "Contrapunto del Master Plan"
+DESCRIPCION = "Preguntas, respuestas y fuentes del debate sobre el Master Plan del Gran Parque Central."
+HEAD = open("head.html").read()  # fuentes y estilos compartidos
+
+
+def documento(titulo, descripcion, cuerpo, extra=""):
+    """Documento HTML completo y autónomo, listo para copiar a cualquier servidor."""
+    return (f'<!doctype html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n'
+            f'<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            f'<title>{html.escape(titulo)}</title>\n<meta name="description" content="{html.escape(descripcion)}">\n'
+            f'{HEAD}{extra}</head>\n<body>\n{cuerpo}\n</body>\n</html>\n')
+
 YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
       "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao"}
 NOMBRE = {
@@ -214,7 +227,6 @@ def src_link(fid):
 
 out = []
 A = out.append
-A(open("head.html").read())
 A('<main class="wrap">')
 A('''<header class="hero">
   <p class="eyebrow">Gran Parque Central · Master Plan</p>
@@ -222,7 +234,7 @@ A('''<header class="hero">
   <p class="lede">Las preguntas centrales del debate, con las respuestas de cada parte y un enlace al minuto exacto en que se dijo cada cosa. Donde hay un documento, se contrasta con él.</p>
   <dl class="facts">
     <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
-    <div><dt>Estado</dt><dd>Preliminar · actualizado el 28/09/2026</dd></div>
+    <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
     <div><dt>Falta publicar</dt><dd>Moción oficial y modelo económico</dd></div>
   </dl>
   <nav class="toc" aria-label="Secciones">
@@ -289,11 +301,9 @@ A('</ul></section>')
 
 A('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, hincha de Nacional, con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente.</p></footer></main>''')
 
-open("contrapunto.html", "w").write("\n".join(out))
+open("index.html", "w").write(documento(TITULO, DESCRIPCION, "\n".join(out)))
 
 from detalle import DETALLE
-HEAD = open("head.html").read()
-STYLE = HEAD[HEAD.index("<link rel=\"preconnect\""):]
 EXTRA = """<style>
 .back { font-family: var(--f-mono); font-size: .82rem; }
 .lado { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
@@ -313,7 +323,7 @@ ids = [p["id"] for p in PREGUNTAS]
 for i, p in enumerate(PREGUNTAS):
     d = DETALLE[p["id"]]
     o = []
-    o.append(f'<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>{html.escape(d["titulo"])}</title>{STYLE}{EXTRA}</head><body><main class="wrap">')
+    o.append('<main class="wrap">')
     o.append(f'<header class="hero"><a class="back" href="index.html">← Volver a la portada</a><p class="eyebrow">Master Plan GPC · Pregunta en detalle</p><h1>{html.escape(d["titulo"])}</h1><p class="lede">{R(d["corto"])}</p><div class="chips">{"".join(chip(e) for e in p["estado"])}</div></header>')
     o.append('<section class="sec"><h2>Qué dice cada uno</h2><div class="lados">')
     for who, tesis, txt, porque in d["posturas"]:
@@ -328,7 +338,8 @@ for i, p in enumerate(PREGUNTAS):
     prev = f'<a href="detalle-{ids[i-1]}.html">← {html.escape(DETALLE[ids[i-1]]["titulo"])}</a>' if i > 0 else '<span></span>'
     nxt = f'<a href="detalle-{ids[i+1]}.html">{html.escape(DETALLE[ids[i+1]]["titulo"])} →</a>' if i + 1 < len(ids) else '<a href="index.html">Volver a la portada</a>'
     o.append(f'<nav class="pager">{prev}{nxt}</nav>')
-    o.append('<footer class="foot"><p>Preliminar, al 28/09/2026. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener la moción oficial y el modelo económico.</p></footer></main></body></html>')
-    open(f"detalle-{p['id']}.html", "w").write("\n".join(o))
+    o.append(f'<footer class="foot"><p>Preliminar, al {ACTUALIZADO}. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener la moción oficial y el modelo económico.</p></footer></main>')
+    descripcion = f'{d["titulo"]} Qué dice cada parte, en qué se apoya y análisis, en el debate sobre el Master Plan del Gran Parque Central.'
+    open(f"detalle-{p['id']}.html", "w").write(documento(d["titulo"], descripcion, "\n".join(o), EXTRA))
 print("detalles:", len(ids))
 print("ok", sum(len(x) for x in out))
