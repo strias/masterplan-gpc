@@ -11,12 +11,6 @@ EN_CORTO = [
  "Si en **30 meses** no empezó ninguna etapa sustancial, caduca la autorización, con una sola prórroga de un año {F-0007 p.9}.",
 ]
 
-CAMBIO = dict(
- antes="Al menos **9 de los 11** directivos para las decisiones centrales. Así lo leyó Aldabalde al aire {F-0014 01:55:53}, así lo resumió La Abdón {F-0009} y así lo comentaron en Pasión Tricolor {F-0017 00:17:07}.",
- ahora="El **voto unánime de los once** integrantes de la Comisión Directiva {F-0007 p.8}. Lo repite en los fundamentos {F-0007 p.4}.",
- nota="Lo demás que se conocía del borrador coincide con el texto oficial. La restitución de flujos al club ya estaba en el borrador leído por Aldabalde {F-0014 01:51:29}. Detalle en la ficha F-0007 del repositorio.",
-)
-
 ARTICULOS = [
  ("Primero", "Aprobación institucional", "Aprueba el Master Plan como marco arquitectónico, estratégico y funcional, con ejecución por etapas y la integración del estadio con arena, Plaza del Hincha, estacionamientos y las demás unidades del proyecto.", "p.6", None),
  ("Segundo", "Alcance de la autorización", "Autoriza a la Directiva, con la CPO y asesores, a seguir con estudios, proyectos ejecutivos, permisos, licitaciones y negociaciones. “Deberá priorizarse el inicio de aquellas etapas que involucren directamente al Estadio.” No habilita obras, financiamiento, garantías ni afectación de activos o ingresos.", "p.6", ("solo", "¿Se puede terminar solo el estadio?")),
@@ -84,7 +78,7 @@ AVISO = "Este análisis es de Claude, la IA que asiste al proyecto, y es opinió
 
 ANALISIS = [
  "**Es una moción de garantías más que de proyecto.** De los diez artículos, los dos primeros aprueban y autorizan; los otros ocho ponen límites a la Directiva. Responde con claridad la preocupación que compartían las dos partes, que el club no se endeude ni hipoteque el Parque {F-0007 p.6-7}. En eso, lo que decía Aldabalde {F-0014 01:56:05} queda escrito.",
- "**La unanimidad es la novedad, y cambia el equilibrio.** La Directiva votó 7 a 4 convocar la Asamblea {F-0015 00:05:51}. Con 9 de 11, bastaba sumar a dos de esos cuatro; con unanimidad, cada directivo puede frenar cada decisión central. La salida es convocar otra Asamblea en 30 días {F-0007 p.8}. En la práctica, si el desacuerdo sigue, las decisiones grandes vuelven a los socios. Eso contesta en parte el temor de Singlet de que se relegue a las asambleas {F-0017 00:17:46}. El costo posible: más asambleas y más demora.",
+ "**La unanimidad cambia el equilibrio.** La Directiva votó 7 a 4 convocar la Asamblea {F-0015 00:05:51}. Con unanimidad, cualquiera de los once puede frenar cada decisión central. La salida es convocar otra Asamblea en 30 días {F-0007 p.8}. En la práctica, si el desacuerdo sigue, las decisiones grandes vuelven a los socios. Eso contesta en parte el temor de Singlet de que se relegue a las asambleas {F-0017 00:17:46}. El costo posible: más asambleas y más demora.",
  "**El 24 de octubre se decide el rumbo, no los números.** Costo, cuota, ingresos y estacionamiento, que son casi todo el debate, no están en la moción. Los va a decidir la Directiva después, por unanimidad y con el modelo actualizado {F-0007 p.7-8}. Hoy el modelo no está publicado {F-0003} y la propia moción llama “evolutivas” sus estimaciones {F-0007 p.2}; el Consejo Asesor presentará sus conclusiones “oportunamente”, sin fecha {F-0007 p.2}. Si eso está bien es un desacuerdo de valores: Decurnex quiere el ejecutivo antes de votar {F-0015 00:11:39}; Aldabalde, no gastar 2 M sin respaldo {F-0016 00:21:22}. Ver [[>debate/#voto|la pregunta del voto]].",
  "**Lo que sí queda fijado pesa.** El artículo 1° adopta este Master Plan, con arena, estacionamiento y zócalo comercial, y sobrevive aunque caduque la autorización {F-0007 p.9}. Una alternativa de solo estadio, como la que estudian Singlet y Bardanca {F-0017 01:20:05}, tendría que volver a la Asamblea como cambio sustancial {F-0007 p.9}.",
  "**El aporte de socios es el punto más abierto.** La moción permite asignar “aportes extraordinarios” sin decir si son voluntarios {F-0007 p.7}. Bardanca sostiene que un financiador pide un aporte propio que no sea voluntario {F-0017 00:54:19}. Si eso termina en una suba de cuota, no queda claro si cuenta como “comprometer ingresos ordinarios adicionales”, que obligaría a volver a la Asamblea {F-0007 p.9}. Convendría que la reglamentación lo aclare. Ver [[>debate/detalle-cuota.html|la cuota]].",
@@ -94,4 +88,4 @@ ANALISIS = [
 
 LECTURA = "La moción protege bien la caja y el patrimonio del club, y suma un control fuerte: unanimidad en la Directiva o vuelta a los socios. No contesta las preguntas de números del debate, que quedan para decisiones posteriores bajo esas reglas. Votar el 24 de octubre es aprobar un rumbo y un sistema de garantías. Si alcanza con eso, sin conocer todavía el modelo, es la pregunta que cada socio tiene que responder."
 
-FUENTES_PORTADA = ["F-0007", "F-0003", "F-0004", "F-0009", "F-0014", "F-0015", "F-0016", "F-0017", "F-0019"]
+FUENTES_PORTADA = ["F-0007", "F-0003", "F-0004", "F-0014", "F-0015", "F-0016", "F-0017", "F-0019"]

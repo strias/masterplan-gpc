@@ -67,7 +67,6 @@ ESTADOS = {
     "coinciden": ("Coinciden en el dato", "ok"),
     "consistente": ("Consistente con documento", "ok"),
     "mocion": ("Consistente con la moción", "ok"),
-    "cambio": ("Cambió del borrador a la moción", "warn"),
     "atribucion": ("Atribución de prensa incorrecta", "bad"),
     "distintos": ("Mismo actor, dichos distintos", "warn"),
     "cuenta": ("La cuenta no cierra", "warn"),
@@ -174,7 +173,7 @@ FILAS = [
  ("Solo estadio", "pendiente", "#solo"),
  ("Informe de CPA “lapidario”", "pendiente", None),
  ("Garantías de la moción", "mocion", None),
- ("Mayoría especial de la Directiva", "cambio", None),
+ ("Mayoría especial de la Directiva", "mocion", None),
  ("Mayoría del 75%", "coinciden", "#voto"),
 ]
 NOTAS = {
@@ -186,7 +185,7 @@ NOTAS = {
  "“10 mil butacas nuevas”": "Aldabalde {F-0014 01:52:45}. El aforo pasa de unos 34.000 a más de 43.000 {F-0004 p.64}.",
  "Informe de CPA “lapidario”": "Aldabalde lo anunció así {F-0016 00:16:50}. En un mail leído al aire, un socio de CPA escribe que “no es lapidario ni pretende serlo” {F-0017 00:47:34}. Falta el informe.",
  "Cuentas de los 26 M y del estacionamiento": "Los componentes que da Decurnex suman 23,5 M, no 26 {F-0015 00:13:06}; en el estacionamiento, 3 M con un castigo del 30% dan 2,1 M, no 2,5 {F-0014 01:13:45}. Ver [[#cuota|la cuota]] y [[#parking|el estacionamiento]].",
- "Mayoría especial de la Directiva": "El borrador pedía 9 de los 11 directivos {F-0014 01:55:53}; la moción oficial pide el voto unánime de los once {F-0007 p.8}. Si no hay unanimidad y la mayoría simple quiere seguir, decide una nueva Asamblea en 30 días.",
+ "Mayoría especial de la Directiva": "La moción pide el voto unánime de los once directivos {F-0007 p.8}. Si no hay unanimidad y la mayoría simple quiere seguir, decide una nueva Asamblea en 30 días.",
  "Garantías de la moción": "Fideicomiso separado, sin hipoteca ni deuda del club, unanimidad de la Directiva para las decisiones centrales, vuelta a la Asamblea ante cambios sustanciales y plazo de 30 meses {F-0007 p.6-9}. Un conductor de Pasión Tricolor pide sanciones para quien incumpla {F-0014 01:58:43}; Singlet teme que se relegue a las asambleas en las decisiones futuras {F-0017 00:17:46}. Aldabalde acepta las sanciones, pero dice que van en el Estatuto {F-0014 01:59:47}. Qué cubre un sobrecosto: [[#sobrecosto|la pregunta del sobrecosto]].",
 }
 
@@ -226,7 +225,7 @@ POSTURAS = [
   "{F-0014 01:24:49}"),
 ]
 
-FUENTES = ["F-0003", "F-0004", "F-0007", "F-0009", "F-0011", "F-0012", "F-0014", "F-0015", "F-0016", "F-0017", "F-0018", "F-0019"]
+FUENTES = ["F-0003", "F-0004", "F-0007", "F-0011", "F-0012", "F-0014", "F-0015", "F-0016", "F-0017", "F-0018", "F-0019"]
 
 def src_link(fid):
     if fid in YT:
@@ -289,7 +288,6 @@ A('''<dl class="legend">
 <div><dt>''' + chip("coinciden") + '''</dt><dd>Las dos partes dan la misma cifra.</dd></div>
 <div><dt>''' + chip("consistente") + '''</dt><dd>Lo confirma un documento oficial registrado.</dd></div>
 <div><dt>''' + chip("mocion") + '''</dt><dd>Lo confirma el texto oficial de la moción.</dd></div>
-<div><dt>''' + chip("cambio") + '''</dt><dd>El texto oficial de la moción dice otra cosa que el borrador que circuló antes.</dd></div>
 <div><dt>''' + chip("atribucion") + '''</dt><dd>La fuente original no dice lo que publicó un medio.</dd></div>
 <div><dt>''' + chip("distintos") + '''</dt><dd>La misma persona dijo cosas distintas en fechas distintas. No implica que sea falso: la información puede haber cambiado.</dd></div>
 <div><dt>''' + chip("cuenta") + '''</dt><dd>La cifra dicha no coincide con sus propios componentes.</dd></div>
@@ -365,10 +363,6 @@ def chip_resp(k):
 PORTADA_CSS = """<style>
 .cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: transparent; color: var(--muted); border: 1px dashed currentColor; padding: 0 5px; border-radius: 3px; white-space: nowrap; }
 .corto { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: 70ch; }
-.cambio { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-.cambio > div { background: var(--surface); padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
-.cambio .ahora { border-top: 4px solid var(--red); }
-.cambio .antes { border-top: 4px solid var(--line); color: var(--muted); }
 .arts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .art { display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .art .num { font-family: var(--f-display); font-size: 1.3rem; text-transform: uppercase; color: var(--red); line-height: 1.1; }
@@ -400,7 +394,7 @@ P('''<header class="hero">
     <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
   </dl>
   <nav class="toc" aria-label="Secciones">
-    <a href="#resumen">En resumen</a><a href="#cambio">Qué cambió</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
+    <a href="#resumen">En resumen</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
   </nav>
   <a class="cta" href="debate/">El debate: qué dice cada uno →</a>
 </header>''')
@@ -410,10 +404,6 @@ for x in M.EN_CORTO:
     P(f'<li>{R(x)}</li>')
 P('</ul></section>')
 
-P(f'<section id="cambio" class="sec"><h2>Qué cambió respecto del borrador</h2><p class="sec-intro">Antes de la publicación circuló un borrador. El texto oficial cambia la garantía que más se había discutido: la mayoría que necesita la Directiva.</p><div class="chips">{chip("cambio")}</div><div class="cambio">')
-P(f'<div class="antes"><p class="label">El borrador</p><p>{R(M.CAMBIO["antes"])}</p></div>')
-P(f'<div class="ahora"><p class="label">La moción oficial</p><p>{R(M.CAMBIO["ahora"])}</p></div>')
-P(f'</div><p class="sec-intro">{R(M.CAMBIO["nota"])}</p></section>')
 
 P('<section id="articulos" class="sec"><h2>Artículo por artículo</h2><p class="sec-intro">La parte que se vota es la resolución, en diez artículos. Resumen propio; cada enlace abre la página del PDF oficial.</p><ol class="arts">')
 for num, tit, txt, pag, deb in M.ARTICULOS:
