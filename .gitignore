@@ -3,3 +3,7 @@ node_modules/
 dist/
 .env
 *.local
+
+# Copias locales de documentos de terceros (pesados o con derechos de sus autores)
+archivo/*.pdf
+archivo/*.mp4

@@ -22,6 +22,8 @@ El análisis se hace con asistencia de IA (Claude, de Anthropic). Las reglas que
 
 🟡 **Fase 1: descubrimiento.** Estamos reuniendo documentos, actores y afirmaciones. Todavía no hay veredictos publicados.
 
+La Asamblea General Extraordinaria que considera el proyecto es el **24 de octubre de 2026** ([cronología](docs/cronologia.md)).
+
 ## Estructura
 
 | Carpeta | Contenido |
