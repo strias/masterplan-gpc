@@ -21,4 +21,4 @@ Integración de la Comisión Directiva del club.
 
 ## Notas
 
-La página no tiene fecha. El autor copió la lista de esta página el 2026-09-28.
+La página no tiene fecha. El autor copió la lista de esta página y se verificó contra ella el 2026-09-28.
