@@ -393,6 +393,8 @@ def chip_resp(k):
 
 PORTADA_CSS = """<style>
 .cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: transparent; color: var(--muted); border: 1px dashed currentColor; padding: 0 5px; border-radius: 3px; white-space: nowrap; }
+.obra { margin: 0; padding-left: 26px; display: flex; flex-direction: column; gap: 8px; max-width: 70ch; }
+.obra li::marker { font-family: var(--f-mono); color: var(--red); }
 .corto { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: 70ch; }
 .arts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .art { display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
@@ -425,7 +427,7 @@ P('''<header class="hero">
     <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
   </dl>
   <nav class="toc" aria-label="Secciones">
-    <a href="#resumen">En resumen</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
+    <a href="#resumen">En resumen</a><a href="#obra">Para que empiece la obra</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
   </nav>
   <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
 </header>''')
@@ -435,6 +437,15 @@ for x in M.EN_CORTO:
     P(f'<li>{R(x)}</li>')
 P('</ul></section>')
 
+
+P('<section id="obra" class="sec"><h2>Qué tiene que pasar para que empiece la obra</h2><p class="sec-intro">Según la moción, todo esto, y se repite en cada etapa.</p><ol class="obra">')
+for t, x in M.OBRA:
+    P(f'<li><strong>{html.escape(t)}:</strong> {R(x)}</li>')
+P(f'</ol><p class="sec-intro">{R(M.OBRA_PLAZO)}</p>')
+P('<h3>¿Vuelve a votar la Asamblea?</h3><p>Solo en estos casos:</p><ul class="falta">')
+for t, r in M.VUELVE:
+    P(f'<li><strong>{html.escape(t)}</strong><span>{R(r)}</span></li>')
+P(f'</ul><p class="sec-intro">{R(M.VUELVE_NOTA)}</p></section>')
 
 P('<section id="articulos" class="sec"><h2>Artículo por artículo</h2><p class="sec-intro">La parte que se vota es la resolución, en diez artículos. Resumen propio; cada enlace abre la página del PDF oficial.</p><ol class="arts">')
 for num, tit, txt, pag, deb in M.ARTICULOS:

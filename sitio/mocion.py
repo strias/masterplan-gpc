@@ -89,3 +89,27 @@ ANALISIS = [
 LECTURA = "La moción protege bien la caja y el patrimonio del club, y suma un control fuerte: unanimidad en la Directiva o vuelta a los socios. No contesta las preguntas de números del debate, que quedan para decisiones posteriores bajo esas reglas. Votar el 24 de octubre es aprobar un rumbo y un sistema de garantías. Si alcanza con eso, sin conocer todavía el modelo, es la pregunta que cada socio tiene que responder."
 
 FUENTES_PORTADA = ["F-0007", "F-0003", "F-0004", "F-0014", "F-0015", "F-0016", "F-0017", "F-0019"]
+
+# Qué tiene que pasar para que empiece la obra (arts. 5°, 6° y 9°). Se repite en cada etapa.
+OBRA = [
+ ("Asamblea del 24/10", "los socios aprueban la moción {F-0007 p.6}."),
+ ("Proyecto ejecutivo", "con alcance, cronograma y presupuesto de la etapa {F-0007 p.7}."),
+ ("Permisos", "las autorizaciones y habilitaciones que hagan falta {F-0007 p.7}."),
+ ("Modelo económico", "actualizado y validado por CPA Ferrere u otra firma independiente {F-0007 p.7}."),
+ ("Fideicomiso", "constituido, con patrimonio y cuentas separados de los del club {F-0007 p.6}."),
+ ("Financiamiento", "suficiente para terminar la etapa, con compromisos firmados {F-0007 p.7}."),
+ ("Licitación", "con una Comisión de Licitaciones y los contratos adjudicados {F-0007 p.7-8}."),
+ ("Garantías y seguros", "de cumplimiento y para contingencias {F-0007 p.8}."),
+ ("Informe jurídico", "que confirme que todo cumple la moción y el Estatuto {F-0007 p.8}."),
+ ("Unanimidad de los 11 directivos", "en cada decisión central. Si no la hay, decide otra Asamblea {F-0007 p.8}."),
+]
+OBRA_PLAZO = "El plazo para empezar es de 30 meses, con una sola prórroga de un año {F-0007 p.9}. Hoy no hay financiamiento comprometido: los contactos con financiadores “no implican compromisos” {F-0007 p.2}."
+
+# ¿Vuelve a votar la Asamblea? Solo en estos casos.
+VUELVE = [
+ ("No hay unanimidad en la Directiva y la mayoría quiere seguir", "{F-0007 p.8}"),
+ ("Un cambio sustancial: la esencia del Master Plan, más ingresos ordinarios, deuda o garantías del club, la propiedad de sus bienes", "{F-0007 p.9}"),
+ ("La autorización caducó y se quiere retomar", "{F-0007 p.9}"),
+ ("Se quiere reducir o quitar una garantía", "{F-0007 p.9}"),
+]
+VUELVE_NOTA = "Si nada de eso pasa, el 24 de octubre es la única vez que votan los socios; después decide la Directiva. Queda abierta la reforma del Estatuto que exige 75% para proyectos de más de USD 2 M: no rige todavía, y la moción se aplica “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” {F-0007 p.5}. No tenemos el texto de la reforma para saber qué exigiría. Ver [[>debate/detalle-voto.html|la pregunta del voto]]."
