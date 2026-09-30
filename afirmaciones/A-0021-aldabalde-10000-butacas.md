@@ -25,12 +25,14 @@ La ampliación del aforo genera ingresos para el club.
 
 ## Evidencia
 
-El anteproyecto dice 16.544 butacas nuevas ([F-0004](../fuentes/F-0004-anteproyecto.md), p. 42) y un aforo de unos 34.000 a más de 43.000 (p. 64). Las diferencias pueden ser butacas nuevas contra lugares netos agregados. Hay que aclararlo.
+El anteproyecto dice 16.544 butacas nuevas ([F-0004](../fuentes/F-0004-anteproyecto.md), p. 42) y un aforo de unos 34.000 a más de 43.000 (p. 64). Las diferencias pueden ser butacas nuevas contra lugares netos agregados. Sumando las etapas (p. 38-41) salen 8.247 butacas generales nuevas más 1.869 de hospitalidad: 10.116, cerca de lo que dice Aldabalde y del aumento de aforo. El total de 16.544 de p. 42 no se puede reconstruir desde las etapas (ver [F-0004](../fuentes/F-0004-anteproyecto.md)).
 
 ## Veredicto
 
 Pendiente (fase 1).
 
 ## Historial
+
+- 2026-09-30: se suma la cuenta por etapa del anteproyecto.
 
 - 2026-09-28: registro inicial.

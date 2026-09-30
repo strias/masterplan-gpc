@@ -57,6 +57,9 @@ URL = {
     "F-0012": "https://laabdon.com/noticias/master-plan-del-gpc-las-dudas-de-singlet-y-bardanca-y-las-respuestas-de-aldabalde-frente-a-frente",
 }
 
+# Diferencia entre la página impresa que se cita y la del visor del PDF (el anteproyecto no numera la portada).
+PAGINA_VISOR = {"F-0004": 1}
+
 def ref(fid, ts=None, page=None):
     """Enlace a la fuente, al minuto exacto si es video."""
     if ts and fid in YT:
@@ -67,7 +70,7 @@ def ref(fid, ts=None, page=None):
         href = URL.get(fid, "#fuentes")
         label = fid + (f" · p. {page}" if page else "")
         if page and href.endswith(".pdf"):
-            href += f"#page={page.split('-')[0]}"
+            href += f"#page={int(page.split('-')[0]) + PAGINA_VISOR.get(fid, 0)}"
     return f'<a class="ref" href="{href}" target="_blank" rel="noopener" title="{html.escape(NOMBRE.get(fid, fid))}">{label}</a>'
 
 def R(s):
