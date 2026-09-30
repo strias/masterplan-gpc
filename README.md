@@ -5,6 +5,7 @@
 ## 👉 [masterplangpc.com](https://masterplangpc.com)
 
 - **[La moción, artículo por artículo](https://masterplangpc.com):** qué se vota en la Asamblea del 24 de octubre de 2026, qué responde del debate y qué deja abierto.
+- **[El anteproyecto](https://masterplangpc.com/anteproyecto/):** qué se construye en cada una de las 14 etapas, en qué orden y cómo se compara con lo que se dijo.
 - **[El debate](https://masterplangpc.com/debate/):** qué dice cada uno, con el minuto exacto de cada cita, en qué coinciden y qué falta verificar.
 
 El sitio se genera desde este repositorio ([`sitio/`](sitio/)). Todo lo que muestra sale de las fichas de acá.

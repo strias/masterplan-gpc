@@ -1,6 +1,6 @@
 import html, os, re
 
-ACTUALIZADO = "29/09/2026"
+ACTUALIZADO = "30/09/2026"
 TITULO = "Contrapunto del Master Plan"
 DESCRIPCION = "Preguntas, respuestas y fuentes del debate sobre el Master Plan del Gran Parque Central."
 HEAD = open("head.html").read()  # fuentes y estilos compartidos
@@ -40,7 +40,7 @@ YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
       "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao"}
 NOMBRE = {
     "F-0003": "Sitio oficial de la Asamblea", "F-0004": "Anteproyecto (PDF oficial)",
-    "F-0007": "Moción oficial (PDF)",
+    "F-0006": "Aclaración de los autores (PDF)", "F-0007": "Moción oficial (PDF)",
     "F-0009": "La Abdón: moción filtrada", "F-0010": "La Abdón: qué se propone",
     "F-0011": "La Abdón: Decurnex y Aldabalde", "F-0012": "La Abdón: Singlet, Bardanca y Aldabalde",
     "F-0014": "Pasión Tricolor, Aldabalde (25/09)", "F-0015": "Territorio Nacional, Decurnex (21/09)",
@@ -50,6 +50,7 @@ NOMBRE = {
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
     "F-0004": "https://asambleagpc.nacional.uy/Anteproyecto.pdf",
+    "F-0006": "https://asambleagpc.nacional.uy/InformacionAdicional1.pdf",
     "F-0007": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf",
     "F-0009": "https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre",
     "F-0010": "https://laabdon.com/noticias/master-plan-del-gran-parque-central-que-se-propone-y-que-significa-para-nacional",
@@ -201,7 +202,8 @@ FILAS = [
  ("Ocupación comercial de 97,5%", "pendiente", None),
  ("Superficie del zócalo comercial", "parcial", None),
  ("Mantenimiento: 3 o 4 M contra 1,2 M", "pendiente", None),
- ("“10 mil butacas nuevas”", "consistente", None),
+ ("“10 mil butacas nuevas”", "parcial", None),
+ ("¿Qué se hace primero?", "pendiente", None),
  ("Solo estadio", "pendiente", "#solo"),
  ("Informe de CPA “lapidario”", "pendiente", None),
  ("Garantías de la moción", "mocion", None),
@@ -214,7 +216,8 @@ NOTAS = {
  "Ocupación comercial de 97,5%": "Bardanca {F-0017 01:16:57}; Aldabalde: “100% alquilado, con precontratos” {F-0014 01:08:44}. Falta el modelo.",
  "Superficie del zócalo comercial": "Aldabalde habla de modelos de 3.500 y 7.000 m² {F-0014 01:08:14}; el anteproyecto da 3.080 m² de locales comerciales y 14.266 m² de superficies rentables {F-0004 p.42}.",
  "Mantenimiento: 3 o 4 M contra 1,2 M": "Aldabalde {F-0016 00:06:05}; Singlet, último balance: 1,2 M bruto {F-0017 01:31:00}. Falta el balance.",
- "“10 mil butacas nuevas”": "Aldabalde {F-0014 01:52:45}. El aforo pasa de unos 34.000 a más de 43.000 {F-0004 p.64}.",
+ "“10 mil butacas nuevas”": "Aldabalde {F-0014 01:52:45}. Sumando las etapas del anteproyecto salen 10.116 y el aforo pasa de unos 34.000 a más de 43.000 {F-0004 p.64}, pero la misma memoria da 16.544 butacas nuevas en total {F-0004 p.42}. Ver [[>../anteproyecto/#cuentas|las cuentas del anteproyecto]].",
+ "¿Qué se hace primero?": "El anteproyecto empieza por el estacionamiento y el zócalo comercial; el estadio arranca en la etapa 3 y el techo va en la 12 y la 13 {F-0004 p.38-41}. La moción pide priorizar las etapas del estadio “en función de los flujos y plazos disponibles” {F-0007 p.6}. Falta el orden definitivo. Ver [[>../anteproyecto/#orden|el anteproyecto]].",
  "Informe de CPA “lapidario”": "Aldabalde lo anunció así {F-0016 00:16:50}. En un mail leído al aire, un socio de CPA escribe que “no es lapidario ni pretende serlo” {F-0017 00:47:34}. Falta el informe.",
  "Cuentas de los 26 M y del estacionamiento": "Los componentes que da Decurnex suman 23,5 M, no 26 {F-0015 00:13:06}; en el estacionamiento, 3 M con un castigo del 30% dan 2,1 M, no 2,5 {F-0014 01:13:45}. Ver [[#cuota|la cuota]] y [[#parking|el estacionamiento]].",
  "Mayoría especial de la Directiva": "La moción pide el voto unánime de los once directivos {F-0007 p.8}. Si no hay unanimidad y la mayoría simple quiere seguir, decide una nueva Asamblea en 30 días.",
@@ -268,7 +271,7 @@ out = []
 A = out.append
 A('<main class="wrap">')
 A('''<header class="hero">
-  <a class="back" href="../">← La moción, artículo por artículo</a>
+  <a class="back" href="../">← La moción, artículo por artículo</a> · <a class="back" href="../anteproyecto/">El anteproyecto, etapa por etapa</a>
   <p class="eyebrow">Gran Parque Central · Master Plan · El debate</p>
   <h1>Qué dice cada uno, y qué se puede comprobar</h1>
   <p class="lede">Las preguntas centrales del debate, con las respuestas de cada parte y un enlace al minuto exacto en que se dijo cada cosa. Donde hay un documento, se contrasta con él.</p>
@@ -432,7 +435,7 @@ P('''<header class="hero">
   <nav class="toc" aria-label="Secciones">
     <a href="#resumen">En resumen</a><a href="#obra">Para que empiece la obra</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
   </nav>
-  <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
+  <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a><a class="cta" href="anteproyecto/">El anteproyecto: qué se construye y en qué orden →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
 </header>''')
 
 P('<section id="resumen" class="sec"><h2>En resumen</h2><ul class="corto">')
@@ -488,3 +491,89 @@ open("index.html", "w").write(documento(
     "Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central artículo por artículo, qué responde del debate y qué deja abierto.",
     "\n".join(o), PORTADA_CSS))
 print("portada ok", sum(len(x) for x in o))
+
+# ---------- El anteproyecto ----------
+import anteproyecto as AP
+
+def chip_tipo(k):
+    t, c = AP.TIPOS[k]
+    return f'<span class="chip chip-{c}">{t}</span>'
+
+AP_CSS = PORTADA_CSS.replace("</style>", """
+.etapas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.etapa { display: grid; grid-template-columns: 64px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.etapa .n { font-family: var(--f-display); font-size: 2rem; line-height: 1; color: var(--red); }
+.etapa div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.etapa .agrega { color: var(--muted); font-size: .95rem; }
+.etapa.estadio .n { color: var(--navy); }
+.back { font-family: var(--f-mono); font-size: .82rem; }
+@media (max-width: 560px) { .etapa { grid-template-columns: 44px 1fr; } }
+</style>""")
+AP_COMPARTIR = "El anteproyecto del Master Plan del Gran Parque Central, etapa por etapa: qué se construye primero y cuándo llega cada mejora del estadio."
+
+a = []
+Q = a.append
+Q('<main class="wrap">')
+Q('<header class="hero">'
+  '<a class="back" href="../">← La moción, artículo por artículo</a>'
+  '<p class="eyebrow">Gran Parque Central · Master Plan · El anteproyecto</p>'
+  '<h1>Qué se construye y en qué orden</h1>'
+  '<p class="lede">El anteproyecto etapa por etapa, con la página de cada dato, y cómo se compara con lo que dijeron las partes y con lo que pide la moción.</p>'
+  '<dl class="facts">'
+  f'<div><dt>Documento</dt><dd>{R("Memoria del concurso de ideas · 121 páginas {F-0004}")}</dd></div>'
+  '<div><dt>Fechas</dt><dd>Junio de 2025 · publicado el 23/09/2026</dd></div>'
+  f'<div><dt>Estado</dt><dd>Preliminar · actualizado el {ACTUALIZADO}</dd></div>'
+  '</dl>'
+  '<nav class="toc" aria-label="Secciones"><a href="#resumen">En resumen</a><a href="#etapas">Las 14 etapas</a><a href="#orden">El orden y la moción</a><a href="#contraste">Contra lo que se dijo</a><a href="#cuentas">Las cuentas</a><a href="#no-trae">Qué no trae</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a></nav>'
+  f'<div class="acciones"><a class="cta" href="../debate/">El debate: qué dice cada uno →</a>{compartir(AP_COMPARTIR, "anteproyecto/")}</div>'
+  '</header>')
+
+Q('<section id="resumen" class="sec"><h2>En resumen</h2><ul class="corto">')
+for x in AP.EN_CORTO:
+    Q(f'<li>{R(x)}</li>')
+Q('</ul></section>')
+
+Q(f'<section id="etapas" class="sec"><h2>Las 14 etapas</h2><p class="sec-intro">Resumen propio de la memoria. Cada etapa indica si es del estadio o de unidades de negocio.</p><ol class="etapas">')
+for n, obras, agrega, tipo, pag in AP.ETAPAS:
+    Q(f'<li class="etapa {tipo}"><span class="n">{n}</span><div><div class="chips">{chip_tipo(tipo)}</div><p>{R(obras)} {R("{F-0004 p." + pag + "}")}</p><p class="agrega"><strong>Agrega:</strong> {R(agrega)}</p></div></li>')
+Q('</ol></section>')
+
+Q('<section id="orden" class="sec"><h2>El orden y la moción</h2>')
+for x in AP.ORDEN:
+    Q(f'<p>{R(x)}</p>')
+Q('</section>')
+
+Q('<section id="contraste" class="sec"><h2>Contra lo que se dijo</h2><p class="sec-intro">Afirmaciones del debate que el anteproyecto permite contrastar. Los estados son los del <a href="../debate/#contrapunto">contrapunto</a>.</p><div class="table-wrap"><table><thead><tr><th scope="col">Qué se dijo</th><th scope="col">Estado</th><th scope="col">Qué dice el anteproyecto</th></tr></thead><tbody>')
+for tema, quien, dice, e, deb in AP.CONTRASTE:
+    link = f' <a href="../{deb}">Ver la pregunta</a>' if deb else ""
+    Q(f'<tr><th scope="row">{html.escape(tema)}<br><span class="refs">{R(quien)}</span></th><td>{chip(e)}</td><td>{R(dice)}{link}</td></tr>')
+Q('</tbody></table></div></section>')
+
+Q('<section id="cuentas" class="sec"><h2>Las cuentas del documento</h2><p class="sec-intro">Sumas propias de lo que agrega cada etapa, contra los totales de la página 42.</p><div class="table-wrap"><table><thead><tr><th scope="col">Rubro</th><th scope="col">Suma de las etapas</th><th scope="col">Total del documento</th><th scope="col">Estado</th></tr></thead><tbody>')
+for t, suma, total, e in AP.CUENTAS:
+    Q(f'<tr><th scope="row">{html.escape(t)}</th><td>{html.escape(suma) or "—"}</td><td>{html.escape(total)}</td><td>{chip(e)}</td></tr>')
+Q('</tbody></table></div></section>')
+
+Q('<section id="no-trae" class="sec"><h2>Qué no trae</h2><ul class="falta">')
+for t, x in AP.NO_TRAE:
+    Q(f'<li><strong>{html.escape(t)}</strong><span>{R(x)}</span></li>')
+Q('</ul></section>')
+
+Q(f'<section id="analisis" class="sec"><h2>Análisis</h2><div class="analisis"><p class="aviso">{AP.AVISO}</p>')
+for par in AP.ANALISIS:
+    Q('<p>' + R(par).replace('href="debate/', 'href="../debate/') + '</p>')
+Q('</div></section>')
+Q(f'<section class="sec"><h2>Conclusión</h2><p class="lectura">{R(AP.LECTURA)}</p><div class="acciones"><a class="cta" href="../">Ver la moción →</a>{compartir(AP_COMPARTIR, "anteproyecto/")}</div></section>')
+
+Q('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Los enlaces con página abren el PDF en esa página; los que tienen minuto abren el video en ese punto.</p><ul class="fuentes">')
+for f in AP.FUENTES_PAGINA:
+    Q(f'<li><span class="code">{f}</span>{src_link(f)}</li>')
+Q('</ul></section>')
+Q('<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Los autores del anteproyecto son el equipo ganador del concurso, parte interesada. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>')
+
+os.makedirs("anteproyecto", exist_ok=True)
+open("anteproyecto/index.html", "w").write(documento(
+    "El anteproyecto, etapa por etapa",
+    "Qué se construye en cada una de las 14 etapas del Master Plan del Gran Parque Central, en qué orden, y cómo se compara con lo que dijeron las partes y con la moción.",
+    "\n".join(a), AP_CSS, "anteproyecto/"))
+print("anteproyecto ok")
