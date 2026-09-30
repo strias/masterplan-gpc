@@ -1,6 +1,6 @@
 ---
 titulo: Cronología del Master Plan
-actualizado: 2026-09-29
+actualizado: 2026-09-30
 ---
 
 # Cronología del Master Plan
@@ -35,6 +35,7 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 | 2026-09-28 a 2026-10-21 | Reuniones informativas para socios (presenciales y virtuales) | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |
 | 2026-09-29 | Según Aldabalde, la Directiva votaría la moción (previsto); después se publica | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:38:47 |
 | 2026-09-29 | Se publica la moción oficial en el sitio de la asamblea. Pide unanimidad de los once directivos, no 9 de 11 como el borrador | [F-0007](../fuentes/F-0007-mocion-asamblea.md) |
+| 2026-09-30 | Reunión informativa virtual para socios, con Aldabalde y otros dos expositores; los socios no pueden preguntar (notas del autor) | [F-0020](../fuentes/F-0020-reunion-informativa-2026-09-30.md) |
 | 2026-10-24 | **Asamblea General Extraordinaria** que considera la moción | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |
 
 Pendiente de publicación al 2026-09-29: el modelo económico financiero ([F-0008](../fuentes/F-0008-modelo-economico-financiero.md)).
