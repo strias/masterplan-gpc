@@ -10,3 +10,6 @@ archivo/*.mp4
 archivo/*.transcripcion.txt
 archivo/*.vtt
 __pycache__/
+archivo/*.wav
+archivo/*.srt
+archivo/*.m4a
