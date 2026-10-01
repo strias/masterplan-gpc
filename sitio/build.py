@@ -47,7 +47,7 @@ NOMBRE = {
     "F-0014": "Pasión Tricolor, Aldabalde (25/09)", "F-0015": "Territorio Nacional, Decurnex (21/09)",
     "F-0016": "El Espectador, Aldabalde (17/09)", "F-0017": "Pasión Tricolor, Singlet y Bardanca (24/09)",
     "F-0018": "El Espectador, Aldabalde (16/07)", "F-0019": "Pasión Tricolor, reacción a Decurnex (22/09)",
-    "F-0021": "Pasión Tricolor, Gomensoro (30/09)", "F-0022": "Cuestión Stream, Decurnex (01/10)",
+    "F-0021": "Pasión Tricolor, Gomensoro (30/09)", "F-0022": "Cuestión Stream, Decurnex (30/09)",
     "F-0023": "Moción de la agrupación Atilio García (imagen en X)",
 }
 URL = {

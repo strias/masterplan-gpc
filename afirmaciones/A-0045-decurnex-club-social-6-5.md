@@ -15,7 +15,7 @@ actualizado: 2026-10-01
 
 ## Contexto
 
-Entrevista en Cuestión Stream, grabada el 30/09 y publicada el 01/10 ([F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md), 00:31:17).
+Entrevista en vivo en Cuestión Stream, 30/09 (extracto publicado el 01/10) ([F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md), 00:31:17).
 
 La cita sale de una transcripción automática: verificar contra el video antes de publicarla.
 

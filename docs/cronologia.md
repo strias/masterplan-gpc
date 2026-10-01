@@ -40,8 +40,8 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 | 2026-09-30 | Reunión informativa virtual para socios, con Aldabalde y otros dos expositores, y preguntas de socios | [F-0020](../fuentes/F-0020-reunion-informativa-2026-09-30.md) |
 | 2026-09-30 | Gomensoro en Pasión Tricolor defiende la moción y critica la alternativa | [F-0021](../fuentes/F-0021-pasion-tricolor-gomensoro.md) |
 | 2026-09-30 | Según Decurnex, se le entrega al presidente Vairo una versión revisada de la moción alternativa | [F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md), 00:16:46 |
+| 2026-09-30 | Decurnex en Cuestión Stream, en vivo; el extracto se publica el 01/10 | [F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md) |
 | 2026-10-01 | Circula en X el texto de la moción de la agrupación Atilio García | [F-0023](../fuentes/F-0023-mocion-atilio-garcia.md) |
-| 2026-10-01 | Se publica la entrevista de Cuestión Stream a Decurnex | [F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md) |
 | 2026-10-24 | **Asamblea General Extraordinaria** que considera la moción | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |
 
 Pendiente de publicación al 2026-09-29: el modelo económico financiero ([F-0008](../fuentes/F-0008-modelo-economico-financiero.md)).

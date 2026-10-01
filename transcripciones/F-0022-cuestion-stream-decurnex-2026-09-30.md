@@ -1,7 +1,7 @@
 # Transcripción: PROYECTO GPC: DECURNEX DIO SU POSTURA 🔥 MANO A MANO CON MATHI CUBA | CUESTIÓN STREAM
 
 - Fuente: [F-0022](../fuentes/) · https://www.youtube.com/watch?v=X_yghFec4j8
-- Fecha de emisión: 2026-10-01
+- Fecha de emisión: 2026-09-30
 - Origen:
   - transcripción con separación de voces (youtubetotext), aportada por el autor del repo. SHA-256: `44224bc1211281bdd25add881c8d3a2aae4e31e7211ce9063fe537ae7ecd9a67`
 

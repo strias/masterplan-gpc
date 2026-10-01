@@ -4,11 +4,11 @@ titulo: "PROYECTO GPC: DECURNEX DIO SU POSTURA - MANO A MANO CON MATHI CUBA"
 tipo: declaracion
 autor: José Decurnex (vocal de la Comisión Directiva), entrevistado por Matías Cuba
 medio: Cuestión Stream (YouTube)
-fecha: 2026-10-01      # publicación; por lo que dice, se grabó el 2026-09-30
+fecha: 2026-09-30      # emisión en vivo; el extracto en YouTube se publicó el 2026-10-01
 consultada: 2026-10-01
 url: https://www.youtube.com/watch?v=X_yghFec4j8
-archivo: archivo/F-0022-cuestion-stream-decurnex-2026-10-01.transcripcion.txt   # transcripción con voces aportada por el autor (youtubetotext)
-transcripcion: transcripciones/F-0022-cuestion-stream-decurnex-2026-10-01.md
+archivo: archivo/F-0022-cuestion-stream-decurnex-2026-09-30.transcripcion.txt   # transcripción con voces aportada por el autor (youtubetotext)
+transcripcion: transcripciones/F-0022-cuestion-stream-decurnex-2026-09-30.md
 ---
 
 ## Resumen
@@ -45,7 +45,7 @@ Minutos del video.
 ## Notas
 
 - **Parte interesada:** Decurnex votó contra convocar la Asamblea y contra la moción, y propone la alternativa. Fue presidente durante la obra del Club Social.
-- **Fecha de grabación:** habla de la Directiva de "ayer" y de entregar la moción "hoy al final de la tarde", después de trabajar "lunes, martes y miércoles". Eso lo ubica el 30/09, con la Directiva del martes 29/09, igual que Gomensoro ([F-0021](F-0021-pasion-tricolor-gomensoro.md)).
+- **Fecha:** se emitió en vivo el 30/09; el extracto en YouTube se publicó el 01/10 (dato del autor). Coincide con lo que dice: la Directiva de "ayer" y la moción entregada "hoy al final de la tarde", después de trabajar "lunes, martes y miércoles", con la Directiva del martes 29/09, igual que Gomensoro ([F-0021](F-0021-pasion-tricolor-gomensoro.md)).
 - **Para contrastar:**
   - 170 M "con todos los recados" frente a "más de 150" con RDA el 21/09 ([F-0015](F-0015-territorio-nacional-decurnex.md), 00:07:35). Puede ser la misma cotización con o sin rubros: falta el informe.
   - 2 M de UI "son 3 millones de dólares": la cuenta no parece cerrar. A valores de 2026, 2 M de UI son del orden de cientos de miles de dólares [[conocimiento general]]. Singlet habló de USD 2 M ([F-0017](F-0017-pasion-tricolor-singlet-bardanca.md), 00:05:19) y el expositor de la reunión del 30/09 de USD 2,5 M ([F-0020](F-0020-reunion-informativa-2026-09-30.md), 00:17). Falta el texto de la reforma.
