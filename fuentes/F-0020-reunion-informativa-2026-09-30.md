@@ -2,7 +2,7 @@
 id: F-0020
 titulo: "Reunión informativa virtual para socios sobre el Master Plan"
 tipo: declaracion
-autor: Santiago Aldabalde (CPO) y otras dos personas sin identificar todavía
+autor: Santiago Aldabalde (CPO), con otras dos personas sin identificar
 medio: reunión virtual organizada por el club (asambleagpc.nacional.uy)
 fecha: 2026-09-30
 consultada: 2026-09-30
@@ -17,7 +17,7 @@ Reunión informativa virtual del 30/09/2026 a las 19:00, una de las previstas en
 
 ## Datos clave
 
-**Cómo leer esto.** Los minutos son de la grabación del autor, que empieza con la presentación ya en curso: el comienzo de la reunión no está grabado. La transcripción es automática y sin separación de voces; en lo que está grabado se oye sobre todo a un expositor que habla por la CPO, presumiblemente Aldabalde (falta confirmarlo). Las citas son cortas y hay que escuchar el tramo antes de usarlas.
+**Cómo leer esto.** Los minutos son de la grabación del autor, que empieza con la presentación ya en curso: el comienzo de la reunión no está grabado. La transcripción es automática y sin separación de voces; en lo que está grabado se oye sobre todo a un expositor de la CPO. El autor, que asistió, lo identifica como Aldabalde. Las citas son cortas y hay que escuchar el tramo antes de usarlas.
 
 ### Notas del autor contra la grabación
 
@@ -56,7 +56,7 @@ Reunión informativa virtual del 30/09/2026 a las 19:00, una de las previstas en
 
 - **Origen:** notas del autor contrastadas con su grabación. El autor es socio y tiene opinión sobre el proyecto.
 - **Grabación:** el autor la tiene. Uso acordado: transcribir, guardar local en `archivo/` y usar citas cortas con minuto para verificar. No se publica ni el audio ni la transcripción completa, porque la reunión era cerrada a socios.
-- **Falta:** confirmar que el expositor es Aldabalde, los nombres de los otros dos y si alguno de ellos habló en lo grabado.
+- **Falta:** los nombres de los otros dos y si alguno de ellos habló en lo grabado.
 - Parte interesada: los expositores presentan el proyecto que impulsan.
 - **Para contrastar:**
   - Los "10, 15, 20 años" son de un camino alternativo; para el Master Plan sigue en pie la obra de cinco años (00:03-00:04), como "los cuatro o cinco años que va a llevar la obra" (Aldabalde, [F-0016](F-0016-espectador-aldabalde-no-tienen-plan-b.md), 00:07:30).
@@ -67,3 +67,4 @@ Reunión informativa virtual del 30/09/2026 a las 19:00, una de las previstas en
   - "Se está corrigiendo el informe económico": el modelo que se publique puede no ser el que vio la Directiva ([F-0008](F-0008-modelo-economico-financiero.md)).
   - Umbral de la reforma: 2,5 M según el expositor (00:17); Singlet dijo 2 M ([F-0017](F-0017-pasion-tricolor-singlet-bardanca.md), 00:05:19).
   - Techo: 22 a 23% del costo (00:08); antes, unos 20 M de 93 a 105 M, un 19 a 21% ([F-0014](F-0014-pasion-tricolor-aldabalde.md), 00:53:46; [F-0017](F-0017-pasion-tricolor-singlet-bardanca.md), 01:41:45).
+- **En el sitio:** se cita con minuto pero sin enlace, porque la grabación no es pública. Donde una fuente pública dice lo mismo, se cita primero la pública.

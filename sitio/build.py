@@ -65,8 +65,14 @@ URL = {
 # Diferencia entre la página impresa que se cita y la del visor del PDF (el anteproyecto no numera la portada).
 PAGINA_VISOR = {"F-0004": 1}
 
+# Fuentes que no son públicas: se citan con minuto, sin enlace.
+PRIVADAS = {"F-0020": "Grabación del autor de la reunión informativa virtual del 30/09, cerrada a socios. No es pública."}
+
 def ref(fid, ts=None, page=None):
     """Enlace a la fuente, al minuto exacto si es video."""
+    if fid in PRIVADAS:
+        label = fid + (f" · {ts}" if ts else "")
+        return f'<span class="ref ref-priv" title="{html.escape(PRIVADAS[fid])}">{label}</span>'
     if ts and fid in YT:
         h, m, s = map(int, ts.split(":"))
         href = f"https://www.youtube.com/watch?v={YT[fid]}&t={h*3600+m*60+s}s"
@@ -267,6 +273,8 @@ POSTURAS = [
 FUENTES = ["F-0003", "F-0004", "F-0007", "F-0011", "F-0012", "F-0014", "F-0015", "F-0016", "F-0017", "F-0018", "F-0019"]
 
 def src_link(fid):
+    if fid in PRIVADAS:
+        return f'<span>{html.escape(PRIVADAS[fid])}</span>'
     if fid in YT:
         return f'<a href="https://www.youtube.com/watch?v={YT[fid]}" target="_blank" rel="noopener">{NOMBRE[fid]}</a>'
     return f'<a href="{URL[fid]}" target="_blank" rel="noopener">{NOMBRE[fid]}</a>'
