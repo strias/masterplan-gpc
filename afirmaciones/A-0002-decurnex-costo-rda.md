@@ -8,9 +8,9 @@ tipo: estimacion
 tema: financiero
 veredicto: pendiente
 evidencia: [F-0015]
-vigente: true
-reemplazada_por:
-actualizado: 2026-09-28
+vigente: false
+reemplazada_por: A-0040
+actualizado: 2026-10-01
 ---
 
 ## Contexto
@@ -37,3 +37,4 @@ Pendiente (fase 1).
 
 - 2026-09-28: registro inicial.
 - 2026-09-28: se agrega la fuente original (F-0015) con fecha y cita.
+- 2026-10-01: el 30/09 Decurnex habló de una cotización de "170 millones con todos los recados" de una empresa de plaza ([A-0040](A-0040-decurnex-cotizacion-170.md)) y de una estimación de 150 a 160 M ([A-0039](A-0039-decurnex-costo-150-160.md)). Se marca como reemplazada; puede ser la misma cotización con más rubros.

@@ -4,7 +4,7 @@ nombre: Santiago Aldabalde
 tipo: persona
 rol: presidente de la Comisión de Patrimonio y Obras (CPO)
 postura: a-favor
-fuentes: [F-0002, F-0011, F-0012, F-0014, F-0016, F-0018]
+fuentes: [F-0002, F-0011, F-0012, F-0014, F-0016, F-0018, F-0020]
 ---
 
 ## Postura
