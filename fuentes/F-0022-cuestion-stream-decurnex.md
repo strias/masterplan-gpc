@@ -27,7 +27,7 @@ Minutos del video.
   - 8,5 M de financiamiento pensado con exjugadores y glorias del club;
   - falta un análisis de sensibilidad por línea de negocio (00:04:09-00:04:39).
 - **Supuestos que cuestiona:** "880 estacionamientos ocupados durante 30 años" y el zócalo comercial "97,5% ocupado" (00:05:39).
-- **Su propuesta:** los flujos que ya son de Nacional (palcos, gastos comunes, excedente del Club Social, aporte de socios), unos 147 M en 30 años, en un fideicomiso aparte y solo para el estadio. Las demás unidades, con inversores "con cero riesgo Nacional" (00:06:10-00:07:10, 00:12:32).
+- **Su propuesta:** los flujos que ya son de Nacional (palcos, gastos comunes, excedente del Club Social, aporte de socios), unos 147 M en 30 años, en un fideicomiso aparte y solo para el estadio. Las demás unidades, con inversores "con cero riesgo Nacional" (00:06:40-00:07:11, 00:12:32).
 - **Solo estadio:** un grupo de técnicos evalúa si el parque se puede terminar con esos flujos: "la respuesta es que sí. Capaz que sin techo, seguramente sin techo" (00:13:02).
 - **Moción alternativa:** llegó "el fin de semana" de la agrupación Atilio García. Se le hicieron cambios y "hoy al final de la tarde se le entregó al presidente" (00:16:46, 00:37:05). Incluye:
   - que cada etapa pase por la Asamblea;

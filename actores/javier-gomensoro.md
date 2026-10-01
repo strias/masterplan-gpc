@@ -9,7 +9,7 @@ fuentes: [F-0001, F-0016, F-0019, F-0021]
 
 ## Postura
 
-Defiende la moción votada 7 a 4, que ayudó a redactar con Aldabalde y Decurnex ([F-0021](../fuentes/F-0021-pasion-tricolor-gomensoro.md), 00:00:51). Sostiene que con la moción "el club no arriesga, el club está blindado" (00:08:00) y que la moción alternativa de la agrupación Atilio García es "un entierro de lujo" (00:13:37). Como miembro informante de la reforma del Estatuto, dice que hasta que la apruebe el MEC rige el 50% más uno (00:56:00-00:59:59).
+Defiende la moción votada 7 a 4, que ayudó a redactar con Aldabalde y Decurnex ([F-0021](../fuentes/F-0021-pasion-tricolor-gomensoro.md), 00:00:51). Sostiene que con la moción "el club no arriesga, el club está blindado" (00:08:00) y que la moción alternativa de la agrupación Atilio García es "un entierro de lujo" (00:13:37). Como miembro informante de la reforma del Estatuto, dice que hasta que la apruebe el MEC rige el 50% más uno (00:56:08-00:59:59).
 
 ## Versión más fuerte de su argumento
 

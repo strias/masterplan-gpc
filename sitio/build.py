@@ -151,7 +151,7 @@ PREGUNTAS = [
    ("Bardanca", "El financiador exige un aporte propio de 15 a 20% y no acepta que sea voluntario.", "{F-0017 00:54:19}"),
   ],
   estado=["distintos", "cuenta", "pendiente"],
-  lectura="Los dos lados coinciden en que el modelo pide unos 26 M de aporte de socios; discrepan en si puede ser voluntario. Gomensoro agrega un dato nuevo: sería voluntaria, pero con permanencia por defecto, como la del básquetbol. Eso no es lo mismo que una cuota a la que hay que adherir. La moción no define el mecanismo ({F-0007 p.7}). Los componentes que da Decurnex suman 23,5 M, no 26 ({F-0015 00:14:05}). Se resuelve con el modelo económico, que todavía no está publicado ({F-0003})."),
+  lectura="Los dos lados coinciden en que el modelo pide unos 26 M de aporte de socios; discrepan en si puede ser voluntario. Aldabalde cambió su versión sobre los USD 10 tres veces: el 17/09 “ni se habla de 10 dólares”, el 25/09 era “una celda de un Excel” y el 30/09 “uno de los modelos” {F-0016 00:09:10} {F-0014 00:59:29} {F-0020 00:06:24}. Gomensoro agrega un dato nuevo: sería voluntaria, pero con permanencia por defecto, como la del básquetbol. Eso no es lo mismo que una cuota a la que hay que adherir. La moción no define el mecanismo ({F-0007 p.7}). Los componentes que da Decurnex suman 23,5 M, no 26 ({F-0015 00:14:05}). Se resuelve con el modelo económico, que todavía no está publicado ({F-0003})."),
  dict(id="570", q="¿El proyecto genera 570 millones de dólares?",
   pregunta=[("Conductor de Pasión Tricolor", "“Según Santiago Aldabalde, el proyecto generaría 570 millones de dólares. Pero dentro de esa cifra se incluyen los ingresos de tres renovaciones de palcos…”", "{F-0014 01:43:03}")],
   resp=[
@@ -193,7 +193,7 @@ PREGUNTAS = [
  dict(id="sobrecosto", q="¿Qué pasa si la obra sale más cara?",
   pregunta=[("Conductor de El Espectador", "“El sobrecosto que puede tener, como tuvo el Camp Nou, como tuvo el Real Madrid, como tuvo el Antel Arena […] ¿quién se hace cargo?”", "{F-0016 00:23:57}")],
   resp=[
-   ("Aldabalde", "“El fideicomiso es el responsable de toda la financiación.” En el peor caso, se tarda más en pagar: el primer modelo daba 10 años; con menos presión, 15.", "{F-0016 00:24:12} {F-0020 00:36:44}"),
+   ("Aldabalde", "“El fideicomiso es el responsable de toda la financiación.” En el peor caso, “el fideicomiso necesitará un año más o dos años más para pagar”. El 30/09: el primer modelo daba 10 años; con menos presión, 15.", "{F-0016 00:24:12} {F-0016 00:24:54} {F-0020 00:36:44}"),
    ("Decurnex", "“Tenés que extender el tiempo de repago, es la única alternativa”; el repago va a estar “más cerca de los 15” años. El Club Social se planteó en 4 M y costó unos 6,5 M. Hay que prever “entre un 15, 18%” de imprevistos.", "{F-0022 00:29:46} {F-0022 00:31:17} {F-0022 00:35:25}"),
    ("Gomensoro", "“Estaremos más tiempo en la duración del fideicomiso”, como en el Club Social, que “se iba a pagar en cuatro años y van ocho”.", "{F-0021 00:12:01} {F-0021 00:29:25}"),
    ("Bardanca", "Estadios como el Real Madrid o el Barcelona tuvieron desvíos del 50 o 60%: “Nosotros un desvío de obra del 60% no lo resistimos.”", "{F-0017 01:08:11}"),
@@ -229,7 +229,7 @@ FILAS = [
  ("Ocupación y valor del estacionamiento", "pendiente", "#parking"),
  ("Ocupación comercial de 97,5%", "pendiente", None),
  ("Superficie del zócalo comercial", "parcial", None),
- ("Mantenimiento: 1,2 M hoy", "coinciden", None),
+ ("Mantenimiento: 1,2 M hoy", "pendiente", None),
  ("“10 mil butacas nuevas”", "parcial", None),
  ("Solo estadio", "pendiente", "#solo"),
  ("¿Qué se hace primero?", "pendiente", "#orden"),
@@ -239,7 +239,7 @@ FILAS = [
  ("Garantías de la moción", "mocion", None),
  ("Mayoría especial de la Directiva", "mocion", None),
  ("Mayoría del 75%", "coinciden", "#voto"),
- ("Umbral de la reforma del Estatuto", "distintos", "#voto"),
+ ("Umbral de la reforma del Estatuto", "pendiente", "#voto"),
 ]
 NOTAS = {
  "Fideicomiso único o aparte para los flujos del estadio": "La moción reserva los flujos propios para el estadio dentro del mismo fideicomiso {F-0007 p.6-7}. Decurnex quiere un vehículo aparte para no quedar “rehén” del financiamiento global {F-0022 00:34:25}. Según Gomensoro, el destino exclusivo se agregó a pedido de Decurnex {F-0021 00:01:04}.",
@@ -248,7 +248,7 @@ NOTAS = {
  "Sobrecuota con permanencia por defecto": "Gomensoro: “por defecto quedás adentro, pero te podés bajar” {F-0021 00:20:03}. La moción no define el mecanismo {F-0007 p.7}. Decurnex: ante un financiador “no hay otra que sea a través de una suba de cuota” {F-0022 00:04:39}.",
  "Ocupación comercial de 97,5%": "Bardanca {F-0017 01:16:57} y Decurnex {F-0022 00:05:39}; Aldabalde: “100% alquilado, con precontratos” {F-0014 01:08:44}. Falta el modelo.",
  "Superficie del zócalo comercial": "Aldabalde habla de modelos de 3.500 y 7.000 m² {F-0014 01:08:14}; el anteproyecto da 3.080 m² de locales comerciales y 14.266 m² de superficies rentables {F-0004 p.42}.",
- "Mantenimiento: 1,2 M hoy": "Singlet, último balance: 1,2 M bruto {F-0017 01:31:00}. Aldabalde el 30/09: 1,2 M “sin inversión” {F-0020 00:27:00}; el 17/09 había hablado de un ahorro de 3 o 4 M por año {F-0016 00:06:05}, que puede incluir la inversión postergada.",
+ "Mantenimiento: 1,2 M hoy": "Singlet, último balance: 1,2 M bruto {F-0017 01:31:00}. Aldabalde el 30/09, en la reunión informativa (grabación no pública): 1,2 M “sin inversión” {F-0020 00:27:00}. Si se confirma, coinciden en el gasto de hoy. El 17/09 había hablado de un ahorro de 3 o 4 M por año {F-0016 00:06:05}, que puede incluir la inversión postergada.",
  "“10 mil butacas nuevas”": "Aldabalde {F-0014 01:52:45}. Sumando las etapas del anteproyecto salen 10.116 y el aforo pasa de unos 34.000 a más de 43.000 {F-0004 p.64}, pero la misma memoria da 16.544 butacas nuevas en total {F-0004 p.42}. Ver [[>../anteproyecto/#cuentas|las cuentas del anteproyecto]].",
  "Informe de CPA “lapidario”": "Aldabalde lo anunció así {F-0016 00:16:50}. En un mail leído al aire, un socio de CPA escribe que “no es lapidario ni pretende serlo” {F-0017 00:47:34}. Para Decurnex, “la palabra avalar es muy determinante”: CPA armó el modelo con datos de Nacional {F-0022 00:40:17}. Falta el informe.",
  "Cuentas de los 26 M y del estacionamiento": "Los componentes que da Decurnex suman 23,5 M, no 26 {F-0015 00:13:06}; en el estacionamiento, 3 M con un castigo del 30% dan 2,1 M, no 2,5 {F-0014 01:13:45}. Ver [[#cuota|la cuota]] y [[#parking|el estacionamiento]].",
@@ -262,7 +262,7 @@ COINCIDEN = [
  ("Ingresos a valor presente", "unos 104 M según Aldabalde; 103 M según Bardanca", "{F-0014 01:44:58} {F-0017 00:31:30}"),
  ("Palcos en 30 años", "93 M, con renovaciones que vencen en distintas fechas", "{F-0015 00:09:37} {F-0014 01:44:58} {F-0020 00:29:40}"),
  ("Flujos propios solo para el estadio", "lo dice la moción y lo piden los críticos", "{F-0007 p.7} {F-0021 00:01:04} {F-0022 00:06:40}"),
- ("Repago si los negocios rinden menos", "se estira, a unos 15 años", "{F-0022 00:29:46} {F-0020 00:36:44}"),
+ ("Repago si los negocios rinden menos", "se estira, a unos 15 años", "{F-0022 00:29:46} {F-0016 00:24:54} {F-0020 00:36:44}"),
  ("Proyecto ejecutivo", "cuesta unos 2 M", "{F-0016 00:21:22} {F-0022 00:02:46} {F-0021 00:13:37}"),
  ("Techo", "unos 20 M o un 22 a 23% según Aldabalde; 21,5 M según Singlet", "{F-0014 00:53:46} {F-0020 00:08:26} {F-0017 01:41:45}"),
  ("Aporte de socios en el modelo", "unos 26 M", "{F-0014 01:06:00} {F-0022 00:04:09}"),

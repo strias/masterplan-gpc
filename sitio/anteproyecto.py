@@ -82,4 +82,4 @@ ANALISIS = [
 
 LECTURA = "El anteproyecto dice qué se construye y en qué orden, pero no cuánto cuesta. En su orden actual, primero vienen el estacionamiento y el zócalo comercial, y el techo va entre lo último. La moción pide priorizar el estadio sin fijar un orden nuevo. Antes de votar vale preguntar en qué orden se va a hacer y cuándo llega cada mejora del estadio."
 
-FUENTES_PAGINA = ["F-0004", "F-0006", "F-0003", "F-0007", "F-0014", "F-0015", "F-0016", "F-0017"]
+FUENTES_PAGINA = ["F-0004", "F-0006", "F-0003", "F-0007", "F-0014", "F-0015", "F-0016", "F-0017", "F-0021"]

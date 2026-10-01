@@ -139,7 +139,7 @@ DETALLE = {
 
 "solo": dict(
  titulo="¿Se puede terminar solo el estadio?",
- corto="Con las cifras que aceptan las dos partes, los flujos propios del club no alcanzan para un estadio de 80 o 90 M. Una versión reducida, sin techo y con menos etapas, es la alternativa realista, y todavía nadie la terminó de modelar.",
+ corto="Con las cifras que aceptan las dos partes, los flujos propios del club no alcanzan para un estadio completo de 80 o 90 M. Una versión reducida, sin techo y con menos etapas, es la alternativa realista: según los técnicos de Decurnex sí alcanza, pero su evaluación no está publicada.",
  posturas=[
   ("Aldabalde", "No dan los números",
    "“Para hacer el parque solo no dan los números.” Con los palcos hay 17 M en los próximos 10 años, unos 13 M a valor presente: “con eso el parque no se entera” {F-0016 00:16:13} {F-0016 00:16:20}. El análisis de CPA dice que no es viable {F-0014 02:14:43}. Solo el estadio costaría “80 o 90, capaz 120” {F-0014 01:19:54}. El 30/09: “el parque solo no se puede hacer; se puede hacer [...] un parche” {F-0020 00:42:23}, o un proyecto de a pedacitos que “va a llevar 10, 15, 20 años” {F-0020 00:43:04}.",
