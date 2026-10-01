@@ -13,7 +13,7 @@ EN_CORTO = [
 
 ARTICULOS = [
  ("Primero", "Aprobación institucional", "Aprueba el Master Plan como marco arquitectónico, estratégico y funcional, con ejecución por etapas y la integración del estadio con arena, Plaza del Hincha, estacionamientos y las demás unidades del proyecto.", "p.6", None),
- ("Segundo", "Alcance de la autorización", "Autoriza a la Directiva, con la CPO y asesores, a seguir con estudios, proyectos ejecutivos, permisos, licitaciones y negociaciones. “Deberá priorizarse el inicio de aquellas etapas que involucren directamente al Estadio.” No habilita obras, financiamiento, garantías ni afectación de activos o ingresos.", "p.6", ("solo", "¿Se puede terminar solo el estadio?")),
+ ("Segundo", "Alcance de la autorización", "Autoriza a la Directiva, con la CPO y asesores, a seguir con estudios, proyectos ejecutivos, permisos, licitaciones y negociaciones. “Deberá priorizarse el inicio de aquellas etapas que involucren directamente al Estadio.” No habilita obras, financiamiento, garantías ni afectación de activos o ingresos.", "p.6", ("orden", "¿Qué se hace primero?")),
  ("Tercero", "Fideicomiso", "Fideicomiso de propósito específico con patrimonio, contabilidad, cuentas y flujos separados, administración profesional y controles independientes. La operación del complejo debe preservar la actividad de los planteles principales.", "p.6", None),
  ("Cuarto", "Protección del patrimonio y de la caja", "Seis límites acumulativos: sin deuda ni garantías del club; sin capital para sobrecostos o déficits; sin hipotecas ni venta de bienes; derechos de uso temporales y reversibles; solo se asignan palcos, Club Social, ingresos nuevos y aportes extraordinarios; los flujos existentes solo van al estadio; restitución al club de lo que aporte.", "p.6-7", ("plata", "¿Nacional pone plata?")),
  ("Quinto", "Condiciones antes de cada etapa", "Proyecto ejecutivo, cronograma y presupuesto; permisos; modelo actualizado y validado por CPA Ferrere u otra firma independiente; financiamiento suficiente para completar la etapa, con compromisos vinculantes; licitación con una Comisión de Licitaciones; contratos, garantías y seguros; informe jurídico.", "p.7-8", ("sobrecosto", "¿Qué pasa si sale más cara?")),
@@ -33,13 +33,15 @@ RESPUESTAS = {
 # (id de la pregunta del debate, pregunta, respuesta, qué dice la moción)
 DEBATE = [
  ("plata", "¿Nacional pone plata en el proyecto?", "si",
-  "Sí, y dice cuál: palcos (venta, renovación, uso y gastos comunes), dividendos del Club Social y aportes extraordinarios. Esos flujos, cuando ya existen, solo pueden ir al estadio, y el modelo debe prever su restitución al club {F-0007 p.7}. Es lo que describían tanto Aldabalde como Decurnex."),
+  "Sí, y dice cuál: palcos (venta, renovación, uso y gastos comunes), dividendos del Club Social y aportes extraordinarios. Esos flujos, cuando ya existen, solo pueden ir al estadio, y el modelo debe prever su restitución al club {F-0007 p.7}. Es lo que describían tanto Aldabalde como Decurnex. Lo que queda en discusión es si van en el mismo fideicomiso o en uno aparte, como pide Decurnex {F-0022 00:06:40}."),
  ("sobrecosto", "¿Qué pasa si la obra sale más cara?", "parte",
   "El club no pone capital para sobrecostos y ninguna etapa empieza sin financiamiento suficiente para completarla, con garantías y seguros {F-0007 p.7-8}. No dice qué pasa si una etapa se queda sin fondos a mitad de camino."),
  ("voto", "¿Qué se vota y con qué mayoría?", "parte",
   "Dice qué se vota: el marco y la autorización para estructurar, no la obra {F-0007 p.6}. No fija con qué mayoría decide la Asamblea: se remite a los Estatutos “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” {F-0007 p.5}."),
  ("solo", "¿Se puede terminar solo el estadio?", "parte",
   "Pide priorizar las etapas del estadio {F-0007 p.6}, pero aprueba el conjunto con arena, estacionamiento y zócalo comercial {F-0007 p.6}. No evalúa la alternativa de solo estadio. Pasar a ella parece un cambio de la “esencia” del Master Plan, que vuelve a la Asamblea {F-0007 p.9}."),
+ ("orden", "¿Qué se hace primero?", "parte",
+  "Pide priorizar las etapas del estadio “en función de los flujos y plazos disponibles” {F-0007 p.6}, pero no fija un orden. El anteproyecto empieza por el estacionamiento y el zócalo comercial {F-0004 p.38}."),
  ("cuota", "¿Va a haber una cuota extra? ¿Es obligatoria?", "no",
   "Solo menciona “aportes extraordinarios que se generen para estos fines” {F-0007 p.7}. No dice monto, si son voluntarios ni quién los aprueba."),
  ("costo", "¿Cuánto cuesta la obra?", "no",
@@ -57,7 +59,7 @@ NO_DICE = [
  ("Fondos que no alcanzan a mitad de una etapa", "Prevé el comienzo, no el medio de la obra {F-0007 p.7-8}."),
  ("Sanciones por incumplir", "Ninguna. Aldabalde dijo que van en el Estatuto {F-0014 01:59:47}."),
  ("Conclusiones del Consejo Asesor", "Las presentará “oportunamente” a la Directiva {F-0007 p.2}; no dice si antes de la Asamblea."),
- ("Votación de la Directiva", "El documento no dice cómo se aprobó el texto ni lleva firma."),
+ ("Votación de la Directiva", "El documento no dice cómo se aprobó ni lleva firma. Según Gomensoro, 7 a 4 el 29/09 {F-0021 00:01:58}; falta el acta."),
 ]
 
 # Afirmaciones de hecho de los antecedentes. Estados del debate (ESTADOS en build.py).
@@ -134,6 +136,22 @@ ALT_TABLA = [
  ("Plazo y caducidad", "30 meses más un año {F-0007 p.9}", "No tiene"),
  ("Comisión técnica", "Comisión de Licitaciones {F-0007 p.7}", "Cuatro miembros, con CPA Ferrere"),
 ]
+# Qué opinan de la moción alternativa: (quién, rol, [citas])
+ALT_OPINIONES = [
+ ("José Decurnex", "Vocal de la Directiva · la apoya", [
+  "“A mí esa moción me seduce. Capaz que con algún pequeño cambio, algún agregado.” Se la planteó formalmente al presidente Vairo {F-0022 00:17:02}.",
+  "Su prioridad es una moción única de toda la Directiva; si no, la presentan en la Asamblea como “acorde al riesgo que este proyecto tiene” {F-0022 00:26:08}.",
+  "El proyecto ejecutivo “lo vas a tener que hacer sí o sí”; reconoce que la plata no está en la caja, pero dice que propuso soluciones en la Directiva {F-0022 00:28:27}.",
+  "Cada etapa “tiene que pasar necesariamente por asamblea” {F-0022 00:20:12}, y propone una comisión técnica de cuatro miembros que trabaje con CPA {F-0022 00:41:29}.",
+ ]),
+ ("Javier Gomensoro", "Prosecretario de la Directiva · en contra", [
+  "Exige primero un proyecto ejecutivo de “dos millones de dólares” como mínimo: “es un entierro de lujo para que no haya obras” {F-0021 00:13:37}.",
+  "Con la oficial, el proyecto ejecutivo se hace cuando ya hay un inversor, y acotado a lo que se va a financiar {F-0021 00:13:46}.",
+  "“No hay un plan alternativo”: no trae otro proyecto para el estadio {F-0021 00:17:36}. Duda de que quienes la impulsan pongan los 2 M si se aprueba {F-0021 00:47:19}.",
+  "Es “mucho más honesto votar en contra” que presentar una moción alternativa {F-0021 01:05:19}. Ve en que la presente una agrupación una señal de que “esto es político” {F-0021 00:12:41}.",
+ ]),
+]
+
 ALT_DICHOS = [
  "Decurnex dijo que su moción pide el 75% y que cada etapa pase por la Asamblea {F-0022 00:19:41}. **En este texto no aparece el 75%**, y hay una sola Asamblea nueva, no una por etapa. Puede estar en la versión revisada.",
  "Gomensoro la llamó “un entierro de lujo” porque exige gastar unos 2 M en el proyecto ejecutivo antes de tener un inversor {F-0021 00:13:37}. El texto lo pone primero, pero no dice cuánto cuesta ni cómo se financia. Los 2 M los dan las dos partes {F-0016 00:21:22} {F-0022 00:02:46}.",

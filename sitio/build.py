@@ -533,7 +533,10 @@ for x in M.ALT_RESUMEN:
 P('</ul><div class="table-wrap"><table><thead><tr><th scope="col">Tema</th><th scope="col">Moción oficial</th><th scope="col">Moción Atilio García</th></tr></thead><tbody>')
 for t, oficial, alt in M.ALT_TABLA:
     P(f'<tr><th scope="row">{html.escape(t)}</th><td>{R(oficial)}</td><td>{R(alt)}</td></tr>')
-P('</tbody></table></div><h3>Contra lo que se dijo de ella</h3><ul class="corto">')
+P('</tbody></table></div><h3>Qué opinan de ella</h3><div class="posturas">')
+for quien, rol, citas in M.ALT_OPINIONES:
+    P(f'<article class="post"><h3>{html.escape(quien)}</h3><p class="rol">{html.escape(rol)}</p><ul class="corto">' + "".join(f"<li>{R(c)}</li>" for c in citas) + '</ul></article>')
+P('</div><h3>Contra lo que se dijo de ella</h3><ul class="corto">')
 for x in M.ALT_DICHOS:
     P(f'<li>{R(x)}</li>')
 P('</ul></section>')

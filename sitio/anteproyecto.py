@@ -48,6 +48,8 @@ CONTRASTE = [
   "Lo ubica en las etapas 12 y 13, las últimas antes de las esquinas {F-0004 p.41}. No da su costo.", "pendiente", None),
  ("La cotización no incluye césped, mobiliario, audio ni anclajes del techo", "Decurnex {F-0015 00:08:11}; Singlet {F-0017 00:51:51}",
   "El anteproyecto no tiene costos, así que no se puede contrastar con él. La crítica es sobre la cotización y el modelo, que no están publicados.", "pendiente", "debate/detalle-costo.html"),
+ ("La numeración de las etapas no es un orden de obra", "Gomensoro {F-0021 00:18:16}",
+  "Habla de una “planificación de etapas” ordenada para “acompasar en forma equilibrada los egresos y la generación de ingresos de cada etapa” {F-0004 p.38}. Es una planificación, aunque de junio de 2025; la moción pide priorizar el estadio {F-0007 p.6}.", "parcial", "debate/detalle-orden.html"),
  ("La obra lleva cuatro o cinco años", "Aldabalde {F-0016 00:07:30}",
   "No da plazos en años.", "pendiente", None),
 ]
