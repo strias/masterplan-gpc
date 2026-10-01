@@ -17,3 +17,5 @@ archivo/*.m4a
 archivo/F-0020-*
 archivo/*.log
 archivo/*.minutos.txt
+archivo/*.jpeg
+archivo/*.jpg
