@@ -1140,7 +1140,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 > *YouTube (01:47:35):* techo, hacemos esto, para vamos a hacer estallamiento, hagamos la mitad, capaz que no funcione igual el arranque mientras se construye la arena. O sea, hay 1 decisiones que tomar. Lo que pasa que podemos estar discutiendo 100 años. Lo que pasa que eh al ser un proyecto tan ambicioso en cuanto a la inversión
 
 [01:47:44] Speaker 11: Lo que pasa es que al ser un proyecto tan ambicioso en cuanto a la inversión que requiere y a todos los riesgos que por ahí se toman, más allá de todo lo que vos decís, también se toman ejemplos de otros estadios del mundo. Lo dijo Decurnex, que todos los estadios que citó, habló del Real Madrid, habló de Católica, habló de todo, que dijeron un precio y se fue a otro y eso alteró la economía del club.
-> *YouTube (01:47:44):* que podemos estar discutiendo 100 años. Lo que pasa que eh al ser un proyecto tan ambicioso en cuanto a la inversión que que requiere y a todos los riesgos que por ahí se toman, más allá de todo lo que vos decís, eh este también se toman ejemplos de otros estadios del mundo. Eh lo dijo de Cournés, que dice que eh todos los estadios que citó, no sé, habló del Real Madrid, habló de Católica, habló de todo, que dijeron un precio y se fue a otro y eso alteró la economía del Católica, la Católica calculó que iba a ser un estadio para 25000 personas con 25 millones de
+> *YouTube (01:47:44):* que podemos estar discutiendo 100 años. Lo que pasa que eh al ser un proyecto tan ambicioso en cuanto a la inversión que que requiere y a todos los riesgos que por ahí se toman, más allá de todo lo que vos decís, eh este también se toman ejemplos de otros estadios del mundo. Eh lo dijo Decurnex, que dice que eh todos los estadios que citó, no sé, habló del Real Madrid, habló de Católica, habló de todo, que dijeron un precio y se fue a otro y eso alteró la economía del Católica, la Católica calculó que iba a ser un estadio para 25000 personas con 25 millones de
 
 [01:48:07] Speaker 10: La Católica calculó que iba a ser un estadio para 25 mil personas con 25 millones de dólares. Es raro también. Ya te suena raro de arranque.
 > *YouTube (01:48:07):* economía del Católica, la Católica calculó que iba a ser un estadio para 25000 personas con 25 millones de dólares. Está bueno. Es raro también. Ya, ya te suena raro de arranque, ¿no? Entonces, digo, yo que sé,
@@ -1329,7 +1329,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 [02:00:00] Speaker 11: No, eso me parece bien y estoy de acuerdo en agregarlo Pero lo que te quiero decir es que es un tema que me parece mucho más importante.
 
 [02:00:06] Speaker 10: ¿Sabes qué pasa, Santiago? Porque ya nos quemamos con leche mil veces y vemos una vaca y lloramos. Ya pasó que acá se han puesto un montón de cosas en mociones. En la moción del club social se puso Decurnex y se votó en la asamblea que el club se endeudaba en cuatro millones de dólares y compraba una casa en 500 mil dólares. ¿Y sabes qué pasa? No pasó nada. Ocho millones, no compraron la casa, el club no cobró cuando tenía que cobrar y hoy Decurnex dice que se equivocó y ya está, no pasa nada. Hoy sale Decurnex
-> *YouTube (02:00:06):* mucho más importante y sabes qué pasa, Santiago porque ya nos quemamos con leche mil veces y vemos una vaca y lloramos y ya pasó que acá se han puesto un montón de cosas en mociones. En la moción del gran del club social se puso de Cournex y se votó en la Asamblea que el club se indeudaba en 4 millones de dólares y compraba una casa en 500,000 y ¿sabes qué pasa? No, no pasó nada. 8 millones no compraron la casa, el club no cobró cuando tenía que cobrar y hoy de Courné dice que se equivocó y ya está y no pasa nada. Hoy sale de Cur, ¿no? Bueno, nosotros le erramos, sí, le erramos 50, 60 los imprevistos y nadie y
+> *YouTube (02:00:06):* mucho más importante y sabes qué pasa, Santiago porque ya nos quemamos con leche mil veces y vemos una vaca y lloramos y ya pasó que acá se han puesto un montón de cosas en mociones. En la moción del gran del club social se puso Decurnex y se votó en la Asamblea que el club se indeudaba en 4 millones de dólares y compraba una casa en 500,000 y ¿sabes qué pasa? No, no pasó nada. 8 millones no compraron la casa, el club no cobró cuando tenía que cobrar y hoy de Courné dice que se equivocó y ya está y no pasa nada. Hoy sale de Cur, ¿no? Bueno, nosotros le erramos, sí, le erramos 50, 60 los imprevistos y nadie y
 
 [02:00:37] Speaker 10: y dice que erraron en 50 o 60 los imprevistos y nunca hay consecuencias para los que se equivocan. Acá estamos hablando de mucho dinero y de muchas cuestiones. Me parecen bien todas las garantías que se ponen en la moción, pero si no hay consecuencias para quien rompa con alguna de estas cuestiones, la verdad es lo mismo que la nada.
 
@@ -2183,7 +2183,9 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 | Singlés | Singlet | 1 |
 | Vares, otro estudio | Varesi, otro estudio | 1 |
 | cuota del Bage | cuota del básquet | 1 |
+| de Cournex | Decurnex | 1 |
 | de Cournext | Decurnex | 3 |
+| de Cournés | Decurnex | 1 |
 | de Curnek | Decurnex | 1 |
 | escarones | Scarone | 1 |
 | la Carone | la Scarone | 3 |

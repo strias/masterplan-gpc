@@ -4,6 +4,7 @@
 Fuentes de entrada (en archivo/, locales, no se suben al repo):
   - <ID>-...transcripcion.txt  transcripción con separación de voces (youtubetotext)
   - <ID>-...subtitulos.vtt     subtítulos automáticos de YouTube
+  - <ID>-...whisper.srt        transcripción local con Whisper, cuando no hay subtítulos
 
 Si hay transcripción con voces, es la base y los subtítulos se usan para
 contrastar cifras: cada bloque donde los números no coinciden lleva debajo
@@ -36,6 +37,17 @@ FIX = [
     (r"\bRicardo (?:Airó|Bairo|Bayro)\b", "Ricardo Vairo"),
     (r"\b(?:Bairo|Bayro)\b", "Vairo"),
     (r"\bLluria\b", "Giuria"),
+    (r"\b(?:Valdavalde|Valdavides|Valdavide|Valdalde|Valdabalde)\b", "Aldabalde"),
+    (r"\bSInglet\b", "Singlet"),
+    (r"\bFlavio Perelman\b", "Flavio Perchman"),
+    (r"\bJosé de Corn(?:ex|és|et)?\b", "José Decurnex"),
+    (r"\bde Cour?n(?:ex|et|és)\b", "Decurnex"),
+    (r"\b(?:[Aa]lda ?[Vv]ald[ei]|[Aa]ldabaldi|el Davalde)\b", "Aldabalde"),
+    (r"\bcingleta\b", "Singlet"),
+    (r"\bbardanca\b", "Bardanca"),
+    (r"\bGomezoro\b", "Gomensoro"),
+    (r"\bAtilo García\b", "Atilio García"),
+    (r"\bPerelman\b", "Perchman"),
     (r"\bNono Yuria\b", "Nono Giuria"),
     (r"\bJavier G[oó]mez (?:Oro|Zoro|Coro|Sol[oó]|Soro|Toro)\b", "Javier Gomensoro"),
     (r"\bG[oó]mez (?:Oro|Zoro|Coro|Sol[oó]|Soro|Toro|Solórzano)\b", "Gomensoro"),
@@ -62,6 +74,13 @@ FIX = [
     (r"\bcuota del Bage\b", "cuota del básquet"),
 ]
 
+# Nombres de las voces de la transcripción con separación de voces, cuando se pueden asignar sin dudas.
+HABLANTES = {
+    "F-0022": {"Speaker 1": "José Decurnex", "Speaker 0": "Matías Cuba (conductor)", "Speaker 2": "Matías Cuba (conductor)",
+               "Speaker 3": "Matías Cuba (conductor)", "Speaker 4": "Matías Cuba (conductor)",
+               "Speaker 5": "Matías Cuba (conductor)", "Speaker 6": "Matías Cuba (conductor)"},
+}
+
 JOBS = [
     # id, slug, título, url, fecha
     ("F-0014", "pasion-tricolor-aldabalde-2026-09-25",
@@ -79,6 +98,12 @@ JOBS = [
     ("F-0018", "espectador-aldabalde-2026-07-16",
      "SANTIAGO ALDABALDE Y LOS DETALLES DEL MASTER PLAN DEL GRAN PARQUE CENTRAL | 16/7/2026",
      "https://www.youtube.com/watch?v=PDYIvpms7r4", "2026-07-16"),
+    ("F-0021", "pasion-tricolor-gomensoro-2026-09-30",
+     "Hablamos con el Dr. Gomensoro sobre el Master plan del Gran Parque Central",
+     "https://www.youtube.com/watch?v=SOkgIuhLvB4", "2026-09-30"),
+    ("F-0022", "cuestion-stream-decurnex-2026-10-01",
+     "PROYECTO GPC: DECURNEX DIO SU POSTURA 🔥 MANO A MANO CON MATHI CUBA | CUESTIÓN STREAM",
+     "https://www.youtube.com/watch?v=X_yghFec4j8", "2026-10-01"),
     ("F-0019", "pasion-tricolor-reaccion-decurnex-2026-09-22",
      "Habló Decurnex: Máster plan GPC y club social - REACCIONAMOS",
      "https://www.youtube.com/watch?v=-lKaALmO6ao", "2026-09-22"),
@@ -125,6 +150,16 @@ def leer_vtt(p):
             continue
         vistos.add(linea)
         out.append((seg(t), linea))
+    return out
+
+
+def leer_srt(p):
+    """Transcripción de Whisper: devuelve [(segundos, texto)] como los subtítulos."""
+    out = []
+    for t, txt in re.findall(r"\d+\n(\d\d:\d\d:\d\d),\d+ --> [^\n]+\n(.*?)(?:\n\n|\Z)", p.read_text(), re.S):
+        txt = " ".join(txt.split())
+        if txt:
+            out.append((seg(t), txt))
     return out
 
 
@@ -256,16 +291,27 @@ def main():
     for fid, slug, titulo, url, fecha in JOBS:
         voces_p = ARCHIVO / f"{fid}-{slug}.transcripcion.txt"
         subs_p = ARCHIVO / f"{fid}-{slug}.subtitulos.vtt"
-        subs = leer_vtt(subs_p) if subs_p.exists() else []
+        whisper = False
+        if not subs_p.exists() and (ARCHIVO / f"{fid}-{slug}.whisper.srt").exists():
+            subs_p, whisper = ARCHIVO / f"{fid}-{slug}.whisper.srt", True
+        subs = (leer_srt(subs_p) if whisper else leer_vtt(subs_p)) if subs_p.exists() else []
+        origen_subs = ("transcripción automática local con Whisper (large-v3-turbo), hecha por este repositorio a partir del video"
+                       if whisper else "subtítulos automáticos de YouTube")
         origenes = []
         if voces_p.exists():
-            cuerpo, div = combinar(leer_voces(voces_p), subs)
+            voces = leer_voces(voces_p)
+            nombres = HABLANTES.get(fid, {})
+            voces = [(a, b, nombres.get(h, h), t) for a, b, h, t in voces]
+            cuerpo, div = combinar(voces, subs)
             origenes.append(f"transcripción con separación de voces (youtubetotext), aportada por el autor del repo. SHA-256: `{sha256(voces_p)}`")
             if subs:
                 origenes.append(f"subtítulos automáticos de YouTube, usados para contrastar cifras. SHA-256: `{sha256(subs_p)}`")
-            modo = (f"La base es la transcripción con voces. En los {div} bloques donde las cifras no coinciden con los "
+            modo = ("La base es la transcripción con voces; no hay subtítulos de YouTube para contrastar cifras. "
+                    "La separación de voces es imperfecta: a veces mezcla a los entrevistados con los conductores."
+                    + (" Los nombres de las voces los asignó Claude según el contenido." if fid in HABLANTES else "")) if not subs else (f"La base es la transcripción con voces. En los {div} bloques donde las cifras no coinciden con los "
                     "subtítulos de YouTube, debajo se muestra el texto de YouTube para ese tramo (línea que empieza con *YouTube*). "
-                    "La separación de voces es imperfecta: a veces mezcla a los entrevistados con los conductores.")
+                    "La separación de voces es imperfecta: a veces mezcla a los entrevistados con los conductores."
+                    + (" Los nombres de las voces los asignó Claude según el contenido." if fid in HABLANTES else ""))
         elif subs and (VOCES / f"{fid}.tsv").exists():
             turnos = voces_manuales(subs, VOCES / f"{fid}.tsv")
             otros = []
@@ -284,9 +330,10 @@ def main():
                         nrep += 1
                 bloques.append(b)
             cuerpo = "\n\n".join(bloques)
-            origenes.append(f"subtítulos automáticos de YouTube. SHA-256: `{sha256(subs_p)}`")
+            origenes.append(f"{origen_subs}. SHA-256: `{sha256(subs_p)}`")
             origenes.append(f"voces asignadas por contenido en [`scripts/voces/{fid}.tsv`](../scripts/voces/{fid}.tsv)")
-            modo = ("El texto es el de los subtítulos automáticos de YouTube. **Las voces las asignó Claude según el contenido** "
+            base = "la transcripción local con Whisper" if whisper else "los subtítulos automáticos de YouTube"
+            modo = (f"El texto es el de {base}. **Las voces las asignó Claude según el contenido** "
                     "(quién pregunta, quién responde, a quién se nombra); es una interpretación, no una separación automática. "
                     "\"Conductor\" sin nombre indica que no se puede saber cuál de los conductores habla. "
                     "Los turnos largos se cortan cada minuto aproximadamente, al inicio de un subtítulo, para que la marca de tiempo sirva para ubicar una cita. "

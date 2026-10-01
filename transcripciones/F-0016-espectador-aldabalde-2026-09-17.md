@@ -177,7 +177,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
 [00:27:17] Speaker 1: los últimos 10 años Nacional tiene un 50 % más de ingresos y tiene los mismos resultados. Y pasa lo mismo con el resto de los clubes. Peñarol y Nacional tienen ingresos simétricos, están en las mismas condiciones. Miren los puntos en la Copa Libertadores de Nacional y Peñarol.
 
-[00:27:33] Speaker 3: Sí. Santiago, ¿cómo has trabajado esta última etapa con el tema? Capaz que no es tu gran tema, pero vos tenés que también lidiar con la parte política. Sé que has tenido reuniones con el ingeniero de Cournex, con la oposición. ¿Se van acercando a tener ideas en común o siguen más alejados en esas posiciones?
+[00:27:33] Speaker 3: Sí. Santiago, ¿cómo has trabajado esta última etapa con el tema? Capaz que no es tu gran tema, pero vos tenés que también lidiar con la parte política. Sé que has tenido reuniones con el ingeniero Decurnex, con la oposición. ¿Se van acercando a tener ideas en común o siguen más alejados en esas posiciones?
 
 [00:27:58] Speaker 5: Creo que la discusión de los modelos económicos y los costos del estadio son interminables y siempre hay un problema para cada solución. Lo que hay que hacer ahora es explicarle al socio y presentar una moción que le dé garantías absolutas al club y a los socios hacia adelante. Fideicomiso, flujos independientes, no se tocan los flujos de Nacional, se le inyectan a Nacional 150 millones, se apuesta a generar 570 millones de dólares en ese fideicomiso. No se empieza si no está la financiación.
 
@@ -232,3 +232,4 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 |---|---|---|
 | Alvalde | Aldabalde | 2 |
 | Javier Gómez Oro | Javier Gomensoro | 1 |
+| de Cournex | Decurnex | 1 |

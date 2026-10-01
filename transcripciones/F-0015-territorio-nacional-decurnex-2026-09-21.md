@@ -62,7 +62,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 > *Repetido en F-0019 (01:23:59), otra transcripción:* se haga el proyecto o no se haga, es plata de Nacional.
 > *Repetido en F-0019 (01:29:01), otra transcripción:* Va a tener en sus arcas en los siguientes años, en fases, en la medida que se vayan venciendo los palcos, en la medida que se vayan cobrando, en la medida que la documentación así lo avala, que el club social empiece a darle el retorno que todos nosotros esperamos. Entonces, sí hay un aporte real de Nacional de 147 millones de dólares al flujo de este proyecto. Eso para mí es un punto ancla muy importante, porque vuelvo a repetir-
 
-[00:11:02] **Conductor:** y José sobre ese punto yo tú sos integrante de la comisión de obras y patrimonio que que preside Santiago Alda Valde. ¿Tú le explicaste a los demás integrantes estos motivos? ¿Qué qué qué te dicen eh como contraparte?
+[00:11:02] **Conductor:** y José sobre ese punto yo tú sos integrante de la comisión de obras y patrimonio que que preside Santiago Aldabalde. ¿Tú le explicaste a los demás integrantes estos motivos? ¿Qué qué qué te dicen eh como contraparte?
 > *Repetido en F-0019 (01:29:31), otra transcripción:* José, sobre ese punto, tú sos integrante de la Comisión de Obras y Patrimonio que preside Santiago Alda Balde. ¿Tú le explicaste a los demás integrantes estos motivos? ¿Qué te dicen como contraparte?
 
 [00:11:19] **José Decurnex:** Sí. Yo no soy integrante de la comisión de patrimonio y obra, digo, estoy en estoy en la comisión. Sí, claro, claro. Me reuní, me reuní. De hecho, tuvimos hace unos seis o 7 meses eh una reunión con una con una parte de la de la Comisión de Patrimonio y obra eh donde se le donde le expuse todos estos argumentos. Mi principal exposición fue hagamos un proyecto ejecutivo para saber exactamente cuál es el valor de la obra, porque eso para mí es absolutamente determinante en cómo se sigue con este tema. Eh, sigo insistiendo, fue lo mismo que manifesté en la comisión directiva de hoy, o sea, eh acá hay un grupo de gente eh de distintas, por eso digo que esto no es partidario, porque de distintas agrupaciones, de distintos movimientos dentro de Nacional, gente que votó a distintos candidatos en distintos momentos y que ha estado trabajando muy a detalle en cada uno de estos aspectos y analizando en profundidad este proyecto y por eso por eso la preocupación eh de
@@ -285,6 +285,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 | Transcrito | Corregido | Veces |
 |---|---|---|
 | Alavalde | Aldabalde | 1 |
+| Alda Valde | Aldabalde | 1 |
 | Aldavalde | Aldabalde | 1 |
 | Alejandro Valvi | Alejandro Balbi | 1 |
 | Balvi | Balbi | 1 |

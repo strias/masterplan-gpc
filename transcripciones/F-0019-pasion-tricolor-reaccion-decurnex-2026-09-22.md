@@ -730,7 +730,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 [01:58:42] Speaker 2: Sí, capaz que debería venir con gente CPO, pero Santiago del Silludo dice: "Javier Aldabalde nos debe muchas respuestas. Él nos dijo un proyecto maravilloso donde se dijo que no había riesgos para el club". Aldabalde lo ha repetido, que si no hay dinero no se construye y que no había riesgos. El tema está en los flujos esos que pone Nacional. ¿Qué pasa si eso no se consigue? El club social,
 
 [01:59:13] Speaker 2: el mismo Decurnex dice que podría llegar a dar un poco más cuando empiece a dar ese dinero. Después, la renovación de los palcos, sabemos que es prácticamente un hecho de que se va a recibir un dinero. Lo que sí genera la duda es esos 26 millones que se pone con aportes de socios, de sobrecuota y de socios que por cinco años pondrían 1.000 dólares, que me parece un disparate. ¿Qué pasa si eso no se llega a cubrir en ese lapso?
-> *YouTube (01:59:13):* va el mismo de Cournet dice que podría llegar a dar un poco más cuando empiece a dar ese dinero. Después la renovación de los palcos sabemos que es prácticamente un hecho de que bueno, se va a recibir un dinero. Lo lo que sí genera la duda es esos 26,000ones que se pone con aportes de socios eh de sobrecuota y de socios que por 5 años pondrían $1,000, que me parece un disparate. digo, y bueno, ¿qué pasa si eso no se no se llega a cubrir, ¿no?, en en en ese lapso, ¿no? Este ahí y bueno, pero por ejemplo la moción que está
+> *YouTube (01:59:13):* va el mismo Decurnex dice que podría llegar a dar un poco más cuando empiece a dar ese dinero. Después la renovación de los palcos sabemos que es prácticamente un hecho de que bueno, se va a recibir un dinero. Lo lo que sí genera la duda es esos 26,000ones que se pone con aportes de socios eh de sobrecuota y de socios que por 5 años pondrían $1,000, que me parece un disparate. digo, y bueno, ¿qué pasa si eso no se no se llega a cubrir, ¿no?, en en en ese lapso, ¿no? Este ahí y bueno, pero por ejemplo la moción que está
 
 [01:59:44] Speaker 2: Pero la moción que está redactada dice que Nacional no pondría de garantías ningún patrimonio. Ahora, si no cubrís, de algún lado lo tenés que poner.
 
@@ -1048,5 +1048,6 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 | Singlede | Singlet | 4 |
 | Singué | Singlet | 1 |
 | Valvi | Balbi | 1 |
+| de Cournet | Decurnex | 1 |
 | de Cournext | Decurnex | 1 |
 | de Curnex | Decurnex | 2 |

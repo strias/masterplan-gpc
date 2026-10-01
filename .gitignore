@@ -16,3 +16,4 @@ archivo/*.m4a
 # Reunión informativa del 30/09 (F-0020): cerrada a socios, solo para verificar
 archivo/F-0020-*
 archivo/*.log
+archivo/*.minutos.txt

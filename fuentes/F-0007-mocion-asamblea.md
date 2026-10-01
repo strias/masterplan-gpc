@@ -73,4 +73,5 @@ Comparación con el borrador resumido por La Abdón ([F-0009](F-0009-laabdon-moc
 - Es un documento de parte: lo publica el club y los antecedentes y fundamentos presentan el proyecto a favor. Las afirmaciones de hecho de los antecedentes (encuesta, fechas, Consejo Asesor, contactos de financiamiento) se verifican como cualquier otra.
 - No fija ninguna cifra de costo, financiamiento, ingresos ni aporte de socios. No dice si los "aportes extraordinarios" serían voluntarios u obligatorios.
 - No dice con qué mayoría la aprueba la Asamblea.
-- Falta saber cómo votó la Directiva el texto final. Según Aldabalde, se votaría el 2026-09-29 ([F-0014](F-0014-pasion-tricolor-aldabalde.md), 01:38:47).
+- **Votación en la Directiva:** según Gomensoro, 7 a 4, el martes 29/09; ese día se cambió la mayoría especial de 9 a 11 votos ([F-0021](F-0021-pasion-tricolor-gomensoro.md), 00:01:50). Decurnex confirma que salió "por mayoría" ([F-0022](F-0022-cuestion-stream-decurnex.md), 00:13:00).
+- **Moción alternativa:** la agrupación Atilio García presentó otra, con proyecto ejecutivo previo, cada etapa por la Asamblea y 75% ([F-0022](F-0022-cuestion-stream-decurnex.md)). Falta registrar su texto.

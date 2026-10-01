@@ -945,7 +945,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
 [01:25:10] Speaker 10: Y lo aclaramos en el mail.
 
-[01:25:11] Speaker 8: Nosotros no somos asesores de Cournex. Y lo aclaramos también en el mail donde está Sepa Ferrer, donde está el presidente nacional, donde está Decurnex copiado y está Santiago Dalbalde. Y dijimos: "Nosotros acá no somos asesores". Eso es importante. Y aparte, lo otro que es importante es que acá de repente Enrique y yo somos las caras más visibles, pero hay un equipo técnico atrás, que hay más gente. Y que de distintos sectores que votaron distintas cosas. Algunos que no son de la agrupación y se están
+[01:25:11] Speaker 8: Nosotros no somos asesores Decurnex. Y lo aclaramos también en el mail donde está Sepa Ferrer, donde está el presidente nacional, donde está Decurnex copiado y está Santiago Dalbalde. Y dijimos: "Nosotros acá no somos asesores". Eso es importante. Y aparte, lo otro que es importante es que acá de repente Enrique y yo somos las caras más visibles, pero hay un equipo técnico atrás, que hay más gente. Y que de distintos sectores que votaron distintas cosas. Algunos que no son de la agrupación y se están
 
 [01:25:41] Speaker 8: sumando.
 
@@ -1398,5 +1398,6 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 | Ricardo Bairo | Ricardo Vairo | 3 |
 | Ricardo Bayro | Ricardo Vairo | 3 |
 | Siglé | Singlet | 2 |
+| de Cournex | Decurnex | 1 |
 | de Cournext | Decurnex | 4 |
 | de Curnex | Decurnex | 2 |
