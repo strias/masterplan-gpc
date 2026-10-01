@@ -37,7 +37,8 @@ def documento(titulo, descripcion, cuerpo, extra="", ruta=""):
             f'{tarjeta(titulo, descripcion, ruta)}{HEAD}{extra}</head>\n<body>\n{AVISO_GIT}\n{cuerpo}\n</body>\n</html>\n')
 
 YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
-      "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao"}
+      "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao",
+      "F-0021": "SOkgIuhLvB4", "F-0022": "X_yghFec4j8"}
 NOMBRE = {
     "F-0003": "Sitio oficial de la Asamblea", "F-0004": "Anteproyecto (PDF oficial)",
     "F-0006": "Aclaración de los autores (PDF)", "F-0007": "Moción oficial (PDF)",
@@ -46,11 +47,14 @@ NOMBRE = {
     "F-0014": "Pasión Tricolor, Aldabalde (25/09)", "F-0015": "Territorio Nacional, Decurnex (21/09)",
     "F-0016": "El Espectador, Aldabalde (17/09)", "F-0017": "Pasión Tricolor, Singlet y Bardanca (24/09)",
     "F-0018": "El Espectador, Aldabalde (16/07)", "F-0019": "Pasión Tricolor, reacción a Decurnex (22/09)",
+    "F-0021": "Pasión Tricolor, Gomensoro (30/09)", "F-0022": "Cuestión Stream, Decurnex (01/10)",
+    "F-0023": "Moción de la agrupación Atilio García (imagen en X)",
 }
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
     "F-0004": "https://asambleagpc.nacional.uy/Anteproyecto.pdf",
     "F-0006": "https://asambleagpc.nacional.uy/InformacionAdicional1.pdf",
+    "F-0023": "https://pbs.twimg.com/media/HTaL8_8WYAA7_1w?format=jpg&name=large",
     "F-0007": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf",
     "F-0009": "https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre",
     "F-0010": "https://laabdon.com/noticias/master-plan-del-gran-parque-central-que-se-propone-y-que-significa-para-nacional",
@@ -401,6 +405,8 @@ PORTADA_CSS = """<style>
 .cg { font-family: var(--f-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; background: transparent; color: var(--muted); border: 1px dashed currentColor; padding: 0 5px; border-radius: 3px; white-space: nowrap; }
 .obra { margin: 0; padding-left: 26px; display: flex; flex-direction: column; gap: 8px; max-width: 70ch; }
 .obra li::marker { font-family: var(--f-mono); color: var(--red); }
+.aparte { border: 1px dashed var(--line); padding: 20px; background: var(--surface); }
+.aviso-alt { border-left: 4px solid var(--red); padding-left: 12px; max-width: 70ch; }
 .corto { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: 70ch; }
 .arts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .art { display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
@@ -433,7 +439,7 @@ P('''<header class="hero">
     <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
   </dl>
   <nav class="toc" aria-label="Secciones">
-    <a href="#resumen">En resumen</a><a href="#obra">Para que empiece la obra</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a>
+    <a href="#resumen">En resumen</a><a href="#obra">Para que empiece la obra</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#otra-mocion">Aparte: otra moción</a><a href="#fuentes">Fuentes</a>
   </nav>
   <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a><a class="cta" href="anteproyecto/">El anteproyecto: qué se construye y en qué orden →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
 </header>''')
@@ -479,6 +485,18 @@ for par in M.ANALISIS:
     P(f'<p>{R(par)}</p>')
 P('</div></section>')
 P(f'<section class="sec"><h2>Conclusión</h2><p class="lectura">{R(M.LECTURA)}</p><div class="acciones"><a class="cta" href="debate/">Ver el debate completo →</a>{compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.")}</div></section>')
+
+P('<section id="otra-mocion" class="sec aparte"><h2>Aparte: la moción de la agrupación Atilio García</h2>')
+P(f'<p class="aviso-alt">{R(M.ALT_AVISO)}</p><ul class="corto">')
+for x in M.ALT_RESUMEN:
+    P(f'<li>{R(x)}</li>')
+P('</ul><div class="table-wrap"><table><thead><tr><th scope="col">Tema</th><th scope="col">Moción oficial</th><th scope="col">Moción Atilio García</th></tr></thead><tbody>')
+for t, oficial, alt in M.ALT_TABLA:
+    P(f'<tr><th scope="row">{html.escape(t)}</th><td>{R(oficial)}</td><td>{R(alt)}</td></tr>')
+P('</tbody></table></div><h3>Contra lo que se dijo de ella</h3><ul class="corto">')
+for x in M.ALT_DICHOS:
+    P(f'<li>{R(x)}</li>')
+P('</ul></section>')
 
 P('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Cada código es la ficha de la fuente en el repositorio del proyecto. Los enlaces con página abren el PDF en esa página; los que tienen minuto abren el video en ese punto.</p><ul class="fuentes">')
 for f in M.FUENTES_PORTADA:

@@ -88,7 +88,7 @@ ANALISIS = [
 
 LECTURA = "La moción protege bien la caja y el patrimonio del club, y suma un control fuerte: unanimidad en la Directiva o vuelta a los socios. No contesta las preguntas de números del debate, que quedan para decisiones posteriores bajo esas reglas. Votar el 24 de octubre es aprobar un rumbo y un sistema de garantías. Si alcanza con eso, sin conocer todavía el modelo, es la pregunta que cada socio tiene que responder."
 
-FUENTES_PORTADA = ["F-0007", "F-0003", "F-0004", "F-0014", "F-0015", "F-0016", "F-0017", "F-0019"]
+FUENTES_PORTADA = ["F-0007", "F-0003", "F-0004", "F-0014", "F-0015", "F-0016", "F-0017", "F-0019", "F-0021", "F-0022", "F-0023"]
 
 # Qué tiene que pasar para que empiece la obra (arts. 5°, 6° y 9°). Se repite en cada etapa.
 OBRA = [
@@ -113,3 +113,29 @@ VUELVE = [
  ("Se quiere reducir o quitar una garantía", "{F-0007 p.9}"),
 ]
 VUELVE_NOTA = "Si nada de eso pasa, el 24 de octubre es la única vez que votan los socios; después decide la Directiva. Queda abierta la reforma del Estatuto que exige 75% para proyectos de más de USD 2 M: no rige todavía, y la moción se aplica “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” {F-0007 p.5}. No tenemos el texto de la reforma para saber qué exigiría. Ver [[>debate/detalle-voto.html|la pregunta del voto]]."
+
+# Apartado: la moción de la agrupación Atilio García (F-0023). No es oficial.
+ALT_AVISO = "**No es una moción oficial.** No la votó la Directiva: la impulsa la agrupación Atilio García, con apoyo de Decurnex, y su texto circula en X {F-0023}. Decurnex dice que se le entregó al presidente Vairo una versión revisada para buscar una moción única {F-0022 00:37:05}; no sabemos si es esta. Si no hay acuerdo, la van a presentar en la Asamblea {F-0022 00:26:08}."
+ALT_RESUMEN = [
+ "**Aprueba solo un proyecto ejecutivo**, en un máximo de 180 días, con el estadio analizado por separado, el costo del techo aparte y cada área adicional analizada por separado.",
+ "**Vuelve a la Asamblea** dentro de los 60 días de recibido el proyecto ejecutivo, para decidir cómo seguir.",
+ "**Flujos propios del club solo para el estadio:** palcos, gastos comunes, Club Social y sobrecuota. La moción oficial dice lo mismo {F-0007 p.7}.",
+ "**Garantías y fideicomiso:** repite el texto de la moción oficial {F-0007 p.6-7}.",
+ "**Comisión Técnico-Financiera** de cuatro miembros, designada por la Directiva, que trabaje con CPA Ferrere.",
+]
+# (tema, moción oficial, moción Atilio García)
+ALT_TABLA = [
+ ("Qué se aprueba", "El Master Plan como marco y seguir estructurándolo {F-0007 p.6}", "Solo hacer el proyecto ejecutivo"),
+ ("Proyecto ejecutivo", "Antes de cada etapa, con financiamiento {F-0007 p.7}", "Primero, en 180 días; no dice cómo se paga"),
+ ("Nueva Asamblea", "Sin unanimidad, con cambios sustanciales o por caducidad {F-0007 p.8-9}", "Siempre, 60 días después del proyecto ejecutivo"),
+ ("Mayoría especial de la Directiva", "Unanimidad de los once {F-0007 p.8}", "No la menciona"),
+ ("Flujos propios solo para el estadio", "Sí {F-0007 p.7}", "Sí"),
+ ("Sin deuda, garantías ni hipotecas del club", "Sí {F-0007 p.6-7}", "Mismo texto"),
+ ("Plazo y caducidad", "30 meses más un año {F-0007 p.9}", "No tiene"),
+ ("Comisión técnica", "Comisión de Licitaciones {F-0007 p.7}", "Cuatro miembros, con CPA Ferrere"),
+]
+ALT_DICHOS = [
+ "Decurnex dijo que su moción pide el 75% y que cada etapa pase por la Asamblea {F-0022 00:19:41}. **En este texto no aparece el 75%**, y hay una sola Asamblea nueva, no una por etapa. Puede estar en la versión revisada.",
+ "Gomensoro la llamó “un entierro de lujo” porque exige gastar unos 2 M en el proyecto ejecutivo antes de tener un inversor {F-0021 00:13:37}. El texto lo pone primero, pero no dice cuánto cuesta ni cómo se financia. Los 2 M los dan las dos partes {F-0016 00:21:22} {F-0022 00:02:46}.",
+ "Gomensoro dijo que tiene “plagio textual” de la oficial {F-0021 00:13:07}. Es un hecho que las garantías y el fideicomiso repiten el texto oficial; llamarlo plagio es una valoración.",
+]
