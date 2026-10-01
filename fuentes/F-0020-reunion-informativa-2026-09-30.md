@@ -13,7 +13,7 @@ transcripcion: archivo/F-0020-reunion-2026-09-30.srt   # Whisper large-v3-turbo,
 
 ## Resumen
 
-Reunión informativa virtual del 30/09/2026 a las 19:00, una de las previstas en el sitio de la asamblea ([F-0003](F-0003-sitio-asamblea-gpc.md)). Era solo para socios habilitados. El autor asistió y tomó notas; los asistentes no pudieron hacer preguntas.
+Reunión informativa virtual del 30/09/2026 a las 19:00, una de las previstas en el sitio de la asamblea ([F-0003](F-0003-sitio-asamblea-gpc.md)). Era solo para socios habilitados. El autor asistió y tomó notas. Hubo preguntas de socios, que el expositor fue leyendo en pantalla y respondiendo (00:01 en adelante); el autor no llegó a hacer las suyas.
 
 ## Datos clave
 
