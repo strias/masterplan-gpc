@@ -23,10 +23,11 @@ Captura de la vista satelital del estadio, aportada por el autor el 2026-10-01. 
 
 - **Tribuna José María Delgado** (sobre Carlos Anaya, con la etiqueta de Google): las gradas se ven descubiertas, sin techo.
 - **Tribunas Héctor Scarone** (Jaime Cibils) y **Atilio García** (Urquiza, con las letras "Club Nacional de Football"): gradas descubiertas.
-- **Tribuna sur**, junto a las canchas de tenis: las letras "CNF" están pintadas sobre gradas descubiertas. Detrás hay una superficie gris grande, que es el techo de una construcción y no de las gradas. Lo confirma el autor, que asiste al estadio.
+- **Tribuna sur**, junto a las canchas de tenis: también descubierta. La parte baja tiene las letras "CNF" pintadas en las gradas, y la parte alta, que en la imagen se ve gris, son gradas pintadas con las tres copas Intercontinentales. Lo dice el autor, que asiste al estadio, y se ve en una foto aérea que aportó (sin autor ni fecha conocidos).
 
 ## Notas
 
 - **No coincide con el anteproyecto**, que dice que "si uno ingresa por la tribuna José María Delgado, con su techado metálico elegante y sus accesos amplios", el estadio "puede parecer un recinto moderno" ([F-0004](F-0004-anteproyecto.md), p. 13). Según el autor, ese techado ya no existe. Hace falta una fuente que diga cuándo se retiró, o si el texto se refiere a otra cosa.
 - La identificación de las tribunas sigue las etiquetas de Google y el anteproyecto, que ubica la Delgado sobre Carlos Anaya ([F-0004](F-0004-anteproyecto.md), p. 43) y la Atilio García frente a Urquiza (p. 38).
-- Una imagen satelital no muestra techos chicos o marquesinas bajo otras estructuras. Para afirmarlo del todo conviene una foto desde la cancha.
+- Sobre las dos tribunas largas hay edificios de palcos con techo propio, que cubren los palcos pero no las gradas (foto aérea aportada por el autor).
+- Una imagen satelital no muestra marquesinas chicas bajo otras estructuras. Para afirmarlo del todo conviene una foto desde la cancha.
