@@ -69,7 +69,7 @@ Memoria del proyecto ganador del concurso de ideas para el Plan Maestro. Cubre e
 - Aforo: "más de 43.000" en p. 64 y "capacidad 44.000 personas" en p. 42.
 
 **Techo** (p. 13, 45 y 69)
-- Hoy: la tribuna José María Delgado tiene un "techado metálico elegante"; el diagnóstico menciona "sectores sin techo" (p. 13).
+- Hoy: el diagnóstico describe la tribuna José María Delgado "con su techado metálico elegante" y menciona "sectores sin techo" (p. 13). **No coincide con la imagen satelital**, en la que las gradas de la Delgado están descubiertas ([F-0025](F-0025-google-maps-gpc.md)). Según el autor, ese techado ya no existe.
 - Propuesto: "un techo que cubre todos los asientos", en etapas. Lo presenta como "el gran aliado para transformar la experiencia", sobre todo por la acústica (p. 45). La estructura de la cubierta se describe en p. 69.
 
 **Unidades de negocio (total del proyecto)** (p. 42)
@@ -88,6 +88,7 @@ Memoria del proyecto ganador del concurso de ideas para el Plan Maestro. Cubre e
 ## Notas
 
 - **Error corregido:** en p. 51 dice que la hinchada visitante va en la "bandeja alta de la tribuna Abdón Porte"; debía decir Héctor Scarone. Lo corrigen los propios autores en [F-0006](F-0006-aclaracion-memoria.md).
+- **Posible error en p. 13:** describe la Delgado con un "techado metálico elegante", que no se ve en la imagen satelital ([F-0025](F-0025-google-maps-gpc.md)).
 - **Datos sin completar:** en p. 34 la superficie y la capacidad del estacionamiento, y los lugares para bicicletas, figuran como "XXX". En p. 42 la superficie de la Plaza del Hincha y la capacidad de la arena figuran como "XX", aunque en la misma página aparecen 3.969 m² y 4.730 personas.
 - **Dos fechas:** el archivo se creó en junio de 2025 (concurso de ideas) y se publicó a los socios en septiembre de 2026. Si el proyecto cambió entre esas fechas, el documento puede no reflejarlo.
 - Parte interesada: los autores son el equipo ganador del concurso.
