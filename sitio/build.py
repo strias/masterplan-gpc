@@ -9,19 +9,21 @@ HEAD = open("head.html").read()  # fuentes y estilos compartidos
 SITIO = "https://masterplangpc.com"
 # Imagen de las vistas previas. Si cambia, cambiar también el nombre: X guarda la imagen vieja en caché.
 OG_IMAGEN = "og-2026-09-29.jpg"
+OG_ANTEPROYECTO = "og-anteproyecto-2026-10-01.jpg"
 
-def tarjeta(titulo, descripcion, ruta):
+def tarjeta(titulo, descripcion, ruta, imagen=None):
     """Metadatos Open Graph y Twitter Card, para que X, WhatsApp y otros muestren la vista previa con imagen."""
     t, d, u = html.escape(titulo), html.escape(descripcion), f"{SITIO}/{ruta}"
+    img = imagen or OG_IMAGEN
     return (f'<link rel="canonical" href="{u}">\n'
             f'<meta property="og:type" content="website">\n<meta property="og:site_name" content="Master Plan GPC">\n'
             f'<meta property="og:locale" content="es_UY">\n<meta property="og:title" content="{t}">\n'
             f'<meta property="og:description" content="{d}">\n<meta property="og:url" content="{u}">\n'
-            f'<meta property="og:image" content="{SITIO}/{OG_IMAGEN}">\n<meta property="og:image:width" content="1200">\n'
+            f'<meta property="og:image" content="{SITIO}/{img}">\n<meta property="og:image:width" content="1200">\n'
             f'<meta property="og:image:height" content="630">\n<meta property="og:image:type" content="image/jpeg">\n'
-            f'<meta property="og:image:alt" content="Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central, con fuentes.">\n'
+            f'<meta property="og:image:alt" content="{t if imagen else "Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central, con fuentes."}">\n'
             f'<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="{t}">\n'
-            f'<meta name="twitter:description" content="{d}">\n<meta name="twitter:image" content="{SITIO}/{OG_IMAGEN}">\n')
+            f'<meta name="twitter:description" content="{d}">\n<meta name="twitter:image" content="{SITIO}/{img}">\n')
 
 REPO = "https://github.com/strias/masterplan-gpc"
 # Franja superior de todas las páginas: el sitio se genera desde el repositorio público.
@@ -29,12 +31,12 @@ AVISO_GIT = (f'<a class="gitbar" href="{REPO}" target="_blank" rel="noopener">'
              '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>'
              '<span>Este sitio se genera desde un repositorio público en GitHub: fuentes, método e historial de cambios <b>strias/masterplan-gpc →</b></span></a>')
 
-def documento(titulo, descripcion, cuerpo, extra="", ruta=""):
+def documento(titulo, descripcion, cuerpo, extra="", ruta="", imagen=None):
     """Documento HTML completo y autónomo, listo para copiar a cualquier servidor."""
     return (f'<!doctype html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n'
             f'<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
             f'<title>{html.escape(titulo)}</title>\n<meta name="description" content="{html.escape(descripcion)}">\n'
-            f'{tarjeta(titulo, descripcion, ruta)}{HEAD}{extra}</head>\n<body>\n{AVISO_GIT}\n{cuerpo}\n</body>\n</html>\n')
+            f'{tarjeta(titulo, descripcion, ruta, imagen)}{HEAD}{extra}</head>\n<body>\n{AVISO_GIT}\n{cuerpo}\n</body>\n</html>\n')
 
 YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
       "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao",
@@ -642,5 +644,5 @@ os.makedirs("anteproyecto", exist_ok=True)
 open("anteproyecto/index.html", "w").write(documento(
     "El anteproyecto, etapa por etapa",
     "Qué se construye en cada una de las 14 etapas del Master Plan del Gran Parque Central, en qué orden, y cómo se compara con lo que dijeron las partes y con la moción.",
-    "\n".join(a), AP_CSS, "anteproyecto/"))
+    "\n".join(a), AP_CSS, "anteproyecto/", OG_ANTEPROYECTO))
 print("anteproyecto ok")
