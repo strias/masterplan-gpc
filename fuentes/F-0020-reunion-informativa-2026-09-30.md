@@ -2,7 +2,7 @@
 id: F-0020
 titulo: "Reunión informativa virtual para socios sobre el Master Plan"
 tipo: declaracion
-autor: Santiago Aldabalde (CPO), con otras dos personas sin identificar
+autor: Santiago Aldabalde y Venturino (CPO), con una tercera persona sin identificar
 medio: reunión virtual organizada por el club (asambleagpc.nacional.uy)
 fecha: 2026-09-30
 consultada: 2026-09-30
@@ -17,7 +17,7 @@ Reunión informativa virtual del 30/09/2026 a las 19:00, una de las previstas en
 
 ## Datos clave
 
-**Cómo leer esto.** Los minutos son de la grabación del autor, que empieza con la presentación ya en curso: el comienzo de la reunión no está grabado. La transcripción es automática y sin separación de voces; en lo que está grabado se oye sobre todo a un expositor de la CPO. El autor, que asistió, lo identifica como Aldabalde. Las citas son cortas y hay que escuchar el tramo antes de usarlas.
+**Cómo leer esto.** Los minutos son de la grabación del autor, que empieza con la presentación ya en curso: el comienzo de la reunión no está grabado. La transcripción es automática y sin separación de voces; según el autor, que asistió, el que más habló fue Aldabalde y el segundo fue Venturino, también de la CPO. Como la transcripción no separa voces, no se puede saber qué tramos son de cada uno: las citas se atribuyen a Aldabalde salvo que se identifique otro expositor. Las citas son cortas y hay que escuchar el tramo antes de usarlas.
 
 ### Notas del autor contra la grabación
 
@@ -56,7 +56,8 @@ Reunión informativa virtual del 30/09/2026 a las 19:00, una de las previstas en
 
 - **Origen:** notas del autor contrastadas con su grabación. El autor es socio y tiene opinión sobre el proyecto.
 - **Grabación:** el autor la tiene. Uso acordado: transcribir, guardar local en `archivo/` y usar citas cortas con minuto para verificar. No se publica ni el audio ni la transcripción completa, porque la reunión era cerrada a socios.
-- **Falta:** los nombres de los otros dos y si alguno de ellos habló en lo grabado.
+- **Expositores:** Aldabalde (el que más habló) y Venturino (el segundo), según el autor. El autor lo nombra Marcelo Venturino; la lista oficial de la CPO tiene a un "Arq. Jorge Venturino" ([F-0002](F-0002-comisiones.md)). Falta confirmar el nombre y qué tramos son suyos.
+- **Falta:** identificar al tercer expositor.
 - Parte interesada: los expositores presentan el proyecto que impulsan.
 - **Para contrastar:**
   - Los "10, 15, 20 años" son de un camino alternativo; para el Master Plan sigue en pie la obra de cinco años (00:03-00:04), como "los cuatro o cinco años que va a llevar la obra" (Aldabalde, [F-0016](F-0016-espectador-aldabalde-no-tienen-plan-b.md), 00:07:30).
