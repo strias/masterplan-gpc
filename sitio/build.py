@@ -49,12 +49,14 @@ NOMBRE = {
     "F-0018": "El Espectador, Aldabalde (16/07)", "F-0019": "Pasión Tricolor, reacción a Decurnex (22/09)",
     "F-0021": "Pasión Tricolor, Gomensoro (30/09)", "F-0022": "Cuestión Stream, Decurnex (30/09)",
     "F-0023": "Moción de la agrupación Atilio García (imagen en X)",
+    "F-0024": "Infobae: el Centenario para el Mundial 2030",
 }
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
     "F-0004": "https://asambleagpc.nacional.uy/Anteproyecto.pdf",
     "F-0006": "https://asambleagpc.nacional.uy/InformacionAdicional1.pdf",
     "F-0023": "https://pbs.twimg.com/media/HTaL8_8WYAA7_1w?format=jpg&name=large",
+    "F-0024": "https://www.infobae.com/america/america-latina/2024/08/09/uruguay-cerrara-durante-dos-anos-y-medio-el-estadio-centenario-para-dejarlo-listo-para-el-mundial-2030/",
     "F-0007": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf",
     "F-0009": "https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre",
     "F-0010": "https://laabdon.com/noticias/master-plan-del-gran-parque-central-que-se-propone-y-que-significa-para-nacional",

@@ -68,6 +68,10 @@ Memoria del proyecto ganador del concurso de ideas para el Plan Maestro. Cubre e
 - **Butacas nuevas:** 1.325 + 768 + 728 + 1.101 + 2.310 + 2.015 = 8.247 generales; con las 1.869 de hospitalidad, 10.116. El total de p. 42 dice **16.544** y no se puede reconstruir desde las etapas (las 3.567 con visibilidad mejorada no son nuevas). La suma sí es coherente con el aumento de aforo, de unos 34.000 a más de 43.000 (p. 64).
 - Aforo: "más de 43.000" en p. 64 y "capacidad 44.000 personas" en p. 42.
 
+**Techo** (p. 13, 45 y 69)
+- Hoy: la tribuna José María Delgado tiene un "techado metálico elegante"; el diagnóstico menciona "sectores sin techo" (p. 13).
+- Propuesto: "un techo que cubre todos los asientos", en etapas. Lo presenta como "el gran aliado para transformar la experiencia", sobre todo por la acústica (p. 45). La estructura de la cubierta se describe en p. 69.
+
 **Unidades de negocio (total del proyecto)** (p. 42)
 - Estacionamiento para 1.000 vehículos; en la misma página, 980 lugares. Por etapa: 430 (etapa 1, p. 38) y 550 (etapa 9, p. 40).
 - 14.266 m² de superficies rentables.
