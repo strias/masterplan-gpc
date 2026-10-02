@@ -5,7 +5,7 @@
 # (etapa, obras, qué agrega, tipo: "estadio" o "negocio", página)
 ETAPAS = [
  (1, "Estacionamiento en el nivel −2. Mudanza del estacionamiento existente y reubicación de las canchas de tenis.", "430 plazas de estacionamiento.", "negocio", "38"),
- (2, "Zócalo bajo la Atilio García, con frente a Urquiza, y bajo la Abdón Porte. Mejora de accesos a esas tribunas.", "3.100 m² de museos, 1.852 m² de locales (ampliables al doble con entrepisos), una tienda ancla de 1.228 m², cocina y área para eventos.", "negocio", "38"),
+ (2, "Zócalo bajo la Atilio García, con frente a Urquiza, y bajo la Abdón Porte. Mejora de accesos a esas tribunas.", "3.100 m² de museos, 1.852 m² de locales (ampliables al doble con entrepisos), una tienda ancla de 1.228 m², cocina y área para eventos.", "ambos", "38"),
  (3, "Reforma de la cancha, que se baja 75 cm. Mejor visibilidad en la Atilio García, más filas en la Abdón Porte y codo Atilio García–Scarone.", "1.325 butacas nuevas y 3.567 con visibilidad mejorada.", "estadio", "38"),
  (4, "Bajo tribuna Delgado: vestuarios, acceso de delegaciones y servicios para competiciones. Codos del primer anillo.", "768 butacas nuevas y un salón VIP de 500 m².", "estadio", "39"),
  (5, "Bajo tribuna Scarone y restauración de su fachada patrimonial.", "728 butacas nuevas.", "estadio", "39"),
@@ -20,16 +20,17 @@ ETAPAS = [
  (14, "Tribunas y lounge elevados en las esquinas.", "1.358 butacas en lounge y 4.053 m² de lounge.", "estadio", "41"),
 ]
 TIPOS = {"estadio": ("Estadio", "soft"), "negocio": ("Unidades de negocio", "pend")}
+# "ambos": la etapa combina obras del estadio y unidades de negocio; se muestran las dos etiquetas.
 
 EN_CORTO = [
  "Es la memoria del proyecto ganador del concurso de ideas: 121 páginas de arquitectura, fechadas en junio de 2025 y publicadas a los socios el 23/09/2026 {F-0004} {F-0003}.",
  "Divide la obra en **14 etapas**. El estadio se sigue usando, salvo en las etapas 3 y 4, que se hacen juntas {F-0004 p.38}.",
  "**No trae costos, financiamiento ni plazos en años.** Eso queda para el modelo económico, que todavía no está publicado {F-0003}.",
- "Las dos primeras etapas son de unidades de negocio: estacionamiento y zócalo comercial. **La primera obra en el estadio es la etapa 3**, y el techo va al final, en las etapas 12 y 13 {F-0004 p.38-41}.",
+ "La etapa 1 es de estacionamiento. La 2 combina el zócalo comercial y los museos con mejoras de accesos a la Atilio García y la Abdón Porte. **Las obras de cancha y tribunas empiezan en la etapa 3**, y el techo va al final, en las etapas 12 y 13 {F-0004 p.38-41}.",
 ]
 
 ORDEN = [
- "El anteproyecto ordena las etapas para “acompasar en forma equilibrada los egresos y la generación de ingresos de cada etapa” {F-0004 p.38}. Por eso empieza por el estacionamiento y el zócalo comercial, que generan ingresos.",
+ "El anteproyecto ordena las etapas para “acompasar en forma equilibrada los egresos y la generación de ingresos de cada etapa” {F-0004 p.38}. Por eso empieza por el estacionamiento y el zócalo comercial, que generan ingresos. La etapa 2 incluye además mejoras de accesos a la Atilio García y la Abdón Porte.",
  "La moción, en cambio, dice que “deberá priorizarse el inicio de aquellas etapas que involucren directamente al Estadio”, aunque “en función de los flujos y plazos disponibles” {F-0007 p.6}.",
  "El anteproyecto es de junio de 2025 y la moción de septiembre de 2026: el orden puede cambiar. Ninguno de los dos documentos dice cuál va a ser.",
 ]
@@ -75,7 +76,7 @@ NO_TRAE = [
 AVISO = "Este análisis es de Claude, la IA que asiste al proyecto, y es opinión. Se apoya en el anteproyecto, la moción y las fuentes enlazadas y, donde lo indica la etiqueta <span class=\"cg\">conocimiento general</span>, en conocimiento general de obras que no sale de una fuente registrada."
 
 ANALISIS = [
- "**Las mejoras del estadio están repartidas en casi toda la obra.** De las 14 etapas, nueve son del estadio. Las primeras son las de cancha, vestuarios, codos y primeros anillos (etapas 3 a 7); la bandeja alta de la Scarone va en la 11 y el techo en la 12 y la 13 {F-0004 p.38-41}.",
+ "**Las mejoras del estadio están repartidas en casi toda la obra.** De las 14 etapas, nueve son del estadio y la 2 combina estadio y negocio. Las primeras mejoras para el hincha son los accesos a la Atilio García y la Abdón Porte, en la etapa 2; siguen cancha, vestuarios, codos y primeros anillos (etapas 3 a 7); la bandeja alta de la Scarone va en la 11 y el techo en la 12 y la 13 {F-0004 p.38-41}.",
  "**El techo es la pieza que todos tratan como postergable.** Aldabalde dice que si no alcanza el financiamiento, una opción es sacarlo, porque es un 22 o 23% del costo {F-0020 00:08:26}; los técnicos de Decurnex dicen que el estadio sale con los flujos propios “seguramente sin techo” {F-0022 00:13:02}; Bardanca, “sacándole el techo” {F-0017 01:22:06}; y la moción alternativa pide su costo por separado {F-0023}. Hoy ninguna tribuna del Parque tiene techo sobre las gradas, según la imagen satelital {F-0025}. (El anteproyecto describe la Delgado “con su techado metálico elegante” {F-0004 p.13}, pero eso no se ve en la imagen.) Techar un estadio entero sería además una novedad en Uruguay: el Centenario lo tiene previsto en su reforma para 2030 {F-0024}.",
  "**Pero el anteproyecto no lo presenta como accesorio.** Lo describe como “el gran aliado para transformar la experiencia”, por cómo retiene el sonido de la hinchada {F-0004 p.45}. Si “terminar el Parque” incluye el techo es una pregunta de valores, no de hechos: depende de qué espera el socio. La encuesta de 2025, con casi 14.000 respuestas, podría decirlo {F-0007 p.1}, pero sus resultados no están publicados.",
  "**Empezar por el estacionamiento tiene lógica de obra, y también de caja.** La etapa 1 incluye mudar el estacionamiento existente y reubicar las canchas de tenis {F-0004 p.38}, algo que suele hacerse antes para liberar espacio [[CG]]. Y el propio documento dice que el orden busca equilibrar egresos e ingresos {F-0004 p.38}. Que eso choque o no con la prioridad al estadio que pide la moción {F-0007 p.6} depende del orden definitivo, que ninguno de los dos documentos fija.",
@@ -83,6 +84,6 @@ ANALISIS = [
  "**El documento es sólido en lo que cuenta y deja afuera lo que se discute.** Casi todos sus totales cierran con las etapas; la excepción son las 16.544 butacas nuevas. Pero el debate es sobre plata, y el anteproyecto no tiene ni un número de costo. Por eso la mayoría de las críticas (costo, techo, estacionamiento) no se pueden contrastar con él: hace falta el modelo económico.",
 ]
 
-LECTURA = "El anteproyecto dice qué se construye y en qué orden, pero no cuánto cuesta. En su orden actual, primero vienen el estacionamiento y el zócalo comercial; las mejoras de cancha y tribunas empiezan en la etapa 3, y el techo, que todas las partes tratan como postergable, va al final. La moción pide priorizar el estadio sin fijar un orden nuevo. Antes de votar vale preguntar en qué orden se va a hacer, cuándo llega cada mejora del estadio y si el techo forma parte de lo que se considera terminarlo."
+LECTURA = "El anteproyecto dice qué se construye y en qué orden, pero no cuánto cuesta. En su orden actual, primero vienen el estacionamiento y el zócalo comercial; la etapa 2 ya mejora accesos a dos tribunas, las obras de cancha y tribunas empiezan en la etapa 3, y el techo, que todas las partes tratan como postergable, va al final. La moción pide priorizar el estadio sin fijar un orden nuevo. Antes de votar vale preguntar en qué orden se va a hacer, cuándo llega cada mejora del estadio y si el techo forma parte de lo que se considera terminarlo."
 
 FUENTES_PAGINA = ["F-0004", "F-0006", "F-0003", "F-0007", "F-0014", "F-0015", "F-0016", "F-0017", "F-0020", "F-0021", "F-0022", "F-0023", "F-0024", "F-0025"]

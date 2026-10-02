@@ -561,6 +561,8 @@ print("portada ok", sum(len(x) for x in o))
 import anteproyecto as AP
 
 def chip_tipo(k):
+    if k == "ambos":
+        return chip_tipo("estadio") + chip_tipo("negocio")
     t, c = AP.TIPOS[k]
     return f'<span class="chip chip-{c}">{t}</span>'
 
@@ -570,7 +572,7 @@ AP_CSS = PORTADA_CSS.replace("</style>", """
 .etapa .n { font-family: var(--f-display); font-size: 2rem; line-height: 1; color: var(--red); }
 .etapa div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .etapa .agrega { color: var(--muted); font-size: .95rem; }
-.etapa.estadio .n { color: var(--navy); }
+.etapa.estadio .n, .etapa.ambos .n { color: var(--navy); }
 .back { font-family: var(--f-mono); font-size: .82rem; }
 @media (max-width: 560px) { .etapa { grid-template-columns: 44px 1fr; } }
 </style>""")
@@ -598,7 +600,7 @@ for x in AP.EN_CORTO:
     Q(f'<li>{R(x)}</li>')
 Q('</ul></section>')
 
-Q(f'<section id="etapas" class="sec"><h2>Las 14 etapas</h2><p class="sec-intro">Resumen propio de la memoria. Cada etapa indica si es del estadio o de unidades de negocio.</p><ol class="etapas">')
+Q(f'<section id="etapas" class="sec"><h2>Las 14 etapas</h2><p class="sec-intro">Resumen propio de la memoria. Cada etapa indica si es del estadio, de unidades de negocio o de las dos cosas.</p><ol class="etapas">')
 for n, obras, agrega, tipo, pag in AP.ETAPAS:
     Q(f'<li class="etapa {tipo}"><span class="n">{n}</span><div><div class="chips">{chip_tipo(tipo)}</div><p>{R(obras)} {R("{F-0004 p." + pag + "}")}</p><p class="agrega"><strong>Agrega:</strong> {R(agrega)}</p></div></li>')
 Q('</ol></section>')

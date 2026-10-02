@@ -166,7 +166,7 @@ DETALLE = {
 
 "orden": dict(
  titulo="¿Qué se hace primero?",
- corto="El anteproyecto empieza por el estacionamiento y el zócalo comercial; el estadio arranca en la etapa 3 y el techo va casi al final. La moción pide priorizar el estadio, pero no fija un orden, y las dos partes dicen querer lo mismo.",
+ corto="El anteproyecto empieza por el estacionamiento y el zócalo comercial; las primeras mejoras del estadio son los accesos de la etapa 2, las de cancha y tribunas empiezan en la 3, y el techo va casi al final. La moción pide priorizar el estadio, pero no fija un orden, y las dos partes dicen querer lo mismo.",
  posturas=[
   ("Gomensoro", "La numeración no es un orden",
    "Que primero van el estacionamiento o el zócalo es “una gran falacia”: el estudio “ordenó en 14 etapas y puso 1 o 2, pero no a título de secuencial” {F-0021 00:18:00} {F-0021 00:18:16}. Lo que vale es la moción: “deberá priorizarse el inicio de aquellas etapas que involucren directamente al Estadio” {F-0021 00:19:17}. Si un inversor viene primero por la arena, “no vamos a frenar” {F-0021 00:18:46}.",
@@ -179,7 +179,7 @@ DETALLE = {
    "Lo ve como un proyecto integral."),
  ],
  analisis=[
-  "**El anteproyecto sí presenta un orden, y lo justifica.** Habla de una “planificación de etapas” ordenada para “acompasar en forma equilibrada los egresos y la generación de ingresos de cada etapa” {F-0004 p.38}: empezar por lo que genera ingresos. Decir que la numeración es solo una lista, como dice Gomensoro, no es lo que se lee en el documento. Pero es un documento de junio de 2025, y la moción, de 15 meses después, pide priorizar el estadio {F-0007 p.6}.",
+  "**El anteproyecto sí presenta un orden, y lo justifica.** Habla de una “planificación de etapas” ordenada para “acompasar en forma equilibrada los egresos y la generación de ingresos de cada etapa” {F-0004 p.38}: empezar por lo que genera ingresos. Decir que la numeración es solo una lista, como dice Gomensoro, no es lo que se lee en el documento. Pero es un documento de junio de 2025, y la moción, de 15 meses después, pide priorizar el estadio {F-0007 p.6}. Además, el estadio no espera hasta la etapa 3, como dijo Decurnex {F-0022 00:23:00}: la etapa 2 ya mejora los accesos a la Atilio García y la Abdón Porte {F-0004 p.38}.",
   "**Empezar por el estacionamiento tiene lógica de obra.** La etapa 1 incluye mudar el estacionamiento existente y reubicar las canchas de tenis {F-0004 p.38}, algo que suele hacerse primero para liberar espacio. Que vaya primero no significa necesariamente que se priorice el negocio. [[CG]]",
   "**La diferencia de fondo no es el orden, sino el amarre.** Las dos partes dicen que el estadio va primero. Decurnex quiere además que el estadio no dependa del resultado de los otros negocios; la moción lo prioriza, pero dentro de un solo fideicomiso {F-0007 p.6}. Es la misma discusión que en [[>detalle-plata.html|la plata del club]].",
  ],
