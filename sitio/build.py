@@ -1,6 +1,6 @@
 import html, os, re
 
-ACTUALIZADO = "01/10/2026"
+ACTUALIZADO = "06/10/2026"
 TITULO = "Contrapunto del Master Plan"
 DESCRIPCION = "Preguntas, respuestas y fuentes del debate sobre el Master Plan del Gran Parque Central."
 HEAD = open("head.html").read()  # fuentes y estilos compartidos
@@ -43,7 +43,8 @@ YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
       "F-0021": "SOkgIuhLvB4", "F-0022": "X_yghFec4j8"}
 NOMBRE = {
     "F-0003": "Sitio oficial de la Asamblea", "F-0004": "Anteproyecto (PDF oficial)",
-    "F-0006": "Aclaración de los autores (PDF)", "F-0007": "Moción oficial (PDF)",
+    "F-0006": "Aclaración de los autores (PDF)", "F-0007": "Moción oficial, versión 1 (PDF)",
+    "F-0026": "Moción oficial, versión 2 (PDF)", "F-0027": "Anteproyecto, versión 2 (PDF oficial)",
     "F-0009": "La Abdón: moción filtrada", "F-0010": "La Abdón: qué se propone",
     "F-0011": "La Abdón: Decurnex y Aldabalde", "F-0012": "La Abdón: Singlet, Bardanca y Aldabalde",
     "F-0014": "Pasión Tricolor, Aldabalde (25/09)", "F-0015": "Territorio Nacional, Decurnex (21/09)",
@@ -62,6 +63,8 @@ URL = {
     "F-0025": "https://www.google.com/maps/place/Estadio+Gran+Parque+Central",
     "F-0024": "https://www.infobae.com/america/america-latina/2024/08/09/uruguay-cerrara-durante-dos-anos-y-medio-el-estadio-centenario-para-dejarlo-listo-para-el-mundial-2030/",
     "F-0007": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf",
+    "F-0026": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria%20v2.pdf",
+    "F-0027": "https://asambleagpc.nacional.uy/Anteproyectov2.pdf",
     "F-0009": "https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre",
     "F-0010": "https://laabdon.com/noticias/master-plan-del-gran-parque-central-que-se-propone-y-que-significa-para-nacional",
     "F-0011": "https://laabdon.com/noticias/el-futuro-del-gran-parque-central-que-propone-cada-uno-y-donde-estan-las-diferencias",
@@ -69,7 +72,7 @@ URL = {
 }
 
 # Diferencia entre la página impresa que se cita y la del visor del PDF (el anteproyecto no numera la portada).
-PAGINA_VISOR = {"F-0004": 1}
+PAGINA_VISOR = {"F-0004": 1, "F-0027": 1}
 
 # Fuentes que no son públicas: se citan con minuto, sin enlace.
 PRIVADAS = {"F-0020": "Grabación del autor de la reunión informativa virtual del 30/09, cerrada a socios. No es pública."}
@@ -136,7 +139,7 @@ PREGUNTAS = [
    ("Gomensoro", "Que esos flujos vayan con destino exclusivo al estadio se agregó a la moción “a solicitud de José Decurnex”.", "{F-0021 00:01:04}"),
   ],
   estado=["coinciden", "mocion"],
-  lectura="Hablan de los mismos flujos y con casi las mismas cifras (Aldabalde también da 93 M de palcos y unos 30 M del Club Social, {F-0014 01:44:58}). La moción oficial asigna al proyecto justamente esos flujos, y dice que los ya existentes solo pueden ir al estadio {F-0007 p.7}. En eso ya hay acuerdo. La diferencia que queda es de estructura: Decurnex quiere esa plata en un vehículo aparte, no en el mismo fideicomiso que paga la deuda de todo el proyecto {F-0022 00:34:25}."),
+  lectura="Hablan de los mismos flujos y con casi las mismas cifras (Aldabalde también da 93 M de palcos y unos 30 M del Club Social, {F-0014 01:44:58}). La moción oficial asigna al estadio justamente esos flujos {F-0007 p.7}. Decurnex quería esa plata en un vehículo aparte, no en el mismo fideicomiso que paga la deuda de todo el proyecto {F-0022 00:34:25}, y la versión 2 de la moción lo incorporó: un fideicomiso independiente, con destino exclusivo al estadio {F-0026 p.3}. En el destino y en la estructura ya hay acuerdo escrito."),
  dict(id="costo", q="¿Cuánto cuesta la obra?",
   pregunta=[("Conductor de El Espectador", "“El costo total está tasado en 112 millones, con el costo financiero se iría a 140…”", "{F-0016 00:06:27}")],
   resp=[
@@ -157,7 +160,7 @@ PREGUNTAS = [
    ("Bardanca", "El financiador exige un aporte propio de 15 a 20% y no acepta que sea voluntario.", "{F-0017 00:54:19}"),
   ],
   estado=["distintos", "cuenta", "pendiente"],
-  lectura="Los dos lados coinciden en que el modelo pide unos 26 M de aporte de socios; discrepan en si puede ser voluntario. Aldabalde cambió su versión sobre los USD 10 tres veces: el 17/09 “ni se habla de 10 dólares”, el 25/09 era “una celda de un Excel” y el 30/09 “uno de los modelos” {F-0016 00:09:10} {F-0014 00:59:29} {F-0020 00:06:24}. Gomensoro agrega un dato nuevo: sería voluntaria, pero con permanencia por defecto, como la del básquetbol. Eso no es lo mismo que una cuota a la que hay que adherir. La moción no define el mecanismo ({F-0007 p.7}). Los componentes que da Decurnex suman 23,5 M, no 26 ({F-0015 00:14:05}). Se resuelve con el modelo económico, que todavía no está publicado ({F-0003})."),
+  lectura="Los dos lados coinciden en que el modelo pide unos 26 M de aporte de socios; discrepan en si puede ser voluntario. Aldabalde cambió su versión sobre los USD 10 tres veces: el 17/09 “ni se habla de 10 dólares”, el 25/09 era “una celda de un Excel” y el 30/09 “uno de los modelos” {F-0016 00:09:10} {F-0014 00:59:29} {F-0020 00:06:24}. Gomensoro agrega un dato nuevo: sería voluntaria, pero con permanencia por defecto, como la del básquetbol. Eso no es lo mismo que una cuota a la que hay que adherir. La moción no define el mecanismo; solo excluye las cuotas ordinarias ({F-0026 p.4}). Los componentes que da Decurnex suman 23,5 M, no 26 ({F-0015 00:14:05}). Se resuelve con el modelo económico, que todavía no está publicado ({F-0003})."),
  dict(id="570", q="¿El proyecto genera 570 millones de dólares?",
   pregunta=[("Conductor de Pasión Tricolor", "“Según Santiago Aldabalde, el proyecto generaría 570 millones de dólares. Pero dentro de esa cifra se incluyen los ingresos de tres renovaciones de palcos…”", "{F-0014 01:43:03}")],
   resp=[
@@ -195,7 +198,7 @@ PREGUNTAS = [
    ("Aldabalde", "Si hay financiamiento completo, “tratemos de hacer todo juntos, con la prioridad del estadio”.", "{F-0020 00:33:22}"),
   ],
   estado=["pendiente"],
-  lectura="El anteproyecto empieza por el estacionamiento y el zócalo, y lo justifica por el equilibrio entre egresos e ingresos ({F-0004 p.38}); el techo va en las etapas 12 y 13 ({F-0004 p.41}). La moción pide priorizar el estadio “en función de los flujos y plazos disponibles” ({F-0007 p.6}). Las dos partes dicen que el estadio va primero; ningún documento fija el orden. Ver [[>../anteproyecto/#orden|el anteproyecto, etapa por etapa]]."),
+  lectura="El anteproyecto empieza por el estacionamiento y el zócalo, y lo justifica por el equilibrio entre egresos e ingresos ({F-0004 p.38}); el techo va en las etapas 12 y 13 ({F-0004 p.41}). La versión 2 de la moción pone como primera etapa el proyecto ejecutivo del estadio, con y sin techo, y prioriza sus etapas ({F-0026 p.2}). Las dos partes dicen que el estadio va primero; ningún documento fija el orden de las obras. Ver [[>../anteproyecto/#orden|el anteproyecto, etapa por etapa]]."),
  dict(id="sobrecosto", q="¿Qué pasa si la obra sale más cara?",
   pregunta=[("Conductor de El Espectador", "“El sobrecosto que puede tener, como tuvo el Camp Nou, como tuvo el Real Madrid, como tuvo el Antel Arena […] ¿quién se hace cargo?”", "{F-0016 00:23:57}")],
   resp=[
@@ -205,7 +208,7 @@ PREGUNTAS = [
    ("Bardanca", "Estadios como el Real Madrid o el Barcelona tuvieron desvíos del 50 o 60%: “Nosotros un desvío de obra del 60% no lo resistimos.”", "{F-0017 01:08:11}"),
   ],
   estado=["coinciden", "mocion", "pendiente"],
-  lectura="Las dos partes coinciden en qué pasa: se estira el repago, a unos 15 años. Según la moción, el club no aporta capital para sobrecostos {F-0007 p.7} y ninguna etapa empieza sin financiamiento para completarla {F-0007 p.7}. La diferencia es qué arriesga el club mientras tanto: para Decurnex, los flujos propios quedan atados al financiamiento global {F-0022 00:34:25}. Decurnex bajó su previsión de imprevistos de 20-25% ({F-0015 00:36:50}) a 15-18%."),
+  lectura="Las dos partes coinciden en qué pasa: se estira el repago, a unos 15 años. Según la moción, el club no aporta capital para sobrecostos {F-0026 p.4} y ninguna etapa empieza sin financiamiento para completarla {F-0026 p.5}. Decurnex temía que los flujos propios quedaran atados al financiamiento global {F-0022 00:34:25}; la versión 2 los pone en un fideicomiso aparte, que no puede garantizar otras unidades {F-0026 p.3}. Decurnex bajó su previsión de imprevistos de 20-25% ({F-0015 00:36:50}) a 15-18%."),
  dict(id="voto", q="¿Qué se vota el 24 de octubre y con qué mayoría?",
   pregunta=[("Conductor de Territorio Nacional", "“La Asamblea, ¿para qué sirve?”", "{F-0015 00:21:40}"),
             ("Oyente, leído en Pasión Tricolor", "“Si se aprueba por el 75% o por el 50 más 1. Que hay un debate ahí.”", "{F-0014 02:12:06}")],
@@ -216,13 +219,13 @@ PREGUNTAS = [
    ("Singlet", "La reforma del 7 de julio fijó el 75% para proyectos de más de USD 2 M.", "{F-0017 00:05:19}"),
   ],
   estado=["coinciden", "pendiente"],
-  lectura="Todos coinciden en que la reforma existe y no rige. El desacuerdo es jurídico y de valores. La moción no fija la mayoría de la Asamblea; se remite a los Estatutos “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” {F-0007 p.5}. Para las decisiones de la Directiva pide unanimidad de los once {F-0007 p.8}; según Gomensoro, el 9 de 11 pasó a 11 de 11 el 29/09, en la misma sesión en que se votó 7 a 4 {F-0021 00:02:05}. El umbral de la reforma no coincide entre los actores: 2 M, 2,5 M o “2 millones de UI”."),
+  lectura="Todos coinciden en que la reforma existe y no rige. El desacuerdo es jurídico y de valores. La moción no fija la mayoría de la Asamblea; se remite a los Estatutos “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” {F-0026 p.1}. La versión 1 pedía unanimidad de los once directivos {F-0007 p.8}; la versión 2 la saca y agrega una segunda Asamblea que decide el alcance definitivo con los ejecutivos y el financiamiento {F-0026 p.5}. El umbral de la reforma no coincide entre los actores: 2 M, 2,5 M o “2 millones de UI”."),
 ]
 
 # ---------- Contrapunto ----------
 FILAS = [
  ("¿Pone plata Nacional?", "coinciden", "#plata"),
- ("Fideicomiso único o aparte para los flujos del estadio", "pendiente", "#plata"),
+ ("Fideicomiso único o aparte para los flujos del estadio", "mocion", "#plata"),
  ("570 M: nominal y valor presente", "coinciden", "#570"),
  ("Costo de la obra", "distintos", "#costo"),
  ("“140 M con costo financiero”", "atribucion", "#costo"),
@@ -243,15 +246,15 @@ FILAS = [
  ("Imprevistos: 20-25% o 15-18%", "distintos", "#sobrecosto"),
  ("Informe de CPA “lapidario”", "pendiente", None),
  ("Garantías de la moción", "mocion", None),
- ("Mayoría especial de la Directiva", "mocion", None),
+ ("Mayoría especial de la Directiva", "mocion", "#voto"),
  ("Mayoría del 75%", "coinciden", "#voto"),
  ("Umbral de la reforma del Estatuto", "pendiente", "#voto"),
 ]
 NOTAS = {
- "Fideicomiso único o aparte para los flujos del estadio": "La moción reserva los flujos propios para el estadio dentro del mismo fideicomiso {F-0007 p.6-7}. Decurnex quiere un vehículo aparte para no quedar “rehén” del financiamiento global {F-0022 00:34:25}. Según Gomensoro, el destino exclusivo se agregó a pedido de Decurnex {F-0021 00:01:04}.",
+ "Fideicomiso único o aparte para los flujos del estadio": "La v1 de la moción reservaba los flujos propios para el estadio dentro del mismo fideicomiso {F-0007 p.6-7}. Decurnex quería un vehículo aparte para no quedar “rehén” del financiamiento global {F-0022 00:34:25}. La v2 los pone en un fideicomiso independiente {F-0026 p.3}. Según Gomensoro, el destino exclusivo se había agregado a pedido de Decurnex {F-0021 00:01:04}.",
  "Costo del proyecto ejecutivo: 2,5 M": "La Abdón publicó 2,5 M; Aldabalde dijo “del entorno de los 2 millones” {F-0016 00:21:22}. Decurnex: “un par de millones de dólares” {F-0022 00:02:46}; Gomensoro: “dos millones de dólares” como mínimo {F-0021 00:13:37}.",
- "Proyecto ejecutivo antes de votar": "La moción exige ejecutivo antes de cada etapa, no antes de la Asamblea {F-0007 p.7}. La moción alternativa lo pone primero, en 180 días {F-0023}. Es un desacuerdo de valores sobre qué hay que saber antes de votar.",
- "Sobrecuota con permanencia por defecto": "Gomensoro: “por defecto quedás adentro, pero te podés bajar” {F-0021 00:20:03}. La moción no define el mecanismo {F-0007 p.7}. Decurnex: ante un financiador “no hay otra que sea a través de una suba de cuota” {F-0022 00:04:39}.",
+ "Proyecto ejecutivo antes de votar": "La v1 exigía ejecutivo antes de cada etapa, no antes de la Asamblea {F-0007 p.7}. La moción alternativa lo pone primero, en 180 días {F-0023}. La v2 lo pone como primera etapa y agrega una segunda Asamblea con los ejecutivos y el financiamiento {F-0026 p.2} {F-0026 p.5}; el 24/10 igual se vota el marco sin ejecutivo.",
+ "Sobrecuota con permanencia por defecto": "Gomensoro: “por defecto quedás adentro, pero te podés bajar” {F-0021 00:20:03}. La moción no define el mecanismo; solo excluye las cuotas ordinarias {F-0026 p.4}. Decurnex: ante un financiador “no hay otra que sea a través de una suba de cuota” {F-0022 00:04:39}.",
  "Ocupación comercial de 97,5%": "Bardanca {F-0017 01:16:57} y Decurnex {F-0022 00:05:39}; Aldabalde: “100% alquilado, con precontratos” {F-0014 01:08:44}. Falta el modelo.",
  "Superficie del zócalo comercial": "Aldabalde habla de modelos de 3.500 y 7.000 m² {F-0014 01:08:14}; el anteproyecto da 3.080 m² de locales comerciales y 14.266 m² de superficies rentables {F-0004 p.42}.",
  "Mantenimiento: 1,2 M hoy": "Singlet, último balance: 1,2 M bruto {F-0017 01:31:00}. Aldabalde el 30/09, en la reunión informativa (grabación no pública): 1,2 M “sin inversión” {F-0020 00:27:00}. Si se confirma, coinciden en el gasto de hoy. El 17/09 había hablado de un ahorro de 3 o 4 M por año {F-0016 00:06:05}, que puede incluir la inversión postergada.",
@@ -259,15 +262,15 @@ NOTAS = {
  "Informe de CPA “lapidario”": "Aldabalde lo anunció así {F-0016 00:16:50}. En un mail leído al aire, un socio de CPA escribe que “no es lapidario ni pretende serlo” {F-0017 00:47:34}. Para Decurnex, “la palabra avalar es muy determinante”: CPA armó el modelo con datos de Nacional {F-0022 00:40:17}. Falta el informe.",
  "Cuentas de los 26 M y del estacionamiento": "Los componentes que da Decurnex suman 23,5 M, no 26 {F-0015 00:13:06}; en el estacionamiento, 3 M con un castigo del 30% dan 2,1 M, no 2,5 {F-0014 01:13:45}. Ver [[#cuota|la cuota]] y [[#parking|el estacionamiento]].",
  "Imprevistos: 20-25% o 15-18%": "Decurnex dijo 20 a 25% el 21/09 {F-0015 00:36:50} y 15 a 18% el 30/09 {F-0022 00:35:25}. Gomensoro habla de un ajuste de hasta 20% sobre 110 M {F-0021 00:28:17}.",
- "Garantías de la moción": "Fideicomiso separado, sin hipoteca ni deuda del club, unanimidad de la Directiva para las decisiones centrales, vuelta a la Asamblea ante cambios sustanciales y plazo de 30 meses {F-0007 p.6-9}. Un conductor de Pasión Tricolor pide sanciones para quien incumpla {F-0014 01:58:43}; Gomensoro acompañaría una moción complementaria con responsabilidad personal de los dirigentes {F-0021 00:50:40}. Qué cubre un sobrecosto: [[#sobrecosto|la pregunta del sobrecosto]].",
- "Mayoría especial de la Directiva": "La moción pide el voto unánime de los once directivos {F-0007 p.8}. Según Gomensoro, pasó de 9 a 11 el 29/09 {F-0021 00:02:05}. Si no hay unanimidad y la mayoría simple quiere seguir, decide una nueva Asamblea en 30 días.",
+ "Garantías de la moción": "Fideicomiso separado, con uno propio para los fondos del estadio; sin hipoteca ni deuda del club; segunda Asamblea con los ejecutivos y el financiamiento; plazo de 30 meses {F-0026 p.3-6}. La v2 saca la unanimidad de la Directiva, la lista de cambios que vuelven a la Asamblea y la prohibición de reducir garantías sin una Asamblea, que estaban en la v1 {F-0007 p.8-9}. Un conductor de Pasión Tricolor pide sanciones para quien incumpla {F-0014 01:58:43}; Gomensoro acompañaría una moción complementaria con responsabilidad personal de los dirigentes {F-0021 00:50:40}. Qué cubre un sobrecosto: [[#sobrecosto|la pregunta del sobrecosto]].",
+ "Mayoría especial de la Directiva": "La v1 pedía el voto unánime de los once directivos {F-0007 p.8}; según Gomensoro, pasó de 9 a 11 el 29/09 {F-0021 00:02:05}. La v2 la elimina y la reemplaza por una segunda Asamblea obligatoria {F-0026 p.5}.",
  "Umbral de la reforma del Estatuto": "Singlet: más de USD 2 M {F-0017 00:05:19}. Aldabalde: 2,5 M {F-0020 00:17:00}. Decurnex: “2 millones de UI, que estamos hablando de 3 millones de dólares” {F-0022 00:19:41}, una cuenta que no parece cerrar. Falta el texto de la reforma.",
 }
 
 COINCIDEN = [
  ("Ingresos a valor presente", "unos 104 M según Aldabalde; 103 M según Bardanca", "{F-0014 01:44:58} {F-0017 00:31:30}"),
  ("Palcos en 30 años", "93 M, con renovaciones que vencen en distintas fechas", "{F-0015 00:09:37} {F-0014 01:44:58} {F-0020 00:29:40}"),
- ("Flujos propios solo para el estadio", "lo dice la moción y lo piden los críticos", "{F-0007 p.7} {F-0021 00:01:04} {F-0022 00:06:40}"),
+ ("Flujos propios solo para el estadio", "lo dice la moción, en un fideicomiso propio, y lo piden los críticos", "{F-0026 p.3-4} {F-0021 00:01:04} {F-0022 00:06:40}"),
  ("Repago si los negocios rinden menos", "se estira, a unos 15 años", "{F-0022 00:29:46} {F-0016 00:24:54} {F-0020 00:36:44}"),
  ("Proyecto ejecutivo", "cuesta unos 2 M", "{F-0016 00:21:22} {F-0022 00:02:46} {F-0021 00:13:37}"),
  ("Techo", "unos 20 M o un 22 a 23% según Aldabalde; 21,5 M según Singlet", "{F-0014 00:53:46} {F-0020 00:08:26} {F-0017 01:41:45}"),
@@ -280,7 +283,7 @@ COINCIDEN = [
 
 FALTA = [
  ("Modelo económico financiero", "Costo vigente, cuota, aporte voluntario, supuestos comerciales. Según Aldabalde, CPA está agregando los análisis que pidió la Directiva"),
- ("Votación de la Directiva sobre la moción", "Acta: 7 a 4 según Gomensoro"),
+ ("Votación de la Directiva sobre la moción", "Acta de la v1: 7 a 4 según Gomensoro. v2: 11 a 11 según la prensa, sin fuente registrada"),
  ("Versión revisada de la moción alternativa", "Si incluye el 75% y una Asamblea por etapa, como dice Decurnex"),
  ("Material entregado a la Directiva el 11/03/2026", "Qué incluye el costo, ocupación del estacionamiento, techo"),
  ("Excel de CPA “evaluación unidad de negocio v3” e informe de CPA", "Valor de cada negocio, el “error en la asignación”, solo estadio"),
@@ -308,7 +311,7 @@ POSTURAS = [
   "{F-0014 01:24:49}"),
 ]
 
-FUENTES = ["F-0003", "F-0004", "F-0007", "F-0011", "F-0012", "F-0014", "F-0015", "F-0016", "F-0017", "F-0018", "F-0019", "F-0020", "F-0021", "F-0022", "F-0023"]
+FUENTES = ["F-0003", "F-0004", "F-0026", "F-0007", "F-0011", "F-0012", "F-0014", "F-0015", "F-0016", "F-0017", "F-0018", "F-0019", "F-0020", "F-0021", "F-0022", "F-0023"]
 
 def src_link(fid):
     if fid in PRIVADAS:
@@ -478,14 +481,14 @@ P('<main class="wrap">')
 P('''<header class="hero">
   <p class="eyebrow">Gran Parque Central · Master Plan · Asamblea del 24 de octubre</p>
   <h1>Qué se vota el 24 de octubre</h1>
-  <p class="lede">El 29 de septiembre el club publicó la moción que considera la Asamblea General Extraordinaria. Acá está artículo por artículo, con la página de cada cita, qué responde a las preguntas del debate y qué deja abierto.</p>
+  <p class="lede">El 5 de octubre el club publicó la versión 2 de la moción que considera la Asamblea General Extraordinaria, que reemplaza a la del 29 de septiembre. Acá está qué cambió, artículo por artículo, con la página de cada cita, qué responde a las preguntas del debate y qué deja abierto.</p>
   <dl class="facts">
     <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
-    <div><dt>Moción</dt><dd>''' + R("Publicada el 29/09/2026 · 9 páginas {F-0007}") + '''</dd></div>
+    <div><dt>Moción</dt><dd>''' + R("Versión 2 · publicada el 05/10/2026 · 6 páginas {F-0026}") + '''</dd></div>
     <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
   </dl>
   <nav class="toc" aria-label="Secciones">
-    <a href="#resumen">En resumen</a><a href="#obra">Para que empiece la obra</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#otra-mocion">Aparte: otra moción</a><a href="#fuentes">Fuentes</a>
+    <a href="#resumen">En resumen</a><a href="#cambios">Qué cambió</a><a href="#obra">Para que empiece la obra</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#otra-mocion">Aparte: otra moción</a><a href="#fuentes">Fuentes</a>
   </nav>
   <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a><a class="cta" href="anteproyecto/">El anteproyecto: qué se construye y en qué orden →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
 </header>''')
@@ -495,12 +498,16 @@ for x in M.EN_CORTO:
     P(f'<li>{R(x)}</li>')
 P('</ul></section>')
 
+P('<section id="cambios" class="sec"><h2>Qué cambió de la versión 1 a la 2</h2><p class="sec-intro">La v1 se publicó el 29/09 y la v2 el 05/10. Comparación propia, palabra por palabra.</p><ul class="corto">')
+for x in M.CAMBIOS:
+    P(f'<li>{R(x)}</li>')
+P('</ul></section>')
 
-P('<section id="obra" class="sec"><h2>Qué tiene que pasar para que empiece la obra</h2><p class="sec-intro">Según la moción, todo esto, y se repite en cada etapa.</p><ol class="obra">')
+P('<section id="obra" class="sec"><h2>Qué tiene que pasar para que empiece la obra</h2><p class="sec-intro">Según la moción, en este orden. Las condiciones de cada etapa se repiten en todas.</p><ol class="obra">')
 for t, x in M.OBRA:
     P(f'<li><strong>{html.escape(t)}:</strong> {R(x)}</li>')
 P(f'</ol><p class="sec-intro">{R(M.OBRA_PLAZO)}</p>')
-P('<h3>¿Vuelve a votar la Asamblea?</h3><p>Solo en estos casos:</p><ul class="falta">')
+P('<h3>¿Vuelve a votar la Asamblea?</h3><p>En estos casos:</p><ul class="falta">')
 for t, r in M.VUELVE:
     P(f'<li><strong>{html.escape(t)}</strong><span>{R(r)}</span></li>')
 P(f'</ul><p class="sec-intro">{R(M.VUELVE_NOTA)}</p></section>')
@@ -508,7 +515,7 @@ P(f'</ul><p class="sec-intro">{R(M.VUELVE_NOTA)}</p></section>')
 P('<section id="articulos" class="sec"><h2>Artículo por artículo</h2><p class="sec-intro">La parte que se vota es la resolución, en diez artículos. Resumen propio; cada enlace abre la página del PDF oficial.</p><ol class="arts">')
 for num, tit, txt, pag, deb in M.ARTICULOS:
     link = f'<a class="more" href="debate/detalle-{deb[0]}.html">En el debate: {html.escape(deb[1])}</a>' if deb else ""
-    P(f'<li class="art"><span class="num">{num}</span><div><h3>{html.escape(tit)}</h3><p>{R(txt)} {R("{F-0007 " + pag + "}")}</p>{link}</div></li>')
+    P(f'<li class="art"><span class="num">{num}</span><div><h3>{html.escape(tit)}</h3><p>{R(txt)} {R("{" + M.FUENTE + " " + pag + "}")}</p>{link}</div></li>')
 P('</ol></section>')
 
 P('<section id="debate" class="sec"><h2>Qué responde a las preguntas del debate</h2><p class="sec-intro">Las preguntas son las del <a href="debate/">contrapunto</a>. Cada una enlaza a su página de detalle.</p><div class="resp">')
@@ -521,7 +528,7 @@ for t, x in M.NO_DICE:
     P(f'<li><strong>{html.escape(t)}</strong><span>{R(x)}</span></li>')
 P('</ul></section>')
 
-P('<section id="hechos" class="sec"><h2>Datos de la moción, por verificar</h2><p class="sec-intro">Los antecedentes de la moción traen afirmaciones de hecho. Se verifican como cualquier otra, con la misma vara para el club.</p><div class="table-wrap"><table><thead><tr><th scope="col">Dato</th><th scope="col">Estado</th><th scope="col">Contraste</th></tr></thead><tbody>')
+P('<section id="hechos" class="sec"><h2>Datos de la moción, por verificar</h2><p class="sec-intro">El preámbulo de la moción y lo que se informó sobre su votación traen afirmaciones de hecho. Se verifican como cualquier otra, con la misma vara para el club.</p><div class="table-wrap"><table><thead><tr><th scope="col">Dato</th><th scope="col">Estado</th><th scope="col">Contraste</th></tr></thead><tbody>')
 for t, r, e, x in M.HECHOS:
     P(f'<tr><th scope="row">{html.escape(t)} <span class="refs">{R(r)}</span></th><td>{chip(e)}</td><td>{R(x)}</td></tr>')
 P('</tbody></table></div></section>')
@@ -536,7 +543,7 @@ P('<section id="otra-mocion" class="sec aparte"><h2>Aparte: la moción de la agr
 P(f'<p class="aviso-alt">{R(M.ALT_AVISO)}</p><ul class="corto">')
 for x in M.ALT_RESUMEN:
     P(f'<li>{R(x)}</li>')
-P('</ul><div class="table-wrap"><table><thead><tr><th scope="col">Tema</th><th scope="col">Moción oficial</th><th scope="col">Moción Atilio García</th></tr></thead><tbody>')
+P('</ul><div class="table-wrap"><table><thead><tr><th scope="col">Tema</th><th scope="col">Moción oficial, v2</th><th scope="col">Moción Atilio García</th></tr></thead><tbody>')
 for t, oficial, alt in M.ALT_TABLA:
     P(f'<tr><th scope="row">{html.escape(t)}</th><td>{R(oficial)}</td><td>{R(alt)}</td></tr>')
 P('</tbody></table></div><h3>Qué opinan de ella</h3><div class="posturas">')
@@ -590,7 +597,7 @@ Q('<header class="hero">'
   '<p class="lede">El anteproyecto etapa por etapa, con la página de cada dato, y cómo se compara con lo que dijeron las partes y con lo que pide la moción.</p>'
   '<dl class="facts">'
   f'<div><dt>Documento</dt><dd>{R("Memoria del concurso de ideas · 121 páginas {F-0004}")}</dd></div>'
-  '<div><dt>Fechas</dt><dd>Junio de 2025 · publicado el 23/09/2026</dd></div>'
+  '<div><dt>Fechas</dt><dd>Junio de 2025 · publicado el 23/09/2026 · versión 2 el 29/09/2026</dd></div>'
   f'<div><dt>Estado</dt><dd>Preliminar · actualizado el {ACTUALIZADO}</dd></div>'
   '</dl>'
   '<nav class="toc" aria-label="Secciones"><a href="#resumen">En resumen</a><a href="#etapas">Las 14 etapas</a><a href="#orden">El orden y la moción</a><a href="#contraste">Contra lo que se dijo</a><a href="#cuentas">Las cuentas</a><a href="#no-trae">Qué no trae</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a></nav>'

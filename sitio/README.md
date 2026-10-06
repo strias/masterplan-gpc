@@ -2,7 +2,7 @@
 
 Sitio estático con dos partes:
 
-- **Portada** (`index.html`): la moción oficial ([F-0007](../fuentes/F-0007-mocion-asamblea.md)) artículo por artículo, qué cambió respecto del borrador, qué responde a las preguntas del debate, qué no dice, sus datos por verificar y un análisis marcado como opinión.
+- **Portada** (`index.html`): la moción oficial, versión 2 ([F-0026](../fuentes/F-0026-mocion-asamblea-v2.md)), artículo por artículo, qué cambió respecto de la versión 1 ([F-0007](../fuentes/F-0007-mocion-asamblea.md)), qué responde a las preguntas del debate, qué no dice, sus datos por verificar y un análisis marcado como opinión.
 - **Anteproyecto** (`anteproyecto/`): las 14 etapas del anteproyecto ([F-0004](../fuentes/F-0004-anteproyecto.md)), su orden frente a la moción, qué se dijo en el debate contra lo que dice el documento y sus cuentas.
 - **Debate** (`debate/`): el "Contrapunto del Master Plan": preguntas clave, respuestas de cada parte con enlace al minuto exacto, en qué coinciden, qué falta verificar y una página de detalle por pregunta. Resume [`analisis/contrapunto-master-plan.md`](../analisis/contrapunto-master-plan.md).
 
@@ -22,4 +22,4 @@ El análisis de cada detalle es opinión de Claude y está marcado como tal. Ver
 
 Publicación: los HTML se copian tal cual al servidor. La configuración del hosting y del dominio no forma parte de este repositorio.
 
-Estado: preliminar, al 2026-09-29.
+Estado: preliminar, al 2026-10-06.
