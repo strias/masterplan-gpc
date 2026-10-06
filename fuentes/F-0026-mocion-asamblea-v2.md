@@ -35,7 +35,7 @@ Sigue aprobando el Master Plan como marco. Los cambios principales son estos:
 
 Páginas del PDF: p. 1, preámbulo; p. 2-3, PRIMERO y SEGUNDO; p. 3, TERCERO; p. 4, CUARTO; p. 5, QUINTO y SEXTO; p. 6, SEPTIMO a DECIMO.
 
-- **Preámbulo** (p. 1): VISTO, tres RESULTANDO, tres CONSIDERANDO y ATENTO. Reemplaza los antecedentes, fundamentos y alcance de la v1, que eran casi cuatro páginas. Ya no menciona la encuesta, el concurso de 1957, el Consejo Asesor ni los contactos con financiadores. Sí dice que la CPO y la Directiva aprobaron el proyecto por unanimidad (RESULTANDO II), sin fechas.
+- **Preámbulo** (p. 1): VISTO, tres RESULTANDO, tres CONSIDERANDO y ATENTO. Reemplaza los antecedentes, fundamentos y alcance de la v1, que eran casi cuatro páginas. Ya no da el detalle de la encuesta (solo "etapas de consulta"), ni menciona el concurso de 1957, el Consejo Asesor ni los contactos con financiadores. Sí dice que la CPO y la Directiva aprobaron el proyecto por unanimidad (RESULTANDO II), sin fechas.
 - **PRIMERO** (p. 2): aprueba el Master Plan como marco. Es nuevo que la aprobación "no constituye una obligación de construir todas las unidades". Las unidades "podrán adaptarse, postergarse o excluirse" por razones fundadas, "de acuerdo con el artículo OCTAVO".
 - **SEGUNDO** (p. 2-3):
   - Prioriza las etapas del estadio "y su infraestructura necesaria". Esto no impide hacer obras habilitantes o unidades complementarias cuando se justifique.
