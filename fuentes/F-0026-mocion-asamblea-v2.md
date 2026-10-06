@@ -87,7 +87,7 @@ Páginas del PDF: p. 1, preámbulo; p. 2-3, PRIMERO y SEGUNDO; p. 3, TERCERO; p.
 
 ## Notas
 
-- **Según el autor (2026-10-05):** la Directiva votó esta versión por unanimidad, 11 a 11. Reemplaza a la original, se hizo tomando en cuenta la moción de la agrupación Atilio García y esa agrupación está conforme. **Falta fuente pública:** ni el PDF ni el sitio dicen nada de la votación ni del acuerdo. El título interno del archivo ("MOCIÓN GPC CONSENSO") apunta a un acuerdo, pero no lo prueba.
+- **Votación en la Directiva:** según el autor (2026-10-05), la Directiva votó esta versión por unanimidad, 11 a 11. Reemplaza a la original, se hizo tomando en cuenta la moción de la agrupación Atilio García y esa agrupación está conforme. El autor dice que salió así en todos los medios y que nadie lo desmintió. **Pendiente:** todavía no hay ninguna nota de prensa ni entrevista registrada en `fuentes/`, y ni el PDF ni el sitio dicen nada de la votación ni del acuerdo. El título interno del archivo ("MOCIÓN GPC CONSENSO") apunta a un acuerdo, pero no lo prueba.
 - **Referencias internas que no cierran:**
   - CUARTO 2 remite al "numeral 7 de la presente cláusula", pero CUARTO tiene seis numerales.
   - TERCERO habla de los fondos reservados "conforme al artículo CUARTO, numeral 5)", pero esos fondos están en el numeral 4; el 5 es la restitución de flujos. Parece que quedó la numeración de la v1.

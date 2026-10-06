@@ -37,6 +37,7 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 | 2026-09-29 | La Directiva vota la moción 7 a 4 y ese día cambia la mayoría especial de 9 a 11 votos | [F-0021](../fuentes/F-0021-pasion-tricolor-gomensoro.md), 00:01:58 |
 | 2026-09-29 | Según Aldabalde, la Directiva votaría la moción (previsto); después se publica | [F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:38:47 |
 | 2026-09-29 | Se publica la moción oficial en el sitio de la asamblea. Pide unanimidad de los once directivos, no 9 de 11 como el borrador | [F-0007](../fuentes/F-0007-mocion-asamblea.md) |
+| 2026-09-29 | Se publica la versión 2 del anteproyecto: erratas, datos que faltaban y correcciones (hinchada visitante en la Scarone, techo de la etapa 13) | [F-0027](../fuentes/F-0027-anteproyecto-v2.md) |
 | 2026-09-30 | Reunión informativa virtual para socios, con Aldabalde y otros dos expositores, y preguntas de socios | [F-0020](../fuentes/F-0020-reunion-informativa-2026-09-30.md) |
 | 2026-09-30 | Gomensoro en Pasión Tricolor defiende la moción y critica la alternativa | [F-0021](../fuentes/F-0021-pasion-tricolor-gomensoro.md) |
 | 2026-09-30 | Según Decurnex, se le entrega al presidente Vairo una versión revisada de la moción alternativa | [F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md), 00:16:46 |
@@ -44,6 +45,7 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 | 2026-10-01 | Circula en X el texto de la moción de la agrupación Atilio García | [F-0023](../fuentes/F-0023-mocion-atilio-garcia.md) |
 | 2026-10-05 | Se publica la versión 2 de la moción, que reemplaza a la v1. Saca la unanimidad de los once directivos, agrega una Asamblea posterior obligatoria y un proyecto ejecutivo del estadio, con y sin techo, como primera etapa | [F-0026](../fuentes/F-0026-mocion-asamblea-v2.md) |
 | 2026-10-05 | Según el autor, la Directiva vota la v2 por unanimidad, 11 a 11, con la conformidad de la agrupación Atilio García (falta fuente pública) | [F-0026](../fuentes/F-0026-mocion-asamblea-v2.md) |
+| 2026-10-08 | Reunión informativa híbrida (Paddock y online); reemplaza a las del 6/10 y 7/10 | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |
 | 2026-10-24 | **Asamblea General Extraordinaria** que considera la moción | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |
 
 Pendiente de publicación al 2026-09-29: el modelo económico financiero ([F-0008](../fuentes/F-0008-modelo-economico-financiero.md)).

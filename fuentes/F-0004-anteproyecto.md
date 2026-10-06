@@ -8,7 +8,10 @@ fecha: 2026-09-23        # publicación a socios (versión 1)
 consultada: 2026-09-28
 url: https://asambleagpc.nacional.uy/Anteproyecto.pdf
 archivo: archivo/Anteproyecto.pdf   # no se sube al repo (155 MB, derechos de los autores)
+reemplazada_por: F-0027   # versión 2, cargada el 2026-09-29
 ---
+
+> **Hay una versión 2** del 2026-09-29 ([F-0027](F-0027-anteproyecto-v2.md)), con la misma paginación. Corrige erratas, completa los datos que figuraban como "XXX" y cambia unos pocos datos (hinchada visitante, hospitalidad, techo de la etapa 13, codos de las etapas 4 y 5). Las citas por página de esta ficha valen para las dos versiones, salvo en esos puntos.
 
 ## Resumen
 
@@ -87,8 +90,8 @@ Memoria del proyecto ganador del concurso de ideas para el Plan Maestro. Cubre e
 
 ## Notas
 
-- **Error corregido:** en p. 51 dice que la hinchada visitante va en la "bandeja alta de la tribuna Abdón Porte"; debía decir Héctor Scarone. Lo corrigen los propios autores en [F-0006](F-0006-aclaracion-memoria.md).
+- **Error corregido:** en p. 51 dice que la hinchada visitante va en la "bandeja alta de la tribuna Abdón Porte"; debía decir Héctor Scarone. Lo corrigen los propios autores en [F-0006](F-0006-aclaracion-memoria.md) y en la versión 2 ([F-0027](F-0027-anteproyecto-v2.md)).
 - **Posible error en p. 13:** describe la Delgado con un "techado metálico elegante", que no se ve en la imagen satelital ([F-0025](F-0025-google-maps-gpc.md)).
-- **Datos sin completar:** en p. 34 la superficie y la capacidad del estacionamiento, y los lugares para bicicletas, figuran como "XXX". En p. 42 la superficie de la Plaza del Hincha y la capacidad de la arena figuran como "XX", aunque en la misma página aparecen 3.969 m² y 4.730 personas.
+- **Datos sin completar:** en p. 34 la superficie y la capacidad del estacionamiento, y los lugares para bicicletas, figuran como "XXX". En p. 42 la superficie de la Plaza del Hincha y la capacidad de la arena figuran como "XX", aunque en la misma página aparecen 3.969 m² y 4.730 personas. La versión 2 los completa: unos 25.000 m², 980 plazas y 123 bicicletas ([F-0027](F-0027-anteproyecto-v2.md)).
 - **Dos fechas:** el archivo se creó en junio de 2025 (concurso de ideas) y se publicó a los socios en septiembre de 2026. Si el proyecto cambió entre esas fechas, el documento puede no reflejarlo.
 - Parte interesada: los autores son el equipo ganador del concurso.
