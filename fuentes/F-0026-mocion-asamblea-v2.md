@@ -88,11 +88,11 @@ Páginas del PDF: p. 1, preámbulo; p. 2-3, PRIMERO y SEGUNDO; p. 3, TERCERO; p.
 ## Notas
 
 - **Votación en la Directiva:** según el autor (2026-10-05), la Directiva votó esta versión por unanimidad, 11 a 11. Reemplaza a la original, se hizo tomando en cuenta la moción de la agrupación Atilio García y esa agrupación está conforme. El autor dice que salió así en todos los medios y que nadie lo desmintió. **Pendiente:** todavía no hay ninguna nota de prensa ni entrevista registrada en `fuentes/`, y ni el PDF ni el sitio dicen nada de la votación ni del acuerdo. El título interno del archivo ("MOCIÓN GPC CONSENSO") apunta a un acuerdo, pero no lo prueba.
-- **Referencias internas que no cierran:**
+- **Referencias internas que no cierran (dos):**
   - CUARTO 2 remite al "numeral 7 de la presente cláusula", pero CUARTO tiene seis numerales.
   - TERCERO habla de los fondos reservados "conforme al artículo CUARTO, numeral 5)", pero esos fondos están en el numeral 4; el 5 es la restitución de flujos. Parece que quedó la numeración de la v1.
-  - PRIMERO dice que las unidades se adaptan "de acuerdo con el artículo OCTAVO", pero el nuevo OCTAVO solo remite al Estatuto.
-  - RESULTANDO I dice "aprobación por de la Comisión".
+  - RESULTANDO I dice "aprobación por de la Comisión" (errata).
+- **PRIMERO y OCTAVO:** PRIMERO permite adaptar o excluir unidades "de acuerdo con el artículo OCTAVO". La remisión cierra, pero el nuevo OCTAVO solo remite al Estatuto, así que qué cambios de unidades vuelven a la Asamblea depende del Estatuto, que no tenemos registrado.
 - **Qué garantías se suman y cuáles se quitan:** se agregan la Asamblea posterior obligatoria, el fideicomiso propio del estadio, la información mensual y la exclusión expresa de las cuotas. Se quitan la unanimidad de los once, la lista de supuestos del OCTAVO y la prohibición del DECIMO de reducir garantías sin una nueva Asamblea. Este es un registro de cambios en el texto; si en conjunto la v2 protege más o menos al club es un juicio de valor y queda para la fase de análisis.
 - Sigue sin cifras de costo, financiamiento, ingresos ni aporte de socios. Sigue sin decir si los "aportes extraordinarios de socios" serían voluntarios.
 - Es un documento de parte, igual que la v1.

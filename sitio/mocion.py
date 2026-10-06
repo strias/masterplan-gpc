@@ -23,8 +23,8 @@ CAMBIOS = [
  "**Se quitan dos garantías de la v1.** La lista de cambios que obligaban a volver a la Asamblea ahora remite solo al Estatuto {F-0026 p.6}; antes nombraba deuda, garantías, ingresos ordinarios y propiedad de los bienes {F-0007 p.9}. Y desaparece la frase que prohibía reducir garantías sin una nueva Asamblea {F-0007 p.9}.",
  "**Más información:** mensual a la Directiva (antes trimestral), con detalle de costos por fase y de los fondos del estadio {F-0026 p.6}.",
  "**El preámbulo es más corto.** Ya no trae el detalle de la encuesta ni menciona el concurso de 1957, el carácter “evolutivo” de las estimaciones de CPA Ferrere ni el Consejo Asesor {F-0026 p.1}.",
- "**Tres referencias internas no cierran.** El artículo 4°, numeral 2, exceptúa la prohibición de transferir bienes con “lo dispuesto en el numeral 7”, que no existe. El 3° remite al numeral 5 por los fondos del estadio, que están en el 4. El 1° remite al 8° para excluir unidades, pero el 8° ya no trata eso {F-0026 p.2-4}.",
- "Según la prensa, la Directiva la votó por unanimidad, 11 a 11, con la conformidad de la agrupación Atilio García. El documento no lo dice y todavía no registramos la fuente.",
+ "**Dos referencias internas no cierran.** El artículo 4°, numeral 2, exceptúa la prohibición de transferir bienes con “lo dispuesto en el numeral 7”, que no existe {F-0026 p.4}. El 3° remite al numeral 5 por los fondos del estadio, que están en el 4 {F-0026 p.3}. Además, el 1° permite excluir unidades “de acuerdo con el artículo OCTAVO”, que ahora solo remite al Estatuto {F-0026 p.2} {F-0026 p.6}.",
+ "**Pendiente:** se informó que la Directiva la votó por unanimidad, 11 a 11, con la conformidad de la agrupación Atilio García. El documento no lo dice y todavía no registramos una fuente.",
 ]
 
 ARTICULOS = [
@@ -78,7 +78,7 @@ NO_DICE = [
  ("Fondos que no alcanzan a mitad de una etapa", "Prevé el comienzo, no el medio de la obra {F-0026 p.5}."),
  ("Etapas posteriores", "La Asamblea posterior es para “las etapas propuestas para su ejecución inicial” {F-0026 p.5}. No dice si las siguientes vuelven a los socios."),
  ("Sanciones por incumplir", "Ninguna. Aldabalde dijo que van en el Estatuto {F-0014 01:59:47}."),
- ("Votación de la Directiva", "El documento no dice cómo se aprobó ni lleva firma. La v1 salió 7 a 4, según Gomensoro {F-0021 00:01:58}. De la v2, la prensa informa que salió 11 a 11; falta registrar la fuente."),
+ ("Votación de la Directiva", "El documento no dice cómo se aprobó ni lleva firma. La v1 salió 7 a 4, según Gomensoro {F-0021 00:01:58}. De la v2 se informó que salió 11 a 11; todavía no registramos una fuente."),
 ]
 
 # Afirmaciones de hecho del preámbulo. Estados del debate (ESTADOS en build.py).
@@ -87,8 +87,8 @@ HECHOS = [
   "La v1 daba fechas: 2/7/2025 y 4/8/2025 {F-0007 p.1}. Coincide con lo que dijo Aldabalde, presidente de la CPO: “agosto” y unanimidad {F-0014 00:53:14}. Falta una fuente independiente, como el acta de la Directiva. Un conductor de Pasión Tricolor habla de una aprobación unánime “en cuanto a la idea” {F-0019 00:13:28}."),
  ("Unas cinco hectáreas", "{F-0026 p.1}", "consistente",
   "El anteproyecto da 48.000 m² de terreno {F-0004 p.15}."),
- ("La v2 se votó 11 a 11, con conformidad de la agrupación Atilio García", "prensa", "pendiente",
-  "Lo informa la prensa y nadie lo desmintió, pero ni el PDF ni el sitio del club lo dicen. Falta registrar la fuente."),
+ ("La v2 se votó 11 a 11, con conformidad de la agrupación Atilio García", "sin fuente registrada", "pendiente",
+  "Se informó así, pero ni el PDF ni el sitio del club lo dicen. Falta registrar la fuente."),
 ]
 
 AVISO = "Este análisis es de Claude, la IA que asiste al proyecto, y es opinión. Se apoya en la moción y en las fuentes enlazadas y, donde lo indica la etiqueta <span class=\"cg\">conocimiento general</span>, en conocimiento general de finanzas y fideicomisos que no sale de una fuente registrada. No es una opinión jurídica."
@@ -97,7 +97,7 @@ ANALISIS = [
  "**Es una moción de consenso, y se nota en lo que suma.** Toma lo central de la alternativa de la agrupación Atilio García {F-0023}: proyecto ejecutivo del estadio primero, techo costeado aparte, cada unidad evaluada por separado, fondos del estadio en un vehículo propio y una nueva Asamblea con los números {F-0026 p.2-5}. La distancia entre las dos posturas se achica a una sola cosa: el 24 de octubre se aprueba el Master Plan como marco, y la alternativa no lo aprobaba.",
  "**Cambia un control por otro.** La v1 frenaba cada decisión central si un solo directivo se oponía {F-0007 p.8}. La v2 saca ese veto y pone a los socios a decidir el alcance definitivo, con ejecutivos, contratos y financiamiento a la vista {F-0026 p.5}. Es lo que pedían los críticos, saber qué se aprueba antes de aprobarlo {F-0015 00:11:39}, aunque llega en una segunda votación. La contracara: entre el 24 de octubre y esa Asamblea, la Directiva decide sin mayoría especial.",
  "**Se aflojan dos candados, y quedan atados al Estatuto.** La v1 nombraba qué cambios volvían a la Asamblea (más deuda, garantías del club, ingresos ordinarios, propiedad de los bienes) y prohibía reducir garantías sin una nueva Asamblea {F-0007 p.9}. La v2 remite al Estatuto {F-0026 p.6}, que no tenemos. Si el Estatuto ya exige Asamblea para esos casos, no cambia nada; si no, la protección es menor. Conviene que alguien con el Estatuto en la mano lo aclare antes del 24.",
- "**Las referencias que no cierran no son un detalle.** La prohibición de transferir bienes del club tiene una excepción que remite a un “numeral 7” que no existe {F-0026 p.4}. Parece un resto de un borrador, pero en el texto que se vota es una puerta abierta sin definir. Lo mismo, en menor medida, con la remisión al numeral 5 por los fondos del estadio {F-0026 p.3}. Son errores fáciles de corregir y deberían corregirse antes de votar.",
+ "**Las dos referencias que no cierran no son un detalle.** La prohibición de transferir bienes del club tiene una excepción que remite a un “numeral 7” que no existe {F-0026 p.4}. Parece un resto de un borrador, pero en el texto que se vota es una puerta abierta sin definir. Lo mismo, en menor medida, con la remisión al numeral 5 por los fondos del estadio {F-0026 p.3}. Son errores fáciles de corregir y deberían corregirse antes de votar.",
  "**El aporte de socios sigue siendo el punto más abierto.** La v2 excluye las cuotas ordinarias pero admite “aportes extraordinarios de socios destinados específicamente a estas obras” {F-0026 p.4}. Una sobrecuota con permanencia por defecto, como la que describió Gomensoro {F-0021 00:20:03}, parece entrar en esa categoría. Bardanca sostiene que un financiador pide un aporte propio que no sea voluntario {F-0017 00:54:19}. Ver [[>debate/detalle-cuota.html|la cuota]].",
  "**El proyecto ejecutivo no tiene plazo ni precio.** Es la pieza central de la v2, pero la moción no dice cuánto cuesta ni cuándo tiene que estar {F-0026 p.2-3}. Sin plazo, la Asamblea posterior puede tardar; el único reloj es la caducidad de 30 meses {F-0026 p.6}.",
  "**Sin capital del club para sobrecostos, el riesgo lo toma otro.** Un financiador sin garantía del club suele pedir más contingencia, más tasa o menos alcance [[CG]]. Es probable que el financiamiento real sea más caro o más chico que el modelado; con la v2, al menos, eso se ve en la Asamblea posterior. Ver [[>debate/detalle-sobrecosto.html|el sobrecosto]].",
@@ -127,7 +127,7 @@ VUELVE = [
 VUELVE_NOTA = "La v1 sumaba dos casos que la v2 ya no tiene: la falta de unanimidad en la Directiva y cualquier intento de reducir una garantía {F-0007 p.8-9}. Queda abierta la reforma del Estatuto que exige 75% para proyectos de más de USD 2 M: no rige todavía, y la moción se aplica “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” {F-0026 p.1}. No tenemos el texto de la reforma para saber qué exigiría. Ver [[>debate/detalle-voto.html|la pregunta del voto]]."
 
 # Apartado: la moción de la agrupación Atilio García (F-0023). No es oficial.
-ALT_AVISO = "**No es una moción oficial.** La presentó la agrupación Atilio García, con apoyo de Decurnex, y su texto circula en X {F-0023}. Según la prensa, la versión 2 de la moción oficial se armó tomándola en cuenta y la agrupación está conforme; falta registrar la fuente. Lo que sigue la compara con la v2."
+ALT_AVISO = "**No es una moción oficial.** La presentó la agrupación Atilio García, con apoyo de Decurnex, y su texto circula en X {F-0023}. Se informó que la versión 2 de la moción oficial se armó tomándola en cuenta y que la agrupación está conforme; todavía no registramos una fuente. Lo que sigue la compara con la v2."
 ALT_RESUMEN = [
  "**Aprueba solo un proyecto ejecutivo**, en un máximo de 180 días, con el estadio analizado por separado, el costo del techo aparte y cada área adicional analizada por separado. La v2 adopta el ejecutivo del estadio primero y el techo aparte, sin plazo {F-0026 p.2-3}.",
  "**Vuelve a la Asamblea** dentro de los 60 días de recibido el proyecto ejecutivo. La v2 convoca otra Asamblea en 45 días, cuando estén también los contratos y el financiamiento {F-0026 p.5}.",

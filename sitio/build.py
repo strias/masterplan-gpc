@@ -246,7 +246,7 @@ FILAS = [
  ("Imprevistos: 20-25% o 15-18%", "distintos", "#sobrecosto"),
  ("Informe de CPA “lapidario”", "pendiente", None),
  ("Garantías de la moción", "mocion", None),
- ("Mayoría especial de la Directiva", "mocion", "#voto"),
+ ("Mayoría especial de la Directiva: la v2 la elimina", "mocion", "#voto"),
  ("Mayoría del 75%", "coinciden", "#voto"),
  ("Umbral de la reforma del Estatuto", "pendiente", "#voto"),
 ]
@@ -263,7 +263,7 @@ NOTAS = {
  "Cuentas de los 26 M y del estacionamiento": "Los componentes que da Decurnex suman 23,5 M, no 26 {F-0015 00:13:06}; en el estacionamiento, 3 M con un castigo del 30% dan 2,1 M, no 2,5 {F-0014 01:13:45}. Ver [[#cuota|la cuota]] y [[#parking|el estacionamiento]].",
  "Imprevistos: 20-25% o 15-18%": "Decurnex dijo 20 a 25% el 21/09 {F-0015 00:36:50} y 15 a 18% el 30/09 {F-0022 00:35:25}. Gomensoro habla de un ajuste de hasta 20% sobre 110 M {F-0021 00:28:17}.",
  "Garantías de la moción": "Fideicomiso separado, con uno propio para los fondos del estadio; sin hipoteca ni deuda del club; segunda Asamblea con los ejecutivos y el financiamiento; plazo de 30 meses {F-0026 p.3-6}. La v2 saca la unanimidad de la Directiva, la lista de cambios que vuelven a la Asamblea y la prohibición de reducir garantías sin una Asamblea, que estaban en la v1 {F-0007 p.8-9}. Un conductor de Pasión Tricolor pide sanciones para quien incumpla {F-0014 01:58:43}; Gomensoro acompañaría una moción complementaria con responsabilidad personal de los dirigentes {F-0021 00:50:40}. Qué cubre un sobrecosto: [[#sobrecosto|la pregunta del sobrecosto]].",
- "Mayoría especial de la Directiva": "La v1 pedía el voto unánime de los once directivos {F-0007 p.8}; según Gomensoro, pasó de 9 a 11 el 29/09 {F-0021 00:02:05}. La v2 la elimina y la reemplaza por una segunda Asamblea obligatoria {F-0026 p.5}.",
+ "Mayoría especial de la Directiva: la v2 la elimina": "La v1 pedía el voto unánime de los once directivos {F-0007 p.8}; según Gomensoro, pasó de 9 a 11 el 29/09 {F-0021 00:02:05}. La v2 la elimina y la reemplaza por una segunda Asamblea obligatoria {F-0026 p.5}.",
  "Umbral de la reforma del Estatuto": "Singlet: más de USD 2 M {F-0017 00:05:19}. Aldabalde: 2,5 M {F-0020 00:17:00}. Decurnex: “2 millones de UI, que estamos hablando de 3 millones de dólares” {F-0022 00:19:41}, una cuenta que no parece cerrar. Falta el texto de la reforma.",
 }
 
@@ -283,7 +283,7 @@ COINCIDEN = [
 
 FALTA = [
  ("Modelo económico financiero", "Costo vigente, cuota, aporte voluntario, supuestos comerciales. Según Aldabalde, CPA está agregando los análisis que pidió la Directiva"),
- ("Votación de la Directiva sobre la moción", "Acta de la v1: 7 a 4 según Gomensoro. v2: 11 a 11 según la prensa, sin fuente registrada"),
+ ("Votación de la Directiva sobre la moción", "Acta de la v1: 7 a 4 según Gomensoro. v2: se informó 11 a 11, sin fuente registrada"),
  ("Versión revisada de la moción alternativa", "Si incluye el 75% y una Asamblea por etapa, como dice Decurnex"),
  ("Material entregado a la Directiva el 11/03/2026", "Qué incluye el costo, ocupación del estacionamiento, techo"),
  ("Excel de CPA “evaluación unidad de negocio v3” e informe de CPA", "Valor de cada negocio, el “error en la asignación”, solo estadio"),
