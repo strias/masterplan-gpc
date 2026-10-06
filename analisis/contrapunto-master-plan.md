@@ -115,7 +115,7 @@ La discusión es sobre todo de **interpretación y de riesgo**, no de datos. En 
 | Versión revisada de la moción alternativa | Si incluye el 75% y una Asamblea por etapa, como dice Decurnex |
 | Evaluación de los técnicos de Decurnex | Solo estadio |
 | Acta de la Directiva del 29/09 | Votación 7 a 4 y cambio a unanimidad |
-| Comunicado o acta de la votación de la moción v2 | Si se votó 11 a 11 y si la agrupación Atilio García está conforme, como dice el autor |
+| Comunicado o acta de la votación de la moción v2 | La unanimidad la informan dos periodistas ([F-0028](../fuentes/F-0028-x-dominguez-unanimidad.md), [F-0029](../fuentes/F-0029-x-olivera-unanimidad.md)). Falta el número de votos y si la agrupación Atilio García está conforme |
 | Texto de la reforma del Estatuto y su trámite en el MEC | Mayoría para aprobar |
 | Último balance del club | Mantenimiento del Parque, pasivo |
 | Audio de [F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md) en el minuto 09:10 | ¿100 o 200 pesos? |

@@ -24,7 +24,7 @@ CAMBIOS = [
  "**Más información:** mensual a la Directiva (antes trimestral), con detalle de costos por fase y de los fondos del estadio {F-0026 p.6}.",
  "**El preámbulo es más corto.** Ya no trae el detalle de la encuesta ni menciona el concurso de 1957, el carácter “evolutivo” de las estimaciones de CPA Ferrere ni el Consejo Asesor {F-0026 p.1}.",
  "**Dos referencias internas no cierran.** El artículo 4°, numeral 2, exceptúa la prohibición de transferir bienes con “lo dispuesto en el numeral 7”, que no existe {F-0026 p.4}. El 3° remite al numeral 5 por los fondos del estadio, que están en el 4 {F-0026 p.3}. Además, el 1° permite excluir unidades “de acuerdo con el artículo OCTAVO”, que ahora solo remite al Estatuto {F-0026 p.2} {F-0026 p.6}.",
- "**Pendiente:** se informó que la Directiva la votó por unanimidad, 11 a 11, con la conformidad de la agrupación Atilio García. El documento no lo dice y todavía no registramos una fuente.",
+ "La Directiva la aprobó **por unanimidad**, según dos periodistas {F-0028} {F-0029}. El documento no lo dice. Que la agrupación Atilio García esté conforme todavía no tiene fuente.",
 ]
 
 ARTICULOS = [
@@ -78,7 +78,7 @@ NO_DICE = [
  ("Fondos que no alcanzan a mitad de una etapa", "Prevé el comienzo, no el medio de la obra {F-0026 p.5}."),
  ("Etapas posteriores", "La Asamblea posterior es para “las etapas propuestas para su ejecución inicial” {F-0026 p.5}. No dice si las siguientes vuelven a los socios."),
  ("Sanciones por incumplir", "Ninguna. Aldabalde dijo que van en el Estatuto {F-0014 01:59:47}."),
- ("Votación de la Directiva", "El documento no dice cómo se aprobó ni lleva firma. La v1 salió 7 a 4, según Gomensoro {F-0021 00:01:58}. De la v2 se informó que salió 11 a 11; todavía no registramos una fuente."),
+ ("Votación de la Directiva", "El documento no dice cómo se aprobó ni lleva firma. La v1 salió 7 a 4, según Gomensoro {F-0021 00:01:58}. La v2 se aprobó por unanimidad, según dos periodistas {F-0028} {F-0029}; falta el acta."),
 ]
 
 # Afirmaciones de hecho del preámbulo. Estados del debate (ESTADOS en build.py).
@@ -87,8 +87,10 @@ HECHOS = [
   "La v1 daba fechas: 2/7/2025 y 4/8/2025 {F-0007 p.1}. Coincide con lo que dijo Aldabalde, presidente de la CPO: “agosto” y unanimidad {F-0014 00:53:14}. Falta una fuente independiente, como el acta de la Directiva. Un conductor de Pasión Tricolor habla de una aprobación unánime “en cuanto a la idea” {F-0019 00:13:28}."),
  ("Unas cinco hectáreas", "{F-0026 p.1}", "consistente",
   "El anteproyecto da 48.000 m² de terreno {F-0004 p.15}."),
- ("La v2 se votó 11 a 11, con conformidad de la agrupación Atilio García", "sin fuente registrada", "pendiente",
-  "Se informó así, pero ni el PDF ni el sitio del club lo dicen. Falta registrar la fuente."),
+ ("La Directiva aprobó la v2 por unanimidad", "{F-0028} {F-0029}", "pendiente",
+  "Lo informan dos periodistas en X, uno citando a Carve Deportiva. Domínguez agrega que se acordó un fideicomiso para el estadio y otro para el resto, lo que coincide con el texto {F-0026 p.3}. Falta el acta o un comunicado del club, y ninguno da el número de votos."),
+ ("La agrupación Atilio García está conforme con la v2", "sin fuente registrada", "pendiente",
+  "Se informó así, pero no hay fuente registrada."),
 ]
 
 AVISO = "Este análisis es de Claude, la IA que asiste al proyecto, y es opinión. Se apoya en la moción y en las fuentes enlazadas y, donde lo indica la etiqueta <span class=\"cg\">conocimiento general</span>, en conocimiento general de finanzas y fideicomisos que no sale de una fuente registrada. No es una opinión jurídica."
@@ -105,7 +107,7 @@ ANALISIS = [
 
 LECTURA = "La versión 2 acerca a las dos partes: el estadio y su techo se estudian primero y por separado, la plata del club para el estadio queda en su propio fideicomiso y los socios vuelven a votar con los números en la mano. A cambio, saca el veto de cada directivo y deja dos garantías en manos del Estatuto. Votar el 24 de octubre es aprobar un rumbo y un procedimiento; la decisión sobre la obra llega después. Antes de votar vale pedir que se corrijan las referencias que no cierran y que se aclare qué exige el Estatuto."
 
-FUENTES_PORTADA = ["F-0026", "F-0007", "F-0003", "F-0004", "F-0014", "F-0015", "F-0016", "F-0017", "F-0019", "F-0021", "F-0022", "F-0023"]
+FUENTES_PORTADA = ["F-0026", "F-0007", "F-0028", "F-0029", "F-0003", "F-0004", "F-0014", "F-0015", "F-0016", "F-0017", "F-0019", "F-0021", "F-0022", "F-0023"]
 
 # Qué tiene que pasar para que empiece la obra (arts. 2°, 5°, 6° y 9°).
 OBRA = [
@@ -127,7 +129,7 @@ VUELVE = [
 VUELVE_NOTA = "La v1 sumaba dos casos que la v2 ya no tiene: la falta de unanimidad en la Directiva y cualquier intento de reducir una garantía {F-0007 p.8-9}. Queda abierta la reforma del Estatuto que exige 75% para proyectos de más de USD 2 M: no rige todavía, y la moción se aplica “sin perjuicio de cualquier exigencia estatutaria más rigurosa que resulte vigente” {F-0026 p.1}. No tenemos el texto de la reforma para saber qué exigiría. Ver [[>debate/detalle-voto.html|la pregunta del voto]]."
 
 # Apartado: la moción de la agrupación Atilio García (F-0023). No es oficial.
-ALT_AVISO = "**No es una moción oficial.** La presentó la agrupación Atilio García, con apoyo de Decurnex, y su texto circula en X {F-0023}. Se informó que la versión 2 de la moción oficial se armó tomándola en cuenta y que la agrupación está conforme; todavía no registramos una fuente. Lo que sigue la compara con la v2."
+ALT_AVISO = "**No es una moción oficial.** La presentó la agrupación Atilio García, con apoyo de Decurnex, y su texto circula en X {F-0023}. La versión 2 de la moción oficial, aprobada por unanimidad en la Directiva {F-0028} {F-0029}, incorpora varios de sus puntos. Se informó que la agrupación está conforme; eso todavía no tiene fuente. Lo que sigue la compara con la v2."
 ALT_RESUMEN = [
  "**Aprueba solo un proyecto ejecutivo**, en un máximo de 180 días, con el estadio analizado por separado, el costo del techo aparte y cada área adicional analizada por separado. La v2 adopta el ejecutivo del estadio primero y el techo aparte, sin plazo {F-0026 p.2-3}.",
  "**Vuelve a la Asamblea** dentro de los 60 días de recibido el proyecto ejecutivo. La v2 convoca otra Asamblea en 45 días, cuando estén también los contratos y el financiamiento {F-0026 p.5}.",

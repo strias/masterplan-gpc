@@ -44,7 +44,7 @@ Solo hechos con fuente registrada. Se completa a medida que llega material.
 | 2026-09-30 | Decurnex en Cuestión Stream, en vivo; el extracto se publica el 01/10 | [F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md) |
 | 2026-10-01 | Circula en X el texto de la moción de la agrupación Atilio García | [F-0023](../fuentes/F-0023-mocion-atilio-garcia.md) |
 | 2026-10-05 | Se publica la versión 2 de la moción, que reemplaza a la v1. Saca la unanimidad de los once directivos, agrega una Asamblea posterior obligatoria y un proyecto ejecutivo del estadio, con y sin techo, como primera etapa | [F-0026](../fuentes/F-0026-mocion-asamblea-v2.md) |
-| 2026-10-05 | Según el autor, la Directiva vota la v2 por unanimidad, 11 a 11, con la conformidad de la agrupación Atilio García (falta fuente pública) | [F-0026](../fuentes/F-0026-mocion-asamblea-v2.md) |
+| 2026-10-05 | La Directiva aprueba la v2 por unanimidad, según dos periodistas. El 11 a 11 y la conformidad de la agrupación Atilio García están pendientes de fuente | [F-0028](../fuentes/F-0028-x-dominguez-unanimidad.md), [F-0029](../fuentes/F-0029-x-olivera-unanimidad.md) |
 | 2026-10-08 | Reunión informativa híbrida (Paddock y online); reemplaza a las del 6/10 y 7/10 | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |
 | 2026-10-24 | **Asamblea General Extraordinaria** que considera la moción | [F-0003](../fuentes/F-0003-sitio-asamblea-gpc.md) |
 

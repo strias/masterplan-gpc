@@ -54,6 +54,8 @@ NOMBRE = {
     "F-0023": "Moción de la agrupación Atilio García (imagen en X)",
     "F-0024": "Infobae: el Centenario para el Mundial 2030",
     "F-0025": "Google Maps: vista satelital del Parque (captura del 01/10)",
+    "F-0028": "Diego Domínguez en X (05/10; enlace a la cuenta)",
+    "F-0029": "Martín Olivera en X, cita a Carve Deportiva (05/10; enlace a la cuenta)",
 }
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
@@ -61,6 +63,8 @@ URL = {
     "F-0006": "https://asambleagpc.nacional.uy/InformacionAdicional1.pdf",
     "F-0023": "https://pbs.twimg.com/media/HTaL8_8WYAA7_1w?format=jpg&name=large",
     "F-0025": "https://www.google.com/maps/place/Estadio+Gran+Parque+Central",
+    "F-0028": "https://x.com/Digadoma",
+    "F-0029": "https://x.com/olivera_martin1",
     "F-0024": "https://www.infobae.com/america/america-latina/2024/08/09/uruguay-cerrara-durante-dos-anos-y-medio-el-estadio-centenario-para-dejarlo-listo-para-el-mundial-2030/",
     "F-0007": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf",
     "F-0026": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria%20v2.pdf",
@@ -283,7 +287,7 @@ COINCIDEN = [
 
 FALTA = [
  ("Modelo económico financiero", "Costo vigente, cuota, aporte voluntario, supuestos comerciales. Según Aldabalde, CPA está agregando los análisis que pidió la Directiva"),
- ("Votación de la Directiva sobre la moción", "Acta de la v1: 7 a 4 según Gomensoro. v2: se informó 11 a 11, sin fuente registrada"),
+ ("Votación de la Directiva sobre la moción", "Acta de la v1: 7 a 4 según Gomensoro. v2: unanimidad según dos periodistas, sin acta ni número de votos"),
  ("Versión revisada de la moción alternativa", "Si incluye el 75% y una Asamblea por etapa, como dice Decurnex"),
  ("Material entregado a la Directiva el 11/03/2026", "Qué incluye el costo, ocupación del estacionamiento, techo"),
  ("Excel de CPA “evaluación unidad de negocio v3” e informe de CPA", "Valor de cada negocio, el “error en la asignación”, solo estadio"),
