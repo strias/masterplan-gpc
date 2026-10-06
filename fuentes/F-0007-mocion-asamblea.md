@@ -8,7 +8,10 @@ fecha: 2026-09-29        # publicación en el sitio de la asamblea
 consultada: 2026-09-29
 url: https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf
 archivo: archivo/F-0007-mocion-asamblea-2026-09-29.pdf   # no se sube al repo; el texto extraído sí: archivo/F-0007-mocion-asamblea-2026-09-29.txt
+reemplazada_por: F-0026   # versión 2, cargada el 2026-10-05
 ---
+
+> **Reemplazada.** El 2026-10-05 el sitio publicó la versión 2 de la moción ([F-0026](F-0026-mocion-asamblea-v2.md)). Lo que se vota es la v2. Esta ficha queda como registro de la v1; las diferencias están en F-0026.
 
 ## Resumen
 

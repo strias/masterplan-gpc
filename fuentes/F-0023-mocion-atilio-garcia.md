@@ -33,7 +33,9 @@ Moción alternativa de la agrupación Atilio García para la Asamblea del 24/10.
 - **Resuelve 6:** fideicomiso de propósito específico, con el mismo texto que el art. 3° de la moción oficial.
 - **Resuelve 7:** Comisión Técnico-Financiera de cuatro miembros, designada por la Directiva, que trabaje con CPA Ferrere en escenarios de sensibilidad y viabilidad.
 
-## Comparación con la moción oficial ([F-0007](F-0007-mocion-asamblea.md))
+## Comparación con la moción oficial, v1 ([F-0007](F-0007-mocion-asamblea.md))
+
+La moción oficial tiene una versión 2 del 2026-10-05 ([F-0026](F-0026-mocion-asamblea-v2.md)), que incorpora varios puntos de esta alternativa. La comparación con la v2 está en F-0026. La tabla que sigue es contra la v1.
 
 | Tema | Moción oficial | Moción Atilio García |
 |---|---|---|
@@ -58,3 +60,4 @@ Moción alternativa de la agrupación Atilio García para la Asamblea del 24/10.
   - Gomensoro dijo que tiene "plagio textual" de la oficial ([F-0021](F-0021-pasion-tricolor-gomensoro.md), 00:13:07). Es un hecho que los puntos 5 a-c y 6 repiten el texto oficial; llamarlo plagio es una valoración.
   - Gomensoro dijo que exige el proyecto ejecutivo, de "dos millones de dólares" como mínimo, como primer paso excluyente. El texto lo pone primero, pero no da costo ni dice cómo se financia. El costo de unos 2 M lo dan las dos partes ([F-0016](F-0016-espectador-aldabalde-no-tienen-plan-b.md), 00:21:22; [F-0022](F-0022-cuestion-stream-decurnex.md), 00:02:46).
 - Texto transcripto a mano desde las imágenes, con la ortografía del original.
+- **Versión 2 de la moción oficial (2026-10-05):** según el autor, se hizo tomando en cuenta esta moción y la agrupación está conforme. Falta fuente pública ([F-0026](F-0026-mocion-asamblea-v2.md)).

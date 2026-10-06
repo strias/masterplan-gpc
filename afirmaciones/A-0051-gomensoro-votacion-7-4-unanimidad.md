@@ -34,3 +34,4 @@ Pendiente (fase 1).
 ## Historial
 
 - 2026-10-01: registro inicial.
+- 2026-10-05: la versión 2 de la moción ([F-0026](../fuentes/F-0026-mocion-asamblea-v2.md)) elimina la unanimidad de los once y la reemplaza por una Asamblea posterior obligatoria. La afirmación describe la v1 y sigue siendo un dato de esa fecha.
