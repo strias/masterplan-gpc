@@ -1,6 +1,6 @@
 import html, os, re
 
-ACTUALIZADO = "06/10/2026"
+ACTUALIZADO = "08/10/2026"
 TITULO = "Contrapunto del Master Plan"
 DESCRIPCION = "Preguntas, respuestas y fuentes del debate sobre el Master Plan del Gran Parque Central."
 HEAD = open("head.html").read()  # fuentes y estilos compartidos
@@ -40,7 +40,8 @@ def documento(titulo, descripcion, cuerpo, extra="", ruta="", imagen=None):
 
 YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
       "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao",
-      "F-0021": "SOkgIuhLvB4", "F-0022": "X_yghFec4j8"}
+      "F-0021": "SOkgIuhLvB4", "F-0022": "X_yghFec4j8",
+      "F-0030": "x5rYmjvAyRQ", "F-0031": "EL0lTOTyOW0"}
 NOMBRE = {
     "F-0003": "Sitio oficial de la Asamblea", "F-0004": "Anteproyecto (PDF oficial)",
     "F-0006": "Aclaración de los autores (PDF)", "F-0007": "Moción oficial, versión 1 (PDF)",
@@ -56,6 +57,7 @@ NOMBRE = {
     "F-0025": "Google Maps: vista satelital del Parque (captura del 01/10)",
     "F-0028": "Diego Domínguez en X (05/10; enlace a la cuenta)",
     "F-0029": "Martín Olivera en X, cita a Carve Deportiva (05/10; enlace a la cuenta)",
+    "F-0030": "Pasión Tricolor, Britos (08/10)", "F-0031": "Trimax Live, Decurnex (08/10)",
 }
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
@@ -188,12 +190,12 @@ PREGUNTAS = [
             ("Conductor de Pasión Tricolor", "“¿Con los flujos de Nacional solamente construir el parque sin todos los negocios anexos, eso para vos es inviable?”", "{F-0014 02:14:26}")],
   resp=[
    ("Aldabalde", "“Para hacer el parque solo no dan los números.” Con los palcos hay 17 M en 10 años, unos 13 M a valor presente. El 30/09: “el parque solo no se puede hacer; se puede hacer […] un parche”, o ir “de a pedacitos” en “10, 15, 20 años”.", "{F-0016 00:16:13} {F-0014 02:14:43} {F-0020 00:42:23} {F-0020 00:43:04}"),
-   ("Decurnex", "Un grupo de técnicos evaluó si el parque se puede terminar con los flujos propios del club: “la respuesta es que sí. Capaz que sin techo, seguramente sin techo”. Los demás negocios, con inversores y sin riesgo para el club.", "{F-0022 00:12:32} {F-0022 00:13:02} {F-0022 00:06:40}"),
+   ("Decurnex", "Un grupo de técnicos evaluó si el parque se puede terminar con los flujos propios del club: “la respuesta es que sí. Capaz que sin techo, seguramente sin techo”. Los demás negocios, con inversores y sin riesgo para el club. El 08/10: el estadio sin techo se puede hacer con los ingresos propios y “un aporte del socio […] de unos 8 millones de dólares”.", "{F-0022 00:12:32} {F-0022 00:13:02} {F-0022 00:06:40} {F-0031 00:21:17}"),
    ("Bardanca", "Trabajan sobre el Excel de CPA con cambios, por ejemplo sin techo, y “tenemos indicios de que se podría llegar a estructurar”.", "{F-0017 01:20:05}"),
    ("Gomensoro", "Si no sale la moción principal, estaría dispuesto a considerar otro proyecto para el estadio, “porque yo quiero que haya obras y no necesariamente que incluyan todo”.", "{F-0021 00:17:48}"),
   ],
   estado=["pendiente"],
-  lectura="Falta el análisis de CPA del escenario de solo estadio y la evaluación de los técnicos que cita Decurnex, que no está publicada. Las dos partes coinciden en que sin techo el problema cambia de escala: el techo es un 22 a 23% del costo según Aldabalde el 30/09 ({F-0020 00:08:26}), y 21,5 M según Singlet ({F-0017 01:41:45}). La moción alternativa de la agrupación Atilio García pide justamente analizar el estadio por separado y el techo aparte ({F-0023})."),
+  lectura="Falta el análisis de CPA del escenario de solo estadio y la evaluación de los técnicos que cita Decurnex, que no está publicada; tampoco hay cálculo publicado de los 8 M de aporte que dio el 08/10. Las dos partes coinciden en que sin techo el problema cambia de escala: el techo es un 22 a 23% del costo según Aldabalde el 30/09 ({F-0020 00:08:26}), y 21,5 M según Singlet ({F-0017 01:41:45}). La moción alternativa de la agrupación Atilio García pide justamente analizar el estadio por separado y el techo aparte ({F-0023})."),
  dict(id="orden", q="¿Qué se hace primero?",
   pregunta=[("Conductor de Cuestión Stream", "“¿Se puede modificar el orden? […] para que en realidad sea el parque que se empiece a construir primero, en lugar de […] el estacionamiento.”", "{F-0022 00:22:02}")],
   resp=[
@@ -219,7 +221,8 @@ PREGUNTAS = [
   resp=[
    ("Gomensoro", "Rige el Estatuto vigente, 50% más uno: una moción que pida el 75% “no tiene valor alguno”. Ve muy difícil que la reforma esté vigente el 24/10. Si hay dos mociones contradictorias, se votan en orden y, si sale la primera, la otra no se vota.", "{F-0021 00:59:59} {F-0021 01:00:48} {F-0021 00:15:13}"),
    ("Aldabalde", "La Asamblea “aprueba el master plan y aprueba un sistema de trabajo”. El 30/09: la reforma pide 75% para proyectos de más de 2,5 M, no rige hasta que la apruebe el MEC, y “capaz que hay que hacer otra asamblea cuando realmente se apruebe la ejecución”; dijo que eso lo tienen que responder los abogados.", "{F-0014 01:56:05} {F-0020 00:17:00} {F-0020 00:18:19}"),
-   ("Decurnex", "Reconoce que la reforma difícilmente esté vigente, pero el 75% es “un tema de conciencia”. Cada etapa “tiene que pasar necesariamente por asamblea”.", "{F-0022 00:21:13} {F-0022 00:20:12}"),
+   ("Decurnex", "Reconoce que la reforma difícilmente esté vigente, pero el 75% es “un tema de conciencia”. Cada etapa “tiene que pasar necesariamente por asamblea”. El 08/10: el 24/10 “no se van a aprobar números, ni […] inicios de obra”; la reforma “todavía está en el MEC” y el 75% le parece “sano”.", "{F-0022 00:21:13} {F-0022 00:20:12} {F-0031 00:15:03} {F-0031 00:25:10}"),
+   ("Britos", "La Asamblea “no habilita a iniciar ninguna obra”. Admite que el 75% “no es estatutariamente”, pero dice que va a precisar “el 75, el 80, el 90%” de los socios.", "{F-0030 01:07:05} {F-0030 01:04:53}"),
    ("Singlet", "La reforma del 7 de julio fijó el 75% para proyectos de más de USD 2 M.", "{F-0017 00:05:19}"),
   ],
   estado=["coinciden", "pendiente"],
@@ -287,7 +290,7 @@ COINCIDEN = [
 
 FALTA = [
  ("Modelo económico financiero", "Costo vigente, cuota, aporte voluntario, supuestos comerciales. Según Aldabalde, CPA está agregando los análisis que pidió la Directiva"),
- ("Votación de la Directiva sobre la moción", "Acta de la v1: 7 a 4 según Gomensoro. v2: unanimidad según dos periodistas, sin acta ni número de votos"),
+ ("Votación de la Directiva sobre la moción", "Acta de la v1: 7 a 4 según Gomensoro. v2: unanimidad según dos periodistas; el directivo Britos dice que la votaron “los 11 directivos”. Falta el acta"),
  ("Versión revisada de la moción alternativa", "Si incluye el 75% y una Asamblea por etapa, como dice Decurnex"),
  ("Material entregado a la Directiva el 11/03/2026", "Qué incluye el costo, ocupación del estacionamiento, techo"),
  ("Excel de CPA “evaluación unidad de negocio v3” e informe de CPA", "Valor de cada negocio, el “error en la asignación”, solo estadio"),

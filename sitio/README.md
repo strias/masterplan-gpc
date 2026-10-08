@@ -22,4 +22,4 @@ El análisis de cada detalle es opinión de Claude y está marcado como tal. Ver
 
 Publicación: los HTML se copian tal cual al servidor. La configuración del hosting y del dominio no forma parte de este repositorio.
 
-Estado: preliminar, al 2026-10-06.
+Estado: preliminar, al 2026-10-08.

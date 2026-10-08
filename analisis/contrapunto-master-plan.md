@@ -35,6 +35,8 @@ El estadio es lo que quieren los socios, y ahí deben ir los recursos propios de
 
 No hay un costo cierto: el 21/09 habló de más de 150 M con una cotización de RDA; el 30/09, de 150 a 160 M y de una cotización de 170 M "con todos los recados" ([A-0040](../afirmaciones/A-0040-decurnex-cotizacion-170.md)). Pide el proyecto ejecutivo antes de avanzar, que los flujos propios vayan a un fideicomiso aparte y una aprobación del 75%. Apoya la moción alternativa, aunque busca una moción única. ([F-0015](../fuentes/F-0015-territorio-nacional-decurnex.md), [F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md), [ficha](../actores/jose-decurnex.md))
 
+Después de la moción v2, aprobada por unanimidad, dice que nunca estuvo en contra del proyecto y que el 24/10 se vota un marco, sin números ni inicio de obras. Sostiene que el estadio sin techo se puede hacer con los ingresos propios y unos 8 M de aporte de los socios, sin mostrar el cálculo ([F-0031](../fuentes/F-0031-trimax-decurnex.md), 00:15:03, 00:21:17, 00:37:22).
+
 ### Enrique Singlet y Joaquín Bardanca (contadores, agrupación Atilio García)
 
 Se registran aparte de Decurnex: dicen que no son sus asesores y que en la elección fueron en la lista de Gomensoro ([F-0017](../fuentes/F-0017-pasion-tricolor-singlet-bardanca.md), 00:25:05 y 01:24:00). Su crítica es técnica y la apoyan en los documentos de CPA:
@@ -115,7 +117,7 @@ La discusión es sobre todo de **interpretación y de riesgo**, no de datos. En 
 | Versión revisada de la moción alternativa | Si incluye el 75% y una Asamblea por etapa, como dice Decurnex |
 | Evaluación de los técnicos de Decurnex | Solo estadio |
 | Acta de la Directiva del 29/09 | Votación 7 a 4 y cambio a unanimidad |
-| Comunicado o acta de la votación de la moción v2 | La unanimidad la informan dos periodistas ([F-0028](../fuentes/F-0028-x-dominguez-unanimidad.md), [F-0029](../fuentes/F-0029-x-olivera-unanimidad.md)). Falta el número de votos y si la agrupación Atilio García está conforme |
+| Comunicado o acta de la votación de la moción v2 | La unanimidad la informan dos periodistas ([F-0028](../fuentes/F-0028-x-dominguez-unanimidad.md), [F-0029](../fuentes/F-0029-x-olivera-unanimidad.md)) y el directivo Britos dice que la votaron "los 11 directivos" ([F-0030](../fuentes/F-0030-pasion-tricolor-britos.md), 01:05:53). Falta el acta y si la agrupación Atilio García está conforme |
 | Texto de la reforma del Estatuto y su trámite en el MEC | Mayoría para aprobar |
 | Último balance del club | Mantenimiento del Parque, pasivo |
 | Audio de [F-0016](../fuentes/F-0016-espectador-aldabalde-no-tienen-plan-b.md) en el minuto 09:10 | ¿100 o 200 pesos? |
