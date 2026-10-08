@@ -1,4 +1,5 @@
 # Asignación de voces para F-0031 (Trimax Live, Triconectados, 2026-10-08).
+# Generado con scripts/voces_audio.py (pasos huellas, grupos con k=3 y tsv); se reproduce idéntico.
 # Separación automática por audio: huellas de voz ECAPA (speechbrain) agrupadas en tres voces con KMeans.
 # Nombres asignados por Claude según el contenido: Decurnex es la voz que responde; el conductor es quien abre el programa,
 # da la bienvenida a «Virginia Lafuente» (así lo transcribe Whisper, sin verificar) y a quien Decurnex llama «Ale»/«Alex» (49:34, 53:26).

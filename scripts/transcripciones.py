@@ -351,8 +351,8 @@ def main():
             base = "la transcripción local con Whisper" if whisper else "los subtítulos automáticos de YouTube"
             if fid in VOCES_AUDIO:
                 origenes.append(f"voces separadas por audio y nombradas por contenido en [`scripts/voces/{fid}.tsv`](../scripts/voces/{fid}.tsv)")
-                modo = (f"El texto es el de {base}. **Las voces se separaron automáticamente por audio** (huellas de voz ECAPA de speechbrain, "
-                        "comparadas con un tramo de referencia de cada voz) y **Claude les puso nombre según el contenido**; "
+                modo = (f"El texto es el de {base}. **Las voces se separaron automáticamente por audio** (huellas de voz ECAPA de speechbrain, con "
+                        "[`scripts/voces_audio.py`](../scripts/voces_audio.py)) y **Claude les puso nombre según el contenido**; "
                         "los cortes dudosos y las correcciones manuales se anotan en el archivo de voces. "
                         "Los turnos largos se cortan cada minuto aproximadamente, al inicio de un subtítulo, para que la marca de tiempo sirva para ubicar una cita.")
             else:

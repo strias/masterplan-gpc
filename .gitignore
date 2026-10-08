@@ -20,3 +20,5 @@ archivo/*.minutos.txt
 archivo/*.jpeg
 archivo/*.jpg
 archivo/*.png
+# Modelo de huellas de voz que descarga scripts/voces_audio.py
+archivo/modelos/
