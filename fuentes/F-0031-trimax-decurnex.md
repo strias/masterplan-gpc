@@ -37,7 +37,7 @@ Minutos del video.
 
 ## Notas
 
-- **Relación con este repositorio:** en 00:19:33 el conductor menciona un trabajo de "Santiago Tríaz" (así lo transcribe Whisper): socio, primo suyo, ingeniero de sistemas, que vive en Los Ángeles y hizo "una página web" que recopila lo dicho sobre el Master Plan. También traslada una pregunta de esa persona sobre los fideicomisos (00:20:10). Por la descripción parece tratarse del autor de este repositorio y de su sitio; queda pendiente que el autor lo confirme. Si es así, el autor es pariente del conductor y una de las preguntas de la entrevista es suya.
+- **Relación con este repositorio:** en 00:19:33 el conductor menciona un trabajo de "Santiago Tríaz" (así lo transcribe Whisper): socio, primo suyo, ingeniero de sistemas, que vive en Los Ángeles y hizo "una página web" que recopila lo dicho sobre el Master Plan. El autor de este repositorio confirmó que se refiere a él y a este sitio. Por lo tanto, **el conductor es pariente del autor**, y la pregunta sobre los fideicomisos (00:20:10) la hizo el autor. Eso no cambia lo que dice Decurnex, pero es un vínculo que hay que tener presente al leer esta fuente.
 - **Parte interesada:** Decurnex fue uno de los cuatro que votaron en contra de la moción v1 ([F-0015](F-0015-territorio-nacional-decurnex.md)) y luego participó en el acuerdo de la v2. Habla de su propia gestión como presidente (Club Social, inversores).
 - **Afirmaciones de los conductores:** que el techo cuesta 18 millones de dólares, según "lo que hablábamos hoy con Bardanca y Singlet" (00:49:13), y que hay "una planilla que es una bomba", según un comentario fuera de micrófono (00:14:27). Ninguna de las dos tiene fuente registrada.
 - **Para contrastar:**
