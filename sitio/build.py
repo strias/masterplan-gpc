@@ -648,6 +648,15 @@ open("index.html", "w").write(documento(
     "Guía para el socio: la moción del Master Plan",
     "Qué se vota el 24 de octubre, qué es el proyecto del Gran Parque Central, qué protege al club y por qué la apoyan, con la fuente de cada dato.",
     "\n".join(o), GUIA_CSS))
+# Copia en /guia/ con su propia dirección: un enlace nuevo para compartir, sin la vista previa vieja que X guarda de la portada.
+GUIA_HTML = "\n".join(o)
+for d in ("mocion/", "anteproyecto/", "debate/"):
+    GUIA_HTML = GUIA_HTML.replace(f'href="{d}', f'href="../{d}')
+os.makedirs("guia", exist_ok=True)
+open("guia/index.html", "w").write(documento(
+    "Guía para el socio: la moción del Master Plan",
+    "Qué se vota el 24 de octubre, qué es el proyecto del Gran Parque Central, qué protege al club y por qué la apoyan, con la fuente de cada dato.",
+    GUIA_HTML, GUIA_CSS, "guia/"))
 print("guía ok", sum(len(x) for x in o))
 
 # ---------- El anteproyecto ----------
