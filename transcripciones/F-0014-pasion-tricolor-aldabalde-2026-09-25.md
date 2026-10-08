@@ -1445,7 +1445,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 [02:16:12] Speaker 11: Yo creo que es lo mismo. En vez de decir: "Che, ¿no será un error?", porque además están los planos, vos mirás los planos y te das cuenta que es la Scarone.
 
 [02:16:18] Speaker 12: Basta con haberte escuchado todas las entrevistas que diste, hablaste del segundo anillo de la Scarone, los visitantes en la Scarone. Yo qué sé, pero hay que aclararlo, porque se generaron, en base a eso, las dudas. Yo creo que no entra en la cabeza de nadie que el visitante vaya al Abdón.
-> *YouTube (02:16:18):* planos." Mira, los planos te das cuenta que las jarones. Pero aparte aparte digo, basta con haberte escuchado este todas las entrevistas que diste. Hablaste del segundo anillo de las Carones, los visitantes en Las Carones, los visitantes de las carones, o sea, yo que sé, digo está, pero por viste, hay que aclararlo, hay que aclararlo porque se generó en base a eso las dudas, digo, la verdad. Yo creo que no entra en la cabeza de nadie que el visitante vaya el abdom. Obviamente yo no quiero dejar de contestarle a Santi lo del 75%.
+> *YouTube (02:16:18):* planos." Mira, los planos te das cuenta que las jarones. Pero aparte aparte digo, basta con haberte escuchado este todas las entrevistas que diste. Hablaste del segundo anillo de las Carones, los visitantes en Las Carones, los visitantes de la Scarone, o sea, yo que sé, digo está, pero por viste, hay que aclararlo, hay que aclararlo porque se generó en base a eso las dudas, digo, la verdad. Yo creo que no entra en la cabeza de nadie que el visitante vaya el abdom. Obviamente yo no quiero dejar de contestarle a Santi lo del 75%.
 
 [02:16:38] Speaker 11: Yo no quiero dejar de contestarle a Santi lo del 75 %. El 75 % nace en una idea de la Comisión de Patrimonio, que era el blindaje de los proyectos de infraestructura del club. ¿Cuál era el concepto o cuál era el origen de eso? Nacional había tenido problemas por ir hacia atrás y hacia adelante con proyectos aprobados. Entonces, la intención era, en aquel momento eran dos tercios, que si hay un proyecto aprobado, grande, importante, obviamente, si estamos arreglando un baño,
 
@@ -2189,4 +2189,5 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 | de Curnek | Decurnex | 1 |
 | escarones | Scarone | 1 |
 | la Carone | la Scarone | 3 |
+| las carones | la Scarone | 1 |
 | modelo de SPA | modelo de CPA | 1 |

@@ -1,0 +1,64 @@
+# Asignación de voces para F-0032 (El Espectador Deportes, 2026-10-08).
+# Generado con scripts/voces_audio.py (pasos huellas, grupos con k=3 y tsv).
+# Nombres asignados por Claude según el contenido: Masena es la voz que responde desde Arabia Saudita; a la otra voz de estudio Masena la llama «Diego» (00:18:05).
+# El conductor que abre y cierra no se nombra en la entrevista.
+# Cada línea marca dónde empieza a hablar alguien: minuto aproximado, frase exacta de la transcripción, hablante.
+00:00:00	Vamos a ir a Arabia Saudita para hablar con el arquitecto José Ignacio Mazena	Conductor (El Espectador)
+00:00:52	Hola, ¿cómo andás? Bien, bien, muchas gracias a ustedes por la invitación.	José Ignacio Masena
+00:00:57	Sí, se escucha, se escucha perfecto.	Conductor (El Espectador)
+00:01:14	Sí, ahora estamos en Arabia Saudita, nos vinimos hace mes y medio ya.	José Ignacio Masena
+00:01:33	¿Cómo se te dio esta posibilidad de estar en Arabia justamente proyectando los estadios de un Mundial que se va a jugar en ocho años?	Conductor (El Espectador)
+00:01:41	Y en verdad es una sumatoria de cosas.	José Ignacio Masena
+00:02:20	Vos hiciste para el 2022, participaste de tres estadios activamente,	Diego (conductor)
+00:02:46	Sí, sí, sí. En el de Qatar, ahí va. Me parece que la gran diferencia que tuvo en el de Qatar fue el tema de que estaban los ocho estadios casi en la misma ciudad. Entonces, el poder proyectar o poder trabajar, mejor dicho, con los ocho estadios a la misma vez está buenísimo y es una experiencia única.	José Ignacio Masena
+00:03:22	El 974 era el de los contenedores, ¿no?	Diego (conductor)
+00:03:26	Contenedores. Ahí va, y Atumama es el que diseñó un arquitecto local.	José Ignacio Masena
+00:03:33	Para el Gran Parque Central hay tres estudios arquitectos,	Diego (conductor)
+00:03:50	Ese fue un concurso que nos presentamos el año pasado,	José Ignacio Masena
+00:04:33	José, conforme a la experiencia, a ver, voy a entrar en un terreno donde el Gran Parque Central tiene una historia en sí misma,	Conductor (El Espectador)
+00:04:54	Y bueno, ese fue un desafío. En verdad, la ventaja que teníamos nosotros es que...	José Ignacio Masena
+00:05:49	Podés explicarle al socio de Nacional y al hincha de fútbol en general	Conductor (El Espectador)
+00:05:59	Bueno, muchas gracias De verdad está bueno el concepto	José Ignacio Masena
+00:07:39	Sí, en todo el mundo es así ¿Cómo adaptar	Conductor (El Espectador)
+00:08:19	Claro, está en terrible punto de la ciudad, juega un contrapunto ahí con el estadio Centenario,	José Ignacio Masena
+00:10:23	Para hacer eso, ¿se necesita adquirir alguna casa o algo que tiene que ver	Diego (conductor)
+00:10:44	Bueno, la Comisión de Patrimonio y Obras de Nacional puso como una premisa	José Ignacio Masena
+00:11:17	Y más allá de las cuestiones laterales, porque esto va a pasar por una asamblea de socios,	Diego (conductor)
+00:11:45	Bueno, la idea es ayornarlo, es traerlo de vuelta 50 años acá y tratar de proyectarlo en el futuro.	José Ignacio Masena
+00:13:19	Bien. José, te pido disculpas si no utilizo alguna terminología que en cuanto al arquitectónico no tiene nada que ver,	Conductor (El Espectador)
+00:13:43	Sí, la generan. Pero fue una premisa del proyecto nuestro, o sea, podíamos haber tomado mil premisas,	José Ignacio Masena
+00:14:54	¿Esto puede llegar a parar el Parque Central en sí a nivel deportivo mientras esto se desarrolla?	Conductor (El Espectador)
+00:15:12	Bueno, nosotros decimos, o sea, todo esto que estamos hablando	José Ignacio Masena
+00:16:10	Claro, claro. Escuchá, José, y lo otro que me interesa saber es,	Conductor (El Espectador)
+00:16:47	No, no, no, no. A ver, pesa y te comentas de acuerdo.	José Ignacio Masena
+00:17:52	Hablamos de un tiempo de laburo, ¿de cuánto?	Diego (conductor)
+00:18:05	Y bueno, Diego, mira, eso, de vuelta, depende de conversaciones que tenemos que tener con Nacional, o sea, no es algo que podemos manejar, va a depender si haces todo el proyecto junto, o si lo haces por etapa, o si, va a depender de cómo será el modelo de trabajo.	José Ignacio Masena
+00:18:38	Y el proyecto del estadio, ¿incluye el techo alrededor de las tribunas o incluye el techo global, cerrar el parque central? Porque ese también es un tema que arriba de la mesa va a estar el día de la asamblea.	Diego (conductor)
+00:18:55	La propuesta nuestra incluye el techo de las cuatro tribunas, en las dos principales y en las dos atrás de los arcos.	José Ignacio Masena
+00:19:33	de juego. El estadio va a mantener la estructura	Diego (conductor)
+00:19:40	Sí, exactamente. Sí, por las tribunas	José Ignacio Masena
+00:19:49	Bueno, a eso mismo iba, José, porque	Conductor (El Espectador)
+00:20:27	Bueno, la propuesta nuestra para las carones lo que plantea	José Ignacio Masena
+00:21:32	No, no, no, sí, sí, sí, está claro que amputás a las carones	Conductor (El Espectador)
+00:21:48	Dije 365, pero debería haber dicho 360, perdón.	José Ignacio Masena
+00:22:55	¿Conceptualmente podés adaptar, mejor dicho, alguna idea de algún estadio	Conductor (El Espectador)
+00:23:11	Y bueno, está materializado acá. Los productos que se quieren comercializar como producto de hospitalidad, entradas VIP, entradas invitados de VIP, lo que se llama, bueno, palco hoy por hoy tiene nacional, la experiencia de la prensa, la experiencia de la televisación, todo eso está materializado hoy en el actual, en el master plan del estadio, del parque central.	José Ignacio Masena
+00:23:46	Bien, bien, perfecto.	Conductor (El Espectador)
+00:23:48	Te cambio de tema, siguiendo los estadios, porque claro, alguien dice 2030, mundial en Uruguay, y no estamos empezando a laburar.	Diego (conductor)
+00:24:00	Claro, hay una cuenta que no se da, pero es otro mundo.	Conductor (El Espectador)
+00:24:02	Claro. ¿En qué etapa están? ¿Qué están haciendo? ¿Qué experiencia del 2022 se están aplicando hoy en Arabia Saudita para el 2034?	Diego (conductor)
+00:24:15	Bueno, experiencia del 2022, todo. Porque en verdad el Mundial de Qatar fue, como decías tú, una línea de corte en la historia de los mundiales.	José Ignacio Masena
+00:25:28	Y José, y a nivel de ciudades y de distancia, más o menos Arabia nos va a presentar una Copa del Mundo como Qatar o hay un poquito más de desplazamiento?	Conductor (El Espectador)
+00:25:42	Empieza a saltar arriba de la mesa	Diego (conductor)
+00:25:46	A ver, en Catar Fue una maravilla	José Ignacio Masena
+00:25:51	Era algo imposible	Conductor (El Espectador)
+00:25:54	Acá la mayoría de los estadios están en Riyadh	José Ignacio Masena
+00:26:22	No es Doha, no es el concepto de Doha, pero tampoco es Estados Unidos.	Conductor (El Espectador)
+00:26:35	Acá alguien escribe un abrazo enorme para mis amigos Jimena y Nacho,	Diego (conductor)
+00:26:42	Sebastián Bassani, un personaje, compañero de escuela.	José Ignacio Masena
+00:26:50	Bueno, José Ignacio, la verdad que fue un placer poder charlar con vos	Conductor (El Espectador)
+00:27:17	No, no, gracias a ustedes y en verdad a las órdenes para lo que precisen	José Ignacio Masena
+00:27:23	estamos acá. Vamos a charlar varias veces	Conductor (El Espectador)
+00:27:26	Esperamos con todo el 2034	Diego (conductor)
+00:27:28	Un abrazo grande, muchas gracias	Conductor (El Espectador)
+00:27:33	Abrazo, muchas gracias	José Ignacio Masena

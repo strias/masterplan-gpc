@@ -25,7 +25,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
 [00:02:42] que que en el parque hoy estaban bien para profundizarlas o para o para mejorarlas. Eh, eso fueron los insumos para trabajar en el en el master plan. Hicimos un lo que llama en arquitectura, un programa, todo lo que queríamos que pasara, que tenía que tener un sustento del punto de vista de unidad de negocios, porque no es viable hacer un desarrollo de infraestructura como como un estadio de este tamaño con todos los los digamos las áreas accesorias que necesite un estadio, como por ejemplo un parking y ese tipo de situaciones por el lugar que tiene y que ocupa el parque central en la ciudad. Entonces, bueno,
 
-[00:03:14] hicimos el programa y llamamos un concurso. El último concurso que se hizo Nacional fue en 1957. está. Digo, eso es un poco lo lo digo en en el sentido de cómo se fue procediendo y cómo se fueron blindando las etapas. Ese concurso lo ganó un consorcio de tres estudios de arquitectura de primer nivel que se dio la casualidad, que me parece que es interesante contar la anécdota, que uno de los estudios que es el estudio Guerra de Rosa, es el mismo estudio, es la continuidad del estudio eh Clerk Guerra, que fue el que hizo el parque en 1941 después de la reconstrucción, después del incendio. O
+[00:03:14] hicimos el programa y llamamos un concurso. El último concurso que se hizo Nacional fue en 1957. está. Digo, eso es un poco lo lo digo en en el sentido de cómo se fue procediendo y cómo se fueron blindando las etapas. Ese concurso lo ganó un consorcio de tres estudios de arquitectura de primer nivel que se dio la casualidad, que me parece que es interesante contar la anécdota, que uno de los estudios que es el estudio Guerra De Rossa, es el mismo estudio, es la continuidad del estudio eh Clerk Guerra, que fue el que hizo el parque en 1941 después de la reconstrucción, después del incendio. O
 
 [00:03:47] sea, hasta esa casualidad histórica se dio que el el estudio ganador ya había hecho el parque este 80 años atrás. Eh, ese proyecto se aprobó por unanimidad en la comisión de patrimonio, que es difícil una unanimidad en una comisión de 11 que está integrada por todos los grupos políticos y después se aprueba por unanimidad la directiva. Ese proyecto tenía obviamente el master plan con todas las áreas y lo ambicioso que es el master plan. Son 5 heas que tiene Nacional en el medio de la ciudad. es descomunal tener ese predio en el corazón de Montevideo y el proyecto
 
@@ -113,7 +113,7 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
 [00:26:39] social. Nacional sin poner dinero tiene club social funcionando. En el caso del club social obviamente es más acotado porque lo disfrutan los socios que pagan la cuota de club social funciona así y tiene todo el sentido del mundo. En este caso, Nacional no va a poner dinero y va a tener toda la infraestructura en el año 2030 si logramos llegar a ese hito para poder aprovechar esos 100 años de de del primer partido de la historia, etcétera, etcétera. Entonces, eh las decisiones políticas de las entradas, de los socios, de las butacas siguen siendo
 
-[00:27:11] políticas y siguen siendo manejadas por el club. Así como esos fondos van para el club, las decisiones en torno a a todo lo que va a pasar en el parque van para el club. Ahora, este modelo, este proyecto del parque lo diseñó la gente porque hubo 14,000 socios. Claro que fueron escribiendo, fueron los que fueron fuer la segunda bandeja de las carones, las interferencias, eh tengo a mi viejo que tiene 80 años que no puede subir y bajar las escaleras, la accesibilidad, eh, un montón. El otro día hablábamos que hay una idea de Morgan Martínez que para mí me parece muy interesante, que es tener un palco e
+[00:27:11] políticas y siguen siendo manejadas por el club. Así como esos fondos van para el club, las decisiones en torno a a todo lo que va a pasar en el parque van para el club. Ahora, este modelo, este proyecto del parque lo diseñó la gente porque hubo 14,000 socios. Claro que fueron escribiendo, fueron los que fueron fuer la segunda bandeja de la Scarone, las interferencias, eh tengo a mi viejo que tiene 80 años que no puede subir y bajar las escaleras, la accesibilidad, eh, un montón. El otro día hablábamos que hay una idea de Morgan Martínez que para mí me parece muy interesante, que es tener un palco e
 
 [00:27:45] un palco ya no hay que pensar en las cabinas, formato de palco que tenemos hoy en los estadios. El palco puede ser una esquina, un corner en donde hay 200 butacas y es para los departamentos del interior. Cada departamento que tenga un palco podemos traer gente que nunca pudo venir a Montevideo a ver un partido de fútbol. O sea, realmente abrir el parque y hacerlo realmente popular. Porque hay dos temas que que se comentaron también en en esas idas y vueltas que hay en las redes. Uno que vamos a hacer un shopping, ¿no? Esa es como una simplificación. El 5%, menos del 5% de las áreas están destinadas a comercio.
 
@@ -254,7 +254,9 @@ Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 | Aldavalde | Aldabalde | 2 |
 | Bairo | Vairo | 3 |
 | CPA Ferrer | CPA Ferrere | 1 |
+| Guerra de Rosa | Guerra De Rossa | 1 |
 | Javier Gómez Soro | Javier Gomensoro | 1 |
 | Persman | Perchman | 2 |
 | Ricardo Bairo | Ricardo Vairo | 1 |
 | de Curnex | Decurnex | 2 |
+| las carones | la Scarone | 1 |

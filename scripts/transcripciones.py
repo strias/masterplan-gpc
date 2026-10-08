@@ -80,6 +80,10 @@ FIX = [
     (r"\bRicardo Airo\b", "Ricardo Vairo"),
     (r"\b(?:Sinclete|Sinclet|Zinglet)\b", "Singlet"),
     (r"\bcon (?:un )?[Mm]esoro\b", "con Gomensoro"),
+    (r"\bMa[cz]ena\b", "Masena"),
+    (r"\bGuerra d[ae] Rosa\b", "Guerra De Rossa"),
+    (r"\bVareci\b", "Varesi"),
+    (r"\blas carones\b", "la Scarone"),
 ]
 
 # Nombres de las voces de la transcripción con separación de voces, cuando se pueden asignar sin dudas.
@@ -121,11 +125,14 @@ JOBS = [
     ("F-0031", "trimax-decurnex-2026-10-08",
      "HABLEMOS DEL MASTER PLAN CON JOSÉ DECURNEX | TRICONECTADOS STREAMING | PROGRAMA 58 | TRIMAX LIVE",
      "https://www.youtube.com/watch?v=EL0lTOTyOW0", "2026-10-08"),
+    ("F-0032", "espectador-masena-2026-10-08",
+     "JOSÉ IGNACIO MASENA: EL ARQUITECTO DEL MUNDIAL 2034 QUE TRABAJA EN LA CONSTRUCCIÓN DEL GPC | 8/10/26",
+     "https://www.youtube.com/watch?v=_V_cehrg2R8", "2026-10-08"),
 ]
 
 # Transcripciones con voces de otros programas que repiten fragmentos de esta.
 # Fuentes cuyas voces se separaron por audio (no solo por contenido).
-VOCES_AUDIO = {"F-0030", "F-0031"}
+VOCES_AUDIO = {"F-0030", "F-0031", "F-0032"}
 
 RELACIONES = {"F-0015": [("F-0019", "pasion-tricolor-reaccion-decurnex-2026-09-22")]}
 
@@ -309,7 +316,8 @@ def main():
         voces_p = ARCHIVO / f"{fid}-{slug}.transcripcion.txt"
         subs_p = ARCHIVO / f"{fid}-{slug}.subtitulos.vtt"
         whisper = False
-        if not subs_p.exists() and (ARCHIVO / f"{fid}-{slug}.whisper.srt").exists():
+        # Whisper si no hay subtítulos, o si las voces se separaron por audio sobre su texto.
+        if (not subs_p.exists() or fid in VOCES_AUDIO) and (ARCHIVO / f"{fid}-{slug}.whisper.srt").exists():
             subs_p, whisper = ARCHIVO / f"{fid}-{slug}.whisper.srt", True
         subs = (leer_srt(subs_p) if whisper else leer_vtt(subs_p)) if subs_p.exists() else []
         origen_subs = ("transcripción automática local con Whisper (large-v3-turbo), hecha por este repositorio a partir del video"
