@@ -78,6 +78,8 @@ FIX = [
     (r"\bComenzoro\b", "Gomensoro"),
     (r"\bJosé Brecht\b", "José Decurnex"),
     (r"\bRicardo Airo\b", "Ricardo Vairo"),
+    (r"\b(?:Sinclete|Sinclet|Zinglet)\b", "Singlet"),
+    (r"\bcon (?:un )?[Mm]esoro\b", "con Gomensoro"),
 ]
 
 # Nombres de las voces de la transcripción con separación de voces, cuando se pueden asignar sin dudas.
@@ -116,11 +118,14 @@ JOBS = [
     ("F-0030", "pasion-tricolor-britos-2026-10-08",
      "Habla el directivo Federico Britos unanimidad moción por el master plan GPC",
      "https://www.youtube.com/watch?v=x5rYmjvAyRQ", "2026-10-08"),
+    ("F-0031", "trimax-decurnex-2026-10-08",
+     "HABLEMOS DEL MASTER PLAN CON JOSÉ DECURNEX | TRICONECTADOS STREAMING | PROGRAMA 58 | TRIMAX LIVE",
+     "https://www.youtube.com/watch?v=EL0lTOTyOW0", "2026-10-08"),
 ]
 
 # Transcripciones con voces de otros programas que repiten fragmentos de esta.
 # Fuentes cuyas voces se separaron por audio (no solo por contenido).
-VOCES_AUDIO = {"F-0030"}
+VOCES_AUDIO = {"F-0030", "F-0031"}
 
 RELACIONES = {"F-0015": [("F-0019", "pasion-tricolor-reaccion-decurnex-2026-09-22")]}
 
