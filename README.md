@@ -28,6 +28,8 @@ Nacional es el club más grande de Uruguay, el más laureado de la historia, el 
 
 Este proyecto lo impulsa **Santiago Trias**, socio de Nacional (n.º 55554). Tiene opinión sobre el proyecto y por eso el método está pensado para que el análisis no dependa de esa opinión: las afirmaciones se verifican con fuentes públicas y los veredictos se pueden revisar y discutir en abierto.
 
+**Vínculo declarado:** Alexis, conductor de *Triconectados* (Trimax Live), es primo del autor. El 2026-10-08 difundió este sitio al aire y le trasladó a José Decurnex una pregunta del autor sobre los fideicomisos ([F-0031](fuentes/F-0031-trimax-decurnex.md), 00:19:33-00:20:17). Las fuentes de ese programa llevan la aclaración en sus notas.
+
 El análisis se hace con asistencia de IA (Claude, de Anthropic). Las reglas que sigue están en [`CLAUDE.md`](CLAUDE.md).
 
 ## Opiniones del modelo

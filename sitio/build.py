@@ -403,7 +403,7 @@ for f in FUENTES:
     A(f'<li><span class="code">{f}</span>{src_link(f)}</li>')
 A('</ul></section>')
 
-A('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>''')
+A('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Vínculo declarado: el conductor de <em>Triconectados</em> (Trimax Live) es primo del autor, difundió este sitio al aire y le trasladó una pregunta del autor a un entrevistado (F-0031). Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>''')
 
 os.makedirs("debate", exist_ok=True)
 open("debate/index.html", "w").write(documento(TITULO, DESCRIPCION, "\n".join(out), '<style>.back { font-family: var(--f-mono); font-size: .82rem; }</style>', "debate/"))
@@ -565,7 +565,7 @@ P('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Cada c
 for f in M.FUENTES_PORTADA:
     P(f'<li><span class="code">{f}</span>{src_link(f)}</li>')
 P('</ul></section>')
-P('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>''')
+P('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Vínculo declarado: el conductor de <em>Triconectados</em> (Trimax Live) es primo del autor, difundió este sitio al aire y le trasladó una pregunta del autor a un entrevistado (F-0031). Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>''')
 
 open("index.html", "w").write(documento(
     "La moción del Master Plan",
@@ -652,7 +652,7 @@ Q('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Los en
 for f in AP.FUENTES_PAGINA:
     Q(f'<li><span class="code">{f}</span>{src_link(f)}</li>')
 Q('</ul></section>')
-Q('<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Los autores del anteproyecto son el equipo ganador del concurso, parte interesada. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>')
+Q('<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Vínculo declarado: el conductor de <em>Triconectados</em> (Trimax Live) es primo del autor, difundió este sitio al aire y le trasladó una pregunta del autor a un entrevistado (F-0031). Los autores del anteproyecto son el equipo ganador del concurso, parte interesada. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>')
 
 os.makedirs("anteproyecto", exist_ok=True)
 open("anteproyecto/index.html", "w").write(documento(
