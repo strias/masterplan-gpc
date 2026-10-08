@@ -1,0 +1,116 @@
+# Asignación de voces para F-0030 (Pasión Tricolor, 2026-10-08).
+# Separación automática por audio: embeddings de voz ECAPA (speechbrain) comparados con un tramo de referencia de cada voz
+# (Britos 00:44:09-00:44:48 y 00:51:10-00:51:50, por Zoom; conductor 00:38:15-00:38:50, en estudio). Nombres asignados por Claude según el contenido.
+# Revisión manual: 01:43:14 ("o algo de esto") pasa al conductor. Entre 01:39:28 y 01:40:31 (ronda rápida de fútbol 5) la separación es dudosa.
+# Cada línea marca dónde empieza a hablar alguien: minuto aproximado, frase exacta de la transcripción, hablante.
+00:38:00	la mano de queso artesano, que es queso queso, el queso de los uruguayos	Javier Moreira (conductor)
+00:39:18	Buenas tardes, buenas tardes. ¿Cómo están todos?	Federico Britos
+00:39:26	Sí, así señor, ahí en San José, en Nacionales Uruguay.	Javier Moreira (conductor)
+00:39:47	Sí, sí, por suerte sí. ¿Vos sabés que tengo retorno, Javier?	Federico Britos
+00:39:57	Ah, a ver, a ver si lo podemos resolver.	Javier Moreira (conductor)
+00:40:13	No, ahí me sigo escuchando, para que saigo y vuelvo a conectar.	Federico Britos
+00:40:17	Bueno, vamos a intentar otra vez conexión ahí con Fede Britos,	Javier Moreira (conductor)
+00:42:47	A ver ahí, a ver ahí,	Federico Britos
+00:42:48	ahí nosotros te escuchamos bárbaro,	Javier Moreira (conductor)
+00:42:52	yo me sigo escuchando, pero bueno,	Federico Britos
+00:42:56	Capaz que sacate un auricular,	Javier Moreira (conductor)
+00:43:06	Sí, ahí entrevera un poquito menos.	Federico Britos
+00:43:08	ahí va, un pique, viste, ese a veces nos pasa a nosotros,	Javier Moreira (conductor)
+00:44:06	Sí, sí, eso sí, Javier, y bueno,	Federico Britos
+00:44:50	Va a estar bueno, va a estar bueno.	Javier Moreira (conductor)
+00:45:06	Bueno, sí, es un tema que el año pasado lo hicimos,	Federico Britos
+00:46:37	Bueno, seguramente también, capaz que viste que,	Javier Moreira (conductor)
+00:46:47	Eso sin dudas, eso es, que siempre está,	Federico Britos
+00:47:26	Bueno, mirá, acá hay muchas preguntas,	Javier Moreira (conductor)
+00:49:07	Bueno, sí, coincido con vos, en,	Federico Britos
+00:52:02	Fede, acá me dicen que, si podés,	Javier Moreira (conductor)
+00:52:43	¿no? No solo yo, sino, este, Ricardo.	Federico Britos
+00:52:47	Ahora sí, Fede.	Javier Moreira (conductor)
+00:52:50	Eh, con el plantel, y, y bueno,	Federico Britos
+00:53:23	ahí se nos fue, ¿no? Eh, a ver si lo podemos,	Javier Moreira (conductor)
+00:54:35	Y está, está grava, ahora, ahora,	Federico Britos
+00:54:41	Puede ser, puede ser, ahora te escuchamos bárbaro,	Javier Moreira (conductor)
+00:54:57	Sí, como te decía, a ver, los coach son parte de,	Federico Britos
+00:55:32	bueno, me voy a meter en, en el master plan de,	Javier Moreira (conductor)
+00:56:43	Bueno, el análisis que, que, que hago es,	Federico Britos
+00:58:45	ahí, lo perdí, se desconectó, bueno,	Javier Moreira (conductor)
+01:00:00	Más que plantear, digo, hice como una especie de reflexión,	Federico Britos
+01:02:07	Fede, las diferencias, entre la que salió,	Javier Moreira (conductor)
+01:02:51	Sí, sí, básicamente, son esos dos puntos,	Federico Britos
+01:04:18	Sí, y con respecto al, al 75% de la aprobación,	Javier Moreira (conductor)
+01:04:53	y un poco jurídicamente, digo,	Federico Britos
+01:06:08	Claro, yo creo que, bueno, vamos un poco por ahí,	Javier Moreira (conductor)
+01:07:05	Exactamente, es que, es que la moción,	Federico Britos
+01:08:07	Sí, señor, y que, que este, que conclusión sacás,	Javier Moreira (conductor)
+01:08:28	Yo creo que, a ver, evidentemente,	Federico Britos
+01:10:37	Con respecto a ese tema, el otro día,	Javier Moreira (conductor)
+01:12:43	Ah, bueno, a ver, un poco lo que dice Javier,	Federico Britos
+01:15:42	Claro, y bueno, y Aldabalde, ya dijo que ha tenido reuniones,	Javier Moreira (conductor)
+01:16:48	Sí, sí, eso es así, y bueno, este,	Federico Britos
+01:17:56	Fede, con respecto a, bueno, a dos cosas,	Javier Moreira (conductor)
+01:18:36	eso fue lo que, lo que Santiago nos dijo,	Federico Britos
+01:20:50	Y si, es para, digo, toda mejora,	Javier Moreira (conductor)
+01:22:10	Bueno, justamente con, con este tema,	Federico Britos
+01:24:26	a la bajada de la cancha. O sea que como,	Javier Moreira (conductor)
+01:24:36	Y bueno, sí, digo, ahí hay que,	Federico Britos
+01:25:12	eso, eso, eso, está bueno, está bueno,	Javier Moreira (conductor)
+01:25:28	Sí, sí, tío, va a quedar con la bajada de la cancha,	Federico Britos
+01:25:38	¿Cuánto es la bajada de la cancha?	Javier Moreira (conductor)
+01:25:40	también es verdad, y a ver, digo,	Federico Britos
+01:26:28	sí, la verdad que están muy buenas condiciones,	Javier Moreira (conductor)
+01:26:49	Sí, claro, ahora sí, pero bueno,	Federico Britos
+01:27:35	y, ¿cuánto se baja la cancha al final,	Javier Moreira (conductor)
+01:27:41	digo, capaz que no tenga el número exacto,	Federico Britos
+01:28:02	De visibilidad. Fede, eh, algo más del master plan,	Javier Moreira (conductor)
+01:28:22	No, no, no, nada más, sino, digo,	Federico Britos
+01:30:29	No tengo duda, Fede, que va a haber mucha gente,	Javier Moreira (conductor)
+01:30:40	Y bueno, va a depender un poco,	Federico Britos
+01:30:55	Aparte, a las 10 de la mañana,	Javier Moreira (conductor)
+01:31:01	Bueno, sí, también pensando mucho en la gente del interior,	Federico Britos
+01:31:30	Acá me preguntan, ¿cuántos fideicomisos son y cómo los harán convivir?	Javier Moreira (conductor)
+01:31:37	No, lo que está en la moción es que al menos serán dos fideicomisos,	Federico Britos
+01:32:07	Claro, eso es lo que dice la moción.	Javier Moreira (conductor)
+01:33:03	Sí, yo creo que ese sería el escenario de los problemas lindos, ¿no?	Federico Britos
+01:33:49	Bien ahí. Fede, acá me pregunta el querido Menchi, Matías Méndez, que le mando un abrazo,	Javier Moreira (conductor)
+01:34:40	Sí, sí, tengo entendido que no había alcanzado los minutos para la renovación automática	Federico Britos
+01:35:51	¿Y hay chance de que venga otro arquero de acá hasta fin de año?	Javier Moreira (conductor)
+01:36:05	Y bueno, esa charla va a estar con Daniel y con Pablo,	Federico Britos
+01:36:26	Fede, tema arbitral, que vos siempre otra vez en directiva planteaste el tema,	Javier Moreira (conductor)
+01:37:36	Bueno, no, yo digo, a ver, en la charla que tuve en una radio,	Federico Britos
+01:37:59	Ahí lo perdimos, vamos de nuevo,	Javier Moreira (conductor)
+01:39:28	Un fútbol 5, mirá, me voy a poner en melancólico,	Federico Britos
+01:39:34	voy a elegir a Scotti, el Negro Mendes,	Javier Moreira (conductor)
+01:39:37	Coelho, y Ojota. Mejía, Ceba Coates,	Federico Britos
+01:39:43	¿Sabés por qué me matás? Porque de 9 voy a arrancar adelante para atrás.	Javier Moreira (conductor)
+01:40:13	y al Mama. Bueno, no sé muy del pádel primero,	Federico Britos
+01:40:19	El jugador, bueno, te voy a decir,	Javier Moreira (conductor)
+01:40:24	El que vi muy bien hoy, fue al Chori Castro,	Federico Britos
+01:40:31	Bueno, hay complejo fanático, mirá,	Javier Moreira (conductor)
+01:40:52	Bueno, tengo una... La noticia es que ya me llegó el mail,	Federico Britos
+01:41:05	Así que no se puede opinar de los jueces,	Javier Moreira (conductor)
+01:41:10	o sea, terminé, terminaba cerrando un poco la...	Federico Britos
+01:43:10	¿Y vos planteaste el lunes en directiva,	Javier Moreira (conductor)
+01:43:15	Yo lo que planteé en directiva,	Federico Britos
+01:44:44	no, totalmente, Fede, la verdad,	Javier Moreira (conductor)
+01:45:23	Bueno, sí, digo, a ver, como, digo,	Federico Britos
+01:46:34	Sí, el tema que acá, acá Antonio dice,	Javier Moreira (conductor)
+01:47:40	Sí, sí, por supuesto, y sé que Ricardo también,	Federico Britos
+01:49:01	Lo que nos gustaría en algún día,	Javier Moreira (conductor)
+01:49:27	Sí, bueno, yo creo que, a ver,	Federico Britos
+01:50:43	y bueno, y cuando ganás, hay que marcar ciertas cosas,	Javier Moreira (conductor)
+01:52:02	Sí, bueno, es un poco la, la tórica,	Federico Britos
+01:53:44	Ahora, Juan Cruz de los Santos,	Javier Moreira (conductor)
+01:53:49	Y lo que pasa es, Juan Cruz era una inversión,	Federico Britos
+01:54:05	Claro, se recuperó lo invertido en la ficha,	Javier Moreira (conductor)
+01:54:15	se postergó 30 días, hace dos lunes,	Federico Britos
+01:54:32	¿Cómo, cómo, en qué consiste bien la amnistía?	Javier Moreira (conductor)
+01:54:39	No, claro, vos pagás, a partir de hoy,	Federico Britos
+01:55:01	Bien, bien, así que bueno, Fede,	Javier Moreira (conductor)
+01:55:11	En mi casa, me lo reclamaron el otro día.	Federico Britos
+01:55:14	La verdad que hicieron bien, estamos en deuda,	Javier Moreira (conductor)
+01:56:17	Ah, bueno, vamos, vamos, vamos arriba,	Federico Britos
+01:57:32	Se nota, se nota que le dio, un cambio,	Javier Moreira (conductor)
+01:57:44	por eso, por eso, por eso, se nota,	Federico Britos
+01:58:32	Vamos con Fede, vamos con Fede,	Javier Moreira (conductor)
+01:58:50	Vamos arriba, un abrazo para todos.	Federico Britos
+01:58:52	Abrazo grande, Federico Brito,	Javier Moreira (conductor)
