@@ -6,11 +6,11 @@ fecha: 2026-09-25
 fuente_original: F-0014   # 01:29:17
 tipo: hecho
 tema: financiero
-veredicto: pendiente
-evidencia: []
+veredicto: verdadero
+evidencia: [F-0004, F-0014]
 vigente: true
 reemplazada_por:
-actualizado: 2026-09-28
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -29,8 +29,11 @@ El anteproyecto pone la reforma de la cancha en la etapa 3 ([F-0004](../fuentes/
 
 ## Veredicto
 
-Pendiente (fase 1).
+✅ **Verdadero.** La etapa 3 del anteproyecto es la reforma de la cancha, que "se baja 75 cm", con el reperfilado de las filas y el codo Atilio García–Héctor Scarone ([F-0004](../fuentes/F-0004-anteproyecto.md), p. 38). La versión 2 no cambia esa etapa. Lo que la afirmación no resuelve es el costo de la etapa, que no figura en el anteproyecto.
+
+**Cita:** coincide en dos transcripciones independientes (youtubetotext y subtítulos de YouTube).
 
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-10-08: veredicto (verdadero), primera tanda de la fase 2.

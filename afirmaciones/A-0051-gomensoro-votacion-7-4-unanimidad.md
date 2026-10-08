@@ -6,11 +6,11 @@ fecha: 2026-09-30
 fuente_original: F-0021   # 00:02:05
 tipo: hecho
 tema: legal
-veredicto: pendiente
-evidencia: [F-0007, F-0021, F-0022]
-vigente: true
-reemplazada_por:
-actualizado: 2026-10-01
+veredicto: verdadero
+evidencia: [F-0007, F-0009, F-0021, F-0022, F-0026]
+vigente: false
+reemplazada_por: F-0026
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -29,9 +29,14 @@ La moción oficial pide la unanimidad de los once ([F-0007](../fuentes/F-0007-mo
 
 ## Veredicto
 
-Pendiente (fase 1).
+✅ **Verdadero** a su fecha. El borrador de la moción pedía 9 de 11 votos de la Directiva ([F-0009](../fuentes/F-0009-laabdon-mocion-filtrada.md)) y la moción oficial pide la "unanimidad de los once integrantes de la Comisión Directiva" ([F-0007](../fuentes/F-0007-mocion-asamblea.md), p. 8). Que el cambio se haya hecho "el martes" no se puede verificar sin el acta.
+
+**Desactualizada:** la versión 2 de la moción elimina esa unanimidad y la reemplaza por una Asamblea posterior obligatoria ([F-0026](../fuentes/F-0026-mocion-asamblea-v2.md), p. 5).
+
+**Cita sin verificar:** hay una sola transcripción automática; falta escuchar el tramo (F-0021, 00:02:05). Si la cita no se confirma, el veredicto se revisa.
 
 ## Historial
 
 - 2026-10-01: registro inicial.
 - 2026-10-05: la versión 2 de la moción ([F-0026](../fuentes/F-0026-mocion-asamblea-v2.md)) elimina la unanimidad de los once y la reemplaza por una Asamblea posterior obligatoria. La afirmación describe la v1 y sigue siendo un dato de esa fecha.
+- 2026-10-08: veredicto (verdadero), primera tanda de la fase 2.

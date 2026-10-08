@@ -6,11 +6,11 @@ fecha: 2026-09-25
 fuente_original: F-0014   # 01:52:45
 tipo: hecho
 tema: deportivo
-veredicto: pendiente
-evidencia: []
+veredicto: mayormente-verdadero
+evidencia: [F-0004, F-0014]
 vigente: true
 reemplazada_por:
-actualizado: 2026-09-28
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -29,10 +29,13 @@ El anteproyecto dice 16.544 butacas nuevas ([F-0004](../fuentes/F-0004-anteproye
 
 ## Veredicto
 
-Pendiente (fase 1).
+🟢 **Mayormente verdadero.** Si se suman las butacas nuevas de cada etapa, salen 8.247 generales y 1.869 de hospitalidad: 10.116 ([F-0004](../fuentes/F-0004-anteproyecto.md), p. 38-41, cuenta propia). Eso coincide con el aumento de aforo, de unos 34.000 a más de 43.000 (p. 64). El matiz: el mismo anteproyecto da un total de 16.544 butacas nuevas (p. 42) que no se puede reconstruir desde las etapas. Aldabalde usa la cifra que cierra con el aforo; el documento es el que no es coherente.
+
+**Cita:** coincide en dos transcripciones independientes (youtubetotext y subtítulos de YouTube).
 
 ## Historial
 
 - 2026-09-30: se suma la cuenta por etapa del anteproyecto.
 
 - 2026-09-28: registro inicial.
+- 2026-10-08: veredicto (mayormente-verdadero), primera tanda de la fase 2.

@@ -6,11 +6,11 @@ fecha: 2026-09-25
 fuente_original: F-0014   # 02:16:38
 tipo: hecho
 tema: legal
-veredicto: pendiente
-evidencia: [F-0017]
+veredicto: no-verificable
+evidencia: [F-0014, F-0017, F-0021, F-0022]
 vigente: true
 reemplazada_por:
-actualizado: 2026-09-28
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -31,9 +31,12 @@ Es clave para [A-0007](A-0007-decurnex-mayoria-75.md). Hace falta: el texto de l
 
 ## Veredicto
 
-Pendiente (fase 1).
+⚪ **No verificable.** Todos los que hablaron del tema coinciden en que la reforma existe, fija un 75% para proyectos grandes y todavía no rige ([F-0017](../fuentes/F-0017-pasion-tricolor-singlet-bardanca.md), 00:05:19; [F-0021](../fuentes/F-0021-pasion-tricolor-gomensoro.md), 00:59:59; [F-0022](../fuentes/F-0022-cuestion-stream-decurnex.md), 00:21:13). Pero no está registrado el texto de la reforma, y los actores no coinciden en el umbral: 2 M de dólares, 2,5 M o 2 M de UI. Falta el texto aprobado y el estado del trámite en el MEC.
+
+**Cita:** coincide en dos transcripciones independientes (youtubetotext y subtítulos de YouTube). (en 02:17:29)
 
 ## Historial
 
 - 2026-09-28: registro inicial.
 - 2026-09-28: se agrega evidencia de F-0017.
+- 2026-10-08: veredicto (no-verificable), primera tanda de la fase 2.

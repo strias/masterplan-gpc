@@ -54,7 +54,7 @@ El autor es socio de Nacional (n.º 55554) y tiene opinión sobre el proyecto. T
 
 ## Fase actual
 
-**Fase 1: descubrimiento.** El autor aporta contexto. Registrar y organizar; no emitir veredictos todavía salvo que se pida.
+**Fase 2: veredictos.** Desde el 2026-10-08 se emiten veredictos por tandas, empezando por las afirmaciones que se resuelven con documentos registrados. Cada tanda la revisa el autor antes de publicarla. Se sigue registrando contexto nuevo como en la fase 1.
 
 ## No hacer sin preguntar
 

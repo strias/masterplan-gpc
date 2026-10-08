@@ -6,11 +6,11 @@ fecha: 2026-09-30
 fuente_original: F-0020   # 00:08:26
 tipo: estimacion
 tema: financiero
-veredicto: pendiente
-evidencia: [F-0004, F-0020]
+veredicto: mayormente-verdadero
+evidencia: [F-0004, F-0017, F-0020]
 vigente: true
 reemplazada_por:
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -29,8 +29,13 @@ El 25/09 dijo "el 25% del costo" ([A-0024](A-0024-aldabalde-techo-25-por-ciento.
 
 ## Veredicto
 
-Pendiente (fase 1).
+🟢 **Mayormente verdadero.** El anteproyecto no tiene costos, así que no hay documento registrado que lo resuelva. Pero la otra parte llega a una cifra parecida: Singlet suma los dos rubros del techo, 11,6 M y 9,9 M, sobre 105 M de la información entregada a la Directiva ([F-0017](../fuentes/F-0017-pasion-tricolor-singlet-bardanca.md), 01:41:54). Son 21,5 M, un 20,5% (cuenta propia), contra el "22, 23%" de Aldabalde. No queda claro sobre qué total calcula Aldabalde el porcentaje.
+
+Criterio: cuando no hay documento pero las dos partes enfrentadas llegan por su cuenta a la misma cifra, el veredicto es *mayormente verdadero*; si solo la da una parte, *no verificable*.
+
+**Cita sin verificar:** hay una sola transcripción automática; falta escuchar el tramo (F-0020, 00:08:26; reunión cerrada a socios, sin enlace público). Si la cita no se confirma, el veredicto se revisa.
 
 ## Historial
 
 - 2026-10-01: registro inicial.
+- 2026-10-08: veredicto (mayormente-verdadero), primera tanda de la fase 2.

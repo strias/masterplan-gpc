@@ -6,11 +6,11 @@ fecha: 2026-09-24
 fuente_original: F-0017   # 01:41:45
 tipo: hecho
 tema: financiero
-veredicto: pendiente
-evidencia: [F-0017, F-0014]
+veredicto: mayormente-verdadero
+evidencia: [F-0014, F-0017, F-0020]
 vigente: true
 reemplazada_por:
-actualizado: 2026-09-28
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -29,8 +29,13 @@ Coincide con Aldabalde, que da unos 20 M para techo y pantallas ([A-0024](A-0024
 
 ## Veredicto
 
-Pendiente (fase 1).
+🟢 **Mayormente verdadero.** La suma es correcta: 11.634.490 + 9.891.572 = 21.526.062, "más de 20 millones" (cuenta propia). Los dos rubros salen de la información entregada a la Directiva, que no está registrada. Pero la otra parte da una proporción parecida: según Aldabalde, el techo es "más o menos un 22, 23%" ([F-0020](../fuentes/F-0020-reunion-informativa-2026-09-30.md), 00:08:26), y 21,5 M sobre 105 M es un 20,5%.
+
+Criterio: cuando no hay documento pero las dos partes enfrentadas llegan por su cuenta a la misma cifra, el veredicto es *mayormente verdadero*; si solo la da una parte, *no verificable*.
+
+**Cita:** coincide en dos transcripciones independientes (youtubetotext y subtítulos de YouTube).
 
 ## Historial
 
 - 2026-09-28: registro inicial.
+- 2026-10-08: veredicto (mayormente-verdadero), primera tanda de la fase 2.

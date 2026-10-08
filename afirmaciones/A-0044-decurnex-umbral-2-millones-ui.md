@@ -6,11 +6,11 @@ fecha: 2026-09-30
 fuente_original: F-0022   # 00:19:41
 tipo: hecho
 tema: legal
-veredicto: pendiente
+veredicto: no-verificable
 evidencia: [F-0017, F-0020, F-0022]
 vigente: true
 reemplazada_por:
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -29,8 +29,11 @@ Las cifras no coinciden entre los actores: Singlet habló de USD 2 M ([F-0017](.
 
 ## Veredicto
 
-Pendiente (fase 1).
+⚪ **No verificable.** El texto de la reforma no está registrado y los actores dan umbrales distintos: 2 M de dólares según Singlet ([F-0017](../fuentes/F-0017-pasion-tricolor-singlet-bardanca.md), 00:05:19) y 2,5 M según Aldabalde ([F-0020](../fuentes/F-0020-reunion-informativa-2026-09-30.md), 00:17:00). Además, la equivalencia no cierra: 2 millones de UI son del orden de unos cientos de miles de dólares, no 3 millones (conocimiento general sobre el valor de la UI, no de una fuente registrada). Puede ser un error al hablar o de la transcripción.
+
+**Cita sin verificar:** hay una sola transcripción automática; falta escuchar el tramo (F-0022, 00:19:41). Si la cita no se confirma, el veredicto se revisa.
 
 ## Historial
 
 - 2026-10-01: registro inicial.
+- 2026-10-08: veredicto (no-verificable), primera tanda de la fase 2.

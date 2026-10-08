@@ -6,11 +6,11 @@ fecha: 2026-09-21
 fuente_original: F-0015
 tipo: estimacion
 tema: financiero
-veredicto: pendiente
-evidencia: [F-0015]
+veredicto: mayormente-verdadero
+evidencia: [F-0007, F-0014, F-0015]
 vigente: true
 reemplazada_por:
-actualizado: 2026-09-28
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -33,9 +33,12 @@ Coincidencias con Aldabalde ([F-0014](../fuentes/F-0014-pasion-tricolor-aldabald
 
 ## Veredicto
 
-Pendiente (fase 1).
+🟢 **Mayormente verdadero.** La suma es correcta: 93 + 33 + 21 = 147. Los 93 M de renovación de palcos coinciden con la cifra de Aldabalde ([F-0014](../fuentes/F-0014-pasion-tricolor-aldabalde.md), 01:44:58), y la moción asigna justamente esos flujos al estadio ([F-0007](../fuentes/F-0007-mocion-asamblea.md), p. 7). El matiz: es una cifra nominal acumulada en 30 años, no a valor presente, y no se puede comparar sin más con el costo de la obra. Los 33 M del Club Social y los 21 M de gastos comunes no tienen confirmación de la otra parte.
+
+**Cita sin verificar:** hay una sola transcripción automática; falta escuchar el tramo (F-0015, 00:09:37; solo subtítulos automáticos de YouTube). Si la cita no se confirma, el veredicto se revisa.
 
 ## Historial
 
 - 2026-09-28: registro inicial.
 - 2026-09-28: se agrega la fuente original (F-0015) con fecha y cita.
+- 2026-10-08: veredicto (mayormente-verdadero), primera tanda de la fase 2.

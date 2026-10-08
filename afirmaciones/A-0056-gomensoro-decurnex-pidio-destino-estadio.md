@@ -6,11 +6,11 @@ fecha: 2026-09-30
 fuente_original: F-0021   # 00:01:04
 tipo: hecho
 tema: financiero
-veredicto: pendiente
-evidencia: [F-0007, F-0021, F-0022]
+veredicto: mayormente-verdadero
+evidencia: [F-0007, F-0021, F-0022, F-0031]
 vigente: true
 reemplazada_por:
-actualizado: 2026-10-01
+actualizado: 2026-10-08
 ---
 
 ## Contexto
@@ -29,8 +29,11 @@ La moción oficial lo dice en el art. 4°, numeral 5 ([F-0007](../fuentes/F-0007
 
 ## Veredicto
 
-Pendiente (fase 1).
+🟢 **Mayormente verdadero.** El contenido está en la moción oficial: palcos, gastos comunes, utilidades del Club Social y aportes extraordinarios "solo podrán tener como destino el estadio de fútbol" ([F-0007](../fuentes/F-0007-mocion-asamblea.md), p. 7). Que lo haya pedido Decurnex lo dice solo Gomensoro. Decurnex no lo desmiente: el 08/10 dijo que se reunió con Gomensoro hace seis o siete meses y que fue "el más vocal" para que ciertas cosas quedaran en la moción ([F-0031](../fuentes/F-0031-trimax-decurnex.md), 00:08:29).
+
+**Cita sin verificar:** hay una sola transcripción automática; falta escuchar el tramo (F-0021, 00:01:04). Si la cita no se confirma, el veredicto se revisa.
 
 ## Historial
 
 - 2026-10-01: registro inicial.
+- 2026-10-08: veredicto (mayormente-verdadero), primera tanda de la fase 2.

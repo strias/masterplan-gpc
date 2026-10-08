@@ -53,3 +53,5 @@ El proyecto se discute públicamente desde hace casi dos años y sus datos cambi
 4. Los veredictos pueden cambiar ante nueva evidencia. El cambio se registra en la ficha y queda en el historial de git.
 5. Mismo estándar para todos los actores, estén a favor o en contra.
 6. Las opiniones del modelo van solo en secciones marcadas como tal, separadas de los hechos, y no cuentan como veredicto. Ver «Opiniones del modelo» en el [README](../README.md).
+7. **Sin documento, concordancia entre partes:** si no hay un documento registrado que resuelva una cifra, pero las dos partes enfrentadas llegan por su cuenta a la misma cifra, el veredicto puede ser *mayormente verdadero*, aclarando que no hay documento. Si la cifra la da una sola parte, el veredicto es *no verificable*.
+8. **Citas de una sola transcripción:** si la cita sale de una sola transcripción automática y nadie escuchó el tramo, el veredicto lo dice ("cita sin verificar") y se revisa si la cita no se confirma.
