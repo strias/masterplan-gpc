@@ -72,6 +72,12 @@ FIX = [
     (r"\bVares, otro estudio\b", "Varesi, otro estudio"),
     (r"\bIgnacio Massena\b", "Ignacio Masena"),
     (r"\bcuota del Bage\b", "cuota del básquet"),
+    (r"\bJosé de Curnay\b", "José Decurnex"),
+    (r"\bde Curnay\b", "Decurnex"),
+    (r"\bC[PT][AS]? Ferrer(?:e)?\b", "CPA Ferrere"),
+    (r"\bComenzoro\b", "Gomensoro"),
+    (r"\bJosé Brecht\b", "José Decurnex"),
+    (r"\bRicardo Airo\b", "Ricardo Vairo"),
 ]
 
 # Nombres de las voces de la transcripción con separación de voces, cuando se pueden asignar sin dudas.
@@ -107,9 +113,15 @@ JOBS = [
     ("F-0019", "pasion-tricolor-reaccion-decurnex-2026-09-22",
      "Habló Decurnex: Máster plan GPC y club social - REACCIONAMOS",
      "https://www.youtube.com/watch?v=-lKaALmO6ao", "2026-09-22"),
+    ("F-0030", "pasion-tricolor-britos-2026-10-08",
+     "Habla el directivo Federico Britos unanimidad moción por el master plan GPC",
+     "https://www.youtube.com/watch?v=x5rYmjvAyRQ", "2026-10-08"),
 ]
 
 # Transcripciones con voces de otros programas que repiten fragmentos de esta.
+# Fuentes cuyas voces se separaron por audio (no solo por contenido).
+VOCES_AUDIO = {"F-0030"}
+
 RELACIONES = {"F-0015": [("F-0019", "pasion-tricolor-reaccion-decurnex-2026-09-22")]}
 
 ARCHIVO = Path("archivo")
@@ -331,9 +343,16 @@ def main():
                 bloques.append(b)
             cuerpo = "\n\n".join(bloques)
             origenes.append(f"{origen_subs}. SHA-256: `{sha256(subs_p)}`")
-            origenes.append(f"voces asignadas por contenido en [`scripts/voces/{fid}.tsv`](../scripts/voces/{fid}.tsv)")
             base = "la transcripción local con Whisper" if whisper else "los subtítulos automáticos de YouTube"
-            modo = (f"El texto es el de {base}. **Las voces las asignó Claude según el contenido** "
+            if fid in VOCES_AUDIO:
+                origenes.append(f"voces separadas por audio y nombradas por contenido en [`scripts/voces/{fid}.tsv`](../scripts/voces/{fid}.tsv)")
+                modo = (f"El texto es el de {base}. **Las voces se separaron automáticamente por audio** (huellas de voz ECAPA de speechbrain, "
+                        "comparadas con un tramo de referencia de cada voz) y **Claude les puso nombre según el contenido**; "
+                        "los cortes dudosos y las correcciones manuales se anotan en el archivo de voces. "
+                        "Los turnos largos se cortan cada minuto aproximadamente, al inicio de un subtítulo, para que la marca de tiempo sirva para ubicar una cita.")
+            else:
+                origenes.append(f"voces asignadas por contenido en [`scripts/voces/{fid}.tsv`](../scripts/voces/{fid}.tsv)")
+                modo = (f"El texto es el de {base}. **Las voces las asignó Claude según el contenido** "
                     "(quién pregunta, quién responde, a quién se nombra); es una interpretación, no una separación automática. "
                     "\"Conductor\" sin nombre indica que no se puede saber cuál de los conductores habla. "
                     "Los turnos largos se cortan cada minuto aproximadamente, al inicio de un subtítulo, para que la marca de tiempo sirva para ubicar una cita. "
