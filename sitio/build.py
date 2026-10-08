@@ -59,6 +59,9 @@ NOMBRE = {
     "F-0029": "Martín Olivera en X, cita a Carve Deportiva (05/10; enlace a la cuenta)",
     "F-0030": "Pasión Tricolor, Britos (08/10)", "F-0031": "Trimax Live, Decurnex (08/10)",
     "F-0032": "El Espectador, el arquitecto Masena (08/10)",
+    "F-0033": "MTOP: microsimulación del corredor BRT de Av. 8 de Octubre (PDF)",
+    "F-0034": "La Mañana: la reforma del transporte metropolitano (06/10)",
+    "F-0035": "OpenStreetMap: el estadio y Av. 8 de Octubre",
 }
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
@@ -68,6 +71,9 @@ URL = {
     "F-0025": "https://www.google.com/maps/place/Estadio+Gran+Parque+Central",
     "F-0028": "https://x.com/Digadoma",
     "F-0029": "https://x.com/olivera_martin1",
+    "F-0033": "https://www.gub.uy/ministerio-transporte-obras-publicas/comunicacion/publicaciones/microsimulacion-brt-corredor-metropolitano-av-8-octubre/microsimulacion",
+    "F-0034": "https://www.xn--lamaana-7za.uy/actualidad/la-reforma-del-transporte-metropolitano-entra-en-su-fase-decisiva/",
+    "F-0035": "https://www.openstreetmap.org/way/37578954",
     "F-0024": "https://www.infobae.com/america/america-latina/2024/08/09/uruguay-cerrara-durante-dos-anos-y-medio-el-estadio-centenario-para-dejarlo-listo-para-el-mundial-2030/",
     "F-0007": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf",
     "F-0026": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria%20v2.pdf",

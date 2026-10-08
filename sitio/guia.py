@@ -32,6 +32,7 @@ PROYECTO = [
  ("Plaza del Hincha", "3.969 m² abiertos al barrio {F-0004 p.40}"),
  ("Superficies comerciales", "Unos 14.300 m² rentables, más museo y locales bajo las tribunas {F-0004 p.42} {F-0004 p.38}"),
  ("Etapas", "14, pensadas para que el estadio siga en uso; solo se interrumpe con la cancha y los vestuarios {F-0004 p.38}"),
+ ("Transporte", "El corredor de ómnibus rápidos (BRT) que el Estado proyecta por Av. 8 de Octubre pasa a una cuadra del estadio; obras desde 2027 y servicio previsto para 2029, con el financiamiento todavía en negociación {F-0033} {F-0034} {F-0035}"),
  ("Plazo", "Unos cuatro años y medio, según la prefactibilidad, aunque depende del financiamiento {F-0031 00:40:20}"),
 ]
 
@@ -97,4 +98,4 @@ ABIERTO = [
  "**El acta de la votación en la Directiva** no está publicada {F-0030 01:05:53}.",
 ]
 
-FUENTES_GUIA = ["F-0026", "F-0003", "F-0004", "F-0007", "F-0016", "F-0017", "F-0021", "F-0022", "F-0023", "F-0028", "F-0029", "F-0030", "F-0031", "F-0032"]
+FUENTES_GUIA = ["F-0026", "F-0003", "F-0004", "F-0007", "F-0016", "F-0017", "F-0021", "F-0022", "F-0023", "F-0028", "F-0029", "F-0030", "F-0031", "F-0032", "F-0033", "F-0034", "F-0035"]
