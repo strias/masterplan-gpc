@@ -1,4 +1,4 @@
-# Contenido de la portada: guía para el socio que vota el 24 de octubre.
+# Contenido de la portada: guía para el socio sobre la Asamblea del 24 de octubre.
 # Informa sobre la moción (versión 2, F-0026) y el proyecto. Las razones para aprobarla se
 # atribuyen a quien las da; las garantías se citan del texto con su página. Mismas marcas que
 # mocion.py: {F-0026 p.5}, {F-0030 01:05:53}, **negrita**, [[>ruta|texto]] y [[CG]].

@@ -603,12 +603,12 @@ G_ = o.append
 G_('<main class="wrap">')
 G_('''<header class="hero">
   <p class="eyebrow">Gran Parque Central · Master Plan · Asamblea del 24 de octubre</p>
-  <h1>Guía para el socio que vota</h1>
+  <h1>Guía para el socio</h1>
   <p class="lede">''' + R(G.LEDE) + '''</p>
   <nav class="toc" aria-label="Secciones">
     <a href="#que-se-vota">Qué se vota</a><a href="#como-votar">Cómo votar</a><a href="#proyecto">El proyecto</a><a href="#garantias">Qué protege al club</a><a href="#apoyos">Por qué la apoyan</a><a href="#preguntas">Preguntas</a><a href="#abierto">Qué queda abierto</a>
   </nav>
-  <div class="acciones"><a class="cta" href="mocion/">La moción, artículo por artículo →</a><a class="cta" href="anteproyecto/">El anteproyecto, etapa por etapa →</a>''' + compartir("Guía para el socio que vota el 24 de octubre: qué se vota, qué es el proyecto del Gran Parque Central y qué protege al club, con la fuente de cada dato.") + '''</div>
+  <div class="acciones"><a class="cta" href="mocion/">La moción, artículo por artículo →</a><a class="cta" href="anteproyecto/">El anteproyecto, etapa por etapa →</a>''' + compartir("Guía para el socio el 24 de octubre: qué se vota, qué es el proyecto del Gran Parque Central y qué protege al club, con la fuente de cada dato.") + '''</div>
 </header>''')
 G_('<section id="que-se-vota" class="sec"><h2>Qué se vota</h2><ul class="voto">')
 for x in G.QUE_SE_VOTA:
