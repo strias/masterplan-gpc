@@ -4,12 +4,14 @@ nombre: José Decurnex
 tipo: persona
 rol: vocal de la Comisión Directiva
 postura: con-reparos
-fuentes: [F-0001, F-0011, F-0015, F-0022]
+fuentes: [F-0001, F-0011, F-0015, F-0022, F-0031]
 ---
 
 ## Postura
 
 Propone concentrar los recursos propios del club en el estadio y dejar los demás negocios a inversores privados, con su dinero y su riesgo. Cuestiona las cifras de costo, advierte que el club compromete ingresos futuros aunque no tome deuda, pide el proyecto ejecutivo antes de votar y un respaldo del 75%. ([F-0011](../fuentes/F-0011-laabdon-decurnex-aldabalde.md))
+
+Después de la moción v2, aprobada por unanimidad, la presenta como un marco en el que "no se van a aprobar números, ni [...] inicios de obra" y dice: "Yo nunca estuve en contra del proyecto". Sostiene que el estadio sin techo se puede hacer con los ingresos propios del club y "un aporte del socio [...] de unos 8 millones de dólares" ([F-0031](../fuentes/F-0031-trimax-decurnex.md), 00:15:03, 00:37:22, 00:21:17).
 
 Afirmaciones registradas: [A-0001](../afirmaciones/A-0001-decurnex-147-millones.md), [A-0002](../afirmaciones/A-0002-decurnex-costo-rda.md), [A-0006](../afirmaciones/A-0006-decurnex-presion-cuota.md), [A-0007](../afirmaciones/A-0007-decurnex-mayoria-75.md), [A-0025](../afirmaciones/A-0025-decurnex-cpa-no-avala-negocios.md).
 

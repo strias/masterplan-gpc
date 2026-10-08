@@ -1,0 +1,154 @@
+# Asignación de voces para F-0031 (Trimax Live, Triconectados, 2026-10-08).
+# Separación automática por audio: huellas de voz ECAPA (speechbrain) agrupadas en tres voces con KMeans.
+# Nombres asignados por Claude según el contenido: Decurnex es la voz que responde; el conductor es quien abre el programa,
+# da la bienvenida a «Virginia Lafuente» (así lo transcribe Whisper, sin verificar) y a quien Decurnex llama «Ale»/«Alex» (49:34, 53:26).
+# La conductora es la voz que responde «¿Cómo andas Alexis?» tras la bienvenida (05:41) y tiene tono agudo (~222 Hz frente a ~126 Hz).
+# Decurnex le dice «Bicho» a alguien (12:28 y 42:36, primera pasada de Whisper); por el contenido parece ser ella, pero no es seguro.
+# Cada línea marca dónde empieza a hablar alguien: minuto aproximado, frase exacta de la transcripción, hablante.
+00:06:00	Pero bueno, la alegría para todos los bolsos, para bueno, un poquito terminar el año de mejor manera.	Virginia Lafuente (conductora)
+00:06:15	Y ya le voy a dar la bienvenida a agradecerle.	Alexis (conductor)
+00:06:37	Sí, más o menos. Estoy de campera, quiero decir que está bien agradable la campera.	José Decurnex
+00:06:46	Todo el Uruguay se enferma estas últimas dos semanas.	Virginia Lafuente (conductora)
+00:06:50	José, bueno, primero que nada, felicitaciones por llegar a una moción	Alexis (conductor)
+00:07:17	A ver, yo creo que primero es importante aclarar que esto no es un tema político dentro de Nacional.	José Decurnex
+00:07:24	Te jodió que se dijera que se estaba político.	Alexis (conductor)
+00:07:27	Claro, porque yo creo que se tomó un enfoque erróneo.	José Decurnex
+00:09:29	Y este papel que yo tengo aquí adelante,	Alexis (conductor)
+00:09:53	Claro, es un proyecto súper ambicioso y por eso yo creo que es importante	José Decurnex
+00:11:35	porque tú vas a tener otras 11 más	Virginia Lafuente (conductora)
+00:11:37	Según nos decía hoy, Enrique Sinclete, el contador	Alexis (conductor)
+00:11:41	Sin duda, sin duda, sin duda. Es un proyecto de muy largo aliento, ¿no?	José Decurnex
+00:11:53	Cuando hablamos de repago es, para traducir un poco,	Alexis (conductor)
+00:12:08	Es un proyecto, si uno lo mira en el contexto uruguayo,	José Decurnex
+00:12:28	Y también hablando un poco de los imprevistos que pueda haber	Virginia Lafuente (conductora)
+00:12:44	Sí, sin duda, sin duda. Por eso hay temas que creo que todos estuvimos de acuerdo,	José Decurnex
+00:13:02	Eso va totalmente para lo que es construcción del parque, del estadio,	Alexis (conductor)
+00:13:20	Sin duda, pero tenés que hacer, o sea, una vez hecho esta prefactibilidad,	José Decurnex
+00:14:11	Simplemente lo que vos querías hacer era	Alexis (conductor)
+00:14:24	Sí, pasarela comercial, negocio inmobiliario.	José Decurnex
+00:14:27	Y negocio del estadio, que debería ser de nacional 100%.	Alexis (conductor)
+00:15:03	Sí, mira, yo creo que lo que es sano en este momento y en lo que se está trabajando	José Decurnex
+00:16:41	¿Qué fue lo más importante de que saliste de esa reunión con Ricardo?	Alexis (conductor)
+00:16:45	Sí, el sábado. Todavía no había caído, el domingo caí, por suerte.	José Decurnex
+00:16:53	¿fue un lugar o una casa? no, no, un café	Virginia Lafuente (conductora)
+00:17:00	un par de horas pero bien con tranquilidad	José Decurnex
+00:17:03	¿qué fue la parte que te puso o por lo menos que te alivió más	Alexis (conductor)
+00:17:24	A mí me gustó mucho la actitud del presidente ya desde varios meses a esta parte,	José Decurnex
+00:18:40	Es que yo creo que en muchos temas él actuó como mediador, ¿no?	Virginia Lafuente (conductora)
+00:18:54	No, claro. Y es el rol que el presidente tiene que tener, ¿no?	José Decurnex
+00:19:29	Distinto, pero siempre es para mejorar el nacional.	Virginia Lafuente (conductora)
+00:19:31	Lo que querés es que el nacional mejore.	José Decurnex
+00:19:33	Llegaste a ver, José, un trabajo que hizo Santiago Tríaz,	Alexis (conductor)
+00:20:17	Mirá, yo creo que no, deberían ser administrados por fiduciarios distintos.	José Decurnex
+00:21:41	Dice, ¿se pueden usar contratos de la parte comercial	Alexis (conductor)
+00:21:49	No, no, no, porque vos podés hacer interactuar los dos fideicomisos.	José Decurnex
+00:22:38	Dice, ¿por qué se separa la arena	Alexis (conductor)
+00:22:47	Bueno, es que si uno ve el proyecto y uno puede	José Decurnex
+00:23:44	Acá Lin Yoruba dice me preocupa que no haya obligación de hacer	Alexis (conductor)
+00:24:09	A ver, son dos temas distintos.	José Decurnex
+00:25:20	donde habla que se pasa del 50% de asamblea	Alexis (conductor)
+00:25:25	y yo creo que es sano porque eso de alguna manera va blindando el proyecto en sus siguientes pasos.	José Decurnex
+00:25:43	En el proyecto que se presentó, en el cambio de estatutos, ¿se habla de cierto monto para tomar asamblea?	Alexis (conductor)
+00:25:50	Se habla de cierto monto y no tengo...	José Decurnex
+00:25:53	No, no importa los números, pero no es que si quiero cambiar el que rega el pasto en el parque.	Alexis (conductor)
+00:26:00	No, no, no. Hasta cierto monto se puede hacer como se puede hacer hoy.	José Decurnex
+00:26:30	Yo creo que el detalle de si se vota con el 50 o con el 75	Alexis (conductor)
+00:27:33	en las últimas elecciones. Con muchos de los chicos que se me acercaron	José Decurnex
+00:27:43	Lo dije el otro día con el oso y él fue	Alexis (conductor)
+00:28:31	Las ganas las tenemos siempre todos, ¿no?	José Decurnex
+00:28:49	Pregunto yo, ¿llega el Estadio Centenario?	Alexis (conductor)
+00:28:51	No tengo la información, yo me imagino que sí,	José Decurnex
+00:28:58	es una responsabilidad enorme,	Virginia Lafuente (conductora)
+00:29:01	aceptaste ser sede, el estadio tiene que estar.	José Decurnex
+00:29:13	No es como con Mebol, que te piden tres, cuatro cositas.	Alexis (conductor)
+00:29:28	Hay condiciones de borde que FIFA te exige	José Decurnex
+00:29:57	Más adiós, claro, va a depender mucho.	Alexis (conductor)
+00:30:20	Mirá, yo no he visto hasta ahora un financiamiento de FIFA	José Decurnex
+00:31:22	Me pregunta Tato que es el más economista de todos	Alexis (conductor)
+00:31:33	Mira, yo creo que han habido varios contactos,	José Decurnex
+00:32:18	preguntan sobre cómo incidiría este proyecto	Alexis (conductor)
+00:32:45	hablado con Mesoro. Pero es importante que eso	José Decurnex
+00:33:18	Lo contesto para que no quede reiterativa la pregunta,	Alexis (conductor)
+00:33:53	que fue con mucha gente sí se está pensando	José Decurnex
+00:34:21	Bueno, acá preguntan si es verdad que	Alexis (conductor)
+00:34:30	No, yo creo que no es que se...	José Decurnex
+00:35:17	Me río porque el que preguntó sobre el tema del pasivo	Alexis (conductor)
+00:35:51	No tengo conocimiento para nada, lo estoy escuchando ahora,	José Decurnex
+00:35:59	No voy a nombrar porque no tengo pruebas de nada	Alexis (conductor)
+00:36:17	Mirá, yo creo que va a estar el nombre de todos	José Decurnex
+00:36:38	ya nos fue mal porque dentro de lo que tenemos el parque	Alexis (conductor)
+00:37:22	Es un poco de todo, pero a mí me duele	José Decurnex
+00:38:23	Es lo que hablamos, creo, muchos en Asado, muchos hinchas.	Alexis (conductor)
+00:38:34	Exactamente. Entonces, la verdad...	José Decurnex
+00:38:37	Y los aciertos y los errores de nuestras decisiones	Alexis (conductor)
+00:38:44	Sí, sí. Y yo creo que Nacional	Virginia Lafuente (conductora)
+00:39:10	Y me consta, porque hemos cubierto varias elecciones, que Singlet	Alexis (conductor)
+00:39:48	ya venían de la moción inicial, que además había	José Decurnex
+00:40:05	a ver, que más acá preguntan cuánto más o menos demorarían	Alexis (conductor)
+00:40:20	Yo creo que va a depender De muchas cosas	José Decurnex
+00:40:47	Esa es la policía deportiva, es lo que nos gusta	Alexis (conductor)
+00:41:03	Pero por supuesto, por supuesto que el proyecto	José Decurnex
+00:41:18	Vayamos un poco a tu primera presidencia, José.	Alexis (conductor)
+00:41:37	Sí, yo creo que el mundo nacional es un mundo muy complejo	José Decurnex
+00:42:17	Como hijos de Franco, somos seres políticos.	Alexis (conductor)
+00:42:19	Por supuesto, al final, se termina medio politizando todo, ¿no?	José Decurnex
+00:42:50	Porque esto muchos recuerdan, cada vez que hablás,	Alexis (conductor)
+00:42:59	Pero por supuesto, pero estamos esperando los inversores.	José Decurnex
+00:43:19	Y creo que también, y esto capaz	Alexis (conductor)
+00:43:29	Pero por supuesto, pero por supuesto.	José Decurnex
+00:43:50	Lo mismo en este proyecto, puede pasar lo mismo que pasó con el Club Social.	Alexis (conductor)
+00:44:04	Y te puede pasar que sale todo perfecto y te puede pasar que de repente	José Decurnex
+00:44:34	Lo que tenemos que quedar claro, en ambos	Alexis (conductor)
+00:44:44	Pero claro, es que así está conceptualizado.	José Decurnex
+00:45:04	y nos queda un ratito nomás, José, ya te liberamos.	Alexis (conductor)
+00:45:09	Azucena Martínez, un gran saludo para Azucena.	José Decurnex
+00:45:13	Y se quiere ganar la camiseta, pero eso ya es la semana que viene.	Alexis (conductor)
+00:45:15	No, esa no es mi respuesta. No me enchufes esa respuesta.	José Decurnex
+00:45:19	No tenés nada que ver ahí. Es un cosito ahí.	Alexis (conductor)
+00:45:30	Ah, bien. Saludos. me falté mucho lo que pasa	Virginia Lafuente (conductora)
+00:45:33	yo le voy a decir que son todos unos ratones	Alexis (conductor)
+00:45:57	no están buenas las comparaciones	Virginia Lafuente (conductora)
+00:46:01	José ¿Cómo pensás Que se va a llevar	Alexis (conductor)
+00:46:06	Yo esperaría Una asamblea Donde	José Decurnex
+00:46:11	Pará Si yo te hubiera Vamos a hacerlo	Alexis (conductor)
+00:46:13	Dale de vuelta Arranca de vuelta	José Decurnex
+00:46:14	Sí Pero si yo te hubiera Hecho la pregunta	Alexis (conductor)
+00:46:24	Sí Había otro	Virginia Lafuente (conductora)
+00:46:26	Marco de trabajo Hoy Hay un marco de trabajo	Alexis (conductor)
+00:46:31	Y hubiera tenido que discutir dos mociones en vez de una, lo que obviamente era una asamblea complejiza, por más que las mociones en un 70% eran coincidentes, obviamente hubieran habido aristas distintas y eso hubiera generado yo creo una discusión que capaz que se politizaba más.	José Decurnex
+00:47:44	Acá Tato vuelve a preguntar si tenemos planes de contingencia	Alexis (conductor)
+00:47:51	esas son de las cosas de detalle que vos tenés	José Decurnex
+00:48:00	Se nos va en vivo se nos va en vivo y sube el rating	Alexis (conductor)
+00:48:40	Yo coincido contigo, yo creo que...	José Decurnex
+00:48:42	Y miren que yo tengo una ubicación en el parque	Alexis (conductor)
+00:48:49	yo comparto contigo de vuelta, yo creo que nosotros tenemos que dar	José Decurnex
+00:49:13	lo que hablábamos hoy con Barranca	Alexis (conductor)
+00:49:19	o más tranquilo	José Decurnex
+00:49:22	si quieren tomar del mismo vaso	Alexis (conductor)
+00:49:27	estamos en el horno	José Decurnex
+00:49:28	yo estoy saliendo	Virginia Lafuente (conductora)
+00:49:31	se tomó toda el agua Santi capaz que podemos conseguir un vasito de agua con Pavo	Alexis (conductor)
+00:49:34	pero Ale de vuelta no pongamos la carreta delante de los bueyes	José Decurnex
+00:49:45	Si está el parque terminado y falta el techo, vamos a jugar.	Alexis (conductor)
+00:50:10	Para mí es de las cosas que menos...	Virginia Lafuente (conductora)
+00:50:13	¿Cuánto puede conseguir el socio del exterior?	Alexis (conductor)
+00:50:16	Bueno, justo Estados Unidos preguntaba que es medio primer mundo.	Virginia Lafuente (conductora)
+00:50:18	Por eso, porque le hagan una vaquita, un mil ahí, un mil cada uno y conseguimos y sumamos.	Alexis (conductor)
+00:50:23	A ver qué hace una vaquita, una vacota.	José Decurnex
+00:50:25	Una vacota, una alcancidota.	Virginia Lafuente (conductora)
+00:50:27	A ver, la última antes de irnos.	Alexis (conductor)
+00:50:36	Sí, el tema del contrato de merchandising con Tenfield no era solamente específico al Parque Central.	José Decurnex
+00:51:19	yo no sé, pero ya he conseguido que me dijeron pongo plata	Alexis (conductor)
+00:52:13	linchas festejando. Yo quiero cerrar con un mensaje.	José Decurnex
+00:52:31	Ahí, Pavo, te trae un poquito de agua para que te refresque	Alexis (conductor)
+00:52:50	Es lo que hay. Para ahí, antes de irnos, José,	Virginia Lafuente (conductora)
+00:52:58	Espero que nos dé, espero que nos dé.	José Decurnex
+00:53:17	Mi última duda. ¿El orden del proyecto es tal cual está dentro del proyecto?	Alexis (conductor)
+00:53:26	Es difícil decirlo ahora, Alex.	José Decurnex
+00:53:31	Que fue algo que se discutió en la primera asamblea cuando se presentó.	Alexis (conductor)
+00:53:40	Yo creo que eso, de alguna manera, es una	José Decurnex
+00:54:19	José, un placer tenerte. Esto es para largo.	Alexis (conductor)
+00:54:34	No me citó, no me citó Daniel para el domingo.	Virginia Lafuente (conductora)
+00:54:42	¿Vos tenés una cosa ahí como con técnicos muy retro?	Alexis (conductor)
+00:54:46	Sí, sí, yo creo que para el momento, además que tenía Nacional en ese momento,	José Decurnex
+00:55:08	decir que esta nota	Alexis (conductor)
