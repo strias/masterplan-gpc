@@ -331,7 +331,7 @@ out = []
 A = out.append
 A('<main class="wrap">')
 A('''<header class="hero">
-  <a class="back" href="../">← La moción, artículo por artículo</a> · <a class="back" href="../anteproyecto/">El anteproyecto, etapa por etapa</a>
+  <a class="back" href="../">← Guía para el socio</a> · <a class="back" href="../mocion/">La moción, artículo por artículo</a> · <a class="back" href="../anteproyecto/">El anteproyecto, etapa por etapa</a>
   <p class="eyebrow">Gran Parque Central · Master Plan · El debate</p>
   <h1>Qué dice cada uno, y qué se puede comprobar</h1>
   <p class="lede">Las preguntas centrales del debate, con las respuestas de cada parte y un enlace al minuto exacto en que se dijo cada cosa. Donde hay un documento, se contrasta con él.</p>
@@ -497,6 +497,7 @@ P('''<header class="hero">
   <nav class="toc" aria-label="Secciones">
     <a href="#resumen">En resumen</a><a href="#cambios">Qué cambió</a><a href="#obra">Para que empiece la obra</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#otra-mocion">Aparte: otra moción</a><a href="#fuentes">Fuentes</a>
   </nav>
+  <p><a class="back" href="../">← Guía para el socio</a></p>
   <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a><a class="cta" href="anteproyecto/">El anteproyecto: qué se construye y en qué orden →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
 </header>''')
 
@@ -567,11 +568,87 @@ for f in M.FUENTES_PORTADA:
 P('</ul></section>')
 P('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Vínculo declarado: el conductor de <em>Triconectados</em> (Trimax Live) es primo del autor, difundió este sitio al aire y le trasladó una pregunta del autor a un entrevistado (F-0031). Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>''')
 
-open("index.html", "w").write(documento(
+MOCION_HTML = "\n".join(o).replace('href="debate/', 'href="../debate/').replace('href="anteproyecto/', 'href="../anteproyecto/')
+os.makedirs("mocion", exist_ok=True)
+open("mocion/index.html", "w").write(documento(
     "La moción del Master Plan",
     "Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central artículo por artículo, qué responde del debate y qué deja abierto.",
-    "\n".join(o), PORTADA_CSS))
-print("portada ok", sum(len(x) for x in o))
+    MOCION_HTML, PORTADA_CSS, "mocion/"))
+print("moción ok", sum(len(x) for x in o))
+
+# ---------- Portada: guía para el socio ----------
+import guia as G
+
+GUIA_CSS = PORTADA_CSS + """<style>
+.voto { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: 70ch; font-size: 1.05rem; }
+.ficha { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 0; }
+.ficha div { background: var(--surface); border: 1px solid var(--line); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.ficha dt { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.ficha dd { margin: 0; }
+.garantias { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.garantias article { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--navy); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.garantias h3 { font-size: 1.15rem; }
+.apoyos { display: flex; flex-direction: column; gap: 12px; }
+.apoyos article { border-left: 4px solid var(--red); padding: 4px 0 4px 14px; display: flex; flex-direction: column; gap: 4px; max-width: 75ch; }
+.apoyos h3 { font-size: 1.1rem; }
+.faq { display: flex; flex-direction: column; gap: 8px; }
+.faq details { background: var(--surface); border: 1px solid var(--line); padding: 12px 16px; }
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq details p { margin: 10px 0 0; max-width: 72ch; }
+.abierto { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; max-width: 72ch; color: var(--muted); }
+</style>"""
+
+o = []
+G_ = o.append
+G_('<main class="wrap">')
+G_('''<header class="hero">
+  <p class="eyebrow">Gran Parque Central · Master Plan · Asamblea del 24 de octubre</p>
+  <h1>Guía para el socio que vota</h1>
+  <p class="lede">''' + R(G.LEDE) + '''</p>
+  <nav class="toc" aria-label="Secciones">
+    <a href="#que-se-vota">Qué se vota</a><a href="#como-votar">Cómo votar</a><a href="#proyecto">El proyecto</a><a href="#garantias">Qué protege al club</a><a href="#apoyos">Por qué la apoyan</a><a href="#preguntas">Preguntas</a><a href="#abierto">Qué queda abierto</a>
+  </nav>
+  <div class="acciones"><a class="cta" href="mocion/">La moción, artículo por artículo →</a><a class="cta" href="anteproyecto/">El anteproyecto, etapa por etapa →</a>''' + compartir("Guía para el socio que vota el 24 de octubre: qué se vota, qué es el proyecto del Gran Parque Central y qué protege al club, con la fuente de cada dato.") + '''</div>
+</header>''')
+G_('<section id="que-se-vota" class="sec"><h2>Qué se vota</h2><ul class="voto">')
+for x in G.QUE_SE_VOTA:
+    G_(f'<li>{R(x)}</li>')
+G_('</ul></section>')
+G_('<section id="como-votar" class="sec"><h2>Cómo votar</h2><dl class="ficha">')
+for k, v in G.COMO_VOTAR:
+    G_(f'<div><dt>{html.escape(k)}</dt><dd>{R(v)}</dd></div>')
+G_('</dl></section>')
+G_('<section id="proyecto" class="sec"><h2>El proyecto en cinco minutos</h2><p class="sec-intro">Cifras del anteproyecto oficial. Se pueden cambiar o excluir unidades: la moción aprueba el marco, no cada pieza.</p><dl class="ficha">')
+for k, v in G.PROYECTO:
+    G_(f'<div><dt>{html.escape(k)}</dt><dd>{R(v)}</dd></div>')
+G_(f'</dl><p class="lectura">{R(G.COSTO)}</p></section>')
+G_('<section id="garantias" class="sec"><h2>Qué protege al club</h2><p class="sec-intro">Lo que dice el texto de la moción. Cada enlace abre la página del PDF oficial.</p><div class="garantias">')
+for t, x in G.GARANTIAS:
+    G_(f'<article><h3>{html.escape(t)}</h3><p>{R(x)}</p></article>')
+G_('</div></section>')
+G_('<section id="apoyos" class="sec"><h2>Por qué la apoyan</h2><p class="sec-intro">Con las palabras de cada uno y el enlace al minuto en que lo dijo. Las citas salen de transcripciones automáticas.</p><div class="apoyos">')
+for quien, x, refs in G.APOYOS:
+    G_(f'<article><h3>{html.escape(quien)}</h3><p>{R(x)}</p><p>{R(refs)}</p></article>')
+G_(f'</div><p class="sec-intro">{R(G.APOYOS_NOTA)}</p></section>')
+G_('<section id="preguntas" class="sec"><h2>Preguntas de socio</h2><div class="faq">')
+for q, a in G.PREGUNTAS:
+    G_(f'<details><summary>{html.escape(q)}</summary><p>{R(a)}</p></details>')
+G_('</div></section>')
+G_('<section id="abierto" class="sec"><h2>Qué queda abierto</h2><p class="sec-intro">Lo que todavía no está resuelto. No impide votar: buena parte se define en la Asamblea posterior.</p><ul class="abierto">')
+for x in G.ABIERTO:
+    G_(f'<li>{R(x)}</li>')
+G_('</ul><p><a href="debate/">Cómo se llegó a esta moción: el debate →</a></p></section>')
+G_('<section id="fuentes" class="sec"><h2>Fuentes</h2><ul class="fuentes">')
+for f in G.FUENTES_GUIA:
+    G_(f'<li><span class="code">{f}</span>{src_link(f)}</li>')
+G_('</ul></section>')
+G_('''<footer class="foot"><p>Guía informativa sobre la moción del Master Plan del Gran Parque Central, el primer estadio mundialista. Hecha por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Vínculo declarado: el conductor de <em>Triconectados</em> (Trimax Live) es primo del autor, difundió este sitio al aire y le trasladó una pregunta del autor a un entrevistado (F-0031). No es un documento oficial del club. Las razones para aprobar se atribuyen a quien las da; las garantías se citan del texto. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>''')
+
+open("index.html", "w").write(documento(
+    "Guía para el socio: la moción del Master Plan",
+    "Qué se vota el 24 de octubre, qué es el proyecto del Gran Parque Central, qué protege al club y por qué la apoyan, con la fuente de cada dato.",
+    "\n".join(o), GUIA_CSS))
+print("guía ok", sum(len(x) for x in o))
 
 # ---------- El anteproyecto ----------
 import anteproyecto as AP
@@ -598,7 +675,7 @@ a = []
 Q = a.append
 Q('<main class="wrap">')
 Q('<header class="hero">'
-  '<a class="back" href="../">← La moción, artículo por artículo</a>'
+  '<a class="back" href="../">← Guía para el socio</a> · <a class="back" href="../mocion/">La moción, artículo por artículo</a>'
   '<p class="eyebrow">Gran Parque Central · Master Plan · El anteproyecto</p>'
   '<h1>Qué se construye y en qué orden</h1>'
   '<p class="lede">El anteproyecto etapa por etapa, con la página de cada dato, y cómo se compara con lo que dijeron las partes y con lo que pide la moción.</p>'
@@ -646,7 +723,7 @@ Q(f'<section id="analisis" class="sec"><h2>Análisis</h2><div class="analisis"><
 for par in AP.ANALISIS:
     Q('<p>' + R(par).replace('href="debate/', 'href="../debate/') + '</p>')
 Q('</div></section>')
-Q(f'<section class="sec"><h2>Conclusión</h2><p class="lectura">{R(AP.LECTURA)}</p><div class="acciones"><a class="cta" href="../">Ver la moción →</a>{compartir(AP_COMPARTIR, "anteproyecto/")}</div></section>')
+Q(f'<section class="sec"><h2>Conclusión</h2><p class="lectura">{R(AP.LECTURA)}</p><div class="acciones"><a class="cta" href="../mocion/">Ver la moción →</a>{compartir(AP_COMPARTIR, "anteproyecto/")}</div></section>')
 
 Q('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Los enlaces con página abren el PDF en esa página; los que tienen minuto abren el video en ese punto.</p><ul class="fuentes">')
 for f in AP.FUENTES_PAGINA:
