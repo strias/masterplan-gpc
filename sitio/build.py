@@ -8,7 +8,7 @@ HEAD = open("head.html").read()  # fuentes y estilos compartidos
 
 SITIO = "https://masterplangpc.com"
 # Imagen de las vistas previas. Si cambia, cambiar también el nombre: X guarda la imagen vieja en caché.
-OG_IMAGEN = "og-2026-09-29.jpg"
+OG_IMAGEN = "og-2026-10-08.jpg"
 OG_ANTEPROYECTO = "og-anteproyecto-2026-10-01.jpg"
 
 def tarjeta(titulo, descripcion, ruta, imagen=None):
@@ -21,7 +21,7 @@ def tarjeta(titulo, descripcion, ruta, imagen=None):
             f'<meta property="og:description" content="{d}">\n<meta property="og:url" content="{u}">\n'
             f'<meta property="og:image" content="{SITIO}/{img}">\n<meta property="og:image:width" content="1200">\n'
             f'<meta property="og:image:height" content="630">\n<meta property="og:image:type" content="image/jpeg">\n'
-            f'<meta property="og:image:alt" content="{t if imagen else "Qué se vota el 24 de octubre: la moción del Master Plan del Gran Parque Central, con fuentes."}">\n'
+            f'<meta property="og:image:alt" content="{t if imagen else "Guía para el socio sobre la Asamblea del 24 de octubre: qué se vota, qué es el proyecto del Gran Parque Central y qué protege al club."}">\n'
             f'<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="{t}">\n'
             f'<meta name="twitter:description" content="{d}">\n<meta name="twitter:image" content="{SITIO}/{img}">\n')
 

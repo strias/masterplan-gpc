@@ -1,6 +1,6 @@
 # Masterplan GPC
 
-[![Qué se vota el 24 de octubre: la moción y el debate, con la fuente de cada dato](sitio/og-2026-09-29.jpg)](https://masterplangpc.com)
+[![Guía para el socio sobre la Asamblea del 24 de octubre: qué se vota, qué es el proyecto y qué protege al club, con la fuente de cada dato](sitio/og-2026-10-08.jpg)](https://masterplangpc.com)
 
 ## 👉 [masterplangpc.com](https://masterplangpc.com)
 
