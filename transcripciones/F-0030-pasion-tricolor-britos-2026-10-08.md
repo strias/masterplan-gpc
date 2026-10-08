@@ -8,7 +8,7 @@
 
 > **Aviso.** Transcripción automática, sin revisión humana completa. Solo se corrigieron nombres propios mal transcritos (lista al final). Puede tener errores de palabras, cifras o atribución de voces. Antes de citar, verificar contra el video en la marca de tiempo indicada. El contenido es de sus autores y del medio; se publica para que cualquiera pueda verificar las citas de este repositorio.
 >
-> El texto es el de la transcripción local con Whisper. **Las voces se separaron automáticamente por audio** (huellas de voz ECAPA de speechbrain, comparadas con un tramo de referencia de cada voz) y **Claude les puso nombre según el contenido**; los cortes dudosos y las correcciones manuales se anotan en el archivo de voces. Los turnos largos se cortan cada minuto aproximadamente, al inicio de un subtítulo, para que la marca de tiempo sirva para ubicar una cita.
+> El texto es el de la transcripción local con Whisper. **Las voces se separaron automáticamente por audio** (huellas de voz ECAPA de speechbrain, con [`scripts/voces_audio.py`](../scripts/voces_audio.py)) y **Claude les puso nombre según el contenido**; los cortes dudosos y las correcciones manuales se anotan en el archivo de voces. Los turnos largos se cortan cada minuto aproximadamente, al inicio de un subtítulo, para que la marca de tiempo sirva para ubicar una cita.
 
 Generada con [`scripts/transcripciones.py`](../scripts/transcripciones.py).
 
