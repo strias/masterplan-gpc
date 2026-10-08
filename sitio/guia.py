@@ -35,6 +35,10 @@ PROYECTO = [
  ("Plazo", "Unos cuatro años y medio, según la prefactibilidad, aunque depende del financiamiento {F-0031 00:40:20}"),
 ]
 
+IDEA = ("**La idea, según uno de sus autores.** El arquitecto José Ignacio Masena explica que hoy el Parque se usa unos 25 o 30 días al año, y que el proyecto busca que funcione todo el año y deje de ser “un costo para Nacional” para ser “una fuente de ingresos” {F-0032 00:05:59} {F-0032 00:06:59}. "
+        "Se trabaja sobre el estadio actual, sin demoler tribunas {F-0032 00:13:43} {F-0032 00:19:40}, y con la capacidad que pide la FIFA, porque un estadio más grande “implica más costo de mantenimiento” {F-0032 00:12:51}. "
+        "Es la visión de quien diseñó el proyecto: experta, pero de parte interesada.")
+
 COSTO = ("**El costo no está cerrado, y la moción no lo fija.** Quienes impulsan el proyecto hablan de unos 110 a 112 M de dólares con asesores y gerenciamiento {F-0016 00:07:30} {F-0021 00:28:11}, "
          "con un ajuste posible de hasta 20% {F-0021 00:28:18}. Decurnex habló de 150 a 160 M para el proyecto completo {F-0022 00:05:09}. "
          "El techo es alrededor de una quinta parte: unos 21 M según Singlet, un 22 o 23% según Aldabalde {F-0017 01:41:54} {F-0020 00:08:26}. "
@@ -76,6 +80,9 @@ PREGUNTAS = [
  ("¿Y si la obra sale más cara?", "El club no pone capital para sobrecostos {F-0026 p.4}. Impulsores y críticos coinciden en la consecuencia: se estira el tiempo de repago del fideicomiso, como pasó con el Club Social {F-0021 00:12:01} {F-0022 00:29:46} {F-0030 01:12:43}."),
  ("¿Y si no aparece ningún inversor?", "No se hace la etapa: ninguna empieza sin financiamiento suficiente {F-0026 p.5}, y a los 30 meses sin obra cae la autorización {F-0026 p.6}. “Si esto es viable, vamos a tener inversores” {F-0030 01:14:43}."),
  ("¿Se puede hacer solo el estadio, sin los negocios?", "La moción manda estudiarlo: el estadio completo, con el techo aparte, comparado con las combinaciones de unidades {F-0026 p.3}. Aldabalde dice que solo no dan los números {F-0016 00:16:13}; Decurnex, que sin techo se puede con los ingresos propios y unos 8 M de aporte de socios {F-0031 00:21:17}. Ninguno de los dos cálculos está publicado."),
+ ("¿Se va a poder jugar en el Parque durante la obra?", "El anteproyecto está pensado para que el estadio siga en uso; solo se interrumpe en las etapas de la cancha y los vestuarios {F-0004 p.38}. Según el arquitecto Masena, depende de cómo se diseñen las etapas en el proyecto ejecutivo, y hay soluciones técnicas para trabajar con el estadio abierto {F-0032 00:15:12}."),
+ ("¿Hay que comprar terrenos o casas del barrio?", "No. Las bases del concurso pedían usar solo los padrones de Nacional y el proyecto no depende de comprar otros {F-0004 p.43} {F-0032 00:10:44}."),
+ ("¿Se techa toda la cancha?", "No: el techo cubre las cuatro tribunas. Techar también el campo es técnicamente posible, pero más caro, según Masena {F-0032 00:18:55} {F-0004 p.45}. La moción manda costear el estadio con y sin techo {F-0026 p.3}."),
  ("¿Qué se construye primero?", "Lo primero es el proyecto ejecutivo del estadio, y la moción prioriza sus etapas {F-0026 p.2}. El orden de las obras se define después; el anteproyecto proponía empezar por el estacionamiento {F-0004 p.38}. Ver [[>anteproyecto/#orden|el anteproyecto, etapa por etapa]]."),
  ("¿Con qué mayoría se aprueba?", "Con la del Estatuto vigente. La reforma que exige 75% para proyectos grandes todavía no rige {F-0021 00:59:59} {F-0031 00:25:10}. Algunos directivos dicen que igual quieren ese respaldo: Britos habla de “el 75, el 80, el 90%” {F-0030 01:04:53}."),
 ]
@@ -90,4 +97,4 @@ ABIERTO = [
  "**El acta de la votación en la Directiva** no está publicada {F-0030 01:05:53}.",
 ]
 
-FUENTES_GUIA = ["F-0026", "F-0003", "F-0004", "F-0007", "F-0016", "F-0017", "F-0021", "F-0022", "F-0023", "F-0028", "F-0029", "F-0030", "F-0031"]
+FUENTES_GUIA = ["F-0026", "F-0003", "F-0004", "F-0007", "F-0016", "F-0017", "F-0021", "F-0022", "F-0023", "F-0028", "F-0029", "F-0030", "F-0031", "F-0032"]

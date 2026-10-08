@@ -41,7 +41,7 @@ def documento(titulo, descripcion, cuerpo, extra="", ruta="", imagen=None):
 YT = {"F-0014": "zOnJazksi08", "F-0015": "ErxVag75_mA", "F-0016": "anYgHKGhDWo",
       "F-0017": "dowYxCNXN7k", "F-0018": "PDYIvpms7r4", "F-0019": "-lKaALmO6ao",
       "F-0021": "SOkgIuhLvB4", "F-0022": "X_yghFec4j8",
-      "F-0030": "x5rYmjvAyRQ", "F-0031": "EL0lTOTyOW0"}
+      "F-0030": "x5rYmjvAyRQ", "F-0031": "EL0lTOTyOW0", "F-0032": "_V_cehrg2R8"}
 NOMBRE = {
     "F-0003": "Sitio oficial de la Asamblea", "F-0004": "Anteproyecto (PDF oficial)",
     "F-0006": "Aclaración de los autores (PDF)", "F-0007": "Moción oficial, versión 1 (PDF)",
@@ -58,6 +58,7 @@ NOMBRE = {
     "F-0028": "Diego Domínguez en X (05/10; enlace a la cuenta)",
     "F-0029": "Martín Olivera en X, cita a Carve Deportiva (05/10; enlace a la cuenta)",
     "F-0030": "Pasión Tricolor, Britos (08/10)", "F-0031": "Trimax Live, Decurnex (08/10)",
+    "F-0032": "El Espectador, el arquitecto Masena (08/10)",
 }
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
@@ -621,7 +622,7 @@ G_('</dl></section>')
 G_('<section id="proyecto" class="sec"><h2>El proyecto en cinco minutos</h2><p class="sec-intro">Cifras del anteproyecto oficial. Se pueden cambiar o excluir unidades: la moción aprueba el marco, no cada pieza.</p><dl class="ficha">')
 for k, v in G.PROYECTO:
     G_(f'<div><dt>{html.escape(k)}</dt><dd>{R(v)}</dd></div>')
-G_(f'</dl><p class="lectura">{R(G.COSTO)}</p></section>')
+G_(f'</dl><p class="lectura">{R(G.IDEA)}</p><p class="lectura">{R(G.COSTO)}</p></section>')
 G_('<section id="garantias" class="sec"><h2>Qué protege al club</h2><p class="sec-intro">Lo que dice el texto de la moción. Cada enlace abre la página del PDF oficial.</p><div class="garantias">')
 for t, x in G.GARANTIAS:
     G_(f'<article><h3>{html.escape(t)}</h3><p>{R(x)}</p></article>')
