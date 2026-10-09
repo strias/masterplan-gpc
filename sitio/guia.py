@@ -16,11 +16,11 @@ QUE_SE_VOTA = [
 ]
 
 COMO_VOTAR = [
- ("Cuándo", "Sábado 24 de octubre de 2026, 10:00 {F-0003}"),
+ ("Cuándo", "Sábado 24 de octubre de 2026: primer llamado 9:30, segundo llamado 10:30 {F-0003}"),
  ("Dónde", "Polideportivo del Club Nacional de Football {F-0003}"),
  ("Quiénes votan", "Socios Honorarios y Activos habilitados, con la cuota al día, que acrediten su identidad {F-0003}"),
  ("Con qué mayoría", "La del Estatuto vigente. La reforma que pide 75% para proyectos grandes todavía no rige: en eso coinciden todos {F-0021 00:59:59} {F-0031 00:25:10}. Ver [[#preguntas|preguntas]]"),
- ("Para informarte", "Reuniones informativas el 12, 14, 19 y 21 de octubre a las 19:00, consultas con respuesta oficial en 48 horas hábiles y los documentos en el sitio oficial {F-0003}"),
+ ("Para informarte", "Reuniones informativas los miércoles 14 y 21 de octubre a las 19:00, en el Paddock y en línea, consultas con respuesta oficial en 48 horas hábiles y los documentos en el sitio oficial {F-0003}"),
 ]
 
 # El proyecto en cifras del anteproyecto (F-0004; la v2, F-0027, mantiene la paginación).

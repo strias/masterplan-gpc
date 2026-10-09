@@ -1,6 +1,6 @@
 import html, os, re
 
-ACTUALIZADO = "08/10/2026"
+ACTUALIZADO = "09/10/2026"
 TITULO = "Contrapunto del Master Plan"
 DESCRIPCION = "Preguntas, respuestas y fuentes del debate sobre el Master Plan del Gran Parque Central."
 HEAD = open("head.html").read()  # fuentes y estilos compartidos
@@ -343,7 +343,7 @@ A('''<header class="hero">
   <h1>Qué dice cada uno, y qué se puede comprobar</h1>
   <p class="lede">Las preguntas centrales del debate, con las respuestas de cada parte y un enlace al minuto exacto en que se dijo cada cosa. Donde hay un documento, se contrasta con él.</p>
   <dl class="facts">
-    <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
+    <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 9:30 (2.º llamado 10:30) · Polideportivo</dd></div>
     <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
     <div><dt>Falta publicar</dt><dd>Modelo económico</dd></div>
   </dl>
@@ -497,7 +497,7 @@ P('''<header class="hero">
   <h1>Qué se vota el 24 de octubre</h1>
   <p class="lede">El 5 de octubre el club publicó la versión 2 de la moción que considera la Asamblea General Extraordinaria, que reemplaza a la del 29 de septiembre. Acá está qué cambió, artículo por artículo, con la página de cada cita, qué responde a las preguntas del debate y qué deja abierto.</p>
   <dl class="facts">
-    <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 10:00 · Polideportivo</dd></div>
+    <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 9:30 (2.º llamado 10:30) · Polideportivo</dd></div>
     <div><dt>Moción</dt><dd>''' + R("Versión 2 · publicada el 05/10/2026 · 6 páginas {F-0026}") + '''</dd></div>
     <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
   </dl>
