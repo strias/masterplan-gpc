@@ -39,3 +39,4 @@ El anteproyecto dice 16.544 butacas nuevas ([F-0004](../fuentes/F-0004-anteproye
 
 - 2026-09-28: registro inicial.
 - 2026-10-08: veredicto (mayormente-verdadero), primera tanda de la fase 2.
+- 2026-10-10: evidencia nueva: la versión 3 del anteproyecto ([F-0037](../fuentes/F-0037-anteproyecto-v3.md)) corrige el total de p. 42: 8.247 butacas nuevas y 3.567 mejoradas en el estadio, más 1.517 nuevas de hospitalidad. El documento ya no es incoherente; la página del anteproyecto del sitio la marca como consistente. Veredicto pendiente de revisión en la próxima tanda.

@@ -39,3 +39,4 @@ Criterio: cuando no hay documento pero las dos partes enfrentadas llegan por su 
 
 - 2026-09-28: registro inicial.
 - 2026-10-08: veredicto (mayormente-verdadero), primera tanda de la fase 2.
+- 2026-10-10: evidencia nueva: el resumen financiero ([F-0036](../fuentes/F-0036-resumen-ejecutivo-financiero.md), p. 3) dice que sacar la cubierta reduce "aproximadamente USD 21,5 millones". Es la primera fuente pública de la cifra. Veredicto pendiente de revisión en la próxima tanda.

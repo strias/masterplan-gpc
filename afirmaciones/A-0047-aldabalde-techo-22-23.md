@@ -39,3 +39,4 @@ Criterio: cuando no hay documento pero las dos partes enfrentadas llegan por su 
 
 - 2026-10-01: registro inicial.
 - 2026-10-08: veredicto (mayormente-verdadero), primera tanda de la fase 2.
+- 2026-10-10: evidencia nueva: el resumen financiero ([F-0036](../fuentes/F-0036-resumen-ejecutivo-financiero.md), p. 2-3) da el techo en unos 21,5 M sobre 105,0 M (20,5%; 23% sobre los 93,6 M a precios de 2025, cuenta propia). Veredicto pendiente de revisión en la próxima tanda.
