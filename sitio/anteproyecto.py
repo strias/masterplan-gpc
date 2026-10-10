@@ -25,7 +25,7 @@ TIPOS = {"estadio": ("Estadio", "soft"), "negocio": ("Unidades de negocio", "pen
 EN_CORTO = [
  "Es la memoria del proyecto ganador del concurso de ideas: 121 páginas de arquitectura, fechadas en junio de 2025 y publicadas a los socios el 23/09/2026 {F-0004} {F-0003}.",
  "Divide la obra en **14 etapas**. El estadio se sigue usando, salvo en las etapas 3 y 4, que se hacen juntas {F-0004 p.38}.",
- "**No trae costos, financiamiento ni plazos en años.** Eso queda para el modelo económico, que todavía no está publicado {F-0003}.",
+ "**No trae costos, financiamiento ni plazos en años.** Los costos y la deuda están en el resumen financiero publicado el 10/10 {F-0036}; ver [[>../finanzas/|las cuentas]].",
  "La etapa 1 es de estacionamiento. La 2 combina el zócalo comercial y los museos con mejoras de accesos a la Atilio García y la Abdón Porte. **Las obras de cancha y tribunas empiezan en la etapa 3**, y el techo va al final, en las etapas 12 y 13 {F-0004 p.38-41}.",
 ]
 
@@ -42,11 +42,11 @@ CONTRASTE = [
  ("La bajada de la cancha está incluida", "Aldabalde {F-0014 01:29:17}",
   "Etapa 3: “reforma de la cancha, se baja 75 cm” {F-0004 p.38}.", "consistente", None),
  ("“10 mil butacas nuevas”", "Aldabalde {F-0014 01:52:45}",
-  "Sumando las etapas salen 10.116 (8.247 generales y 1.869 de hospitalidad), coherente con pasar de unos 34.000 a más de 43.000 lugares {F-0004 p.64}. Pero el total de la misma memoria dice 16.544 butacas nuevas {F-0004 p.42}.", "parcial", None),
+  "La versión 3 da 8.247 butacas nuevas en el estadio, 3.567 mejoradas y 1.517 nuevas de hospitalidad {F-0037 p.42}: 9.764 nuevas en el estadio, 10.116 con las 352 de hospitalidad del Arena. Es coherente con pasar de unos 34.000 a más de 43.000 lugares {F-0004 p.64}. Hasta la versión 2, el total decía 16.544 {F-0027 p.42}.", "consistente", None),
  ("Zócalo comercial de 3.500 o 7.000 m²", "Aldabalde {F-0014 01:08:14}",
   "3.080 m² de locales {F-0004 p.42}: 1.852 ampliables al doble con entrepisos más una tienda ancla de 1.228 {F-0004 p.38}. Con entrepisos serían 4.932 m². Los 7.000 m² no aparecen en el documento.", "parcial", None),
  ("El techo cuesta unos 20 M", "Aldabalde {F-0014 00:53:46}; Singlet, 21,5 M {F-0017 01:41:45}",
-  "Lo ubica en las etapas 12 y 13, las últimas antes de las esquinas {F-0004 p.41}. No da su costo.", "pendiente", None),
+  "Lo ubica en las etapas 12 y 13, las últimas antes de las esquinas {F-0004 p.41}. No da su costo; el resumen financiero dice que sacarlo reduce unos 21,5 M {F-0036 p.3}.", "consistente", None),
  ("La cotización no incluye césped, mobiliario, audio ni anclajes del techo", "Decurnex {F-0015 00:08:11}; Singlet {F-0017 00:51:51}",
   "El anteproyecto no tiene costos, así que no se puede contrastar con él. La crítica es sobre la cotización y el modelo, que no están publicados.", "pendiente", "debate/detalle-costo.html"),
  ("La numeración de las etapas no es un orden de obra", "Gomensoro {F-0021 00:18:16}",
@@ -60,16 +60,17 @@ CUENTAS = [
  ("Estacionamiento", "430 + 550 = 980", "980 (p. 42)", "consistente"),
  ("Locales comerciales", "1.852 + 1.228 = 3.080 m²", "3.080 m² (p. 42)", "consistente"),
  ("Superficies rentables", "1.494 + 805 + 11.138 + 500 + 329 = 14.266 m²", "14.266 m² (p. 42)", "consistente"),
- ("Butacas de hospitalidad", "159 + 281 + 71 + 1.358 = 1.869", "1.869 (p. 42)", "consistente"),
- ("Butacas nuevas", "8.247 generales + 1.869 de hospitalidad = 10.116", "16.544 (p. 42)", "cuenta"),
+ ("Butacas de hospitalidad del estadio", "159 + 1.358 = 1.517", "1.517 (p. 42, v3)", "consistente"),
+ ("Butacas de hospitalidad del Arena", "281 + 71 = 352", "352 (p. 42)", "consistente"),
+ ("Butacas nuevas del estadio", "1.325 + 768 + 728 + 1.101 + 2.310 + 2.015 = 8.247", "8.247 (p. 42, v3; hasta la v2 decía 16.544)", "consistente"),
  ("Aforo", "", "“más de 43.000” (p. 64) y “44.000” (p. 42)", "parcial"),
 ]
 
 NO_TRAE = [
- ("Costos", "Ni de la obra ni de cada etapa."),
- ("Financiamiento y plazos", "Ni cómo se paga ni cuántos años lleva cada etapa."),
+ ("Costos", "Ni de la obra ni de cada etapa. El costo total y por alternativa está en el resumen financiero {F-0036 p.2}; por etapa no hay datos públicos."),
+ ("Financiamiento y plazos", "Ni cómo se paga ni cuántos años lleva cada etapa. El financiamiento se resume en [[>../finanzas/|las cuentas]]."),
  ("Datos que faltaban", "En la versión 1, el estacionamiento figuraba como “XXX” y la Plaza del Hincha y la arena como “XX”. La versión 2, del 29/09, los completa: unos 25.000 m², 980 plazas y 123 lugares para bicicletas {F-0027 p.34}."),
- ("Errores corregidos", "La versión 1 ubicaba a la hinchada visitante en la Abdón Porte (p. 51); los autores aclararon que es la Héctor Scarone {F-0006}, y la versión 2 lo corrige {F-0027 p.51}. También corrige las tribunas de la segunda etapa del techo {F-0027 p.41} y ubica la hospitalidad en la Delgado y la Atilio García, no en la Abdón Porte {F-0027 p.52}."),
+ ("Errores corregidos", "La versión 1 ubicaba a la hinchada visitante en la Abdón Porte (p. 51); los autores aclararon que es la Héctor Scarone {F-0006}, y la versión 2 lo corrige {F-0027 p.51}. También corrige las tribunas de la segunda etapa del techo {F-0027 p.41} y ubica la hospitalidad en la Delgado y la Atilio García, no en la Abdón Porte {F-0027 p.52}. La versión 3, del 10/10, corrige el total de butacas nuevas: separa las nuevas, las mejoradas y las del Arena {F-0037 p.42}."),
  ("Un posible error", "En p. 13 describe la Delgado “con su techado metálico elegante” {F-0004 p.13}. En la imagen satelital sus gradas están descubiertas {F-0025}."),
 ]
 
@@ -81,9 +82,9 @@ ANALISIS = [
  "**Pero el anteproyecto no lo presenta como accesorio.** Lo describe como “el gran aliado para transformar la experiencia”, por cómo retiene el sonido de la hinchada {F-0004 p.45}. Si “terminar el Parque” incluye el techo es una pregunta de valores, no de hechos: depende de qué espera el socio. La encuesta de 2025, con casi 14.000 respuestas, podría decirlo {F-0007 p.1}, pero sus resultados no están publicados.",
  "**Empezar por el estacionamiento tiene lógica de obra, y también de caja.** La etapa 1 incluye mudar el estacionamiento existente y reubicar las canchas de tenis {F-0004 p.38}, algo que suele hacerse antes para liberar espacio [[CG]]. Y el propio documento dice que el orden busca equilibrar egresos e ingresos {F-0004 p.38}. Que eso choque o no con la prioridad al estadio que pide la moción {F-0026 p.2} depende del orden definitivo, que ninguno de los dos documentos fija.",
  "**Si cada etapa necesita su propio financiamiento, las últimas dependen de las primeras.** La moción exige financiamiento suficiente para completar cada etapa antes de empezarla {F-0026 p.5}. Si los ingresos de las primeras unidades rinden menos de lo previsto, lo que más se atrasa es justo lo que va al final: el techo y la bandeja alta [[CG]]. Ver [[>debate/detalle-sobrecosto.html|el sobrecosto]] y [[>debate/detalle-solo.html|solo el estadio]].",
- "**El documento es sólido en lo que cuenta y deja afuera lo que se discute.** Casi todos sus totales cierran con las etapas; la excepción son las 16.544 butacas nuevas. Pero el debate es sobre plata, y el anteproyecto no tiene ni un número de costo. Por eso la mayoría de las críticas (costo, techo, estacionamiento) no se pueden contrastar con él: hace falta el modelo económico.",
+ "**El documento es sólido en lo que cuenta y deja afuera lo que se discute.** Desde la versión 3, todos sus totales cierran con las etapas; hasta la versión 2, la excepción eran las 16.544 butacas nuevas. Pero el debate es sobre plata, y el anteproyecto no tiene ni un número de costo. Las cifras están en el resumen financiero del 10/10 {F-0036}, y el estudio completo sigue sin publicarse.",
 ]
 
 LECTURA = "El anteproyecto dice qué se construye y en qué orden, pero no cuánto cuesta. En su orden actual, primero vienen el estacionamiento y el zócalo comercial; la etapa 2 ya mejora accesos a dos tribunas, las obras de cancha y tribunas empiezan en la etapa 3, y el techo, que todas las partes tratan como postergable, va al final. La moción pide priorizar el estadio sin fijar un orden nuevo. Antes de votar vale preguntar en qué orden se va a hacer, cuándo llega cada mejora del estadio y si el techo forma parte de lo que se considera terminarlo."
 
-FUENTES_PAGINA = ["F-0004", "F-0027", "F-0006", "F-0003", "F-0026", "F-0007", "F-0014", "F-0015", "F-0016", "F-0017", "F-0020", "F-0021", "F-0022", "F-0023", "F-0024", "F-0025"]
+FUENTES_PAGINA = ["F-0004", "F-0027", "F-0037", "F-0036", "F-0006", "F-0003", "F-0026", "F-0007", "F-0014", "F-0015", "F-0016", "F-0017", "F-0020", "F-0021", "F-0022", "F-0023", "F-0024", "F-0025"]

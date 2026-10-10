@@ -1,6 +1,7 @@
 import html, os, re
 
-ACTUALIZADO = "09/10/2026"
+ACTUALIZADO = "10/10/2026"
+ACTUALIZADO_DEBATE = "09/10/2026"  # el debate no se actualizó con los documentos del 10/10
 TITULO = "Contrapunto del Master Plan"
 DESCRIPCION = "Preguntas, respuestas y fuentes del debate sobre el Master Plan del Gran Parque Central."
 HEAD = open("head.html").read()  # fuentes y estilos compartidos
@@ -62,6 +63,9 @@ NOMBRE = {
     "F-0033": "MTOP: microsimulación del corredor BRT de Av. 8 de Octubre (PDF)",
     "F-0034": "La Mañana: la reforma del transporte metropolitano (06/10)",
     "F-0035": "OpenStreetMap: el estadio y Av. 8 de Octubre",
+    "F-0036": "Resumen ejecutivo financiero para socios (PDF oficial)",
+    "F-0037": "Anteproyecto, versión 3 (PDF oficial)",
+    "F-0008": "Modelo económico financiero (sitio oficial; acceso restringido)",
 }
 URL = {
     "F-0003": "https://asambleagpc.nacional.uy/",
@@ -78,6 +82,9 @@ URL = {
     "F-0007": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria.pdf",
     "F-0026": "https://asambleagpc.nacional.uy/Moci%C3%B3n%20Asamblea%20General%20Extraordinaria%20v2.pdf",
     "F-0027": "https://asambleagpc.nacional.uy/Anteproyectov2.pdf",
+    "F-0036": "https://asambleagpc.nacional.uy/Resumen%20ejecutivo%20financiero.pdf",
+    "F-0037": "https://asambleagpc.nacional.uy/Anteproyectov3.pdf",
+    "F-0008": "https://asambleagpc.nacional.uy/#documentos",
     "F-0009": "https://laabdon.com/noticias/se-filtro-la-mocion-del-master-plan-que-se-propone-votar-el-24-de-octubre",
     "F-0010": "https://laabdon.com/noticias/master-plan-del-gran-parque-central-que-se-propone-y-que-significa-para-nacional",
     "F-0011": "https://laabdon.com/noticias/el-futuro-del-gran-parque-central-que-propone-cada-uno-y-donde-estan-las-diferencias",
@@ -85,7 +92,7 @@ URL = {
 }
 
 # Diferencia entre la página impresa que se cita y la del visor del PDF (el anteproyecto no numera la portada).
-PAGINA_VISOR = {"F-0004": 1, "F-0027": 1}
+PAGINA_VISOR = {"F-0004": 1, "F-0027": 1, "F-0037": 1}
 
 # Fuentes que no son públicas: se citan con minuto, sin enlace.
 PRIVADAS = {"F-0020": "Grabación del autor de la reunión informativa virtual del 30/09, cerrada a socios. No es pública."}
@@ -344,7 +351,7 @@ A('''<header class="hero">
   <p class="lede">Las preguntas centrales del debate, con las respuestas de cada parte y un enlace al minuto exacto en que se dijo cada cosa. Donde hay un documento, se contrasta con él.</p>
   <dl class="facts">
     <div><dt>Asamblea</dt><dd>24 de octubre de 2026, 9:30 (2.º llamado 10:30) · Polideportivo</dd></div>
-    <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO + '''</dd></div>
+    <div><dt>Estado</dt><dd>Preliminar · actualizado el ''' + ACTUALIZADO_DEBATE + '''</dd></div>
     <div><dt>Falta publicar</dt><dd>Modelo económico</dd></div>
   </dl>
   <nav class="toc" aria-label="Secciones">
@@ -451,7 +458,7 @@ for i, p in enumerate(PREGUNTAS):
     nxt = f'<a href="detalle-{ids[i+1]}.html">{html.escape(DETALLE[ids[i+1]]["titulo"])} →</a>' if i + 1 < len(ids) else '<a href="index.html">Volver al debate</a>'
     o.append(f'<div class="acciones">{compartir(d["titulo"] + " Qué dice cada parte y en qué se apoya, con fuentes.", "debate/detalle-" + p["id"] + ".html")}</div>')
     o.append(f'<nav class="pager">{prev}{nxt}</nav>')
-    o.append(f'<footer class="foot"><p>Preliminar, al {ACTUALIZADO}. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener el modelo económico. Fuentes y método: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>')
+    o.append(f'<footer class="foot"><p>Preliminar, al {ACTUALIZADO_DEBATE}. Las citas salen de transcripciones automáticas: escuchá el tramo enlazado antes de citarlo. Los veredictos formales siguen pendientes hasta tener el modelo económico. Fuentes y método: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>')
     descripcion = f'{d["titulo"]} Qué dice cada parte, en qué se apoya y análisis, en el debate sobre el Master Plan del Gran Parque Central.'
     open(f"debate/detalle-{p['id']}.html", "w").write(documento(d["titulo"], descripcion, "\n".join(o), EXTRA, f"debate/detalle-{p['id']}.html"))
 print("detalles:", len(ids))
@@ -697,7 +704,7 @@ Q('<header class="hero">'
   '<p class="lede">El anteproyecto etapa por etapa, con la página de cada dato, y cómo se compara con lo que dijeron las partes y con lo que pide la moción.</p>'
   '<dl class="facts">'
   f'<div><dt>Documento</dt><dd>{R("Memoria del concurso de ideas · 121 páginas {F-0004}")}</dd></div>'
-  '<div><dt>Fechas</dt><dd>Junio de 2025 · publicado el 23/09/2026 · versión 2 el 29/09/2026</dd></div>'
+  '<div><dt>Fechas</dt><dd>Junio de 2025 · publicado el 23/09/2026 · versión 2 el 29/09 · versión 3 el 10/10/2026</dd></div>'
   f'<div><dt>Estado</dt><dd>Preliminar · actualizado el {ACTUALIZADO}</dd></div>'
   '</dl>'
   '<nav class="toc" aria-label="Secciones"><a href="#resumen">En resumen</a><a href="#etapas">Las 14 etapas</a><a href="#orden">El orden y la moción</a><a href="#contraste">Contra lo que se dijo</a><a href="#cuentas">Las cuentas</a><a href="#no-trae">Qué no trae</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a></nav>'
