@@ -9,7 +9,10 @@ consultada: 2026-10-05
 url: https://asambleagpc.nacional.uy/Anteproyectov2.pdf
 archivo: archivo/Anteproyectov2.pdf   # no se sube al repo (36 MB, derechos de los autores)
 reemplaza: F-0004
+reemplazada_por: F-0037   # versión 3, cargada el 2026-10-10
 ---
+
+> **Hay una versión 3** del 2026-10-10 ([F-0037](F-0037-anteproyecto-v3.md)). Solo cambia p. 42: el total de "16.544 butacas nuevas" pasa a "8.247 butacas nuevas y 3.567 butacas mejoradas", y las de hospitalidad del estadio pasan de 1.869 a 1.517. Las demás citas por página valen igual.
 
 ## Resumen
 
@@ -47,6 +50,7 @@ Se comparó el texto de las 121 páginas. Hay diferencias en 26 páginas; en 95 
 
 ## Notas
 
+- **Corregido en la v3:** el total de 16.544 butacas nuevas de p. 42 ([F-0037](F-0037-anteproyecto-v3.md)).
 - **Sigue igual en la v2:** la descripción de la Delgado con un "techado metálico elegante" (p. 13; ver [F-0004](F-0004-anteproyecto.md) y [F-0025](F-0025-google-maps-gpc.md)), las 16.544 butacas nuevas (p. 42), las 14 etapas y la ausencia de costos.
 - **Fechas:** la v2 se armó y se subió el 29/09, el mismo día que la moción v1. El sitio no avisó del cambio; la tarjeta dice solo "Versión 2".
 - Parte interesada: los autores son el equipo ganador del concurso.

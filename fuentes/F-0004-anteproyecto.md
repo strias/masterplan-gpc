@@ -8,10 +8,10 @@ fecha: 2026-09-23        # publicación a socios (versión 1)
 consultada: 2026-09-28
 url: https://asambleagpc.nacional.uy/Anteproyecto.pdf
 archivo: archivo/Anteproyecto.pdf   # no se sube al repo (155 MB, derechos de los autores)
-reemplazada_por: F-0027   # versión 2, cargada el 2026-09-29
+reemplazada_por: F-0027   # versión 2, cargada el 2026-09-29; la versión 3 (F-0037) es del 2026-10-10
 ---
 
-> **Hay una versión 2** del 2026-09-29 ([F-0027](F-0027-anteproyecto-v2.md)), con la misma paginación. Corrige erratas, completa los datos que figuraban como "XXX" y cambia unos pocos datos (hinchada visitante, hospitalidad, techo de la etapa 13, codos de las etapas 4 y 5). Las citas por página de esta ficha valen para las dos versiones, salvo en esos puntos.
+> **Hay una versión 2** del 2026-09-29 ([F-0027](F-0027-anteproyecto-v2.md)), con la misma paginación. Corrige erratas, completa los datos que figuraban como "XXX" y cambia unos pocos datos (hinchada visitante, hospitalidad, techo de la etapa 13, codos de las etapas 4 y 5). Las citas por página de esta ficha valen para las dos versiones, salvo en esos puntos. La **versión 3** del 2026-10-10 ([F-0037](F-0037-anteproyecto-v3.md)) solo cambia el resumen de butacas de p. 42.
 
 ## Resumen
 
@@ -35,7 +35,7 @@ Memoria del proyecto ganador del concurso de ideas para el Plan Maestro. Cubre e
 **Aforo**
 - Actual: unos 34.000 espectadores. Propuesto: más de 43.000 en las tres configuraciones (AUF, CONMEBOL, FIFA). (p. 64)
 - En modo FIFA, capacidad neta de más de 40.000, lo que permitiría partidos de un Mundial hasta cuartos de final. (p. 64)
-- 16.544 butacas nuevas en el estadio. (p. 42)
+- 16.544 butacas nuevas en el estadio. (p. 42) **Corregido en la v3** ([F-0037](F-0037-anteproyecto-v3.md)): 8.247 butacas nuevas y 3.567 mejoradas en el estadio, más 1.517 nuevas de hospitalidad.
 - Hinchada visitante en la bandeja alta de la Héctor Scarone, con 1.937 lugares. (p. 62; ver también la corrección de p. 51 abajo)
 
 **Etapas**
@@ -68,7 +68,7 @@ Memoria del proyecto ganador del concurso de ideas para el Plan Maestro. Cubre e
 - Superficies rentables: 1.494 + 805 + 11.138 + 500 (salón VIP) + 329 (e-sports) = 14.266. Coincide.
 - Lounge de hospitalidad: 239 + 180 + 247 + 4.053 = 4.719 m². Coincide.
 - Butacas de hospitalidad: 159 + 281 + 71 + 1.358 = 1.869. Coincide.
-- **Butacas nuevas:** 1.325 + 768 + 728 + 1.101 + 2.310 + 2.015 = 8.247 generales; con las 1.869 de hospitalidad, 10.116. El total de p. 42 dice **16.544** y no se puede reconstruir desde las etapas (las 3.567 con visibilidad mejorada no son nuevas). La suma sí es coherente con el aumento de aforo, de unos 34.000 a más de 43.000 (p. 64).
+- **Butacas nuevas:** 1.325 + 768 + 728 + 1.101 + 2.310 + 2.015 = 8.247 generales; con las 1.869 de hospitalidad, 10.116. El total de p. 42 dice **16.544** y no se puede reconstruir desde las etapas (las 3.567 con visibilidad mejorada no son nuevas). La suma sí es coherente con el aumento de aforo, de unos 34.000 a más de 43.000 (p. 64). **Resuelto en la v3** ([F-0037](F-0037-anteproyecto-v3.md)): p. 42 dice ahora 8.247 nuevas y 3.567 mejoradas; el 16.544 sumaba esas dos cifras y las 4.730 del Arena. Las 1.869 de hospitalidad incluían las 352 del Arena; las del estadio son 1.517.
 - Aforo: "más de 43.000" en p. 64 y "capacidad 44.000 personas" en p. 42.
 
 **Techo** (p. 13, 45 y 69)
