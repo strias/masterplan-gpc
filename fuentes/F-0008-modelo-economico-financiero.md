@@ -20,4 +20,5 @@ Pendiente. Al 2026-09-28 figura como "Carga pendiente". Acceso restringido: solo
 
 ## Notas
 
+- 2026-10-10: el modelo sigue con "Carga pendiente". El mismo día el sitio publicó, con acceso público, un resumen ejecutivo del estudio de CPA Ferrere con costos, deuda, plazos de repago y sensibilidades ([F-0036](F-0036-resumen-ejecutivo-financiero.md)). Mientras el modelo no se publique, ese resumen es la fuente pública de las cifras financieras.
 - Por ser de acceso restringido, este repo no puede publicar su contenido sin decidir antes cómo tratarlo. Mientras no sea público, las afirmaciones que dependan solo de este documento quedan como "No verificable" para el público general.
