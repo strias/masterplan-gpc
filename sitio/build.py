@@ -512,7 +512,7 @@ P('''<header class="hero">
     <a href="#resumen">En resumen</a><a href="#cambios">Qué cambió</a><a href="#obra">Para que empiece la obra</a><a href="#articulos">Artículo por artículo</a><a href="#debate">Y el debate</a><a href="#no-dice">Qué no dice</a><a href="#hechos">Datos por verificar</a><a href="#analisis">Análisis</a><a href="#otra-mocion">Aparte: otra moción</a><a href="#fuentes">Fuentes</a>
   </nav>
   <p><a class="back" href="../">← Guía para el socio</a></p>
-  <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a><a class="cta" href="anteproyecto/">El anteproyecto: qué se construye y en qué orden →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
+  <div class="acciones"><a class="cta" href="debate/">El debate: qué dice cada uno →</a><a class="cta" href="anteproyecto/">El anteproyecto: qué se construye y en qué orden →</a><a class="cta" href="finanzas/">Las cuentas: cuánto cuesta y cómo se paga →</a>''' + compartir("¿Qué se vota el 24 de octubre? La moción del Master Plan del Gran Parque Central, artículo por artículo y con la fuente de cada dato.") + '''</div>
 </header>''')
 
 P('<section id="resumen" class="sec"><h2>En resumen</h2><ul class="corto">')
@@ -582,7 +582,7 @@ for f in M.FUENTES_PORTADA:
 P('</ul></section>')
 P('''<footer class="foot"><p>Proyecto de verificación del debate sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Vínculo declarado: el conductor de <em>Triconectados</em> (Trimax Live) es primo del autor, difundió este sitio al aire y le trasladó una pregunta del autor a un entrevistado (F-0031). Método: se separan hechos, estimaciones y opiniones; se aplica la misma vara a todos, incluida la directiva; ninguna cifra se da sin fuente. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>''')
 
-MOCION_HTML = "\n".join(o).replace('href="debate/', 'href="../debate/').replace('href="anteproyecto/', 'href="../anteproyecto/')
+MOCION_HTML = "\n".join(o).replace('href="debate/', 'href="../debate/').replace('href="anteproyecto/', 'href="../anteproyecto/').replace('href="finanzas/', 'href="../finanzas/')
 os.makedirs("mocion", exist_ok=True)
 open("mocion/index.html", "w").write(documento(
     "La moción del Master Plan",
@@ -620,9 +620,9 @@ G_('''<header class="hero">
   <h1>Guía para el socio</h1>
   <p class="lede">''' + R(G.LEDE) + '''</p>
   <nav class="toc" aria-label="Secciones">
-    <a href="#que-se-vota">Qué se vota</a><a href="#como-votar">Cómo votar</a><a href="#proyecto">El proyecto</a><a href="#garantias">Qué protege al club</a><a href="#apoyos">Por qué la apoyan</a><a href="#preguntas">Preguntas</a><a href="#abierto">Qué queda abierto</a>
+    <a href="#que-se-vota">Qué se vota</a><a href="#como-votar">Cómo votar</a><a href="#proyecto">El proyecto</a><a href="#plata">La plata</a><a href="#garantias">Qué protege al club</a><a href="#apoyos">Por qué la apoyan</a><a href="#preguntas">Preguntas</a><a href="#abierto">Qué queda abierto</a>
   </nav>
-  <div class="acciones"><a class="cta" href="mocion/">La moción, artículo por artículo →</a><a class="cta" href="anteproyecto/">El anteproyecto, etapa por etapa →</a>''' + compartir("Guía para el socio el 24 de octubre: qué se vota, qué es el proyecto del Gran Parque Central y qué protege al club, con la fuente de cada dato.") + '''</div>
+  <div class="acciones"><a class="cta" href="mocion/">La moción, artículo por artículo →</a><a class="cta" href="anteproyecto/">El anteproyecto, etapa por etapa →</a><a class="cta" href="finanzas/">Las cuentas, alternativa por alternativa →</a>''' + compartir("Guía para el socio el 24 de octubre: qué se vota, qué es el proyecto del Gran Parque Central y qué protege al club, con la fuente de cada dato.") + '''</div>
 </header>''')
 G_('<section id="que-se-vota" class="sec"><h2>Qué se vota</h2><ul class="voto">')
 for x in G.QUE_SE_VOTA:
@@ -635,7 +635,11 @@ G_('</dl></section>')
 G_('<section id="proyecto" class="sec"><h2>El proyecto en cinco minutos</h2><p class="sec-intro">Cifras del anteproyecto oficial. Se pueden cambiar o excluir unidades: la moción aprueba el marco, no cada pieza.</p><dl class="ficha">')
 for k, v in G.PROYECTO:
     G_(f'<div><dt>{html.escape(k)}</dt><dd>{R(v)}</dd></div>')
-G_(f'</dl><p class="lectura">{R(G.IDEA)}</p><p class="lectura">{R(G.COSTO)}</p></section>')
+G_(f'</dl><p class="lectura">{R(G.IDEA)}</p></section>')
+G_('<section id="plata" class="sec"><h2>La plata</h2><p class="sec-intro">Cifras del resumen financiero que el club publicó el 10 de octubre. El detalle, con las cuatro alternativas y qué pasa si las cosas salen peor, está en <a href="finanzas/">las cuentas</a>.</p><dl class="ficha">')
+for k, v in G.PLATA:
+    G_(f'<div><dt>{html.escape(k)}</dt><dd>{R(v)}</dd></div>')
+G_(f'</dl><p class="lectura">{R(G.PLATA_NOTA)}</p><div class="acciones"><a class="cta" href="finanzas/">Ver las cuentas completas →</a></div></section>')
 G_('<section id="garantias" class="sec"><h2>Qué protege al club</h2><p class="sec-intro">Lo que dice el texto de la moción. Cada enlace abre la página del PDF oficial.</p><div class="garantias">')
 for t, x in G.GARANTIAS:
     G_(f'<article><h3>{html.escape(t)}</h3><p>{R(x)}</p></article>')
@@ -664,7 +668,7 @@ open("index.html", "w").write(documento(
     "\n".join(o), GUIA_CSS))
 # Copia en /guia/ con su propia dirección: un enlace nuevo para compartir, sin la vista previa vieja que X guarda de la portada.
 GUIA_HTML = "\n".join(o)
-for d in ("mocion/", "anteproyecto/", "debate/"):
+for d in ("mocion/", "anteproyecto/", "debate/", "finanzas/"):
     GUIA_HTML = GUIA_HTML.replace(f'href="{d}', f'href="../{d}')
 os.makedirs("guia", exist_ok=True)
 open("guia/index.html", "w").write(documento(
@@ -690,6 +694,7 @@ AP_CSS = PORTADA_CSS.replace("</style>", """
 .etapa .agrega { color: var(--muted); font-size: .95rem; }
 .etapa.estadio .n, .etapa.ambos .n { color: var(--navy); }
 .back { font-family: var(--f-mono); font-size: .82rem; }
+.migas { margin: 0; color: var(--muted); }
 @media (max-width: 560px) { .etapa { grid-template-columns: 44px 1fr; } }
 </style>""")
 AP_COMPARTIR = "El anteproyecto del Master Plan del Gran Parque Central, etapa por etapa: qué se construye primero y cuándo llega cada mejora del estadio."
@@ -698,7 +703,7 @@ a = []
 Q = a.append
 Q('<main class="wrap">')
 Q('<header class="hero">'
-  '<a class="back" href="../">← Guía para el socio</a> · <a class="back" href="../mocion/">La moción, artículo por artículo</a>'
+  '<p class="migas"><a class="back" href="../">← Guía para el socio</a> · <a class="back" href="../mocion/">La moción, artículo por artículo</a> · <a class="back" href="../finanzas/">Las cuentas</a></p>'
   '<p class="eyebrow">Gran Parque Central · Master Plan · El anteproyecto</p>'
   '<h1>Qué se construye y en qué orden</h1>'
   '<p class="lede">El anteproyecto etapa por etapa, con la página de cada dato, y cómo se compara con lo que dijeron las partes y con lo que pide la moción.</p>'
@@ -760,3 +765,127 @@ open("anteproyecto/index.html", "w").write(documento(
     "Qué se construye en cada una de las 14 etapas del Master Plan del Gran Parque Central, en qué orden, y cómo se compara con lo que dijeron las partes y con la moción.",
     "\n".join(a), AP_CSS, "anteproyecto/", OG_ANTEPROYECTO))
 print("anteproyecto ok")
+
+# ---------- Las cuentas (resumen financiero) ----------
+import finanzas as FZ
+
+FZ_CSS = PORTADA_CSS.replace("</style>", """
+.alts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.alts article { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--navy); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.alts h3 { font-size: 1.15rem; }
+.cifras { font-size: .92rem; }
+.cifras th[scope="col"] { font-size: .66rem; }
+.cifras tbody th { width: auto; min-width: 9ch; }
+.cifras th, .cifras td { padding: 10px 8px; }
+.cifras thead th { letter-spacing: .04em; }
+.cifras td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.migas { margin: 0; color: var(--muted); }
+.cifras .grupo th { font-family: var(--f-mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.notas-tabla { margin: 8px 0 0; padding: 0; list-style: none; font-size: .92rem; color: var(--muted); display: flex; flex-direction: column; gap: 2px; }
+.leer { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 0; }
+.leer div { background: var(--surface); border: 1px solid var(--line); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.leer dt { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.leer dd { margin: 0; }
+.estres { display: flex; flex-direction: column; gap: 10px; }
+.estres article { border-left: 4px solid var(--navy); padding: 4px 0 4px 14px; max-width: 75ch; display: flex; flex-direction: column; gap: 4px; }
+.estres h3 { font-size: 1.1rem; }
+.imagen { display: flex; flex-direction: column; gap: 8px; }
+.imagen img { width: 100%; height: auto; border: 1px solid var(--line); }
+.back { font-family: var(--f-mono); font-size: .82rem; }
+</style>""")
+FZ_COMPARTIR = "Las cuentas del Master Plan del Gran Parque Central: cuánto cuesta cada alternativa, cuánta deuda, en cuántos años se paga y qué deja, con la fuente de cada dato."
+FZ_IMAGEN = "alternativas-cpa-2026-10-10.png"
+
+def nb(x):
+    """Número y «años» en la misma línea."""
+    return html.escape(x).replace(" años", "&nbsp;años")
+
+f = []
+F_ = f.append
+F_('<main class="wrap">')
+F_('<header class="hero">'
+   '<p class="migas"><a class="back" href="../">← Guía para el socio</a> · <a class="back" href="../mocion/">La moción, artículo por artículo</a> · <a class="back" href="../anteproyecto/">El anteproyecto, etapa por etapa</a></p>'
+   '<p class="eyebrow">Gran Parque Central · Master Plan · Las cuentas</p>'
+   '<h1>Cuánto cuesta y cómo se paga</h1>'
+   '<p class="lede">Lo que dice el resumen financiero que el club publicó el 10 de octubre: cuatro alternativas, su costo, la deuda, en cuántos años se paga y qué le dejaría a Nacional. Cada dato enlaza a la página del PDF oficial.</p>'
+   '<dl class="facts">'
+   f'<div><dt>Documento</dt><dd>{R("Resumen ejecutivo para socios · 6 páginas {F-0036}")}</dd></div>'
+   '<div><dt>Fechas</dt><dd>Fechado el 7/10/2026 · publicado el 10/10/2026</dd></div>'
+   '<div><dt>Falta publicar</dt><dd>El estudio completo de CPA Ferrere y el modelo económico</dd></div>'
+   f'<div><dt>Estado</dt><dd>Preliminar · actualizado el {ACTUALIZADO}</dd></div>'
+   '</dl>'
+   '<nav class="toc" aria-label="Secciones"><a href="#resumen">En resumen</a><a href="#alternativas">Las cuatro alternativas</a><a href="#tabla">La tabla</a><a href="#como-leer">Cómo leerla</a><a href="#estres">Si sale peor</a><a href="#despues">Después del repago</a><a href="#recursos">De dónde sale la plata</a><a href="#no-dice">Qué no dice</a><a href="#analisis">Análisis</a><a href="#fuentes">Fuentes</a></nav>'
+   f'<div class="acciones"><a class="cta" href="#tabla">Ver la tabla →</a>{compartir(FZ_COMPARTIR, "finanzas/")}</div>'
+   '</header>')
+
+F_('<section id="resumen" class="sec"><h2>En resumen</h2><ul class="corto">')
+for x in FZ.EN_CORTO:
+    F_(f'<li>{R(x)}</li>')
+F_('</ul></section>')
+
+F_('<section id="alternativas" class="sec"><h2>Las cuatro alternativas</h2><div class="alts">')
+for t, x in FZ.ALTERNATIVAS:
+    F_(f'<article><h3>{html.escape(t)}</h3><p>{R(x)}</p></article>')
+F_('</div></section>')
+
+F_('<section id="tabla" class="sec"><h2>La tabla</h2>'
+   f'<p class="sec-intro">Millones de dólares. Escenario base y sensibilidades del estudio de CPA Ferrere, según el resumen {R("{F-0036 p.2} {F-0036 p.5} {F-0036 p.6}")}. Plazo indicativo de la deuda: 15 años.</p>'
+   '<div class="table-wrap"><table class="cifras"><thead>'
+   '<tr class="grupo"><th></th><th colspan="3" scope="colgroup">Inversión</th><th colspan="3" scope="colgroup">Años de repago de la deuda</th><th scope="colgroup">Después</th></tr>'
+   '<tr><th scope="col">Alternativa</th><th scope="col">Costo de obra</th><th scope="col">Aportes (25%)</th><th scope="col">Deuda</th>'
+   '<th scope="col">Base</th><th scope="col">Obra +10%,<br>ingresos −10%</th><th scope="col">Obra +20%,<br>ingresos −20%</th><th scope="col">Retiros para Nacional</th></tr>'
+   '</thead><tbody>')
+for alt, costo, aportes, deuda, base, d10, d20, ret in FZ.TABLA:
+    F_(f'<tr><th scope="row">{html.escape(alt)}</th><td class="n">{costo}</td><td class="n">{aportes}</td><td class="n">{deuda}</td>'
+       f'<td>{nb(base)}</td><td>{nb(d10)}</td><td>{nb(d20)}</td><td>{html.escape(ret)}</td></tr>')
+F_('</tbody></table></div><ul class="notas-tabla">')
+for x in FZ.TABLA_NOTAS:
+    F_(f'<li>{R(x)}</li>')
+F_('</ul>'
+   f'<div class="imagen"><p class="sec-intro">La misma tabla como imagen, para compartir. Es un análisis independiente, no material oficial del club.</p>'
+   f'<a href="{FZ_IMAGEN}"><img src="{FZ_IMAGEN}" width="1600" height="1203" loading="lazy" alt="Tabla de las cuatro alternativas del Master Plan: costo de obra, aportes, deuda, años de repago en el escenario base y con desvíos del 10% y del 20%, y retiros para Nacional tras el repago."></a>'
+   f'<a class="cta" href="{FZ_IMAGEN}" download>Descargar la imagen</a></div>'
+   '</section>')
+
+F_('<section id="como-leer" class="sec"><h2>Cómo leer las cifras</h2><dl class="leer">')
+for k, v in FZ.COMO_LEER:
+    F_(f'<div><dt>{html.escape(k)}</dt><dd>{R(v)}</dd></div>')
+F_('</dl></section>')
+
+F_('<section id="estres" class="sec"><h2>Si las cosas salen peor</h2><p class="sec-intro">Qué pasa con cada alternativa si la obra sale más cara y los ingresos son menores, según el resumen.</p><div class="estres">')
+for t, x in FZ.ESTRES:
+    F_(f'<article><h3>{html.escape(t)}</h3><p>{R(x)}</p></article>')
+F_(f'</div><p class="sec-intro">{R(FZ.ESTRES_NOTA)}</p></section>')
+
+F_('<section id="despues" class="sec"><h2>Después del repago</h2><ul class="corto">')
+for x in FZ.RETIROS:
+    F_(f'<li>{R(x)}</li>')
+F_('</ul></section>')
+
+F_(f'<section id="recursos" class="sec"><h2>De dónde sale la plata</h2><p class="sec-intro">Los recursos que considera el modelo {R("{F-0036 p.3}")}.</p><dl class="leer">')
+for k, v in FZ.RECURSOS:
+    F_(f'<div><dt>{html.escape(k)}</dt><dd>{R(v)}</dd></div>')
+F_(f'</dl><p class="lectura">{R(FZ.RECURSOS_NOTA)}</p></section>')
+
+F_('<section id="no-dice" class="sec"><h2>Qué no dice</h2><ul class="falta">')
+for t, x in FZ.NO_DICE:
+    F_(f'<li><strong>{html.escape(t)}</strong><span>{R(x)}</span></li>')
+F_('</ul></section>')
+
+F_(f'<section id="analisis" class="sec"><h2>Análisis</h2><div class="analisis"><p class="aviso">{FZ.AVISO}</p>')
+for par in FZ.ANALISIS:
+    F_(f'<p>{R(par)}</p>')
+F_('</div></section>')
+F_(f'<section class="sec"><h2>Conclusión</h2><p class="lectura">{R(FZ.LECTURA)}</p><div class="acciones"><a class="cta" href="../">Volver a la guía →</a>{compartir(FZ_COMPARTIR, "finanzas/")}</div></section>')
+
+F_('<section id="fuentes" class="sec"><h2>Fuentes</h2><p class="sec-intro">Los enlaces con página abren el PDF en esa página.</p><ul class="fuentes">')
+for x in FZ.FUENTES_PAGINA:
+    F_(f'<li><span class="code">{x}</span>{src_link(x)}</li>')
+F_('</ul></section>')
+F_('<footer class="foot"><p>Proyecto de verificación sobre el Master Plan del Gran Parque Central, el primer estadio mundialista. Hecho por Santiago Trias, socio de Nacional (n.º 55554), con asistencia de Claude. Vínculo declarado: el conductor de <em>Triconectados</em> (Trimax Live) es primo del autor, difundió este sitio al aire y le trasladó una pregunta del autor a un entrevistado (F-0031). No es un documento oficial del club. El resumen financiero lo publica el club, que impulsa la moción. Fuentes, método e historial de cambios: <a href="https://github.com/strias/masterplan-gpc">repositorio en GitHub</a>.</p></footer></main>')
+
+open("finanzas/index.html", "w").write(documento(
+    "Las cuentas del Master Plan",
+    "Cuánto cuesta cada alternativa del Master Plan del Gran Parque Central, cuánta deuda toma, en cuántos años se paga y qué le deja a Nacional, según el resumen financiero oficial.",
+    "\n".join(f), FZ_CSS, "finanzas/"))
+print("finanzas ok")

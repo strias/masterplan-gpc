@@ -23,9 +23,10 @@ COMO_VOTAR = [
  ("Para informarte", "Reuniones informativas los miércoles 14 y 21 de octubre a las 19:00, en el Paddock y en línea, consultas con respuesta oficial en 48 horas hábiles y los documentos en el sitio oficial {F-0003}"),
 ]
 
-# El proyecto en cifras del anteproyecto (F-0004; la v2, F-0027, mantiene la paginación).
+# El proyecto en cifras del anteproyecto (F-0004; la v2, F-0027, y la v3, F-0037, mantienen la paginación).
 PROYECTO = [
  ("Aforo", "De unos 34.000 a más de 43.000 espectadores, con un techo que cubre todos los asientos {F-0004 p.64} {F-0004 p.45}"),
+ ("Butacas", "8.247 nuevas y 3.567 mejoradas en el estadio, más 1.517 nuevas de hospitalidad {F-0037 p.42}"),
  ("Estadio", "Cancha más baja, codos cerrados, bandeja alta en la Scarone, vestuarios y accesos nuevos {F-0004 p.38-41}"),
  ("Arena", "Polideportiva, para 4.730 personas {F-0004 p.40}"),
  ("Estacionamiento", "980 lugares, en dos etapas {F-0004 p.42}"),
@@ -40,10 +41,19 @@ IDEA = ("**La idea, según uno de sus autores.** El arquitecto José Ignacio Mas
         "Se trabaja sobre el estadio actual, sin demoler tribunas {F-0032 00:13:43} {F-0032 00:19:40}, y con la capacidad que pide la FIFA, porque un estadio más grande “implica más costo de mantenimiento” {F-0032 00:12:51}. "
         "Es la visión de quien diseñó el proyecto: experta, pero de parte interesada.")
 
-COSTO = ("**El costo no está cerrado, y la moción no lo fija.** Quienes impulsan el proyecto hablan de unos 110 a 112 M de dólares con asesores y gerenciamiento {F-0016 00:07:30} {F-0021 00:28:11}, "
-         "con un ajuste posible de hasta 20% {F-0021 00:28:18}. Decurnex habló de 150 a 160 M para el proyecto completo {F-0022 00:05:09}. "
-         "El techo es alrededor de una quinta parte: unos 21 M según Singlet, un 22 o 23% según Aldabalde {F-0017 01:41:54} {F-0020 00:08:26}. "
-         "Por eso la moción manda costear el estadio con y sin techo antes de decidir {F-0026 p.3}.")
+# La plata: cifras del resumen financiero (F-0036). Reemplaza las cifras dichas en entrevistas.
+PLATA = [
+ ("Costo del plan completo", "105 M de dólares con la suba de precios durante la obra; 93,6 M a precios de 2025 {F-0036 p.2}"),
+ ("El techo", "Unos 21,5 M. Sin techo, el plan completo cuesta 83,5 M {F-0036 p.2} {F-0036 p.3}"),
+ ("Solo el estadio", "56,6 M con techo y 35,1 M sin techo, sin Arena ni espacios comerciales {F-0036 p.2}"),
+ ("Aporte de los socios y otras iniciativas", "El 25% del costo: de 8,8 M a 26,3 M según la alternativa, a recaudar con contribuciones voluntarias y otras iniciativas {F-0036 p.2}"),
+ ("Deuda y repago", "La toma un fideicomiso; el esquema busca que el club no asuma la deuda ni sea garante. Se paga en 10 a 15 años según la alternativa; 13 en el plan completo {F-0036 p.2} {F-0036 p.3}"),
+ ("Después del repago", "Unos 17,5 M por año para Nacional desde 2045 con el plan completo, en dólares de esos años {F-0036 p.6}"),
+]
+PLATA_NOTA = ("**Son cifras preliminares de CPA Ferrere, resumidas por el club.** El estudio completo no está publicado {F-0036 p.1} {F-0008}. "
+              "Según el resumen, las cuatro alternativas se pueden pagar en el escenario base; si la obra sale 20% más cara y los ingresos 20% menores, las dos con techo pasan los 15 años o no repagan {F-0036 p.5}. "
+              "Hay quien estima más: Decurnex habló de 150 a 160 M para el proyecto completo {F-0022 00:05:09}. "
+              "La moción no aprueba estos números: se actualizan con el proyecto ejecutivo y vuelven a la Asamblea {F-0026 p.5}.")
 
 # Qué protege al club: garantías citadas del texto de la moción.
 GARANTIAS = [
@@ -90,12 +100,12 @@ PREGUNTAS = [
 
 # Qué queda abierto, corto y sin alarma.
 ABIERTO = [
- "**El costo y el modelo económico.** No hay costo cerrado y el modelo de CPA Ferrere está disponible solo para socios habilitados {F-0003}; la moción pide actualizarlo con el proyecto ejecutivo {F-0026 p.3}.",
- "**El aporte de los socios:** monto y si es voluntario {F-0026 p.4}.",
+ "**El estudio económico completo.** El club publicó un resumen con las cifras de CPA Ferrere {F-0036}, pero el estudio y el modelo siguen sin publicarse {F-0003} {F-0008}; la moción pide actualizarlo con el proyecto ejecutivo {F-0026 p.3}.",
+ "**El aporte de los socios:** el resumen financiero lo fija en el 25% del costo y lo describe como voluntario {F-0036 p.2}; la moción no fija el monto {F-0026 p.4}.",
  "**Dos referencias del texto que no cierran,** entre ellas una excepción que remite a un “numeral 7” que no existe {F-0026 p.4}. Ver [[>mocion/#cambios|qué cambió]].",
  "**Dos garantías de la versión 1 ahora dependen del Estatuto,** que no está publicado {F-0026 p.6} {F-0007 p.9}.",
  "**Hasta la próxima Asamblea, la Directiva decide sin mayoría especial;** la v1 pedía unanimidad {F-0007 p.8} {F-0026 p.5}.",
  "**El acta de la votación en la Directiva** no está publicada {F-0030 01:05:53}.",
 ]
 
-FUENTES_GUIA = ["F-0026", "F-0003", "F-0004", "F-0007", "F-0016", "F-0017", "F-0021", "F-0022", "F-0023", "F-0028", "F-0029", "F-0030", "F-0031", "F-0032", "F-0033", "F-0034", "F-0035"]
+FUENTES_GUIA = ["F-0026", "F-0036", "F-0003", "F-0004", "F-0037", "F-0008", "F-0007", "F-0016", "F-0017", "F-0021", "F-0022", "F-0023", "F-0028", "F-0029", "F-0030", "F-0031", "F-0032", "F-0033", "F-0034", "F-0035"]
